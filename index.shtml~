@@ -179,7 +179,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 															<div class= 'issue'>
 																<div class="issueSummary col-sm-9">
 																	<img class="col-sm-3" src="files/aapeducation.jpg">
-																	<div class="col-sm-9 issueSummary">
+																	<div class="col-sm-9">
 																		<b>Education</b><br/>Kejriwal uncle receiving gifts from children on children's day.
 																		 
 																	</div>

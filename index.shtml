@@ -71,6 +71,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
 					<div class="menu-one-page-menu-container">
 						<ul style="padding-top: 10px;" id="mainnav" class="sf-menu sf-js-enabled sf-arrows">
+							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="#hello"><span>HOME</span></a></li>
 							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="#about"><span>ABOUT US</span></a></li>
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#topics"><span>TOPICS</span></a></li>
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#schedule"><span>SCHEDULE</span></a></li>
