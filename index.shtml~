@@ -71,11 +71,11 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
 					<div class="menu-one-page-menu-container">
 						<ul style="padding-top: 10px;" id="mainnav" class="sf-menu sf-js-enabled sf-arrows">
-							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a href="#about"><span>ABOUT US</span></a></li>
-							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a href="#topics"><span>TOPICS</span></a></li>
-							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a href="#schedule"><span>SCHEDULE</span></a></li>
-							<li style="overflow: visible;" id="menu-item-183" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-183"><a href="http://discuss.aamaadmiparty.org"><span>DISCUSS ONLINE</span></a></li>
-							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a href="#contact"><span>CONTACT</span></a></li>
+							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="#about"><span>ABOUT US</span></a></li>
+							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#topics"><span>TOPICS</span></a></li>
+							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#schedule"><span>SCHEDULE</span></a></li>
+							<li style="overflow: visible;" id="menu-item-183" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-183"><a class="headnavs" href="http://discuss.aamaadmiparty.org"><span>DISCUSS ONLINE</span></a></li>
+							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="#contact"><span>CONTACT</span></a></li>
 						</ul>
 					</div>				
 				</nav><!--end navigation-->				
@@ -147,8 +147,10 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 								</div>
 							</div>
 
-
 							<div id="topics" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
+								<br/>
+								<br/>
+								<br/>
 								<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
 									<div class="vc_span12 wpb_column column_container">
 										<div class="wpb_wrapper">

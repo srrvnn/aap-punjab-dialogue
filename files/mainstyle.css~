@@ -54,8 +54,8 @@
 		.playintro
 		{
 			margin-top:50px;
-			left:auto;
-			right:auto;
+			margin-left:auto;
+			margin-right:auto;
 			width:150px;
 			height:150px;
 			padding-left:auto;
@@ -78,7 +78,7 @@
 			text-decoration:none !important;
 		}
 		a {
-    	outline: none;
+    	outline: none !important;
 		}
 
 

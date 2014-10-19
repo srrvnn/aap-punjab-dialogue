@@ -147,8 +147,9 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 								</div>
 							</div>
 
-
 							<div id="topics" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
+								<br/>
+								<br/>
 								<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
 									<div class="vc_span12 wpb_column column_container">
 										<div class="wpb_wrapper">
