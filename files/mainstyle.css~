@@ -121,15 +121,20 @@ text-align:center;}
 	color:white !important;
 }
 
-
+#oval{
+		padding: 0.67em 1em 0.5em;
+}
 .oval{
     border-radius: 2em;
 		color:white !important;
 		color: #FFF;
 		width:220px;
 		font-size: 20px !important;
-		padding: 0.67em 1em 0.5em;
 		font-family: "Avenir","Corbel","Myriad Pro","Lucida Sans","Lucida Grande",Arial,Helvetica,sans-serif;
+}
+
+.introBtn{
+	border:1px dotted orange;
 }
 
 

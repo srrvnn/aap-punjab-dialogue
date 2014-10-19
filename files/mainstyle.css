@@ -133,6 +133,10 @@ text-align:center;}
 		font-family: "Avenir","Corbel","Myriad Pro","Lucida Sans","Lucida Grande",Arial,Helvetica,sans-serif;
 }
 
+.introBtn{
+	border:1px dotted orange !important;
+}
+
 
 html body {background: #efefef;}#wrapper {background: #ffffff;}#header {background: #ffffff;}#footer {background: #ffffff;}body { background: #efefef; }
 .map-wrapper [id^="google_map_"], .portfolio li a img, .team-member img.team-avatar, .post-masonry a img, .client-item img, iframe{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: url(http://demo.deliciousthemes.com/patti/wp-content/themes/patti-demo-3/images/grayscale.svg#greyscale); filter: gray; }
