@@ -150,7 +150,6 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 							<div id="topics" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
 								<br/>
 								<br/>
-								<br/>
 								<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
 									<div class="vc_span12 wpb_column column_container">
 										<div class="wpb_wrapper">
@@ -245,7 +244,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 																<a href="issue/Health.html" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:skyblue;">
 																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">DISCOVER MORE</h3></i>
+																			<h3 class="service-title">DISCOVER MORE</h3>
 																		</div>
 																	</div>
 																</a>
