@@ -140,6 +140,27 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 												<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
 													<div class="wpb_wrapper">
 														<h1 class="section-title">ABOUT US</h1>
+														<div class="col-md-12 aboutText">
+															<p><h2>"Delhi Dialogue: Vision 2020"</h2> An initiative to conduct a comprehensive study of policies for Delhi. This will be used to create a concrete, feasible and long-term roadmap and vision for Delhi.</p>
+															<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments,  organizations, businesses and civil society to engage with us on a 13-point agenda. The engagement would happen in the form of round table conferences.</p>
+															<p>The major areas of discussion and policy research will center around:</p>
+															<ul id="aboutTopicList" class="col-md-offset-1 col-md-10">
+																<li>Energy and Electricity</li>
+																<li>Water</li>
+																<li>Jobs and Employment</li>
+																<li>Enterprise: Trade and Industry</li>
+																<li>Women’s Issues</li>
+																<li>Education</li>
+																<li>Health</li>
+																<li>Land and Housing</li>
+																<li>Sanitation, Sewage & Solid Waste Management</li>
+																<li>Social Welfare and Social Justice</li>
+																<li>Rural Delhi</li>
+																<li>Transportation</li>
+															</ul>
+															<i class="col-md-12">Citizens will also be invited to give their suggestions on different policy areas through our website, Whatsapp, Text Messaging and registering for policy roundtables.</i>
+
+														</div>
 													</div>
 												</div>
 											</div>

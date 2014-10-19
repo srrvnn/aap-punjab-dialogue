@@ -88,8 +88,26 @@
 ul#mainnav > li {
     background: url('files/nav-bg.png') no-repeat scroll right center transparent;
 		}
+.aboutText h2{
+text-align:center;}
+
+.aboutText{
+	color:black;
+	font-size:16px;
+	
+}
+#aboutTopicList > li{
+	display:inline-block;
+	border:2px solid skyblue;
+	margin: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
+	font-size:16px;
+	font-weight:bold;
+	min-width:400px !important;
+	text-align:center;
 
 
+}
 html body {background: #efefef;}#wrapper {background: #ffffff;}#header {background: #ffffff;}#footer {background: #ffffff;}body { background: #efefef; }
 .map-wrapper [id^="google_map_"], .portfolio li a img, .team-member img.team-avatar, .post-masonry a img, .client-item img, iframe{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: url(http://demo.deliciousthemes.com/patti/wp-content/themes/patti-demo-3/images/grayscale.svg#greyscale); filter: gray; }
 html .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon, html .wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon {
