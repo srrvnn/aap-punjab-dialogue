@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html class=" js webgl no-touch rgba opacity cssanimations csstransforms csstransforms3d csstransitions js_active  vc_desktop  vc_transform " lang="en-US"><head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!-- mobile meta tag -->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<title>Patti </title>
+		
+		<!-- Custom Favicon -->
+		<link rel="icon" type="image/png" href="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/ico.ico">			
+				
+		<link rel="alternate" type="text/xml" title="Patti RSS 0.92 Feed" href="http://demo.deliciousthemes.com/patti/feed/rss/">
+		<link rel="alternate" type="application/atom+xml" title="Patti Atom Feed" href="http://demo.deliciousthemes.com/patti/feed/atom/">
+		<link rel="alternate" type="application/rss+xml" title="Patti RSS 2.0 Feed" href="http://demo.deliciousthemes.com/patti/feed/">
+		<link rel="pingback" href="http://demo.deliciousthemes.com/patti/xmlrpc.php">
+
+		<link rel="alternate" type="application/rss+xml" title="Patti » Feed" href="http://demo.deliciousthemes.com/patti/feed/">
+<link rel="alternate" type="application/rss+xml" title="Patti » Comments Feed" href="http://demo.deliciousthemes.com/patti/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Patti » Homepage Comments Feed" href="http://demo.deliciousthemes.com/patti/homepage/feed/">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="Patti_files/settings.css" type="text/css" media="all">
+<style type="text/css">
+.tp-caption.medium_grey {
+position:absolute;
+color:#fff;
+text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+font-weight:700;
+font-size:20px;
+line-height:20px;
+font-family:Arial;
+padding:2px 4px;
+margin:0px;
+border-width:0px;
+border-style:none;
+background-color:#888;
+white-space:nowrap;
+}
+
+.tp-caption.small_text {
+position:absolute;
+color:#fff;
+text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+font-weight:700;
+font-size:14px;
+line-height:20px;
+font-family:Arial;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+}
+
+.tp-caption.medium_text {
+position:absolute;
+color:#fff;
+text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+font-weight:700;
+font-size:20px;
+line-height:20px;
+font-family:Arial;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+}
+
+.tp-caption.large_text {
+position:absolute;
+color:#fff;
+text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+font-weight:700;
+font-size:40px;
+line-height:40px;
+font-family:Arial;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+}
+
+.tp-caption.very_large_text {
+position:absolute;
+color:#fff;
+text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+font-weight:700;
+font-size:60px;
+line-height:60px;
+font-family:Arial;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+letter-spacing:-2px;
+}
+
+.tp-caption.very_big_white {
+position:absolute;
+color:#fff;
+text-shadow:none;
+font-weight:800;
+font-size:60px;
+line-height:60px;
+font-family:Arial;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+padding:0px 4px;
+padding-top:1px;
+background-color:#000;
+}
+
+.tp-caption.very_big_black {
+position:absolute;
+color:#000;
+text-shadow:none;
+font-weight:700;
+font-size:60px;
+line-height:60px;
+font-family:Arial;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+padding:0px 4px;
+padding-top:1px;
+background-color:#fff;
+}
+
+.tp-caption.modern_medium_fat {
+position:absolute;
+color:#000;
+text-shadow:none;
+font-weight:800;
+font-size:24px;
+line-height:20px;
+font-family:"Open Sans", sans-serif;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+}
+
+.tp-caption.modern_medium_fat_white {
+position:absolute;
+color:#fff;
+text-shadow:none;
+font-weight:800;
+font-size:24px;
+line-height:20px;
+font-family:"Open Sans", sans-serif;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+}
+
+.tp-caption.modern_medium_light {
+position:absolute;
+color:#000;
+text-shadow:none;
+font-weight:300;
+font-size:24px;
+line-height:20px;
+font-family:"Open Sans", sans-serif;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+}
+
+.tp-caption.modern_big_bluebg {
+position:absolute;
+color:#fff;
+text-shadow:none;
+font-weight:800;
+font-size:30px;
+line-height:36px;
+font-family:"Open Sans", sans-serif;
+padding:3px 10px;
+margin:0px;
+border-width:0px;
+border-style:none;
+background-color:#4e5b6c;
+letter-spacing:0;
+}
+
+.tp-caption.modern_big_redbg {
+position:absolute;
+color:#fff;
+text-shadow:none;
+font-weight:300;
+font-size:30px;
+line-height:36px;
+font-family:"Open Sans", sans-serif;
+padding:3px 10px;
+padding-top:1px;
+margin:0px;
+border-width:0px;
+border-style:none;
+background-color:#de543e;
+letter-spacing:0;
+}
+
+.tp-caption.modern_small_text_dark {
+position:absolute;
+color:#555;
+text-shadow:none;
+font-size:14px;
+line-height:22px;
+font-family:Arial;
+margin:0px;
+border-width:0px;
+border-style:none;
+white-space:nowrap;
+}
+
+.tp-caption.boxshadow {
+-moz-box-shadow:0px 0px 20px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow:0px 0px 20px rgba(0, 0, 0, 0.5);
+box-shadow:0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tp-caption.black {
+color:#000;
+text-shadow:none;
+}
+
+.tp-caption.noshadow {
+text-shadow:none;
+}
+
+.tp-caption.thinheadline_dark {
+position:absolute;
+color:rgba(0,0,0,0.85);
+text-shadow:none;
+font-weight:300;
+font-size:30px;
+line-height:30px;
+font-family:"Open Sans";
+background-color:transparent;
+}
+
+.tp-caption.thintext_dark {
+position:absolute;
+color:rgba(0,0,0,0.85);
+text-shadow:none;
+font-weight:300;
+font-size:16px;
+line-height:26px;
+font-family:"Open Sans";
+background-color:transparent;
+}
+
+.tp-caption.largeblackbg {
+position:absolute;
+color:#fff;
+text-shadow:none;
+font-weight:300;
+font-size:50px;
+line-height:70px;
+font-family:"Open Sans";
+background-color:#000;
+padding:0px 20px;
+-webkit-border-radius:0px;
+-moz-border-radius:0px;
+border-radius:0px;
+}
+
+.tp-caption.largepinkbg {
+position:absolute;
+color:#fff;
+text-shadow:none;
+font-weight:300;
+font-size:50px;
+line-height:70px;
+font-family:"Open Sans";
+background-color:#db4360;
+padding:0px 20px;
+-webkit-border-radius:0px;
+-moz-border-radius:0px;
+border-radius:0px;
+}
+
+.tp-caption.largewhitebg {
+position:absolute;
+color:#000;
+text-shadow:none;
+font-weight:300;
+font-size:50px;
+line-height:70px;
+font-family:"Open Sans";
+background-color:#fff;
+padding:0px 20px;
+-webkit-border-radius:0px;
+-moz-border-radius:0px;
+border-radius:0px;
+}
+
+.tp-caption.largegreenbg {
+position:absolute;
+color:#fff;
+text-shadow:none;
+font-weight:300;
+font-size:50px;
+line-height:70px;
+font-family:"Open Sans";
+background-color:#67ae73;
+padding:0px 20px;
+-webkit-border-radius:0px;
+-moz-border-radius:0px;
+border-radius:0px;
+}
+
+.tp-caption.excerpt {
+font-size:36px;
+line-height:36px;
+font-weight:700;
+font-family:Arial;
+color:#ffffff;
+text-decoration:none;
+background-color:rgba(0, 0, 0, 1);
+text-shadow:none;
+margin:0px;
+letter-spacing:-1.5px;
+padding:1px 4px 0px 4px;
+width:150px;
+white-space:normal !important;
+height:auto;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
+
+.tp-caption.large_bold_grey {
+font-size:60px;
+line-height:60px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(102, 102, 102);
+text-decoration:none;
+background-color:transparent;
+text-shadow:none;
+margin:0px;
+padding:1px 4px 0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_thin_grey {
+font-size:34px;
+line-height:30px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(102, 102, 102);
+text-decoration:none;
+background-color:transparent;
+padding:1px 4px 0px;
+text-shadow:none;
+margin:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.small_thin_grey {
+font-size:18px;
+line-height:26px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(117, 117, 117);
+text-decoration:none;
+background-color:transparent;
+padding:1px 4px 0px;
+text-shadow:none;
+margin:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.lightgrey_divider {
+text-decoration:none;
+background-color:rgba(235, 235, 235, 1);
+width:370px;
+height:3px;
+background-position:initial initial;
+background-repeat:initial initial;
+border-width:0px;
+border-color:rgb(34, 34, 34);
+border-style:none;
+}
+
+.tp-caption.large_bold_darkblue {
+font-size:58px;
+line-height:60px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(52, 73, 94);
+text-decoration:none;
+background-color:transparent;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_bg_darkblue {
+font-size:20px;
+line-height:20px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:rgb(52, 73, 94);
+padding:10px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_bold_red {
+font-size:24px;
+line-height:30px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(227, 58, 12);
+text-decoration:none;
+background-color:transparent;
+padding:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_light_red {
+font-size:21px;
+line-height:26px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(227, 58, 12);
+text-decoration:none;
+background-color:transparent;
+padding:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_bg_red {
+font-size:20px;
+line-height:20px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:rgb(227, 58, 12);
+padding:10px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_bold_orange {
+font-size:24px;
+line-height:30px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(243, 156, 18);
+text-decoration:none;
+background-color:transparent;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_bg_orange {
+font-size:20px;
+line-height:20px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:rgb(243, 156, 18);
+padding:10px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.grassfloor {
+text-decoration:none;
+background-color:rgba(160, 179, 151, 1);
+width:4000px;
+height:150px;
+border-width:0px;
+border-color:rgb(34, 34, 34);
+border-style:none;
+}
+
+.tp-caption.large_bold_white {
+font-size:58px;
+line-height:60px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:transparent;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_light_white {
+font-size:30px;
+line-height:36px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:transparent;
+padding:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.mediumlarge_light_white {
+font-size:34px;
+line-height:40px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:transparent;
+padding:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.mediumlarge_light_white_center {
+font-size:34px;
+line-height:40px;
+font-weight:300;
+font-family:"Open Sans";
+color:#ffffff;
+text-decoration:none;
+background-color:transparent;
+padding:0px 0px 0px 0px;
+text-align:center;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_bg_asbestos {
+font-size:20px;
+line-height:20px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:rgb(127, 140, 141);
+padding:10px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.medium_light_black {
+font-size:30px;
+line-height:36px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(0, 0, 0);
+text-decoration:none;
+background-color:transparent;
+padding:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.large_bold_black {
+font-size:58px;
+line-height:60px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(0, 0, 0);
+text-decoration:none;
+background-color:transparent;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.mediumlarge_light_darkblue {
+font-size:34px;
+line-height:40px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(52, 73, 94);
+text-decoration:none;
+background-color:transparent;
+padding:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.small_light_white {
+font-size:17px;
+line-height:28px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:transparent;
+padding:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.roundedimage {
+border-width:0px;
+border-color:rgb(34, 34, 34);
+border-style:none;
+}
+
+.tp-caption.large_bg_black {
+font-size:40px;
+line-height:40px;
+font-weight:800;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:rgb(0, 0, 0);
+padding:10px 20px 15px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.mediumwhitebg {
+font-size:30px;
+line-height:30px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(0, 0, 0);
+text-decoration:none;
+background-color:rgb(255, 255, 255);
+padding:5px 15px 10px;
+text-shadow:none;
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
+}
+
+
+.tp-caption a {
+color:#ff7302;
+text-shadow:none;
+-webkit-transition:all 0.2s ease-out;
+-moz-transition:all 0.2s ease-out;
+-o-transition:all 0.2s ease-out;
+-ms-transition:all 0.2s ease-out;
+}
+
+.tp-caption a:hover {
+color:#ffa902;
+}
+.tp-caption a {
+color:#ff7302;
+text-shadow:none;
+-webkit-transition:all 0.2s ease-out;
+-moz-transition:all 0.2s ease-out;
+-o-transition:all 0.2s ease-out;
+-ms-transition:all 0.2s ease-out;
+}
+
+.tp-caption a:hover {
+color:#ffa902;
+}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="Patti_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="dt-demo-css" href="Patti_files/template-changer.css" type="text/css" media="all">
+<link rel="stylesheet" id="dt-delicious-font-css" href="Patti_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="dt-default-style-css" href="Patti_files/style.css" type="text/css" media="all">
+<style type="text/css">
+html body {background: #efefef;}#wrapper {background: #ffffff;}#header {background: #ffffff;}#footer {background: #ffffff;}body { background: #efefef; }
+.map-wrapper [id^="google_map_"], .portfolio li a img, .team-member img.team-avatar, .post-masonry a img, .client-item img, iframe{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: url(http://demo.deliciousthemes.com/patti/wp-content/themes/patti-demo-3/images/grayscale.svg#greyscale); filter: gray; }
+html .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon, html .wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon {
+    background: none !important;
+}
+#header { padding-top: 55px; padding-bottom: 25px;  }
+</style>
+<link rel="stylesheet" id="dt-font-awesome-css" href="Patti_files/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="dt-css-styles-css" href="Patti_files/css-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="dt-color-scheme-css" href="Patti_files/orange.css" type="text/css" media="all">
+<div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script style="" src="Patti_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="Patti_files/jquery_008.js"></script>
+<script type="text/javascript" src="Patti_files/jquery-migrate.js"></script>
+<script type="text/javascript" src="Patti_files/jquery_004.js"></script>
+<script type="text/javascript" src="Patti_files/jquery_011.js"></script>
+<script type="text/javascript" src="Patti_files/template-changer.js"></script>
+<script type="text/javascript" src="Patti_files/styleswitch.js"></script>
+<script type="text/javascript" src="Patti_files/jquery_010.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var dt_loader = {"bcolor":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Patti_files/custom-loader.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default_color":"#ffffff","logo_width":"100","logo_height":"35","init_pt":"55","init_pb":"25","scroll_pt":"15","scroll_pb":"15","scrolling_effect":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Patti_files/custom-navscroll.js"></script>
+<script type="text/javascript" src="Patti_files/comment-reply.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demo.deliciousthemes.com/patti/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demo.deliciousthemes.com/patti/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Blogging isn`t just writing…" href="http://demo.deliciousthemes.com/patti/blog/">
+<link rel="next" title="Blogging isn`t just writing…" href="http://demo.deliciousthemes.com/patti/blog-masonry-2-columns-sidebar/">
+<meta name="generator" content="WordPress 3.8.4">
+<link rel="canonical" href="http://demo.deliciousthemes.com/patti/">
+<link rel="shortlink" href="http://demo.deliciousthemes.com/patti/?p=82">
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
+<style type="text/css" title="dynamic-css" class="options-output">html body{font-family:Open Sans;font-weight:300;font-style:normal;font-size:15px;line-height:24px;color:#686868;}html ul#mainnav li a{font-family:Open Sans;font-weight:700;font-style:normal;font-size:14px;line-height:25px;color:#404040;}html h1{font-family:Open Sans;font-weight:300;font-style:normal;font-size:28px;line-height:36px;color:#444444;}html h2{font-family:Open Sans;font-weight:300;font-style:normal;font-size:24px;line-height:32px;color:#444444;}html h3{font-family:Open Sans;font-weight:300;font-style:normal;font-size:18px;line-height:24px;color:#444444;}html h4{font-family:Open Sans;font-weight:300;font-style:normal;font-size:16px;line-height:22px;color:#444444;}html h5{font-family:Open Sans;font-weight:300;font-style:normal;font-size:14px;line-height:20px;color:#444444;}html h6{font-family:Open Sans;font-weight:300;font-style:normal;font-size:13px;line-height:20px;color:#444444;}</style><link rel="stylesheet" id="options-google-fonts" href="Patti_files/css_002.css" type="text/css" media="all">			
+
+	<script src="Patti_files/commonutilstats.js" charset="UTF-8" type="text/javascript"></script></head>
+	
+<body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
+
+	<!-- preloader-->
+	<div style="display: none;" id="qLoverlay"></div>
+
+	
+
+<!-- demo switcher -->
+
+	<div class="theme-changer-wrap">
+		<div class="theme-changer">
+			<div class="changer-inner">
+
+				<span>Predefined Color schemes</span>
+				<div style="" id="stylesw">
+				<a href="#" rel="styles1" class="color-themes col1" id="styles1"></a>
+				<a href="#" rel="styles2" class="color-themes col2" id="styles2"></a>
+				<a href="#" rel="styles3" class="color-themes col3" id="styles3"></a>
+				<a href="#" rel="styles4" class="color-themes col4" id="styles4"></a>
+				<a href="#" rel="styles5" class="color-themes col5" id="styles5"></a>
+				<a href="#" rel="styles6" class="color-themes col6" id="styles6"></a>
+				</div>
+				<div style="clear:both"></div>
+				<p>You can set a new color scheme within 2 clicks in admin panel.</p>
+
+				<span style="padding-top:25px;">Header Styles</span>
+				<form>
+					<select name="header-type" id="htype">
+						<option value="light-header show-original-logo" selected="selected">Light Header</option>
+						<option value="dark-header show-white-logo">Dark Header</option>
+						<option value="colored-header dark-header show-white-logo">Colored Header</option>
+					</select>
+				</form>	
+				<div style="clear:both"></div>
+				<p>Plus many more header options in admin panel.</p>
+
+				<span style="padding-top:25px;">Slider Versions</span>
+				<form>
+					<select id="utype" name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+						<option value="http://demo.deliciousthemes.com/patti/" selected="selected">FullScreen Image Slider</option>
+						<option value="http://demo.deliciousthemes.com/patti/demo-2/">FullWidth Image Slider</option>
+						<option value="http://demo.deliciousthemes.com/patti/demo-3/">FullScreen Video Slider</option>
+					</select>
+				</form>	
+				<div style="clear:both"></div>
+				<p>Based on the amazing Revolution Slider plugin.</p>			
+			</div>
+		</div>
+		<div class="open-close"></div>
+	</div> 			
+
+	<header style="padding-top: 55px; padding-bottom: 25px; background: none repeat scroll 0% 0% rgb(255, 255, 255); box-shadow: none;" id="header" class="show-original-logo solid-header">
+		<div class="centered-wrapper">
+			<div class="percent-one-fourth">
+					<div class="logo"><a class="original-logo" href="http://demo.deliciousthemes.com/patti"><img style="width: 100px; height: 35px;" src="Patti_files/logo.png" alt="Patti"></a>
+						<a class="white-logo" href="http://demo.deliciousthemes.com/patti"><img style="width: 100px; height: 35px;" src="Patti_files/logo-white.png" alt="Patti"></a></div>
+				
+			</div><!--end one-fourth-->
+			
+			<a class="nav-btn "><i class="fa fa-bars"></i></a>
+			
+			<div class="percent-three-fourth column-last">	
+
+							
+
+								
+
+				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
+					<div class="menu-one-page-menu-container"><ul style="padding-top: 10px;" id="mainnav" class="sf-menu sf-js-enabled sf-arrows"><li style="overflow: visible;" id="menu-item-186" class="initial menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186 current"><a href="http://demo.deliciousthemes.com/patti#hello"><span>HELLO</span></a></li>
+<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a href="http://demo.deliciousthemes.com/patti#about"><span>ABOUT</span></a></li>
+<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a href="http://demo.deliciousthemes.com/patti#work"><span>WORK</span></a></li>
+<li style="overflow: visible;" id="menu-item-183" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-183"><a href="http://demo.deliciousthemes.com/patti#services"><span>SERVICES</span></a></li>
+<li style="overflow: visible;" id="menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-184"><a href="http://demo.deliciousthemes.com/patti#journal"><span>JOURNAL</span></a></li>
+<li style="overflow: visible;" id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-187"><a class="sf-with-ul" href="http://demo.deliciousthemes.com/patti#extra"><span>EXTRA</span></a>
+<ul style="display: none;" class="sub-menu">
+	<li style="overflow: visible;" id="menu-item-285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/elements/">Elements</a></li>
+	<li style="overflow: visible;" id="menu-item-280" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-280"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/blog/portfolio/l-a-p-d-1947/">Portfolio Item 1</a></li>
+	<li style="overflow: visible;" id="menu-item-281" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-281"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/blog/portfolio/outdoor-photoshoot/">Portfolio Item 2</a></li>
+	<li style="overflow: visible;" id="menu-item-282" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-282"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/blog/portfolio/nex7-workspace/">Portfolio Item 3</a></li>
+	<li style="overflow: visible;" id="menu-item-283" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-283"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/blog/portfolio/focus-lab/">Portfolio Item 4</a></li>
+	<li style="overflow: visible;" id="menu-item-284" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-284"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/blog/portfolio/gibson-guitars/">Portfolio Item 5</a></li>
+	<li style="overflow: visible;" id="menu-item-232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/blog-masonry-3-columns/">Blog – Masonry 3 Cols</a></li>
+	<li style="overflow: visible;" id="menu-item-233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/blog-masonry-2-columns/">Blog – Masonry 2 Cols</a></li>
+	<li style="overflow: visible;" id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/blog-masonry-2-columns-sidebar/">Blog – Masonry 2 Cols + Sidebar</a></li>
+	<li style="overflow: visible;" id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a class="external" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);" href="http://demo.deliciousthemes.com/patti/blog/">Blog – Regular Layout</a></li>
+</ul>
+</li>
+<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a href="http://demo.deliciousthemes.com/patti#contact"><span>CONTACT</span></a></li>
+</ul></div>				</nav><!--end navigation-->				
+			
+				
+			</div><!--end three-fourth-->
+			<div class="clear"></div>
+		</div><!--end centered-wrapper-->
+	</header>		
+	
+	<div id="wrapper">	
+		
+	<div id="hello"></div><div style="height: 116px;" class="menu-fixer"></div>
+		
+		<section>
+			<article id="page-82" class="begin-content">
+				<section>
+					<div class="  wpb_row vc_row-fluid no-margin " style="" data-token="oBpTt"><div class="lighter-overlay" style=" background-color: rgba(255,255,255, 0.70);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="wpb_revslider_element wpb_content_element"><!-- START REVOLUTION SLIDER 4.3.5 fullscreen mode --><script type="text/javascript" src="Patti_files/jquery.js"></script><script type="text/javascript" src="Patti_files/jquery_003.js"></script><div style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px" class="forcefullwidth_wrapper_tp_banner"><div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" style="background-color: rgb(255, 255, 255); padding: 0px; left: 0px; position: absolute; width: 1288px; max-height: none; overflow: visible; height: 557px;">	<div id="rev_slider_1_1" class="rev_slider fullscreenbanner revslider-initialised tp-simpleresponsive" style="height: 100%; background-color: rgb(255, 255, 255); background-image: none; max-height: none;"><ul style="height: 100%; display: block; overflow: hidden; width: 100%; max-height: none;">	<!-- SLIDE  -->	<li style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute;" data-transition="fade" data-slotamount="7" data-masterspeed="300">		<!-- MAIN IMAGE -->		<div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center center" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="http://demo.deliciousthemes.com/patti/wp-content/uploads/revslider/fullscreen-image-slider/slide33.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://demo.deliciousthemes.com/patti/wp-content/uploads/revslider/fullscreen-image-slider/slide33.jpg" data-src="http://demo.deliciousthemes.com/patti/wp-content/plugins/revslider/images/dummy.png" style="background-color: transparent; background-repeat: no-repeat; background-image: url(&quot;http://demo.deliciousthemes.com/patti/wp-content/uploads/revslider/fullscreen-image-slider/slide33.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0; position: relative;"></div></div>		<!-- LAYERS -->		<!-- LAYER NR. 1 -->		<div class="tp-caption black lft tp-resizeme start" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-speed="300" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 2; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px; left: 355px; top: 197px; visibility: visible; opacity: 0; transform: translate3d(0px, -188px, 0px);"><h1 style="min-height: 0px; min-width: 0px; line-height: 56px; border-width: 1px; margin: 0px; padding: 10px 30px; letter-spacing: 0px; font-size: 48px;">We Are Patti Studio</h1><div class="fancy-caption" style="width: 365px; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 5px 0px 0px; letter-spacing: 0px; font-size: 15px;">	<div style="min-height: 0px; min-width: 0px; line-height: 40px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 2px; font-size: 14px;" class="fancy-slider-info">Since 2008</div>	<div style="min-height: 0px; min-width: 0px; line-height: 40px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 8px; font-size: 22px;" class="fancy-slider-caption">Serving Web Design</div></div>		</div>	</li>	<!-- SLIDE  -->	<li style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute;" data-transition="slidedown" data-slotamount="7" data-masterspeed="300">		<!-- MAIN IMAGE -->		<div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center center" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="http://demo.deliciousthemes.com/patti/wp-content/uploads/revslider/fullscreen-image-slider/slide11.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://demo.deliciousthemes.com/patti/wp-content/uploads/revslider/fullscreen-image-slider/slide11.jpg" data-src="http://demo.deliciousthemes.com/patti/wp-content/plugins/revslider/images/dummy.png" style="background-color: transparent; background-repeat: no-repeat; background-image: url(&quot;http://demo.deliciousthemes.com/patti/wp-content/uploads/revslider/fullscreen-image-slider/slide11.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;"></div></div>		<!-- LAYERS -->		<!-- LAYER NR. 1 -->		<div class="tp-caption black lft tp-resizeme start" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300" style="z-index: 2; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px; left: 268px; top: 239.5px; visibility: visible; opacity: 0; transform: translate3d(0px, -103px, 0px);"><h1 style="min-height: 0px; min-width: 0px; line-height: 56px; border-width: 1px; margin: 0px; padding: 10px 30px; letter-spacing: 0px; font-size: 48px;">It all starts with a vision</h1>		</div>	</li>	<!-- SLIDE  -->	<li style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 20; opacity: 1;" data-transition="fade" data-slotamount="7" data-masterspeed="300">		<!-- MAIN IMAGE -->		<div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center center" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/slide44.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/slide44.jpg" data-src="http://demo.deliciousthemes.com/patti/wp-content/plugins/revslider/images/dummy.png" style="background-color: transparent; background-repeat: no-repeat; background-image: url(&quot;http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/slide44.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; position: relative;"></div></div>		<!-- LAYERS -->		<!-- LAYER NR. 1 -->		<div class="tp-caption black lft tp-resizeme start" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 2; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px; left: 286.5px; top: 239.5px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px);"><h1 style="min-height: 0px; min-width: 0px; line-height: 56px; border-width: 1px; margin: 0px; padding: 10px 30px; letter-spacing: 0px; font-size: 48px;">We just love what we do</h1>		</div>	</li></ul><div class="tp-bannertimer tp-bottom" style="visibility: hidden; width: 51.9222%;"></div>	<div style="opacity: 0; display: block; visibility: hidden;" class="tp-loader spinner2"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div><div style="bottom: 20px; left: 50%; margin-left: -48px;" class="tp-bullets simplebullets round hidebullets"><div class="bullet first"></div><div class="bullet"></div><div class="bullet last selected"></div><div class="tpclear"></div></div><div style="position: absolute; top: 278px; margin-top: -24px; left: 20px;" class="tp-leftarrow tparrows default hidearrows"></div><div style="position: absolute; top: 278px; margin-top: -24px; right: 20px;" class="tp-rightarrow tparrows default hidearrows"></div></div><div class="tp-fullwidth-forcer" style="width: 100%; height: 557px;"></div></div>						<script type="text/javascript">				var tpj=jQuery;								tpj.noConflict();								var revapi1;								tpj(document).ready(function() {												if(tpj('#rev_slider_1_1').revolution == undefined)					revslider_showDoubleJqueryError('#rev_slider_1_1');				else				   revapi1 = tpj('#rev_slider_1_1').show().revolution(					{						dottedOverlay:"none",						delay:9000,						startwidth:1120,						startheight:400,						hideThumbs:10,												thumbWidth:100,						thumbHeight:50,						thumbAmount:3,												navigationType:"bullet",						navigationArrows:"solo",						navigationStyle:"round",												touchenabled:"on",						onHoverStop:"on",												swipe_velocity: 0.7,						swipe_min_touches: 1,						swipe_max_touches: 1,						drag_block_vertical: false,																		keyboardNavigation:"off",												navigationHAlign:"center",						navigationVAlign:"bottom",						navigationHOffset:0,						navigationVOffset:20,						soloArrowLeftHalign:"left",						soloArrowLeftValign:"center",						soloArrowLeftHOffset:20,						soloArrowLeftVOffset:0,						soloArrowRightHalign:"right",						soloArrowRightValign:"center",						soloArrowRightHOffset:20,						soloArrowRightVOffset:0,														shadow:0,						fullWidth:"off",						fullScreen:"on",						spinner:"spinner2",												stopLoop:"off",						stopAfterLoops:-1,						stopAtSlide:-1,												shuffle:"off",																								forceFullWidth:"on",												fullScreenAlignForce:"on",												minFullScreenHeight:"400",												hideTimerBar:"on",												hideThumbsOnMobile:"off",						hideNavDelayOnMobile:1500,						hideBulletsOnMobile:"off",						hideArrowsOnMobile:"off",						hideThumbsUnderResolution:0,												hideSliderAtLimit:0,						hideCaptionAtLimit:0,						hideAllCaptionAtLilmit:0,						startWithSlide:0,						videoJsPath:"http://demo.deliciousthemes.com/patti/wp-content/plugins/revslider/rs-plugin/videojs/",						fullScreenOffsetContainer: ".menu-fixer"						});								});	//ready							</script>						<style type="text/css">	#rev_slider_1_1_wrapper .tp-loader.spinner2{ background-color: #34281e !important; }</style><!-- END REVOLUTION SLIDER --></div>
+
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div id="about" class="  wpb_row vc_row-fluid no-margin " style="" data-token="ACCVI"><div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(250,250,250, 0.70);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="g0vur">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<h1 class="section-title">We`re Patti Studio</h1><div style="clear:both; width:100%; height:60px"></div>
+		</div> 
+	</div> 
+</div><div class="  wpb_row vc_row-fluid  " style="" data-token="LpxWA">
+	<div class="vc_span4 wpb_column column_container wpb_animate_when_almost_visible wpb_bottom-to-top wpb_start_animation">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2><strong>WE CARE.</strong></h2>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+ illo inventore.</p>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span4 wpb_column column_container wpb_animate_when_almost_visible wpb_bottom-to-top wpb_start_animation">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2><strong>WE DELIVER.</strong></h2>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+ illo inventore.</p>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span4 wpb_column column_container wpb_animate_when_almost_visible wpb_bottom-to-top wpb_start_animation">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2><strong>WE`RE CREATIVE.</strong></h2>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+ illo inventore.</p>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+</div><div class="  wpb_row vc_row-fluid  " style="" data-token="u3M3Y">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="vc_separator wpb_content_element vc_el_width_100 vc_sep_color_grey">
+	<span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span>
+		<span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+</div>
+
+
+		</div> 
+	</div> 
+</div><div class="  wpb_row vc_row-fluid  " style="" data-token="ZSDJW">
+	<div class="vc_span8 wpb_column column_container wpb_animate_when_almost_visible wpb_bottom-to-top wpb_start_animation">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2><strong>ABOUT US</strong></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas 
+diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor 
+elementum quam consequat condimentum. Cum sociis natoque penatibus et 
+magnis dis parturient montes, nascetur ridiculus mus.Praesent volutpat 
+nisl fringilla felis sodales elementum. Ut commodo arcu massa.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus…</p>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span4 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div style="clear:both; width:100%; height:20px"></div><div class="skillbar clearfix" data-percent="65%"><div class="skillbar-title"><span>HTML5</span></div><div style="width: 65%;" class="skillbar-bar"></div><div style="left: 65%; opacity: 1; margin-left: -19px;" class="skill-bar-percent">65%</div></div><div class="skillbar clearfix" data-percent="45%"><div class="skillbar-title"><span>Illustrator</span></div><div style="width: 45%;" class="skillbar-bar"></div><div style="left: 45%; opacity: 1; margin-left: -19px;" class="skill-bar-percent">45%</div></div><div class="skillbar clearfix" data-percent="95%"><div class="skillbar-title"><span>Photoshop</span></div><div style="width: 95%;" class="skillbar-bar"></div><div style="left: 95%; opacity: 1; margin-left: -19px;" class="skill-bar-percent">95%</div></div>
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div class="  wpb_row vc_row-fluid no-margin " style="" data-token="p0ACY"><div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 0.70);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="8879C">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<h1 class="section-title">Our Team</h1><h2 class="section-tagline">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse</h2>
+		</div> 
+	</div> 
+</div><div style="clear:both; width:100%; height:60px"></div><div class="  wpb_row vc_row-fluid  " style="" data-token="q8IBS">
+	<div class="vc_span4 wpb_column column_container wpb_animate_when_almost_visible wpb_bottom-to-top wpb_start_animation">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<div class="team-member"><a href="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/member11.jpg" rel="prettyPhoto" title="John Doe"><span class="item-on-hover"><span class="hover-image"><i class="fa fa-search"></i></span></span><img src="Patti_files/member11.jpg" class="team-avatar wp-post-image" alt="member1" height="288" width="380"></a><div class="team-text"><h3><span>John Doe</span></h3><h6>Graphic Designer</h6><p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.</p></div><div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div></div>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span4 wpb_column column_container wpb_animate_when_almost_visible wpb_bottom-to-top wpb_start_animation">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<div class="team-member"><a href="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/member21.jpg" rel="prettyPhoto" title="Andrew Clark"><span style="opacity: 0;" class="item-on-hover"><span style="opacity: 0;" class="hover-image"><i class="fa fa-search"></i></span></span><img src="Patti_files/member21.jpg" class="team-avatar wp-post-image" alt="member2" height="288" width="380"></a><div class="team-text"><h3><span>Andrew Clark</span></h3><h6>Web Developer</h6><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p></div><div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div></div>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span4 wpb_column column_container wpb_animate_when_almost_visible wpb_bottom-to-top wpb_start_animation">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<div class="team-member"><a href="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/member41.jpg" rel="prettyPhoto" title="Patrick Smith"><span class="item-on-hover"><span class="hover-image"><i class="fa fa-search"></i></span></span><img src="Patti_files/member41.jpg" class="team-avatar wp-post-image" alt="member4" height="288" width="380"></a><div class="team-text"><h3><span>Patrick Smith</span></h3><h6>Marketing Manager</h6><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p></div><div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div></div>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div class=" parallax-bag-oyk wpb_row vc_row-fluid no-margin " style="background-image: url(&quot;http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/parallax-quote.jpg&quot;); background-repeat: repeat-y; background-attachment: fixed; background-position: 50% 239px;" data-token="LdObW"><div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="u0UQZ">
+	<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
+		<div class="wpb_wrapper">
+			<h2 class="parallax-quote">"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."</h2><span class="quote-author">ANTOINE DE SAINT-EXUPÉRY</span>
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div id="work" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv"><div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="7cO2D">
+	<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
+		<div class="wpb_wrapper">
+			<h1 class="section-title">Our Work</h1>
+		</div> 
+	</div> 
+</div><div style="clear:both; width:100%; height:60px"></div><section class="patti-grid" id="gridwrapper_psm" data-token="JIjfv"><section id="options"><ul id="filters" class="option-set clearfix" data-option-key="filter"><li><a href="#filter" data-option-value="*" class="selected active">All</a></li><li><a href="#filter" data-option-value=".33">Branding</a></li><li><a href="#filter" data-option-value=".3">Marketing</a></li><li><a href="#filter" data-option-value=".4">Media</a></li><li><a href="#filter" data-option-value=".32">Photography</a></li><li><a href="#filter" data-option-value=".31">Print</a></li><li><a href="#filter" data-option-value=".30">Web Design</a></li></ul></section><div class="space"></div><section id="portfolio-wrapper"><ul style="position: relative; overflow: hidden; height: 803px;" class="portfolio grid isotope grid_psm"><li style="margin: 2px; width: 253px; height: 197px; position: absolute; left: 0px; top: 0px;" class="grid-item 32 31  item-small isotope-item"><a href="http://demo.deliciousthemes.com/patti/blog/portfolio/l-a-p-d-1947/"><div class="grid-item-on-hover"><div class="grid-text"><h1>L.A.P.D. 1947</h1></div><div><span>Photography, Print</span></div></div><img style="width: 253px; height: auto;" src="Patti_files/thumbnail-small.jpg" alt=""></a></li><li style="width: 253px; height: 197px; margin: 2px; position: absolute; left: 257px; top: 0px;" class="grid-item 4 32  item-small isotope-item"><a href="http://demo.deliciousthemes.com/patti/blog/portfolio/outdoor-photoshoot/"><div class="grid-item-on-hover"><div class="grid-text"><h1>Outdoor Photoshoot</h1></div><div><span>Media, Photography</span></div></div><img style="width: 253px; height: auto;" src="Patti_files/thumbnail-small-2.jpg" alt=""></a></li><li style="margin: 2px; width: 510px; height: 397px; position: absolute; left: 514px; top: 0px;" class="grid-item 34 30  item-wide isotope-item"><a href="http://demo.deliciousthemes.com/patti/blog/portfolio/nex7-workspace/"><div style="opacity: 0;" class="grid-item-on-hover"><div class="grid-text"><h1>Nex7 Workspace</h1></div><div><span>Tech, Web Design</span></div></div><img style="width: 510px; height: auto;" src="Patti_files/thumbnail.jpg" alt=""></a></li><li style="margin: 2px; width: 253px; height: 397px; position: absolute; left: 1028px; top: 0px;" class="grid-item 3 35  item-high isotope-item"><a href="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/thumbnail-high.jpg" rel="prettyPhoto[portf_gal]" title="Sea Side Store"><div class="grid-item-on-hover"><div class="grid-text"><h1>Sea Side Store</h1></div><div><span>Marketing, Retail</span></div></div><img style="width: 253px; height: auto;" src="Patti_files/thumbnail-high.jpg" alt=""></a></li><li style="width: 510px; height: 397px; margin: 2px; position: absolute; left: 0px; top: 201px;" class="grid-item 4 31  item-wide isotope-item"><a href="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/childhood-memories.jpg" rel="prettyPhoto[portf_gal]" title="Childhood Memories"><div class="grid-item-on-hover"><div class="grid-text"><h1>Childhood Memories</h1></div><div><span>Media, Print</span></div></div><img style="width: 510px; height: auto;" src="Patti_files/childhood-memories-566x440.jpg" alt=""></a></li><li style="margin: 2px; width: 510px; height: 197px; position: absolute; left: 514px; top: 401px;" class="grid-item 32  item-long isotope-item"><a href="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/thumbnail-long-2.jpg" rel="prettyPhoto[portf_gal]" title="Maybe One Day Fashion"><div class="grid-item-on-hover"><div class="grid-text"><h1>Maybe One Day Fashion</h1></div><div><span>Photography</span></div></div><img style="width: 510px; height: auto;" src="Patti_files/thumbnail-long-2.jpg" alt=""></a></li><li style="width: 253px; height: 197px; margin: 2px; position: absolute; left: 1028px; top: 401px;" class="grid-item 33 32  item-small isotope-item"><a href="http://demo.deliciousthemes.com/patti/blog/portfolio/focus-lab/"><div class="grid-item-on-hover"><div class="grid-text"><h1>Focus Lab</h1></div><div><span>Branding, Photography</span></div></div><img style="width: 253px; height: auto;" src="Patti_files/thumbnail-small-4.jpg" alt=""></a></li><li style="width: 510px; height: 197px; margin: 2px; position: absolute; left: 0px; top: 602px;" class="grid-item 3 31  item-long isotope-item"><a href="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/thumbnail-long.jpg" rel="prettyPhoto[portf_gal]" title="It`s Summer Time"><div class="grid-item-on-hover"><div class="grid-text"><h1>It`s Summer Time</h1></div><div><span>Marketing, Print</span></div></div><img style="width: 510px; height: auto;" src="Patti_files/thumbnail-long.jpg" alt=""></a></li><li style="width: 253px; height: 197px; margin: 2px; position: absolute; left: 514px; top: 602px;" class="grid-item 32  item-small isotope-item"><a href="http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/time-is-nothing.jpg" rel="prettyPhoto[portf_gal]" title="Time is Nothing"><div class="grid-item-on-hover"><div class="grid-text"><h1>Time is Nothing</h1></div><div><span>Photography</span></div></div><img style="width: 253px; height: auto;" src="Patti_files/time-is-nothing-281x219.jpg" alt=""></a></li><li style="width: 510px; height: 197px; margin: 2px; position: absolute; left: 771px; top: 602px;" class="grid-item 33 4  item-long isotope-item"><a href="http://demo.deliciousthemes.com/patti/blog/portfolio/gibson-guitars/"><div class="grid-item-on-hover"><div class="grid-text"><h1>Gibson Guitars</h1></div><div><span>Branding, Media</span></div></div><img style="width: 510px; height: auto;" src="Patti_files/thumbnail-long-3.jpg" alt=""></a></li></ul></section></section><div class="space"></div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div class="  wpb_row vc_row-fluid no-margin " style="" data-token="8Nlb1"><div class="lighter-overlay" style="padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<h1 class="section-title">Some Fun Facts</h1><div style="clear:both; width:100%; height:60px"></div><div class="  wpb_row vc_row-fluid  " style="" data-token="A15NU">
+	<div class="vc_span3 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="counter-wrapper"><div class="counter-item no-border"><span class="counter-number" data-decimals="0" data-from="1" data-to="134" data-speed="2000"></span><span class="counter-text">Cups of Coffee</span></div><div class="clear"></div></div>
+		</div> 
+	</div> 
+
+	<div class="vc_span3 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="counter-wrapper"><div class="counter-item with-border"><span class="counter-number" data-decimals="0" data-from="1" data-to="75" data-speed="2000"></span><span class="counter-text">Projects Delivered</span></div><div class="clear"></div></div>
+		</div> 
+	</div> 
+
+	<div class="vc_span3 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="counter-wrapper"><div class="counter-item with-border"><span class="counter-number" data-decimals="0" data-from="1" data-to="28" data-speed="2000"></span><span class="counter-text">Satisfied Clients</span></div><div class="clear"></div></div>
+		</div> 
+	</div> 
+
+	<div class="vc_span3 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="counter-wrapper"><div class="counter-item with-border"><span class="counter-number" data-decimals="0" data-from="1" data-to="12" data-speed="2000"></span><span class="counter-text">Winning Awards</span></div><div class="clear"></div></div>
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div id="services" class=" parallax-bag-zps wpb_row vc_row-fluid no-margin " style="background-image: url(http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/parallax-services1.jpg);background-repeat: repeat-y;background-attachment: fixed;background-position: 50% 0;" data-token="7DKZY"><div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 0.70);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="apQ1z">
+	<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom">
+		<div class="wpb_wrapper">
+			<h1 class="section-title">Services</h1><div style="clear:both; width:100%; height:60px"></div><div class="homepage-services"><div class="dt-service-wrapper percent-one-fifth"><div class="dt-service-item"><i class="fa fa-microphone"></i><h3 class="service-title">Social Media</h3></div><div class="dt-service-hover"><i class="fa fa-microphone"></i><h3>Social Media</h3><p></p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+
+<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+<a href="#work">Read More</a><p></p></div></div><div class="dt-service-wrapper percent-one-fifth"><div class="dt-service-item"><i class="fa fa-cogs"></i><h3 class="service-title">Clean Code</h3></div><div class="dt-service-hover"><i class="fa fa-cogs"></i><h3>Clean Code</h3><p></p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.<p></p>
+
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.<p></p></div></div><div class="dt-service-wrapper percent-one-fifth"><div class="dt-service-item"><i class="fa fa-camera-retro"></i><h3 class="service-title">Photography</h3></div><div class="dt-service-hover"><i class="fa fa-camera-retro"></i><h3>Photography</h3><p></p><p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.</p>
+
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.<p></p></div></div><div class="dt-service-wrapper percent-one-fifth"><div class="dt-service-item"><i class="fa fa-pencil-square-o"></i><h3 class="service-title">Copywriting</h3></div><div class="dt-service-hover"><i class="fa fa-pencil-square-o"></i><h3>Copywriting</h3><p></p><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+
+Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.<p></p></div></div><div class="dt-service-wrapper percent-one-fifth column-last"><div class="dt-service-item"><i class="fa fa-clock-o"></i><h3 class="service-title">Fast Delivery</h3></div><div class="dt-service-hover"><i class="fa fa-clock-o"></i><h3>Fast Delivery</h3><p></p><p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+
+Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.<p></p></div></div></div>
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div id="journal" class="  wpb_row vc_row-fluid no-margin " style="" data-token="QIu5A"><div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="p6Fij">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<h1 class="section-title">From the Blog</h1><div style="clear:both; width:100%; height:60px"></div>
+		</div> 
+	</div> 
+</div><div class="  wpb_row vc_row-fluid  " style="" data-token="AY6Kv">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="blog-page"><section style="position: relative; overflow: hidden; height: 1079px;" class="blog-masonry vc_blog_shortcode on-three-columns isotope">
+<article style="width: 339px; position: absolute; left: 0px; top: 0px;" id="post-26" class="post-26 post type-post status-publish format-standard hentry category-business tag-design tag-outdoor post post-masonry isotope-item">
+
+					<div class="post-thumbnail">
+					<a href="http://demo.deliciousthemes.com/patti/blog/perfect-sunday-morning-ride/">
+						<span class="item-on-hover"><span class="hover-link"><i class="fa fa-external-link"></i></span></span>
+						<img src="Patti_files/blog-image1.jpg" class="attachment-blog-thumb wp-post-image" alt="blog-image1" height="385" width="700">					</a>
+				</div><!--end post-thumbnail-->		
+				
+	<div class="post-content">
+		<h1 class="masonry-title">
+						<a href="http://demo.deliciousthemes.com/patti/blog/perfect-sunday-morning-ride/" rel="bookmark" title="Permanent Link to Perfect Sunday Morning Ride">Perfect Sunday Morning Ride</a>
+					</h1>
+		<span class="post-meta">
+		<i class="for-sticky fa fa-exclamation"></i><i class="fa fa-pencil"></i>
+		<em>March 1, 2014</em>		</span>			
+		<div class="clear"></div>
+	
+		<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam 
+corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+<div class="post-read-more"> <a href="http://demo.deliciousthemes.com/patti/blog/perfect-sunday-morning-ride/" class="more-link">Read More</a></div>
+ 
+			
+				</div><!--end post-content-->
+	
+</article><!-- #post -->
+<article style="width: 339px; position: absolute; left: 383px; top: 0px;" id="post-24" class="post-24 post type-post status-publish format-standard hentry category-business category-web-applications tag-wordpress post post-masonry isotope-item">
+
+					<div class="post-thumbnail">
+					<a href="http://demo.deliciousthemes.com/patti/blog/working-like-a-workaholic/">
+						<span class="item-on-hover"><span class="hover-link"><i class="fa fa-external-link"></i></span></span>
+						<img src="Patti_files/blog-image2-780x579.jpg" class="attachment-blog-thumb wp-post-image" alt="blog-image2" height="579" width="780">					</a>
+				</div><!--end post-thumbnail-->		
+				
+	<div class="post-content">
+		<h1 class="masonry-title">
+						<a href="http://demo.deliciousthemes.com/patti/blog/working-like-a-workaholic/" rel="bookmark" title="Permanent Link to Working Like a Workaholic">Working Like a Workaholic</a>
+					</h1>
+		<span class="post-meta">
+		<i class="for-sticky fa fa-exclamation"></i><i class="fa fa-pencil"></i>
+		<em>February 28, 2014</em>		</span>			
+		<div class="clear"></div>
+	
+		<p>Nullam adipiscing sapien ut mi elementum sit amet dictum magna 
+luctus. Donec id ligula ut tellus ultricies ornare quis vel nunc lorem 
+ipsum dolor sit amet.</p>
+<div class="post-read-more"> <a href="http://demo.deliciousthemes.com/patti/blog/working-like-a-workaholic/" class="more-link">Read More</a></div>
+ 
+			
+				</div><!--end post-content-->
+	
+</article><!-- #post -->
+<article style="width: 339px; position: absolute; left: 766px; top: 0px;" id="post-13" class="post-13 post type-post status-publish format-standard hentry category-business category-media category-web-applications tag-envato post post-masonry isotope-item">
+
+					<div class="post-thumbnail">
+					<a href="http://demo.deliciousthemes.com/patti/blog/case-study-envato-website-redesign/">
+						<span class="item-on-hover"><span class="hover-link"><i class="fa fa-external-link"></i></span></span>
+						<img src="Patti_files/image-gallery3.jpg" class="attachment-blog-thumb wp-post-image" alt="image-gallery3" height="430" width="780">					</a>
+				</div><!--end post-thumbnail-->		
+				
+	<div class="post-content">
+		<h1 class="masonry-title">
+						<a href="http://demo.deliciousthemes.com/patti/blog/case-study-envato-website-redesign/" rel="bookmark" title="Permanent Link to Case Study: Envato Website Redesign">Case Study: Envato Website Redesign</a>
+					</h1>
+		<span class="post-meta">
+		<i class="for-sticky fa fa-exclamation"></i><i class="fa fa-pencil"></i>
+		<em>February 14, 2014</em>		</span>			
+		<div class="clear"></div>
+	
+		<p>Nunc blandit tincidunt consequat. Duis diam metus, suscipit in 
+pulvinar eget, egestas id arcu. Duis a enim vel mauris ultrices. Nullam 
+aliquet velit ac velit tempus in semper neque auctor.</p>
+<div class="post-read-more"> <a href="http://demo.deliciousthemes.com/patti/blog/case-study-envato-website-redesign/" class="more-link">Read More</a></div>
+ 
+			
+				</div><!--end post-content-->
+	
+</article><!-- #post -->
+<article style="width: 339px; position: absolute; left: 0px; top: 453px;" id="post-196" class="post-196 post type-post status-publish format-standard hentry category-personal tag-business tag-videos post post-masonry isotope-item">
+
+					<div class="post-thumbnail">
+					<a href="http://demo.deliciousthemes.com/patti/blog/videos-can-help-promote-your-business/">
+						<span class="item-on-hover"><span class="hover-link"><i class="fa fa-external-link"></i></span></span>
+						<img src="Patti_files/blog-image41.jpg" class="attachment-blog-thumb wp-post-image" alt="blog-image4" height="466" width="700">					</a>
+				</div><!--end post-thumbnail-->		
+				
+	<div class="post-content">
+		<h1 class="masonry-title">
+						<a href="http://demo.deliciousthemes.com/patti/blog/videos-can-help-promote-your-business/" rel="bookmark" title="Permanent Link to How Videos Can Help Promote Your Business">How Videos Can Help Promote Your Business</a>
+					</h1>
+		<span class="post-meta">
+		<i class="for-sticky fa fa-exclamation"></i><i class="fa fa-pencil"></i>
+		<em>January 28, 2014</em>		</span>			
+		<div class="clear"></div>
+	
+		<p>Donec id ligula ut tellus ultricies ornare quis vel nunc. In id 
+purus vel magna porta laoreet at a dolor. Aliquam aliquam mollis 
+feugiat.</p>
+<div class="post-read-more"> <a href="http://demo.deliciousthemes.com/patti/blog/videos-can-help-promote-your-business/" class="more-link">Read More</a></div>
+ 
+			
+				</div><!--end post-content-->
+	
+</article><!-- #post -->
+<article style="width: 339px; position: absolute; left: 766px; top: 504px;" id="post-199" class="post-199 post type-post status-publish format-standard hentry category-personal tag-design tag-writing post post-masonry isotope-item">
+
+					<div class="post-thumbnail">
+					<a href="http://demo.deliciousthemes.com/patti/blog/role-of-logo-design/">
+						<span class="item-on-hover"><span class="hover-link"><i class="fa fa-external-link"></i></span></span>
+						<img src="Patti_files/blog-image31.jpg" class="attachment-blog-thumb wp-post-image" alt="blog-image3" height="391" width="700">					</a>
+				</div><!--end post-thumbnail-->		
+				
+	<div class="post-content">
+		<h1 class="masonry-title">
+						<a href="http://demo.deliciousthemes.com/patti/blog/role-of-logo-design/" rel="bookmark" title="Permanent Link to Role of Size in Logo Design">Role of Size in Logo Design</a>
+					</h1>
+		<span class="post-meta">
+		<i class="for-sticky fa fa-exclamation"></i><i class="fa fa-pencil"></i>
+		<em>January 7, 2014</em>		</span>			
+		<div class="clear"></div>
+	
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+<div class="post-read-more"> <a href="http://demo.deliciousthemes.com/patti/blog/role-of-logo-design/" class="more-link">Read More</a></div>
+ 
+			
+				</div><!--end post-content-->
+	
+</article><!-- #post -->
+<article style="width: 339px; position: absolute; left: 383px; top: 543px;" id="post-7" class="post-7 post type-post status-publish format-quote hentry category-quotes tag-writing post post-masonry quote-post isotope-item">
+
+	<div class="post-content">
+		<h3>Logic will get you from A to B. Imagination will take you just about everywhere.</h3>
+		<span class="post-meta">
+			<i class="for-sticky fa fa-exclamation"></i><i class="fa fa-quote-right"></i>
+			<em>December 10, 2013</em>		</span>	
+		<span class="quote-author">Albert Einstein</span>
+
+	</div><!--end post-content-->
+</article><!-- #post -->
+<article style="width: 339px; position: absolute; left: 383px; top: 789px;" id="post-4" class="post-4 post type-post status-publish format-audio hentry category-media tag-videos post post-masonry isotope-item">
+
+	
+
+	<div class="audio-item">
+				
+		
+		<div style="width: 0px; height: 0px;" id="audio_jplayer_4" class="jp-jplayer del_audio" data-token="AvZJZ"><img style="width: 0px; height: 0px; display: none;" id="jp_poster_0"><audio src="Patti_files/audio.mp3" preload="metadata" id="jp_audio_0"></audio></div>
+		<div id="jp_container_4" class="jp-audio">
+			<div class="jp-type-single">
+				<div class="jp-gui jp-interface">
+					<div class="jp-controls">
+						<a href="javascript:;" class="jp-play" tabindex="1">play</a>
+						<a style="display: none;" href="javascript:;" class="jp-pause" tabindex="1">pause</a>
+						<div class="jp-current-time">00:00</div>
+						<div style="width: 89px;" class="jp-progress">
+							<div style="width: 100%;" class="jp-seek-bar">
+								<div style="width: 0%;" class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-volume-bar">
+							<div style="width: 80%;" class="jp-volume-bar-value"></div>
+						</div>																
+
+						<a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a>
+						<a style="display: none;" href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a>
+						<div class="jp-duration">00:00</div>								
+					</div>
+				</div>
+				<div style="display: none;" class="jp-no-solution">
+					<span>Update required</span>
+					To play the media you will need to either update your browser to a 
+recent version or change it with a better one like Google Chrome.				</div>
+			</div>
+		</div>		
+
+	</div>		
+			
+	<div class="post-content">
+
+		<h1 class="masonry-title">
+						<a href="http://demo.deliciousthemes.com/patti/blog/audio-post/" rel="bookmark" title="Permanent Link to Audio Post">Audio Post</a>
+					</h1>
+		<span class="post-meta">
+		<i class="for-sticky fa fa-exclamation"></i><i class="fa fa-music"></i>
+		<em>October 12, 2013</em>		</span>			
+		<div class="clear"></div>
+
+					<p>Nullam adipiscing sapien ut mi elementum sit amet dictum magna 
+luctus. Donec id ligula ut tellus ultricies ornare quis vel nunc lorem 
+ipsum dolor sit amet.</p>
+<div class="post-read-more"> <a href="http://demo.deliciousthemes.com/patti/blog/audio-post/" class="more-link">Read More</a></div>
+ 
+			
+	</div><!--end post-content-->
+	
+</article><!-- #post --></section></div>
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div id="twitter" class=" parallax-bag-irk wpb_row vc_row-fluid no-margin fullwidth" style="background-image: url(http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/parallax-twitter.jpg);background-repeat: repeat-y;background-attachment: fixed;background-position: 50% 0;" data-token="3aN0e"><div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="01Zkd">
+	<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom">
+		<div class="wpb_wrapper">
+			<h1 class="section-title">Twitter Feed</h1><div style="clear:both; width:100%; height:60px"></div>
+		</div> 
+	</div> 
+</div><div class="  wpb_row vc_row-fluid  " style="" data-token="nOzl6"><div class="twitter-carousel"><ul style="opacity: 1; display: block;" class="tweet_list owl-carousel owl-theme" id="owl-twitter"><div style="height: 151px;" class="owl-wrapper-outer autoHeight"><div style="width: 5520px; left: 0px; display: block;" class="owl-wrapper"><div style="width: 920px;" class="owl-item"><li><span class="tweet_time">7 months ago</span><span class="tweet_text">Patti V1.3 is live with new awesome features! Check it out: <a href="http://t.co/BolTjGrLJX" class="twitter-link">http://t.co/BolTjGrLJX</a></span><a class="tweet_action tweet_reply" href="http://twitter.com/intent/tweet?in_reply_to=451835418321764352"><i class="fa fa-reply"></i> Reply</a><a class="tweet_action tweet_retweet" href="http://twitter.com/intent/retweet?tweet_id=451835418321764352"><i class="fa fa-retweet"></i> Retweet</a><a class="tweet_action tweet_favorite" href="http://twitter.com/intent/favorite?tweet_id=451835418321764352"><i class="fa fa-retweet"></i> Favorite</a></li></div><div style="width: 920px;" class="owl-item"><li><span class="tweet_time">7 months ago</span><span class="tweet_text">Check out this great <a href="http://twitter.com/#search?q=themeforest" class="twitter-link">#themeforest</a> item 'Patti - Parallax One Page WordPress Theme' <a href="http://t.co/BolTjGrLJX" class="twitter-link">http://t.co/BolTjGrLJX</a></span><a class="tweet_action tweet_reply" href="http://twitter.com/intent/tweet?in_reply_to=448572420266274816"><i class="fa fa-reply"></i> Reply</a><a class="tweet_action tweet_retweet" href="http://twitter.com/intent/retweet?tweet_id=448572420266274816"><i class="fa fa-retweet"></i> Retweet</a><a class="tweet_action tweet_favorite" href="http://twitter.com/intent/favorite?tweet_id=448572420266274816"><i class="fa fa-retweet"></i> Favorite</a></li></div><div style="width: 920px;" class="owl-item"><li><span class="tweet_time">7 months ago</span><span class="tweet_text"><a href="http://twitter.com/jeffimperial" class="twitter-user">@jeffimperial</a> Hi Jeff, Sure, I can help you, but I`m not sure what platform you are able to use. What theme are you interested in?</span><a class="tweet_action tweet_reply" href="http://twitter.com/intent/tweet?in_reply_to=446958953361330176"><i class="fa fa-reply"></i> Reply</a><a class="tweet_action tweet_retweet" href="http://twitter.com/intent/retweet?tweet_id=446958953361330176"><i class="fa fa-retweet"></i> Retweet</a><a class="tweet_action tweet_favorite" href="http://twitter.com/intent/favorite?tweet_id=446958953361330176"><i class="fa fa-retweet"></i> Favorite</a></li></div></div></div><div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev">prev</div><div class="owl-next">next</div></div></div></ul></div>
+	<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_bottom-to-top">
+		<div class="wpb_wrapper">
+			
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div class="  wpb_row vc_row-fluid no-margin " style="" data-token="S4A8A"><div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="945XF">
+	<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom">
+		<div class="wpb_wrapper">
+			<h1 class="section-title">Testimonials</h1><div style="clear:both; width:100%; height:60px"></div>
+		</div> 
+	</div> 
+</div><div class="  wpb_row vc_row-fluid  " style="" data-token="HELAn">
+	<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_bottom-to-top">
+		<div class="wpb_wrapper">
+			<div class="testimonials-carousel"><div style="opacity: 1; display: block;" id="owl-testimonials-yiy" class="owl-carousel testimonials-slider owl-theme" data-token="AZutp"><div style="height: 112px;" class="owl-wrapper-outer autoHeight"><div style="width: 5376px; left: 0px; display: block;" class="owl-wrapper"><div style="width: 896px;" class="owl-item"><div class="testimonial-item"><p>"The
+ work they made impressed me on multiple levels. I have been very happy 
+about the whole process and they have done a great job. They was fast to
+ deliver new ideas and always helpful with our questions!”</p><p><span class="testimonial-name">Richard Brennan</span>, <span class="testimonial-position">Linda Marketing Team</span></p></div></div><div style="width: 896px;" class="owl-item"><div class="testimonial-item"><p>"We
+ have been very much impressed by Patti Studio. They grasped our needs 
+and produced a stunning design. Needless to say we are extremely 
+satisfied with the results. Thank you!”</p><p><span class="testimonial-name">Elena Gonzales</span>, <span class="testimonial-position">Envato Team</span></p></div></div><div style="width: 896px;" class="owl-item"><div class="testimonial-item"><p>“I had the best <a href="#">collaboration ever</a>. I`m very excited about the way that my new website looks. And all because of the awesome guys from Patti Studio.”</p><p><span class="testimonial-name">John Doe</span>, <span class="testimonial-position">Company CEO</span></p></div></div></div></div><div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev">prev</div><div class="owl-next">next</div></div></div></div></div>
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div class="  wpb_row vc_row-fluid no-margin " style="" data-token="YHXsQ"><div class="darker-overlay" style="padding-top: 20px; background-color: rgba(254,126,23, 1);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="AkhoV">
+	<div class="vc_span2 wpb_column column_container">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<img src="Patti_files/digitalside.png" class=" vc_box_border_grey attachment-full" alt="digitalside" height="100" width="160">
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span2 wpb_column column_container">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<img src="Patti_files/videosms1.png" class=" vc_box_border_grey attachment-full" alt="videosms" height="100" width="140">
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span2 wpb_column column_container">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<img src="Patti_files/spectrum1.png" class=" vc_box_border_grey attachment-full" alt="spectrum" height="100" width="160">
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span2 wpb_column column_container">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<img src="Patti_files/brilliant1.png" class=" vc_box_border_grey attachment-full" alt="brilliant" height="100" width="120">
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span2 wpb_column column_container">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<img src="Patti_files/homeenergy1.png" class=" vc_box_border_grey attachment-full" alt="homeenergy" height="100" width="160">
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span2 wpb_column column_container">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<img src="Patti_files/diagblock1.png" class=" vc_box_border_grey attachment-full" alt="diagblock" height="100" width="140">
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div id="contact" class=" parallax-bag-jga wpb_row vc_row-fluid no-margin " style="background-image: url(http://demo.deliciousthemes.com/patti/wp-content/uploads/2014/03/parallax-contact1.jpg);background-repeat: repeat-y;background-attachment: fixed;background-position: 50% 0;" data-token="4z3FC"><div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="  wpb_row vc_row-fluid  " style="" data-token="WdDPY">
+	<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom">
+		<div class="wpb_wrapper">
+			<h1 class="section-title">Come and Work with Us</h1><div style="clear:both; width:100%; height:60px"></div>
+		</div> 
+	</div> 
+</div><div class="  wpb_row vc_row-fluid  " style="" data-token="oqcgI">
+	<div class="vc_span6 wpb_column column_container wpb_animate_when_almost_visible wpb_left-to-right">
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h3>Contact Info</h3>
+<ul class="contact-info">
+<li><i class="fa fa-map-marker"></i>Amphitheatre Parkway, Mountain View, CA 94043</li>
+<li><i class="fa fa-phone"></i>+321 123 456 7</li>
+<li><i class="fa fa-envelope"></i><a href="mailto:">johndoe@ipsum.com</a></li>
+<li><i class="fa fa-globe"></i><a href="#">www.website.com</a></li>
+</ul>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_span6 wpb_column column_container wpb_animate_when_almost_visible wpb_right-to-left">
+		<div class="wpb_wrapper">
+			<div class="wpcf7" id="wpcf7-f69-p82-o1"><form action="/patti/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input name="_wpcf7" value="69" type="hidden">
+<input name="_wpcf7_version" value="3.7.2" type="hidden">
+<input name="_wpcf7_locale" value="en_US" type="hidden">
+<input name="_wpcf7_unit_tag" value="wpcf7-f69-p82-o1" type="hidden">
+<input name="_wpnonce" value="7dfff67aca" type="hidden">
+</div>
+<div class="percent-one-half"> <br>
+<span class="wpcf7-form-control-wrap your-name"><input name="your-name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" type="text"></span><br>
+</div><br>
+<div class="percent-one-half column-last"> <br>
+<span class="wpcf7-form-control-wrap your-email"><input name="your-email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" type="email"></span><br>
+</div><br>
+<span class="wpcf7-form-control-wrap honeypot-415-wrap" style="display:none !important;visibility:hidden !important;"><input class="wpcf7-form-control wpcf7-text" name="honeypot-415" size="40" tabindex="-1" type="text"><br><small>Please leave this field empty.</small></span><br>
+<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span><br>
+<input value="Send" class="wpcf7-form-control wpcf7-submit button black" type="submit"><img style="visibility: hidden;" alt="Sending ..." src="Patti_files/ajax-loader.gif" class="ajax-loader"><p></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
+		</div> 
+	</div> 
+</div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div><div class="  wpb_row vc_row-fluid no-margin " style="" data-token="MSqBi"><div class="lighter-overlay" style=" background-color: rgba(255,255,255, 0.70);">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="map-wrapper" id="delicious_map_gno" data-token="gQA8r"><a class="button-map close-map"><span>Locate us on Map</span></a><div id="google_map_gno"></div></div>
+		</div> 
+	</div> 
+<div class="clear"></div></div></div>
+				</section>
+			</article>
+		</section>
+
+	
+	
+
+
+	<footer id="footer">		
+	
+		<div class="centered-wrapper">
+			
+	
+		</div><!--end centered-wrapper-->
+		
+		
+		<div id="bottomfooter">		
+			<div class="centered-wrapper">	
+				<div class="percent-two-third">
+										<p>Copyright 2014 - Patti.All Rights Reserved</p>
+									</div><!--end percent-two-third-->
+
+				<div class="percent-one-third column-last">
+					<ul id="social">
+						<li><a href="http://feeds.feedburner.com/EnvatoNotes" title="rss" class="rss" target="_blank"><i class="fa fa-rss"></i></a></li><li><a href="http://www.facebook.com/envato" title="facebook" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li><li><a href="http://twitter.com/envato" title="twitter" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>					
+					</ul>				
+					
+				</div><!--end percent-one-third-->
+			</div><!--end centered-wrapper-->				
+		</div><!--end bottomfooter-->
+		
+		<a href="#" class="totop"><i class="fa fa-angle-double-up"></i></a>
+
+	</footer><!--end footer-->	
+</div><!--end wrapper-->
+
+	<link rel="stylesheet" id="js_composer_front-css" href="Patti_files/js_composer_front.css" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_custom_css-css" href="Patti_files/custom.css" type="text/css" media="screen">
+<script type="text/javascript" src="Patti_files/jquery_002.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/demo.deliciousthemes.com\/patti\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Patti_files/scripts.js"></script>
+<script type="text/javascript" src="Patti_files/js-scripts-top.js"></script>
+<script type="text/javascript" src="Patti_files/hoverIntent.js"></script>
+<script type="text/javascript" src="Patti_files/js-scripts-bottom.js"></script>
+<script type="text/javascript" src="Patti_files/jquery_005.js"></script>
+<script type="text/javascript" src="Patti_files/jquery_007.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var vals = {"grid_manager":"0","grid_very_wide":"7","grid_wide":"5","grid_normal":"5","grid_small":"5","grid_tablet":"3","grid_phone":"2","grid_gutter_width":"4"};
+var dt_grid_JIjfv = {"id":"psm"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Patti_files/custom-isotope-portfolio.js"></script>
+<script type="text/javascript" src="Patti_files/custom-isotope-blog.js"></script>
+<script type="text/javascript" src="Patti_files/custom-nav.js"></script>
+<script type="text/javascript" src="Patti_files/custom-social.js"></script>
+<script type="text/javascript" src="Patti_files/custom.js"></script>
+<script type="text/javascript" src="Patti_files/js_composer_front.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var dt_parallax_oBpTt = {"id":"bna"};
+var dt_parallax_ACCVI = {"id":"quj"};
+var dt_parallax_g0vur = {"id":"hyu"};
+var dt_parallax_LpxWA = {"id":"nng"};
+var dt_parallax_u3M3Y = {"id":"vek"};
+var dt_parallax_ZSDJW = {"id":"elg"};
+var dt_parallax_p0ACY = {"id":"yol"};
+var dt_parallax_8879C = {"id":"fta"};
+var dt_parallax_q8IBS = {"id":"msq"};
+var dt_parallax_LdObW = {"id":"oyk"};
+var dt_parallax_u0UQZ = {"id":"oic"};
+var dt_parallax_o90fv = {"id":"msq"};
+var dt_parallax_7cO2D = {"id":"kcq"};
+var dt_parallax_8Nlb1 = {"id":"udo"};
+var dt_parallax_A15NU = {"id":"ulk"};
+var dt_parallax_7DKZY = {"id":"zps"};
+var dt_parallax_apQ1z = {"id":"jdp"};
+var dt_parallax_QIu5A = {"id":"jof"};
+var dt_parallax_p6Fij = {"id":"psy"};
+var dt_parallax_AY6Kv = {"id":"wlx"};
+var dt_parallax_3aN0e = {"id":"irk"};
+var dt_parallax_01Zkd = {"id":"rrd"};
+var dt_parallax_nOzl6 = {"id":"usa"};
+var dt_parallax_S4A8A = {"id":"qrn"};
+var dt_parallax_945XF = {"id":"ezw"};
+var dt_parallax_HELAn = {"id":"dbe"};
+var dt_parallax_YHXsQ = {"id":"xxs"};
+var dt_parallax_AkhoV = {"id":"nxx"};
+var dt_parallax_4z3FC = {"id":"jga"};
+var dt_parallax_WdDPY = {"id":"xav"};
+var dt_parallax_oqcgI = {"id":"tnw"};
+var dt_parallax_MSqBi = {"id":"qxz"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Patti_files/custom-parallax.js"></script>
+<script type="text/javascript" src="Patti_files/waypoints_002.js"></script>
+<script type="text/javascript" src="Patti_files/waypoints.js"></script>
+<script type="text/javascript" src="Patti_files/custom-skills.js"></script>
+<script type="text/javascript" src="Patti_files/custom-waypoints.js"></script>
+<script type="text/javascript" src="Patti_files/jquery_009.js"></script>
+<script type="text/javascript" src="Patti_files/jquery_006.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var dt_audio_AvZJZ = {"post_id":"4","mp3_item":"http:\/\/demo.deliciousthemes.com\/patti\/wp-content\/uploads\/2013\/10\/audio.mp3","ogg_item":"http:\/\/demo.deliciousthemes.com\/patti\/wp-content\/uploads\/2013\/10\/audio.ogg","spath":"http:\/\/demo.deliciousthemes.com\/patti\/wp-content\/themes\/patti-demo-3\/js"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Patti_files/custom-audio.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var dt_testimonials_AZutp = {"id":"yiy"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Patti_files/custom-testimonials.js"></script>
+<script type="text/javascript" src="Patti_files/js"></script><script src="Patti_files/main.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var dt_map_gQA8r = {"id":"gno","site_url":"http:\/\/demo.deliciousthemes.com\/patti\/wp-content\/themes\/patti-demo-3","latitude":"37.422117","longitude":"-122.084053","pin_title":"Company Headquarters","pin_desc":"Now that you visited our website, how about<br \/>\nchecking out our office too?"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Patti_files/custom-map.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ga = {"ga_id":"UA-45051484-2"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Patti_files/google-analytics.js"></script>
+<script>                            </script> 
+</body></html>

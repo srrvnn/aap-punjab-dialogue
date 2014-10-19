@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delhi Dialogue</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+	<style>
+		#headNav
+		{
+			background:url('../img/flag.jpg');
+			background-size:100% 100%;
+			padding-top:10px;
+			height:70px;
+			font-size:20px;
+			font-weight:bold;
+		}
+		.center
+		{
+			margin-left: auto;
+    	margin-right: auto;
+			text-align:center;
+		}
+		.headCar{
+			width: 800px;
+			height: 500px;
+		}
+		.headCarImgs{
+			width: 100%;
+		}
+		.head-caption
+		{
+			background-color: #47719A;
+			bottom: 15px;
+			color: #FFFFFF;
+			font-family: arial;
+			font-size: 16px;
+			opacity: 0.9;
+			padding: 15px;
+			max-width: 550px;
+		}
+		.issue{
+			padding-top:15px;
+			padding-bottom:15px;
+			overflow:auto;
+			border-bottom:1px solid lightgrey;
+		}
+
+	</style>
+</head>
+
+<body>
+	<nav class="navbar" role="navigation">
+		<div class="container-fluid" id = "headNav">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-interval="2000" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="#">
+					<img src = "../img/AAPLogo.png"/> Delhi Dialogue</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="headnavs">
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="../main.html">Home</a></li>
+		      <li><a href="#">About</a></li>
+		      <li><a href="../issue.html">Delhi Issues</a></li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="#">Contact Us</a></li>
+		      <li><a href="#">Subscribe</a></li>
+		    </ul>
+		  </div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<h1><small> Issue:</small> Education</h1>
+
+		<div class="well issue col-sm-8">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="panel-title"> Meeting #5 <small><i>(18 OCT 2014)</i></small></div>
+				</div>
+				<div class="panel-body">
+
+Democrats have a long and proud history of defending Civil Rights and expanding opportunity for all Americans. From the Civil Rights Act of 1964 to the Lilly Ledbetter Fair Pay Act in 2009 to including marriage equality in the party platform in 2012, Democrats have fought to end discrimination in all forms—including discrimination based on race, sex, ethnicity or national origin, language, religion, sexual orientation, gender identity, age, or disability.
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="panel-title"> Meeting #4 <small><i>(18 OCT 2014)</i></small></div>
+				</div>
+				<div class="panel-body">
+
+Democrats have a long and proud history of defending Civil Rights and expanding opportunity for all Americans. From the Civil Rights Act of 1964 to the Lilly Ledbetter Fair Pay Act in 2009 to including marriage equality in the party platform in 2012, Democrats have fought to end discrimination in all forms—including discrimination based on race, sex, ethnicity or national origin, language, religion, sexual orientation, gender identity, age, or disability.
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="panel-title"> Meeting #3 <small><i>(18 OCT 2014)</i></small></div>
+				</div>
+				<div class="panel-body">
+
+Democrats have a long and proud history of defending Civil Rights and expanding opportunity for all Americans. From the Civil Rights Act of 1964 to the Lilly Ledbetter Fair Pay Act in 2009 to including marriage equality in the party platform in 2012, Democrats have fought to end discrimination in all forms—including discrimination based on race, sex, ethnicity or national origin, language, religion, sexual orientation, gender identity, age, or disability.
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="panel-title"> Meeting #2 <small><i>(18 OCT 2014)</i></small></div>
+				</div>
+				<div class="panel-body">
+
+Democrats have a long and proud history of defending Civil Rights and expanding opportunity for all Americans. From the Civil Rights Act of 1964 to the Lilly Ledbetter Fair Pay Act in 2009 to including marriage equality in the party platform in 2012, Democrats have fought to end discrimination in all forms—including discrimination based on race, sex, ethnicity or national origin, language, religion, sexual orientation, gender identity, age, or disability.
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="panel-title"> Meeting #1 <small><i>(18 OCT 2014)</i></small></div>
+				</div>
+				<div class="panel-body">
+
+Democrats have a long and proud history of defending Civil Rights and expanding opportunity for all Americans. From the Civil Rights Act of 1964 to the Lilly Ledbetter Fair Pay Act in 2009 to including marriage equality in the party platform in 2012, Democrats have fought to end discrimination in all forms—including discrimination based on race, sex, ethnicity or national origin, language, religion, sexual orientation, gender identity, age, or disability.
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+
+		<aside class="col-sm-4 well">
+			<h2>Meeting Schedule</h2>
+			Upcoming Meetings:
+			<table class="table table-bordered">
+				<thead><th>Time</th><th>Date</th></thead>
+				<tbody>
+					<tr>
+						<td>12 PM</td>
+						<td>20 Oct</td>
+						<td><button class="btn btn-primary">Register</button></td>
+					</tr>
+					<tr>
+						<td>12 PM</td>
+						<td>21 Oct</td>
+						<td><button class="btn btn-primary">Register</button></td>
+					</tr>
+					<tr>
+						<td>12 PM</td>
+						<td>22 Oct</td>
+						<td><button class="btn btn-primary">Register</button></td>
+					</tr>
+					<tr>
+						<td>12 PM</td>
+						<td>23 Oct</td>
+						<td><button class="btn btn-primary">Register</button></td>
+					</tr>
+					<tr>
+						<td>12 PM</td>
+						<td>24 Oct</td>
+						<td><button class="btn btn-primary">Register</button></td>
+					</tr>
+					<tr>
+						<td>12 PM</td>
+						<td>25 Oct</td>
+						<td><button class="btn btn-primary">Register</button></td>
+					</tr>
+					<tr>
+						<td>12 PM</td>
+						<td>26 Oct</td>
+						<td><button class="btn btn-primary">Register</button></td>
+					</tr>
+					<tr>
+						<td>12 PM</td>
+						<td>27 Oct</td>
+						<td><button class="btn btn-primary">Register</button></td>
+					</tr>
+					<tr>
+						<td>12 PM</td>
+						<td>28 Oct</td>
+						<td><button class="btn btn-primary">Register</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</aside>
+	</div>
+
+		
+
+</body>
+</html>
