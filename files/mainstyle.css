@@ -18,6 +18,7 @@
 		.issueSummary
 		{
 			border-right:1px solid lightgrey;
+			overflow:auto;
 		} 
 
 		.visiontext

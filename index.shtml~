@@ -161,30 +161,33 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 															<div id="tableHeading" class="center"><h2>Top Issues<h2></div>
 
 															<div class= 'issue'>
-																<img class="col-sm-3" src="files/aapelectricity.jpg">
-																<div class="col-sm-6 issueSummary">
-																	<b>Electricity</b><br/>AAP will make sure that AK visits each and every household and cut their electricity personally.
-																	 
+																<div class="issueSummary col-sm-9">
+																	<img class="col-sm-3" src="files/aapelectricity.jpg">
+																	<div class="col-sm-9">
+																		<b>Electricity</b><br/>AAP will make sure that AK visits each and every household and cut their electricity personally.
+																	</div>
 																</div>
 																<a href="issue/Electricity.html" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:skyblue;">
 																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">DISCOVER MORE</h3></i>
+																			<h3 class="service-title">DISCOVER MORE</h3>
 																		</div>
 																	</div>
 																</a>
 															</div>
 	
 															<div class= 'issue'>
-																<img class="col-sm-3" src="files/aapeducation.jpg">
-																<div class="col-sm-6 issueSummary">
-																	<b>Education</b><br/>Kejriwal uncle receiving gifts from children on children's day.
-																	 
+																<div class="issueSummary col-sm-9">
+																	<img class="col-sm-3" src="files/aapeducation.jpg">
+																	<div class="col-sm-9 issueSummary">
+																		<b>Education</b><br/>Kejriwal uncle receiving gifts from children on children's day.
+																		 
+																	</div>
 																</div>
 																<a href="issue/Education.html" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:skyblue;">
 																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">DISCOVER MORE</h3></i>
+																			<h3 class="service-title">DISCOVER MORE</h3>
 																		</div>
 																	</div>
 																</a>
@@ -199,7 +202,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 																<a href="issue/Water.html" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:skyblue;">
 																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">DISCOVER MORE</h3></i>
+																			<h3 class="service-title">DISCOVER MORE</h3>
 																		</div>
 																	</div>
 																</a>
@@ -214,7 +217,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 																<a href="issue/Employment.html" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:skyblue;">
 																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">DISCOVER MORE</h3></i>
+																			<h3 class="service-title">DISCOVER MORE</h3>
 																		</div>
 																	</div>
 																</a>
@@ -229,7 +232,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 																<a href="issue/Smartcity.html" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:skyblue;">
 																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">DISCOVER MORE</h3></i>
+																			<h3 class="service-title">DISCOVER MORE</h3>
 																		</div>
 																	</div>
 																</a>
