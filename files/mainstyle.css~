@@ -55,13 +55,16 @@
 		.playintro
 		{
 			margin-top:50px;
-			margin-left:auto;
-			margin-right:auto;
+			margin-left:auto !important;
+			margin-right:47% !important;
+			left:auto !important;
+			right:auto !important;
 			width:150px;
 			height:170px;
-			padding-left:auto;
-			padding-right:auto;
+			padding-left:auto !important;
+			padding-right:auto !important;
 			padding-top:40px;
+			color:white !important;
 			-moz-text-decoration:none;
 
 		}
@@ -85,6 +88,10 @@
 .dt-service-item i {
     font-size: 100px;}
 
+.dt-service-item {
+    border: 1px solid rgba(0, 0, 0, 0) !important;}
+
+
 ul#mainnav > li {
     background: url('files/nav-bg.png') no-repeat scroll right center transparent;
 		}
@@ -94,7 +101,7 @@ text-align:center;}
 .aboutText{
 	color:black;
 	font-size:16px;
-	text-align:justify;
+	
 }
 #aboutTopicList > li{
 	display:inline-block;
@@ -105,9 +112,27 @@ text-align:center;}
 	font-weight:bold;
 	min-width:400px !important;
 	text-align:center;
-
-
 }
+
+.discovermore{
+	background-color:#00ABEC;
+}
+.discovermore h3{
+	color:white !important;
+}
+
+
+.oval{
+    border-radius: 2em;
+		color:white !important;
+		color: #FFF;
+		width:220px;
+		font-size: 20px !important;
+		padding: 0.67em 1em 0.5em;
+		font-family: "Avenir","Corbel","Myriad Pro","Lucida Sans","Lucida Grande",Arial,Helvetica,sans-serif;
+}
+
+
 html body {background: #efefef;}#wrapper {background: #ffffff;}#header {background: #ffffff;}#footer {background: #ffffff;}body { background: #efefef; }
 .map-wrapper [id^="google_map_"], .portfolio li a img, .team-member img.team-avatar, .post-masonry a img, .client-item img, iframe{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: url(http://demo.deliciousthemes.com/patti/wp-content/themes/patti-demo-3/images/grayscale.svg#greyscale); filter: gray; }
 html .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon, html .wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon {
