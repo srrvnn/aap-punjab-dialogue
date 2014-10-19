@@ -1322,7 +1322,7 @@ ul#mainnav li {
 }
 
 ul#mainnav > li {
-	background: url(images/nav-bg.png) no-repeat scroll right center;
+	background: url(nav-bg.png) no-repeat scroll right center;
 }
 
 .dark-header ul#mainnav > li {
@@ -3863,7 +3863,7 @@ ul.tabs li.active, ul.tabs li.active a:hover  {
 .flags_language_selector {
 	float: right;
 	margin-top: 9px;
-	background: url(images/nav-bg.png) no-repeat scroll left center;
+	background: url(files/nav-bg.png) no-repeat scroll left center;
 	padding-left: 25px;
 	margin-left: 5px;
 }

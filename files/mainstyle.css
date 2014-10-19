@@ -82,6 +82,12 @@
     	outline: none !important;
 			text-decoration:none !important;
 		}
+.dt-service-item i {
+    font-size: 100px;}
+
+ul#mainnav > li {
+    background: url('files/nav-bg.png') no-repeat scroll right center transparent;
+		}
 
 
 html body {background: #efefef;}#wrapper {background: #ffffff;}#header {background: #ffffff;}#footer {background: #ffffff;}body { background: #efefef; }

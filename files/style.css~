@@ -1322,7 +1322,7 @@ ul#mainnav li {
 }
 
 ul#mainnav > li {
-	background: url(images/nav-bg.png) no-repeat scroll right center;
+	background: url(files/nav-bg.png) no-repeat scroll right center;
 }
 
 .dark-header ul#mainnav > li {
@@ -1364,7 +1364,7 @@ ul#mainnav li a {
 }
 
 .dark-header ul#mainnav > li > a:hover > span {
-	border-bottom:1px solid #fff;
+	border-bottom:1px solid #323232;
 }
 
 .dark-header ul#mainnav > li.item-active > a, .dark-header ul#mainnav > li > a.sf-with-ul:hover, .dark-header ul#mainnav li > a.sf-with-ul:active, .dark-header ul#mainnav > li > a.sf-with-ul:hover, .dark-header ul#mainnav li > a.sf-with-ul:active, .dark-header ul#mainnav li a:hover, .dark-header ul#mainnav li a:active, .dark-header ul#mainnav li a.current-menu-item {
@@ -3863,7 +3863,7 @@ ul.tabs li.active, ul.tabs li.active a:hover  {
 .flags_language_selector {
 	float: right;
 	margin-top: 9px;
-	background: url(images/nav-bg.png) no-repeat scroll left center;
+	background: url(files/nav-bg.png) no-repeat scroll left center;
 	padding-left: 25px;
 	margin-left: 5px;
 }

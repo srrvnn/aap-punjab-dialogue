@@ -123,7 +123,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 											</a>
 											<a href="#schedule" class="dt-service-wrapper">
 												<div class="dt-service-item">
-													<i class="fa"><img src="files/icon-calendar.png"></img><br/>
+													<i class="fa"><img src="files/icon-calendar.png" height="60px" width="60px"></img><br/>
 													<h3 class="service-title">Schedule</h3></i>
 												</div>
 											</a>
@@ -281,7 +281,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 																	<h5><i>9/16/14</i></h5>
 																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
 																</div>
-																<a style="padding-top:20px" href="#" class="col-sm-3">
+																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:yellow;">
 																		<div class="dt-service-item">
 																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
@@ -296,7 +296,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 																	<h5><i>9/16/14</i></h5>
 																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
 																</div>
-																<a style="padding-top:20px" href="#" class="col-sm-3">
+																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:yellow;">
 																		<div class="dt-service-item">
 																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
@@ -311,7 +311,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 																	<h5><i>9/16/14</i></h5>
 																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
 																</div>
-																<a style="padding-top:20px" href="#" class="col-sm-3">
+																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:yellow;">
 																		<div class="dt-service-item">
 																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
@@ -326,7 +326,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 																	<h5><i>9/16/14</i></h5>
 																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
 																</div>
-																<a style="padding-top:20px" href="#" class="col-sm-3">
+																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:yellow;">
 																		<div class="dt-service-item">
 																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
@@ -341,7 +341,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 																	<h5><i>9/16/14</i></h5>
 																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
 																</div>
-																<a style="padding-top:20px" href="#" class="col-sm-3">
+																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
 																	<div class="dt-service-wrapper" style="background-color:yellow;">
 																		<div class="dt-service-item">
 																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
