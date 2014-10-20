@@ -107,10 +107,6 @@ fieldset[disabled] .btn-blue.active {
 	text-align: center;
 	margin-top: 2em;
 }
-.button-group > button{
+.button-group > a{
 	margin-left: 2em;
-}
-.buttonGroup {
-    float: right;
-	padding: 10px;
 }
