@@ -62,6 +62,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 			<div class="percent-one-fourth ">
 				<div class="logo">
 					<a class="original-logo" href="#hello"><img style="width: auto; height: 70px;" src="files/DDLogo1.jpg" alt="AAP Logo"></a>
+					<a class="white-logo" href="#hello"><img style="width: auto; height: 70px;" src="files/logo-white.png" alt="Patti"></a>
 				</div>
 			</div><!--end one-fourth-->
 
@@ -85,330 +86,244 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 	<div id="wrapper">	
 		<div id="hello"></div><div style="height: 116px;" class="menu-fixer"></div>
 		<section>
-			<article id="page-82" class="begin-content">
-				<section>
-					<div class="  wpb_row vc_row-fluid no-margin " style="" data-token="oBpTt">
-						<div class="vc_span12 wpb_column column_container">
-							<div class="wpb_wrapper">
-								<img class="defaultimg" src="files/slide44.jpg" height="auto" width = "100%"></img>
-								<div  class="visiontext">
-								 	<span id="vision">It all starts with a vision</span><br />
-									<div class="playintro">											
-										<a id="oval_parent" href="#intro">
-											<div  class="dt-service-wrapper oval" style="background-color:orange;">
-												<div id="oval" class="dt-service-item oval" style="color:blue;">
-													<span>Watch Intro</span>
-												</div>
-											</div>
-										</a>
-									</center>
-								</div>
-							</div>
-
-							<div id="intro" class="  wpb_row vc_row-fluid no-margin ">
-								<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(250,250,250, 0.70);">
-									<div class="vc_span12 wpb_column column_container">
-										<div class="col-sm-8 col-sm-offset-2">
-											<iframe width="100%" height="350" src="//www.youtube.com/embed/gq0V8rQ5nVY" frameborder="0" allowfullscreen></iframe>
-										</div>
-										<div class="col-sm-12">
-											<a href="#topics" class="col-sm-offset-3 col-sm-3 dt-service-wrapper">
-												<div class="introBtn dt-service-item">
-													<i class="fa">i<br/>
-													<h1 class="service-title">Focus Areas</h1></i>
-												</div>
-											</a>
-											<a href="#schedule" class="col-sm-3 dt-service-wrapper">
-												<div class="introBtn dt-service-item">
-													<i class="fa"><img src="files/icon-calendar.png" height="60px" width="60px"></img><br/>
-													<h3 class="service-title">Schedule</h3></i>
-												</div>
-											</a>
-										</div> 
-									</div> 
-								</div> 
-							</div> 
-
-							<div id="about" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
-								<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
-									<div class="vc_span12 wpb_column column_container">
-										<div class="wpb_wrapper">
-											<div class="  wpb_row vc_row-fluid  " style="" data-token="7cO2D">
-												<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
-													<div class="wpb_wrapper">
-														<h1 class="section-title">ABOUT US</h1>
-														<div class="col-md-12 aboutText">
-															<p><h2>"Delhi Dialogue: Vision 2020"</h2> An initiative to conduct a comprehensive study of policies for Delhi. This will be used to create a concrete, feasible and long-term roadmap and vision for Delhi.</p>
-															<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments,  organizations, businesses and civil society to engage with us on a 13-point agenda. The engagement would happen in the form of round table conferences.</p>
-															<p>The major areas of discussion and policy research will center around:</p>
-															<ul id="aboutTopicList" class="col-md-offset-1 col-md-10">
-																<li>Energy and Electricity</li>
-																<li>Water</li>
-																<li>Jobs and Employment</li>
-																<li>Enterprise: Trade and Industry</li>
-																<li>Women’s Issues</li>
-																<li>Education</li>
-																<li>Health</li>
-																<li>Land and Housing</li>
-																<li>Sanitation, Sewage & Solid Waste Management</li>
-																<li>Social Welfare and Social Justice</li>
-																<li>Rural Delhi</li>
-																<li>Transportation</li>
-															</ul>
-															<i class="col-md-12">Citizens will also be invited to give their suggestions on different policy areas through our website, Whatsapp, Text Messaging and registering for policy roundtables.</i>
-
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div id="topics" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
-								<br/>
-								<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
-									<div class="vc_span12 wpb_column column_container">
-										<div class="wpb_wrapper">
-											<div class="  wpb_row vc_row-fluid  " style="" data-token="7cO2D">
-												<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
-													<div class="wpb_wrapper">
-														<h1 class="section-title">TOPICS</h1>
-														<div class = "col-sm-12">
-															<div id="tableHeading" class="center"><h2>Top Issues<h2></div>
-
-															<div class= 'issue'>
-																<div class="issueSummary col-sm-9">
-																	<img class="col-sm-3" src="files/aapelectricity.jpg">
-																	<div class="col-sm-9">
-																		<b>Electricity</b><br/>AAP will make sure that AK visits each and every household and cut their electricity personally.
-																	</div>
-																</div>
-																<a href="issue/Electricity.html" class="col-sm-3">
-																	<div class="dt-service-wrapper discovermore">
-																		<div class="dt-service-item">
-																			<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
-																		</div>
-																	</div>
-																</a>
-															</div>
-	
-															<div class= 'issue'>
-																<div class="issueSummary col-sm-9">
-																	<img class="col-sm-3" src="files/aapeducation.jpg">
-																	<div class="col-sm-9">
-																		<b>Education</b><br/>Kejriwal uncle receiving gifts from children on children's day.
-																		 
-																	</div>
-																</div>
-																<a href="issue/Education.html" class="col-sm-3">
-																	<div class="dt-service-wrapper discovermore">
-																		<div class="dt-service-item">
-																			<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
-																		</div>
-																	</div>
-																</a>
-															</div>
-
-															<div class= 'issue'>
-																<div class="issueSummary col-sm-9">
-																	<img class="col-sm-3" src="files/aapwater.png">
-																	<div class="col-sm-9">
-																		<b>Water</b><br/>AAP will ensure Modi doesn't give any more interviews to Karan Thapar, which will solve half of the water crisis. because <i>"Bas dosti bani rahe!"</i>
-																		 
-																	</div>
-																</div>
-																<a href="issue/Water.html" class="col-sm-3">
-																	<div class="dt-service-wrapper discovermore">
-																		<div class="dt-service-item">
-																			<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
-																		</div>
-																	</div>
-																</a>
-															</div>
-
-															<div class= 'issue'>
-																<div class="issueSummary col-sm-9">
-																	<img class="col-sm-3" src="files/aapemployment.jpg">
-																	<div class="col-sm-9">
-																		<b>Employment</b><br/>AAP will hire all the unemployed people as unpaid volunteers, eradicating problem of unemployment once and for all.
-																	</div>
-																</div>
-																<a href="issue/Employment.html" class="col-sm-3">
-																	<div class="dt-service-wrapper discovermore">
-																		<div class="dt-service-item">
-																			<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
-																		</div>
-																	</div>
-																</a>
-															</div>
-	
-															<div class= 'issue'>
-																<div class="issueSummary col-sm-9">
-																	<img class="col-sm-3" src="files/aapsmartcity.jpg">
-																	<div class="col-sm-9">
-																		<b>Smart City</b><br/>AAP will distribute free smartphones to all voters making Delhi a smart city
-																	</div>
-																</div>
-																<a href="issue/Smartcity.html" class="col-sm-3">
-																	<div class="dt-service-wrapper discovermore">
-																		<div class="dt-service-item">
-																			<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
-																		</div>
-																	</div>
-																</a>
-															</div>
-
-															<div class= 'issue'>
-																<div class="issueSummary col-sm-9">
-																	<img class="col-sm-3" src="files/aaphealth.jpg">
-																	<div class="col-sm-9">
-																		<b>Health</b><br/>AAP will invest in researching the reason for AK's cough, which is bigger problem than Ebola
-																	</div>
-																</div>
-																<a href="issue/Health.html" class="col-sm-3">
-																	<div class="dt-service-wrapper discovermore">
-																		<div class="dt-service-item">
-																			<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
-																		</div>
-																	</div>
-																</a>
-															</div>
-
-														</div>
-
-
-													</div> 
-												</div> 
-											</div>
-										</div> 
-									</div> 
-								</div>
-							</div>
-
-							<div id="schedule" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
-								<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
-									<div class="vc_span12 wpb_column column_container">
-										<div class="wpb_wrapper">
-											<div class="  wpb_row vc_row-fluid  " style="" data-token="7cO2D">
-												<div class="vc_span12 wpb_column column_container wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
-													<div class="wpb_wrapper">
-														<h1 class="section-title">SCHEDULE</h1>
-														<div class = "col-sm-offset-2 col-sm-8">
-															<div class="meeting">
-																<img style="padding-top:20px" class="col-sm-3" src="file:///home/manav/WebProjects/AAP/DelhiD/templates/Lists%20&%20Calendars%20of%20Chicago%20Events%20-%20Activities%20from%20Chicago%20Traveler_files/adler-1_A.jpg">
-																<div class="col-sm-6 issueSummary">
-																	<h3><b>Adler After Dark</b></h3>
-																	<h5><i>9/16/14</i></h5>
-																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
-																</div>
-																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
-																	<div class="dt-service-wrapper" style="background-color:yellow;">
-																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
-																		</div>
-																	</div>
-																</a>
-														 	</div>
-															<div class="meeting">
-																<img style="padding-top:20px" class="col-sm-3" src="file:///home/manav/WebProjects/AAP/DelhiD/templates/Lists%20&%20Calendars%20of%20Chicago%20Events%20-%20Activities%20from%20Chicago%20Traveler_files/adler-1_A.jpg">
-																<div class="col-sm-6 issueSummary">
-																	<h3><b>Adler After Dark</b></h3>
-																	<h5><i>9/16/14</i></h5>
-																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
-																</div>
-																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
-																	<div class="dt-service-wrapper" style="background-color:yellow;">
-																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
-																		</div>
-																	</div>
-																</a>
-														 	</div>
-															<div class="meeting">
-																<img style="padding-top:20px" class="col-sm-3" src="file:///home/manav/WebProjects/AAP/DelhiD/templates/Lists%20&%20Calendars%20of%20Chicago%20Events%20-%20Activities%20from%20Chicago%20Traveler_files/adler-1_A.jpg">
-																<div class="col-sm-6 issueSummary">
-																	<h3><b>Adler After Dark</b></h3>
-																	<h5><i>9/16/14</i></h5>
-																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
-																</div>
-																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
-																	<div class="dt-service-wrapper" style="background-color:yellow;">
-																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
-																		</div>
-																	</div>
-																</a>
-														 	</div>
-															<div class="meeting">
-																<img style="padding-top:20px" class="col-sm-3" src="file:///home/manav/WebProjects/AAP/DelhiD/templates/Lists%20&%20Calendars%20of%20Chicago%20Events%20-%20Activities%20from%20Chicago%20Traveler_files/adler-1_A.jpg">
-																<div class="col-sm-6 issueSummary">
-																	<h3><b>Adler After Dark</b></h3>
-																	<h5><i>9/16/14</i></h5>
-																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
-																</div>
-																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
-																	<div class="dt-service-wrapper" style="background-color:yellow;">
-																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
-																		</div>
-																	</div>
-																</a>
-														 	</div>
-															<div class="meeting">
-																<img style="padding-top:20px" class="col-sm-3" src="file:///home/manav/WebProjects/AAP/DelhiD/templates/Lists%20&%20Calendars%20of%20Chicago%20Events%20-%20Activities%20from%20Chicago%20Traveler_files/adler-1_A.jpg">
-																<div class="col-sm-6 issueSummary">
-																	<h3><b>Adler After Dark</b></h3>
-																	<h5><i>9/16/14</i></h5>
-																	<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
-																</div>
-																<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
-																	<div class="dt-service-wrapper" style="background-color:yellow;">
-																		<div class="dt-service-item">
-																			<i class="fa"><h3 class="service-title">REGISTER</h3></i>
-																		</div>
-																	</div>
-																</a>
-														 	</div>
-															
-													 	</div>
-													</div> <!-- /.view -->
-										 	 	</div>
-										 	</div>
-										</div> <!-- /.view -->
-							 	 	</div>
-							 	</div>
-							</div> <!-- /.view -->
-
-
-
-	
-							<div id="contact" style="background-image: url(files/aapuday.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
-								<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
-									<h1 class="section-title">Send us a Message</h1><div style="clear:both; width:100%; height:60px"></div>
-									<div class="container">
-										<form action="/patti/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-											<div class="percent-one-half"> <br>
-												<span class="wpcf7-form-control-wrap your-name">
-													<input name="your-name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" type="text">
-												</span><br>
-											</div><br>
-											<div class="percent-one-half column-last"> <br>
-												<span class="wpcf7-form-control-wrap your-email"><input name="your-email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" type="email"></span><br>
-											</div><br>
-
-											<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span><br>
-
-											<input value="Send" class="wpcf7-form-control wpcf7-submit button black" type="submit"><img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader"><p></p>
-										</form>
-									</div>
-								</div>
+			<img class="defaultimg" src="files/slide44.jpg" style="height:100vh;width:100vw"></img>
+			<div  class="visiontext">
+			 	<span id="vision">It all starts with a vision</span><br />
+				<div class="playintro">											
+					<a class="oval_parent" href="#intro">
+						<div  class="dt-service-wrapper oval" style="background-color:orange;">
+							<div id="oval" class="dt-service-item oval" style="color:blue;">
+								<span>Watch Intro</span>
 							</div>
 						</div>
+					</a>
+				</div>
+			</div>
+
+			<div id="intro" class="row">
+				<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(250,250,250, 0.70);">
+					<div class="wpb_wrapper">
+						<h1 class="section-title">INTRODUCTION TO DELHI DIALOGUE</h1>
+						<div class=" col-sm-2"></div>
+						<div class="col-sm-8">
+							<iframe width="100%" height="350" src="//www.youtube.com/embed/gq0V8rQ5nVY" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class=" col-sm-2"></div>
+						<div class=" col-sm-12" style='height:30px'></div>
+						<div class=" col-sm-5"></div>
+						<a class="oval_parent col-sm-7" href="#topics">
+							<div  class="dt-service-wrapper oval" style="background-color:orange;">
+								<div id="oval" class="dt-service-item oval" style="color:blue;">
+									<span>Focus Areas</span>
+								</div>
+							</div>
+						</a>
+					</div> 
+				</div> 
+			</div> 
+
+			<div id="about">
+				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
+					<div class="wpb_wrapper">
+						<h1 class="section-title">ABOUT US</h1>
+						<div class="aboutText">
+							<p><h2>"Delhi Dialogue: Vision 2020"</h2> An initiative to conduct a comprehensive study of policies for Delhi. This will be used to create a concrete, feasible and long-term roadmap and vision for Delhi.</p>
+							<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments,  organizations, businesses and civil society to engage with us on a 13-point agenda. The engagement would happen in the form of round table conferences.</p>
+							<p>The major areas of discussion and policy research will center around:</p>
+							<ul id="aboutTopicList">
+								<li>Energy and Electricity</li>
+								<li>Water</li>
+								<li>Jobs and Employment</li>
+								<li>Enterprise: Trade and Industry</li>
+								<li>Women’s Issues</li>
+								<li>Education</li>
+								<li>Health</li>
+								<li>Land and Housing</li>
+								<li>Sanitation, Sewage & Solid Waste Management</li>
+								<li>Social Welfare and Social Justice</li>
+								<li>Rural Delhi</li>
+								<li>Transportation</li>
+							</ul>
+							<i class="col-md-12">Citizens will also be invited to give their suggestions on different policy areas through our website, Whatsapp, Text Messaging and registering for policy roundtables.</i>
+
+						</div>
 					</div>
-				</section>
-			</article>
+				</div>
+			</div>
+			<div id="topics">
+				<br/>
+				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
+					<div class="wpb_wrapper">
+						<h1 class="section-title">TOPICS</h1>
+						<div>
+							<div id="tableHeading" class="center"><h2>Top Issues<h2></div>
+
+							<div class= 'issue'>
+								<div class="issueSummary col-sm-9">
+									<img class="col-sm-3" src="files/aapelectricity.jpg">
+									<div class="col-sm-9">
+										<b>Electricity</b><br/>AAP will make sure that AK visits each and every household and cut their electricity personally.
+									</div>
+								</div>
+								<a href="issue/Electricity.html" class="col-sm-3">
+									<div class="dt-service-wrapper discovermore">
+										<div class="dt-service-item">
+											<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class= 'issue'>
+								<div class="issueSummary col-sm-9">
+									<img class="col-sm-3" src="files/aapeducation.jpg">
+									<div class="col-sm-9">
+										<b>Education</b><br/>Kejriwal uncle receiving gifts from children on children's day.
+										 
+									</div>
+								</div>
+								<a href="issue/Education.html" class="col-sm-3">
+									<div class="dt-service-wrapper discovermore">
+										<div class="dt-service-item">
+											<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class= 'issue'>
+								<div class="issueSummary col-sm-9">
+									<img class="col-sm-3" src="files/aapwater.png">
+									<div class="col-sm-9">
+										<b>Water</b><br/>AAP will ensure Modi doesn't give any more interviews to Karan Thapar, which will solve half of the water crisis. because <i>"Bas dosti bani rahe!"</i>
+										 
+									</div>
+								</div>
+								<a href="issue/Water.html" class="col-sm-3">
+									<div class="dt-service-wrapper discovermore">
+										<div class="dt-service-item">
+											<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class= 'issue'>
+								<div class="issueSummary col-sm-9">
+									<img class="col-sm-3" src="files/aapemployment.jpg">
+									<div class="col-sm-9">
+										<b>Employment</b><br/>AAP will hire all the unemployed people as unpaid volunteers, eradicating problem of unemployment once and for all.
+									</div>
+								</div>
+								<a href="issue/Employment.html" class="col-sm-3">
+									<div class="dt-service-wrapper discovermore">
+										<div class="dt-service-item">
+											<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class= 'issue'>
+								<div class="issueSummary col-sm-9">
+									<img class="col-sm-3" src="files/aapsmartcity.jpg">
+									<div class="col-sm-9">
+										<b>Smart City</b><br/>AAP will distribute free smartphones to all voters making Delhi a smart city
+									</div>
+								</div>
+								<a href="issue/Smartcity.html" class="col-sm-3">
+									<div class="dt-service-wrapper discovermore">
+										<div class="dt-service-item">
+											<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class= 'issue'>
+								<div class="issueSummary col-sm-9">
+									<img class="col-sm-3" src="files/aaphealth.jpg">
+									<div class="col-sm-9">
+										<b>Health</b><br/>AAP will invest in researching the reason for AK's cough, which is bigger problem than Ebola
+									</div>
+								</div>
+								<a href="issue/Health.html" class="col-sm-3">
+									<div class="dt-service-wrapper discovermore">
+										<div class="dt-service-item">
+											<h3 class="service-title">DISCOVER MORE  <img src="files/discovermore.png"></h3>
+										</div>
+									</div>
+								</a>
+							</div>
+
+						</div>
+
+
+					</div> 
+				</div> 
+			</div>
+			<div id="schedule" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
+				<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
+					<div class="wpb_wrapper">
+						<h1 class="section-title">SCHEDULE</h1>
+						<div class = "col-sm-offset-2 col-sm-8">
+							<div class="meeting">
+								<img style="padding-top:20px" class="col-sm-3" src="file:///home/manav/WebProjects/AAP/DelhiD/templates/Lists%20&%20Calendars%20of%20Chicago%20Events%20-%20Activities%20from%20Chicago%20Traveler_files/adler-1_A.jpg">
+								<div class="col-sm-6 issueSummary">
+									<h3><b>Adler After Dark</b></h3>
+									<h5><i>9/16/14</i></h5>
+									<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
+								</div>
+								<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
+									<div class="dt-service-wrapper" style="background-color:yellow;">
+										<div class="dt-service-item">
+											<i class="fa"><h3 class="service-title">REGISTER</h3></i>
+										</div>
+									</div>
+								</a>
+						 	</div>
+							<div class="meeting">
+								<img style="padding-top:20px" class="col-sm-3" src="file:///home/manav/WebProjects/AAP/DelhiD/templates/Lists%20&%20Calendars%20of%20Chicago%20Events%20-%20Activities%20from%20Chicago%20Traveler_files/adler-1_A.jpg">
+								<div class="col-sm-6 issueSummary">
+									<h3><b>Adler After Dark</b></h3>
+									<h5><i>9/16/14</i></h5>
+									<p>The Adler After Dark has everything you could want during a night out: spectacular views, drinks...</p>
+								</div>
+								<a style="padding-top:20px" href="issue/Health.html#contact" class="col-sm-3">
+									<div class="dt-service-wrapper" style="background-color:yellow;">
+										<div class="dt-service-item">
+											<i class="fa"><h3 class="service-title">REGISTER</h3></i>
+										</div>
+									</div>
+								</a>
+						 	</div>
+							
+					 	</div>
+					</div> <!-- /.view -->
+		 	 	</div>
+			</div>
+	
+			<div id="contact" style="background-image: url(files/aapuday.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
+				<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
+					<h1 class="section-title">Send us a Message</h1><div style="clear:both; width:100%; height:60px"></div>
+					<div class="container">
+						<form action="/patti/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+							<div class="percent-one-half"> <br>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input name="your-name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" type="text">
+								</span><br>
+							</div><br>
+							<div class="percent-one-half column-last"> <br>
+								<span class="wpcf7-form-control-wrap your-email"><input name="your-email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" type="email"></span><br>
+							</div><br>
+
+							<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span><br>
+
+							<input value="Send" class="wpcf7-form-control wpcf7-submit button black" type="submit"><img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader"><p></p>
+						</form>
+					</div>
+				</div>
+			</div>
 		</section>
 	</div><!--end wrapper-->
 
@@ -435,23 +350,23 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 	<script type="text/javascript" src="files/custom-waypoints.js"></script>
 	<script type="text/javascript" src="files/jquery_009.js"></script>
 	<script type="text/javascript" src="files/jquery_006.js"></script>
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	<script>
+	$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+		  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
+		    var target = $(this.hash);
+		    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		    if (target.length) {
+		      $('html,body').animate({
+		        scrollTop: target.offset().top
+		      }, 1000);
+		      return false;
+		    }
+		  }
+		});
+	});
+	</script>
 
 </body>
 </html>

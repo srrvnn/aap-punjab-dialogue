@@ -15,4 +15,9 @@ jQuery(document).ready(function(){
 
         jQuery("#qLoverlay").css({'display':'none'});
 
+        // Rev Slider default heights
+        var fullscreenheight = jQuery(window).height() - jQuery('#header').outerHeight();
+        jQuery('.rev_slider_wrapper .fullscreenbanner').css({'height': fullscreenheight});
+        jQuery('.rev_slider_wrapper .fullscreenbanner ul').css({'height': fullscreenheight});   
+
 });
