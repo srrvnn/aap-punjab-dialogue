@@ -113,18 +113,36 @@ text-align:center;}
 	padding: 5px 5px 5px 5px;
 	font-size:16px;
 	font-weight:bold;
-	margin-left:10vw;
+	margin-left:5vw;
 	min-width:33vw !important;
 	text-align:center;
 }
 
 .discovermore{
 	background-color:#00ABEC;
+	margin-top:48px;
+	width:201px;
+	height:48px;
 }
+.discovermore> .dt-service-item{
+	width:201px !important;
+	height:48px !important;
+	transition: all 0.2s linear 0s;
+	padding: 10px 10px 10px 10px;
+	color:white;
+	font-weight:400;
+	font-size:18px;
+	font-stretch:ultra-condensed;
+}
+
+
 .discovermore h3{
 	color:white !important;
 }
-
+.FAImg{
+	height:130px;
+	background-size: cover | contain;
+}
 #oval{
 		padding: 0.67em 1em 0.5em;
 }
@@ -132,8 +150,8 @@ text-align:center;}
     border-radius: 2em;
 		color:white !important;
 		color: #FFF;
-		width:220px;
-		font-size: 20px !important;
+		width:15vw;
+		font-size: 1.4vw !important;
 		font-family: "Avenir","Corbel","Myriad Pro","Lucida Sans","Lucida Grande",Arial,Helvetica,sans-serif;
 }
 

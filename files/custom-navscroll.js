@@ -40,7 +40,7 @@ jQuery(document).ready(function() {
 			}
 			else {
 				jQuery("#header").removeClass("scrolled-header");
-				jQuery("#header").css({"padding-top": dt_styles.init_pt+"px", "padding-bottom": dt_styles.init_pb+"px"});
+				jQuery("#header").css({"padding-top": "10px", "padding-bottom": dt_styles.init_pb+"px"});
 				jQuery(".logo img").css({"width": 'auto', "height": '70px'});
 				jQuery("#header #mainnav").css({"padding-top": "10px"});
 				
