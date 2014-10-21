@@ -99,7 +99,7 @@ ul#mainnav > li {
     background: url('files/nav-bg.png') no-repeat scroll right center transparent;
 		}
 .aboutText h2{
-text-align:center;}
+text-align:justify;}
 
 .aboutText{
 	color:black;
@@ -141,7 +141,7 @@ text-align:center;}
 }
 .FAImg{
 	height:130px;
-	background-size: cover | contain;
+	background-size: 100% 100% !important;
 }
 #oval{
 		padding: 0.67em 1em 0.5em;

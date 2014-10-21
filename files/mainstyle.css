@@ -38,7 +38,7 @@
 			min-height: 0px;
 			min-width: 0px;
 			line-height: 24px;
-			margin-left: 10vw !important;
+			margin-left: 11vw !important;
 			margin-right:auto !important;
 			top: 60.7vh;
 			
@@ -99,7 +99,7 @@ ul#mainnav > li {
     background: url('files/nav-bg.png') no-repeat scroll right center transparent;
 		}
 .aboutText h2{
-text-align:center;}
+text-align:justify;}
 
 .aboutText{
 	color:black;
