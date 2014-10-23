@@ -1322,7 +1322,7 @@ ul#mainnav li {
 }
 
 ul#mainnav > li {
-	background: url(files/nav-bg.png) no-repeat scroll right center;
+	background: url(nav-bg.png) no-repeat scroll right center;
 }
 
 .dark-header ul#mainnav > li {

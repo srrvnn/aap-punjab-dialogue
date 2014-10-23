@@ -1,4 +1,4 @@
 $(document).ready(function(){
 	$('.defaultimg').css("width", $(window).width());
-	$('.tp-bgimg .defaultimg').css("height", $(window).width()/2);
+	$('.defaultimg').css("height", $(window).width()/2);
 });

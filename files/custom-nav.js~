@@ -136,7 +136,7 @@ function pattinav_extend() {
 
 	// Fixed Element Height
 	var headerheight = jQuery('#header').outerHeight();
-	jQuery('.menu-fixer').css({'height': '5vh'});		
+	jQuery('.menu-fixer').css({'height': '10vh'});		
 
 }
 
