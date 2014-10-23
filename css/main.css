@@ -1,0 +1,30 @@
+.btn-blue {
+	background-color: #29AAE1;
+	border-color: #29AAE1;
+	color:white;
+	border-radius: 1.5em;
+	border: 0;
+	font-family: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;
+}
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active {
+  background-color: #3ed5f0;
+  border-color: #1a8cbd;
+}
+.btn-blue.disabled:hover,
+.btn-blue.disabled:focus,
+.btn-blue.disabled:active,
+.btn-blue.disabled.active,
+.btn-blue[disabled]:hover,
+.btn-blue[disabled]:focus,
+.btn-blue[disabled]:active,
+.btn-blue[disabled].active,
+fieldset[disabled] .btn-blue:hover,
+fieldset[disabled] .btn-blue:focus,
+fieldset[disabled] .btn-blue:active,
+fieldset[disabled] .btn-blue.active {
+  background-color: #29AAE1;
+  border-color: #29AAE1;
+}
