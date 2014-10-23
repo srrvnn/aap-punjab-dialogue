@@ -8,9 +8,14 @@ ul#mainnav li a:active span {
 }*/
 
 #spinner:before {
+	border-top-color: #FE7E17;
+	border-left-color: #FE7E17;
+	border-right-color: #FE7E17;
 }
 
 #qLbar {
+	background: #FE7E17;
+	color: #FE7E17;
 }
 
 .widget .tagcloud a:hover {

@@ -945,7 +945,7 @@ OverlayLoader.prototype.createOverlay = function () {
 	}).appendTo(this.container);
 
 	//create the spinner
-	//this.spinner = $("<div id='spinner'></div>").css({}).appendTo(this.container);	
+	this.spinner = $("<div id='spinner'></div>").css({}).appendTo(this.container);	
 
 	//if percentage is on
 	if (this.parent.options.percentage == true) {

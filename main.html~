@@ -1,6 +1,61 @@
 <!DOCTYPE html>
 <html class=" js webgl no-touch rgba opacity cssanimations csstransforms csstransforms3d csstransitions js_active  vc_desktop  vc_transform " lang="en-US"><head>
+<style>
+.tp-loader.spinner4 {
+  margin: -20px 0px 0px -20px;
+  width: 40px;
+  height: 40px;
+  text-align: center; 
+  -webkit-animation: tp-rotate 2.0s infinite linear;
+  animation: tp-rotate 2.0s infinite linear;
+}
+#spinner {
+	position: absolute;
+	height:41px;
+	width:41px;
+	top: 50%;
+	left: 50%;
+	margin-left: -17px;
+	margin-top: -17px;
+	border: 3px solid rgba(226, 226, 226, 0.75);
+	border-radius:100%;
+	-webkit-animation: rotation 1s infinite linear;
+	-moz-animation: rotation 1s infinite linear;
+	-o-animation: rotation 1s infinite linear;
+	animation: rotation 1s infinite linear;
+}
 
+.no-csstransforms #spinner {
+	background:url(images/preloader.gif) no-repeat scroll 0 0;
+	width: 38px;
+	height: 38px;
+	border: 0;
+	margin-left: -19px;
+	margin-top: -19px;	
+}
+
+.no-csstransforms #spinner:before {
+	border: 0;
+}	
+
+#spinner:before {
+   content:"";
+	 background-image:url('files/icon.ico');
+   display:block;
+   position:absolute;
+   height:100%;
+   width:100%;
+   border-top:3px solid rgba(0,0,0,1);
+   border-left: 3px solid #000;
+   border-bottom:3px solid transparent;
+   border-right: 3px solid #000;
+   border-radius:100%;
+	border-top-color: #FE7E17;
+	border-left-color: #FE7E17;
+	border-right-color: #FE7E17;
+
+}
+</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
 		<!-- mobile meta tag -->		
@@ -10,13 +65,21 @@
 		
 		<!-- Custom Favicon -->
 		<link rel="icon" type="image/png" href="files/icon.ico">			
+		<link rel="stylesheet" id="rs-plugin-settings-css" href="files/settings.css" type="text/css" media="all">
+		<link rel="stylesheet" id="dt-default-style-css" href="files/style.css" type="text/css" media="all">
+
+
+		<script type="text/javascript" src="files/loader.js"></script>
+		<script type="text/javascript" src="files/jquery_008.js"></script>
+		<script type="text/javascript" src="files/jquery_002.js"></script>
+		<script type="text/javascript" src="files/jquery_011.js"></script>
 
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
 
 	<!-- preloader-->
-	<div style="display: none;" id="qLoverlay"></div>
+	<div style="display: block;" id="qLoverlay" onLoad='qLoverlayonLoad()'><div id="spinner" style="background-image:url('icon.ico');"></div></div>
 	<header style="padding-top: 10px; padding-bottom: 25px; background: none repeat scroll 0% 0% rgb(255, 255, 255); box-shadow: none;" id="header" class="show-original-logo solid-header">
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
@@ -60,26 +123,30 @@
 				</div>
 			</div>
 
-			<div id="intro" class="row">
-				<div class="lighter-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(250,250,250, 0.70);">
-					<div class="wpb_wrapper">
-						<h1 class="section-title">INTRODUCING DELHI DIALOGUE</h1>
-						<div class=" col-sm-2"></div>
-						<div class="col-sm-8">
-							<iframe width="100%" height="350" src="//www.youtube.com/embed/gq0V8rQ5nVY" frameborder="0" allowfullscreen></iframe>
+
+			<div id="intro" style="margin-top: 10px;" class="wpb_row vc_row-fluid">
+				<div class="col-sm-8 col-sm-offset-2" style="padding: 30px 15px; background-color: rgba(250,250,250);border: #e6e6e6 1px solid;">
+					<div>
+						<div class="col-sm-6">
+							<iframe width="100%" height="350" src="//www.youtube.com/embed/gq0V8rQ5nVY?wmode=transparent&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
 						</div>
-						<div class=" col-sm-2"></div>
-						<div class=" col-sm-12" style='height:30px'></div>
-						<div class=" col-sm-5"></div>
-						<a class="oval_parent col-sm-7" href="#topics">
-							<div  class="dt-service-wrapper oval" style="background-color:orange;">
-								<div id="oval" class="dt-service-item oval" style="color:blue;">
-									<span>Focus Areas</span>
-								</div>
-							</div>
-						</a>
-					</div> 
-				</div> 
+						<div class="col-sm-6">
+							<h1 style="font-size: 66px;  line-height: 66px;	color: #f78d1e; font-family: Corbel, 'Myriad Pro', 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;font-weight: 600;	margin-top: 0;">
+								Make Delhi world class city in 5 years
+							</h1>
+							<p style="font-family: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 18px;  margin-top:30px;   padding-top: 20px;">
+								Our vision is to make Delhi world class city in 5 years. Delhi Dialogue is an initiative to build realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety etc have been identified. Experts will be involved through seminars & conferences (including researchers, social organizations, bureacrats etc).Citizens are also encouraged to participate.
+							</p>
+						</div> 
+						
+					</div>
+					<div>
+						<div class="col-sm-6 col-sm-offset-6">
+							<a href="#topics"><button style="margin-right: 25px; margin-top: 25px;" type="button" class="btn-lg btn-blue"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
+							<a href="#schedule"><button style="margin-top: 25px;" type="button" class="btn-lg btn-blue"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Schedule</button></a>
+						</div>
+					</div>
+				</div>
 			</div> 
 
 			<div id="about">
@@ -125,7 +192,7 @@
 										Delhi should have growing employment opportunities across various types of industries. Small businesses needs to be encouraged as viable employment opportunity. Labor reforms are needed to provide fair & conducive work environment.
 									</div>
 								</div>
-								<a href="issue/Electricity.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=1" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -142,7 +209,7 @@
 										 
 									</div>
 								</div>
-								<a href="issue/Education.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=2" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -159,7 +226,7 @@
 										 
 									</div>
 								</div>
-								<a href="issue/Water.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=3" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -175,7 +242,7 @@
 										<b>Sanitation and Solid Waste Mgmt</b><br/>Comprehensive sanitation, sewage and solid waste management for every living establishment in Delhi. Easy availability of public toilets & waste bins for use. Discourage littering by heavy fines
 									</div>
 								</div>
-								<a href="issue/Employment.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=4" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -191,7 +258,7 @@
 										<b>Social Welfare and Social Justice</b><br/>Delhi would provide equal opportunities across all sections of society. There would be no appeasement of specific people in a community. Policies would focus on equal access to education, health & job opportunities. 
 									</div>
 								</div>
-								<a href="issue/Smartcity.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=5" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -207,7 +274,7 @@
 										<b>Transportation</b><br/>Delhi would have high quality diverse public transport to reduce peak time load on roads. The transportation would include Metro trains, last mile connectivity via feeder bues & private transport vehicles like autorickshaws. 
 									</div>
 								</div>
-								<a href="issue/Health.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=6" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -223,7 +290,7 @@
 										<b>Energy and Electricity</b><br/>Delhi has self-sufficient 100% electricity & increase depedence on clean energy
 									</div>
 								</div>
-								<a href="issue/Health.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=7" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -239,7 +306,7 @@
 										<b>Education</b><br/>Delhi should have high quality school education system with access to all sections of society. Focus on creation & explansion of world class colleges & universities. 
 									</div>
 								</div>
-								<a href="issue/Health.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=8" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -255,7 +322,7 @@
 										<b>Health</b><br/>Delhi would have drastically improved quality of public hospitals & further expand network. Health care delivery systems would be modernized using technology. Promote focus on proactive prevention of diseases to reduce healthcare costs & improve quality of life. 
 									</div>
 								</div>
-								<a href="issue/Health.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=9" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -271,7 +338,7 @@
 										<b>Land and Housing</b><br/>Delhi would have transparent land allotment policies, enforce infrastructure guidelines and protect rights of home buyers. Long term policies to prevent mushrooming of unauthorised settlements by ensuring availability of low-cost housing.  
 									</div>
 								</div>
-								<a href="issue/Health.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=10" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -287,7 +354,7 @@
 										<b>Rural Delhi</b><br/>Delhi's rural areas would have good quality public infrastrasture including schools & hospitals. 
 									</div>
 								</div>
-								<a href="issue/Health.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=11" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -303,7 +370,7 @@
 										<b>Water</b><br/>Every home in Delhi has access to clean piped water. Remove dependence on water tankers. Develop Delhi's water resources & implement ideas like rainwater harvesting
 									</div>
 								</div>
-								<a href="issue/Health.html" class="col-sm-3">
+								<a href="focus-area/main.html?id=12" class="col-sm-3">
 									<div class="dt-service-wrapper discovermore">
 										<div class="dt-service-item">
 											DISCOVER MORE  <img src="files/discovermore.png">
@@ -324,16 +391,45 @@
 					<div class="wpb_wrapper">
 						<h1 class="section-title">SCHEDULE</h1>
 						<div class="aboutText">
-							<p><h2>TDomain experts & citizens will participate to build realistic & practical plan. At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments, social organizations, businesses and civil society to engage. Experts are also encouraged to apply with their proposals. Similary, citizens are also invited to send proposals for review. These inputs will be reviewed & subsequently detailed schedule for seminars, round table meetings & conferences will be published.</h2></p>
+							<p><h2>Domain experts & citizens will participate to build realistic & practical plan. At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments, social organizations, businesses and civil society to engage. Experts are also encouraged to apply with their proposals.</p>
+							<p> Similary, citizens are also invited to send proposals for review. These inputs will be reviewed & subsequently detailed schedule for seminars, round table meetings & conferences will be published.</h2></p>
 						</div>
 					</div>
 				</div>
 			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
-			<div id="contact" style="background-image: url(files/aapuday.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
-				<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
-					<h1 class="section-title">Send us a Message</h1><div style="clear:both; width:100%; height:60px"></div>
-					<div class="container">
+			<div id="contact" style="background-image: url(files/aapuday.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;margin-top: 50px;">
+				<div class="darker-overlay" style="padding-top: 50px;padding-bottom: 0px; background-color: rgba(0,0,0, 0.70);">
+					<h1 class="section-title">Send us a Message</h1><div style="clear:both; width:100%; height:30px"></div>
+					<div class="percent-one-third" style="margin-left:5vw;margin-right:20vw;">
+
+						<ul class="contact-info" style="color:white !important;">
+							<li><h2><span class="col-md-12">Aam Aadmi Party</span></h2></li><br/>
+							<li><h3><span class="col-md-3">Address: </span><span class="col-md-7"><b>A-119, First Floor,<br />Kaushambi, Ghaziabad,<br />Uttar Pradesh - 201010</b></span></h3></li>
+							<li><h3><span class="col-md-3">Phone: </span><span class="col-md-9"><b>+91-9643327265</b></span></h3></li>
+							<div style="clear:both; width:100%; height:10px"></div>
+							<li><span class="col-md-offset-2 col-md-2"><a href="mailto: newdelhidialogue@gmail.com"><img src="files/email.png" height="30" width="30"></a></span><span class="col-md-2"><a href="http://facebook.com/pages/Delhi-Dialogue/576718279124066 "><img src="files/facebook.gif"></a></span><span class="col-md-2"><a href="http://www.twitter.com/DelhiDialogue "><img src="files/twitter.png"></a></span></h3></li>
+						</ul>
+
+					</div>
+
+
+
+					<div class="percent-one-third" style="padding-top:30px">
 						<form action="/patti/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form" novalidate="novalidate">
 							<div class="percent-one-half"> <br>
 								<span class="wpcf7-form-control-wrap your-name">
@@ -349,6 +445,7 @@
 							<input value="Send" class="wpcf7-form-control wpcf7-submit button black" type="submit"><img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader"><p></p>
 						</form>
 					</div>
+<div style="clear:both; width:100%; height:85px"></div>
 				</div>
 			</div>
 		</section>
@@ -357,24 +454,20 @@
 
 
 
-<link rel="stylesheet" id="rs-plugin-settings-css" href="files/settings.css" type="text/css" media="all">
 <link rel="stylesheet" href="files/mainstyle.css" type="text/css" media="all">
 <link rel="stylesheet" id="contact-form-7-css" href="files/styles.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-demo-css" href="files/template-changer.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-delicious-font-css" href="files/css.css" type="text/css" media="all">
-<link rel="stylesheet" id="dt-default-style-css" href="files/style.css" type="text/css" media="all">
-<link rel="stylesheet" id="dt-font-awesome-css" href="files/font-awesome.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-css-styles-css" href="files/css-styles.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-color-scheme-css" href="files/orange.css" type="text/css" media="all">
-<div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script style="" src="files/ga.js" async="" type="text/javascript"></script>
-<script type="text/javascript" src="files/jquery_008.js"></script>
+<div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div>
 <script type="text/javascript" src="files/jquery-migrate.js"></script>
 <script type="text/javascript" src="files/jquery_004.js"></script>
-<script type="text/javascript" src="files/jquery_011.js"></script>
 <script type="text/javascript" src="files/template-changer.js"></script>
 <script type="text/javascript" src="files/styleswitch.js"></script>
 <script type="text/javascript" src="files/jquery_010.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" id="dt-main-css" href="css/main.css" type="text/css" media="all">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -403,7 +496,6 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 
 
 	<link rel="stylesheet" id="js_composer_front-css" href="files/js_composer_front.css" type="text/css" media="all">
-	<script type="text/javascript" src="files/jquery_002.js"></script>
 	<script type="text/javascript" src="files/scripts.js"></script>
 	<script type="text/javascript" src="files/js-scripts-top.js"></script>
 	<script type="text/javascript" src="files/hoverIntent.js"></script>
@@ -414,16 +506,9 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 	<script type="text/javascript" src="files/custom-isotope-blog.js"></script>
 	<script type="text/javascript" src="files/custom-nav.js"></script>
 	<script type="text/javascript" src="files/custom-social.js"></script>
-	<script type="text/javascript" src="files/custom.js"></script>
 	<script type="text/javascript" src="files/js_composer_front.js"></script>
 
 	<script type="text/javascript" src="files/custom-parallax.js"></script>
-	<script type="text/javascript" src="files/waypoints_002.js"></script>
-	<script type="text/javascript" src="files/waypoints.js"></script>
-	<script type="text/javascript" src="files/custom-skills.js"></script>
-	<script type="text/javascript" src="files/custom-waypoints.js"></script>
-	<script type="text/javascript" src="files/jquery_009.js"></script>
-	<script type="text/javascript" src="files/jquery_006.js"></script>
 	<script>
 	</script>
 

@@ -96,7 +96,7 @@
 
 
 ul#mainnav > li {
-    background: url('files/nav-bg.png') no-repeat scroll right center transparent;
+    background: url('nav-bg.png') no-repeat scroll right center transparent;
 		}
 .aboutText h2{
 text-align:justify;}

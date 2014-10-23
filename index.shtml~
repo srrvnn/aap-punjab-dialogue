@@ -355,9 +355,9 @@
 						<ul class="contact-info" style="color:white !important;">
 							<li><h2><span class="col-md-12">Aam Aadmi Party</span></h2></li><br/>
 							<li><h3><span class="col-md-3">Address: </span><span class="col-md-7"><b>A-119, First Floor,<br />Kaushambi, Ghaziabad,<br />Uttar Pradesh - 201010</b></span></h3></li>
-							<li><h3><span class="col-md-3">Phone: </span><span class="col-md-7"><b>+91-9718500606</b></span></h3></li>
-							<li><h3><span class="col-md-3">Email: </span><span class="col-md-7"><b><a href="mailto:contact@aamaadmiparty.org">contact@aamaadmiparty.org</a></b></span></h3></li><li><br/></li>
-							<li><h3><span class="col-md-3">Website: </span><span class="col-md-7"><b><a href="http://www.aamaadmiparty.org">www.aamaadmiparty.org</a></b></span></h3></li>
+							<li><h3><span class="col-md-3">Phone: </span><span class="col-md-9"><b>+91-9643327265</b></span></h3></li>
+							<div style="clear:both; width:100%; height:10px"></div>
+							<li><span class="col-md-offset-2 col-md-2"><a href="mailto: newdelhidialogue@gmail.com"><img src="files/email.png" height="30" width="30"></a></span><span class="col-md-2"><a href="http://facebook.com/pages/Delhi-Dialogue/576718279124066 "><img src="files/facebook.gif"></a></span><span class="col-md-2"><a href="http://www.twitter.com/DelhiDialogue "><img src="files/twitter.png"></a></span></h3></li>
 						</ul>
 
 					</div>
@@ -380,7 +380,7 @@
 							<input value="Send" class="wpcf7-form-control wpcf7-submit button black" type="submit"><img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader"><p></p>
 						</form>
 					</div>
-<div style="clear:both; width:100%; height:80px"></div>
+<div style="clear:both; width:100%; height:85px"></div>
 				</div>
 			</div>
 		</section>
