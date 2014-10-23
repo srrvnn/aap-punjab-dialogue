@@ -1,3 +1,5 @@
+
+
 /*-----------------------------------------------------------------------------------
 
 Theme Name: Patti Demo 3
@@ -4297,3 +4299,136 @@ div[class^="ytp-player"] {
     position:relative;
     overflow: hidden;
 }
+
+
+.video-frame .button.blue {
+background: #29aae1;
+}
+
+.tour-container .hero .button {
+position: relative;
+display: inline-block;
+margin-top: 30px;
+margin-right: 20px;
+height: 18px;
+padding: 10px 48px 10px 20px;
+border-radius: 19px;
+font-size: 18px;
+line-height: 18px;
+color: #fff;
+}
+
+.lucid .button {
+display: inline-block;
+padding: 0 14px;
+height: 28px;
+color: #fff !important;
+text-align: center;
+text-decoration: none;
+font-weight: normal;
+font-size: 14px;
+line-height: 28px;
+cursor: default;
+margin-top: 10px;
+overflow: hidden;
+outline: none;
+border: none;
+background: #777;
+text-shadow: none;
+-webkit-appearance: none;
+appearance: none;
+border-radius: 14px;
+}
+
+.bbttnn {
+background-color: rgb(41, 170, 225);
+background-image: none;
+background-origin: padding-box;
+background-size: auto;
+border-bottom-color: rgb(255, 255, 255);
+border-bottom-left-radius: 19px;
+border-bottom-right-radius: 19px;
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-left-color: rgb(255, 255, 255);
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: rgb(255, 255, 255);
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: rgb(255, 255, 255);
+border-top-left-radius: 19px;
+border-top-right-radius: 19px;
+border-top-style: none;
+border-top-width: 0px;
+color: rgb(255, 255, 255);
+cursor: default;
+display: inline-block;
+font-family: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;
+font-size: 18px;
+font-weight: normal;
+height: 18px;
+line-height: 18px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+margin-top: 30px;
+outline-color: rgb(255, 255, 255);
+outline-style: none;
+outline-width: 0px;
+overflow-x: hidden;
+overflow-y: hidden;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 48px;
+padding-top: 10px;
+position: relative;
+text-align: center;
+text-decoration: none;
+text-shadow: none;
+width: 105.234375px;
+}
+.bbtt {
+background-color: rgb(41, 170, 225);
+
+
+}
+.lucid .button.blue:hover {
+background: #3ed5f0;
+}
+.lucid .button:hover {
+text-decoration: none !important;
+background: #ccc;
+}
+
+.btn-custom {
+  background-color: #29AAE1;
+  border-color: #29AAE1;
+  color:white;
+  border-radius: 1.5em;
+  border: 0;
+font-family: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #3ed5f0;
+  border-color: #1a8cbd;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #29AAE1;
+  border-color: #29AAE1;
+}
+

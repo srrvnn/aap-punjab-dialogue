@@ -15,7 +15,7 @@
 <link rel="stylesheet" id="dt-font-awesome-css" href="../files/font-awesome.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-css-styles-css" href="../files/css-styles.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-color-scheme-css" href="../files/orange.css" type="text/css" media="all">
-<link rel="stylesheet" id="dt-issue-css" href="../css/issue.css" type="text/css" media="all">
+<link rel="stylesheet" id="dt-issue-css" href="../css/focus-area.css" type="text/css" media="all">
 <div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script style="" src="../files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="../files/jquery_008.js"></script>
 <script type="text/javascript" src="../files/jquery-migrate.js"></script>
 <script type="text/javascript" src="../files/jquery_004.js"></script>
@@ -23,6 +23,7 @@
 <script type="text/javascript" src="../files/template-changer.js"></script>
 <script type="text/javascript" src="../files/styleswitch.js"></script>
 <script type="text/javascript" src="../files/jquery_010.js"></script>
+<script type="text/javascript" src="../js/focus-area.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 <!-- Optional theme -->
@@ -95,7 +96,7 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 				<section style="border: 1px solid #e3e3e3">
 					<div class=" wpb_row vc_row-fluid" style="" data-token="oBpTt"><div class="lighter-overlay" style="padding:30px 30px 0; background-color: #fff;">
 						<div class="vc_span12 wpb_column column_container">
-							<header class="main-header"><h2>Focus Area</h2><h1>Electricity</h1></header>
+							<header class="main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></header>
 							<div style="padding: 30px; background-color: #ececec;" class="col-sm-12">
 								
 								<form class="form form-inline" role="form">
@@ -108,9 +109,9 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 								  
 								</form>
 
-									<div class="col-sm-12" style="padding: 30px; background-color: #fff;">
+									<div id="focusAreaSection" class="col-sm-12" style="padding: 30px; background-color: #fff;">
 
-					Democrats have a long and proud history of defending Civil Rights and expanding opportunity for all Americans. From the Civil Rights Act of 1964 to the Lilly Ledbetter Fair Pay Act in 2009 to including marriage equality in the party platform in 2012, Democrats have fought to end discrimination in all formsâ€”including discrimination based on race, sex, ethnicity or national origin, language, religion, sexual orientation, gender identity, age, or disability.
+					The Aam Aadmi Party is committed to providing access to basic energy needs to all of Delhi’s 2 crore citizens. It has large, ever-growing and unmatched energy requirements. Our vision of Delhi's energy future envisions an economy supported by clean, replenishable and renewable resources. The vision is agnostic about the path that Delhi’s power requirements need to take, but understand that dependence on carbon-based fuels must be drastically reduced.<br><br>Energy policy needs to be based on:<br>Meet expanding demand for energy to enhance quality of life and economic activities.<br>Preventing socially wasteful and inefficient energy use and demand side management of energy, combined with adoption of energy conservation techniques.<br>Phased shift to decentralised and renewable energy.<br>Minimizing consumer expenditure and maximizing efficient, effective and transparent competition amongst power distribution companies.
 									</div>
 								<div class="button-group col-sm-12">
 									<a href="#connect" id="registerBtn" class="blue-fixed-btn button" role="button">Register</a>
@@ -185,45 +186,45 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 							<div>
 								<p style="color: rgba(255, 255, 255, 0.77); font-size: 16px; font-weight: 400;">Select Issue Type</p><br>
 							</div><br>
-							<div id="issueCkbxContainer" class="col-sm-12 inline-checkbox">
+							<div id="focusAreaCheckbox" class="col-sm-12 inline-checkbox">
 								<div class="checkbox">
-								  <label><input type="checkbox" id="issue0">All</label>
+								  <label><input type="checkbox" id="focusAreaCheckbox0">All</label>
 								</div>
 								<div class="checkbox">
-									<label><input type="checkbox" class="issue-checkbox" id="issue1">Jobs and Employment</label>
+									<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox1">Jobs and Employment</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue2">Enterprise: Trade and Industry</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox2">Enterprise: Trade and Industry</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue3">Women Rights (Safety)</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox3">Women Rights (Safety)</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue4">Sanitation and Solid Waste Mgmt</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox4">Sanitation and Solid Waste Mgmt</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue5">Social Welfare and Social Justice</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox5">Social Welfare and Social Justice</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue6">Transportation</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox6">Transportation</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue7">Energy and Electricity</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox7">Energy and Electricity</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue8">Education</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox8">Education</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue9" checked>Health</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox9">Health</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue10">Land and Housing</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox10">Land and Housing</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue11">Rural Delhi</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox11">Rural Delhi</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="issue-checkbox" id="issue12">Water</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox12">Water</label>
 								</div>
 							</div><br>
 							<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span><br>
@@ -245,33 +246,48 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 			</div>
 		</footer>
 <script>
- $(document).ready(function(){
-	$( "#registerBtn" ).click(function() {
+
+Dialouge.FocusAreaPage.create("#focusAreaHeader", "#focusAreaSection", ".focus-area-checkbox");
+
+function initialze(focusAreaId) {
+	
+	// Assign handlers immediately after making the request,
+	// and remember the jqxhr object for this request
+	var jqxhr = $.getJSON( "../data/issue-details.json", function() {
+	  console.log( "success" );
+	})
+	  .done(function(result) {
+		console.log( "second success" );
+		Dialouge.FocusAreaPage.setContents(result, focusAreaId);
+	  })
+	  .fail(function() {
 		
+	  })
+	  .always(function() {
+		console.log( "complete" );
+	  });
+}
+
+ $(document).ready(function(){
+	var queryString = Dialouge.UrlUtils.getQueryString();
+	var pageId =  queryString["id"];
+	if(!pageId) {
+		pageId = "1"; // default focus issue page Id
+	}
+	initialze(pageId);
+	
+	$( "#registerBtn" ).click(function() {
 		$("#seminarRadioBtn").prop("checked", true);
-	//  $( this ).slideUp();
 	});
 	$( "#proposalBtn" ).click(function() {
-		
 		$("#proposalRadioBtn").prop("checked", true);
-	//  $( this ).slideUp();
 	});
-	$( "#issue0" ).click(function() {
-		//select/deselect all checkboxes with class "issue-checkbox"               
-		if(this.checked) {
-            $('.issue-checkbox').each(function() {
-                this.checked = true;
-            });
-        }else{
-            $('.issue-checkbox').each(function() {
-                this.checked = false;
-            });         
-        }
- 
+	$( "#focusAreaCheckbox0" ).click(function() {
+		//select/deselect all checkboxes with class "focus-area-checkbox" 
+		Dialouge.FocusAreaPage.setAllCheckboxStatus(this.checked);
 	});
-	
-	//issueCkbxContainer
 });
+
 </script>
 </body>
 </html>
