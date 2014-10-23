@@ -11,13 +11,15 @@
 	text-transform: uppercase;
 }
 .main-header h2 {
-    font-size: 1.5em;
+    font-size: 22px;
+	line-height: 22px;
     margin: 4px 0 0 2px;
 	color: #808285;
 }
 .main-header h1 {
 	color: rgb(1, 113, 208);
-	font-size: 4.2em;
+	font-size: 56px;
+	line-height: 56px;
 }
 .blue-fixed-btn {
     min-width: 180px;
