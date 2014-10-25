@@ -4,6 +4,7 @@
 	<title>Delhi Dialogue</title>
 
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Navbar and Register Proposal Style -->
 	<link rel="stylesheet" href="../files/mainstyle.css" type="text/css" media="all">
 	<link rel="stylesheet" id="dt-default-style-css" href="../files/style.css" type="text/css" media="all">
@@ -223,8 +224,10 @@
 
 			var queryString = Dialouge.UrlUtils.getQueryString();
 			var pageId =  queryString["id"];
-			// Remove section if specified
-			pageId = pageId.replace(/#.*/i, "");
+			if(pageId) {
+				// Remove section if specified
+				pageId = pageId.replace(/#.*/i, "");
+			}
 			if(!pageId) {
 				pageId = "1"; // default focus issue page Id
 			}
