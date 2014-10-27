@@ -8,6 +8,7 @@ header {
 	box-shadow: none;
 	padding-top: 0px; 
 	padding-bottom: 0px;
+	height:13vh;
 }
 
 .headnavs{

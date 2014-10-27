@@ -165,6 +165,7 @@ background-color: #3ed5f0;
 	font-weight:400;
 	font-size:18px;
 	font-stretch:ultra-condensed;
+	border-radius:2em;
 }
 
 .discovermore:hover{
