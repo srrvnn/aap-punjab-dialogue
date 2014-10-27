@@ -60,7 +60,7 @@
 		
 		<!-- mobile meta tag -->		
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
+		<meta name="generator" content="Delhi Dialogue Portal by AAP">
 		<title>Delhi Dialogue </title>
 		
 		<!-- Custom Favicon -->
@@ -68,12 +68,12 @@
 		<link rel="stylesheet" id="rs-plugin-settings-css" href="files/settings.css" type="text/css" media="all">
 		<link rel="stylesheet" id="dt-default-style-css" href="files/style.css" type="text/css" media="all">
 
+		
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" id="dt-main-css" href="css/main.css" type="text/css" media="all">
 
-		<script type="text/javascript" src="files/loader.js"></script>
-		<script type="text/javascript" src="files/jquery_008.js"></script>
-		<script type="text/javascript" src="files/jquery_002.js"></script>
-		<script type="text/javascript" src="files/jquery_011.js"></script>
-
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
@@ -84,8 +84,8 @@
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
-					<a class="original-logo" href="#hello"><img style="width: auto; height: 70px;" src="files/DDLogo2.jpg" alt="AAP Logo"></a>
-					<a class="white-logo" href="#hello"><img style="width: auto; height: 70px;" src="files/logo-white.png" alt="Patti"></a>
+					<a class="original-logo" href="#home"><img style="width: auto; height: 70px;" src="files/DDLogo2.jpg" alt="AAP Logo"></a>
+					<a class="white-logo" href="#home"><img style="width: auto; height: 70px;" src="files/logo-white.png" alt="Patti"></a>
 				</div>
 			</div><!--end one-fourth-->
 
@@ -94,7 +94,7 @@
 				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
 					<div class="menu-one-page-menu-container">
 						<ul style="padding-top: 10px;" id="mainnav" class="sf-menu sf-js-enabled sf-arrows">
-							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="#hello"><span>HOME</span></a></li>
+							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="#home"><span>HOME</span></a></li>
 							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="#about"><span>ABOUT US</span></a></li>
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#topics"><span>FOCUS AREAS</span></a></li>
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#schedule"><span>SCHEDULE</span></a></li>
@@ -107,7 +107,7 @@
 	</header>		
 
 	<div id="wrapper">	
-		<div id="hello"></div><div style="height: 116px;" class="menu-fixer"></div>
+		<div id="home"></div><div style="height: 116px;" class="menu-fixer"></div>
 		<section>
 			<img class="defaultimg" src="files/slide44.jpg" style="height:100vh;width:100vw"></img>
 			<div  class="visiontext">
@@ -123,18 +123,27 @@
 				</div>
 			</div>
 
-
-			<div id="intro" style="margin-top: 10px;" class="wpb_row vc_row-fluid">
+	
+			<div id="intro" style="margin-top: 10px; padding-top: 100px;" class="lighter-overlay">
+				<h1 class="section-title">INTRODUCING DELHI DIALOGUE</h1>
 				<div class="col-sm-8 col-sm-offset-2" style="padding: 30px 15px; background-color: rgba(250,250,250);border: #e6e6e6 1px solid;">
 					<div>
 						<div class="col-sm-6">
-							<iframe width="100%" height="350" src="//www.youtube.com/embed/gq0V8rQ5nVY?wmode=transparent&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+							<object width="100%" height="350">
+							  <param name="movie"
+									 value="http://www.youtube.com/v/gq0V8rQ5nVY"></param>
+							  <param name="allowScriptAccess" value="always"></param>
+							  <embed src="http://www.youtube.com/v/gq0V8rQ5nVY"
+									 type="application/x-shockwave-flash" wmode="Opaque"
+									 allowscriptaccess="always" frameborder="0" allowfullscreen="1" 
+									 width="100%" height="350"></embed>
+							</object>
 						</div>
 						<div class="col-sm-6">
 							<h1 style="font-size: 66px;  line-height: 66px;	color: #f78d1e; font-family: Corbel, 'Myriad Pro', 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;font-weight: 600;	margin-top: 0;">
 								Make Delhi world class city in 5 years
 							</h1>
-							<p style="font-family: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 18px;  margin-top:30px;   padding-top: 20px;">
+							<p style="font-family: margin: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 18px; margin: 40px 0 20px;">
 								Our vision is to make Delhi world class city in 5 years. Delhi Dialogue is an initiative to build realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety etc have been identified. Experts will be involved through seminars & conferences (including researchers, social organizations, bureacrats etc).Citizens are also encouraged to participate.
 							</p>
 						</div> 
@@ -461,16 +470,10 @@
 <link rel="stylesheet" id="dt-css-styles-css" href="files/css-styles.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-color-scheme-css" href="files/orange.css" type="text/css" media="all">
 <div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div>
-<script type="text/javascript" src="files/jquery-migrate.js"></script>
-<script type="text/javascript" src="files/jquery_004.js"></script>
-<script type="text/javascript" src="files/template-changer.js"></script>
-<script type="text/javascript" src="files/styleswitch.js"></script>
-<script type="text/javascript" src="files/jquery_010.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" id="dt-main-css" href="css/main.css" type="text/css" media="all">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="files/loader.js"></script>
+<script type="text/javascript" src="files/jquery_010.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -484,33 +487,22 @@ var dt_loader = {"bcolor":""};
 /* <![CDATA[ */
 var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default_color":"#ffffff","logo_width":"100","logo_height":"35","init_pt":"55","init_pb":"25","scroll_pt":"15","scroll_pb":"15","scrolling_effect":"1"};
 /* ]]> */
+$(document).ready(function(){
+	// Create scroll effect when clicked on local links
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
 </script>
-<script type="text/javascript" src="files/custom-navscroll.js"></script>
-<script type="text/javascript" src="files/comment-reply.js"></script>
-<meta name="generator" content="Delhi Dialogue Portal by AAP">
-<link rel="stylesheet" id="options-google-fonts" href="files/css_002.css" type="text/css" media="all">			
-
-
-
-
-
-
-	<link rel="stylesheet" id="js_composer_front-css" href="files/js_composer_front.css" type="text/css" media="all">
-	<script type="text/javascript" src="files/scripts.js"></script>
-	<script type="text/javascript" src="files/js-scripts-top.js"></script>
-	<script type="text/javascript" src="files/hoverIntent.js"></script>
-	<script type="text/javascript" src="files/js-scripts-bottom.js"></script>
-	<script type="text/javascript" src="files/jquery_005.js"></script>
-	<script type="text/javascript" src="files/jquery_007.js"></script>
-	<script type="text/javascript" src="files/custom-isotope-portfolio.js"></script>
-	<script type="text/javascript" src="files/custom-isotope-blog.js"></script>
-	<script type="text/javascript" src="files/custom-nav.js"></script>
-	<script type="text/javascript" src="files/custom-social.js"></script>
-	<script type="text/javascript" src="files/js_composer_front.js"></script>
-
-	<script type="text/javascript" src="files/custom-parallax.js"></script>
-	<script>
-	</script>
 
 </body>
 </html>
