@@ -11,8 +11,8 @@
 	<link rel="stylesheet" id="options-google-fonts" href="../files/css_002.css" type="text/css" media="all">		
 
 	<!-- Page content style -->	
-	<link rel="stylesheet" id="dt-issue-css" href="../css/focus-area.css" type="text/css" media="all">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" id="dt-issue-css" href="../css/focus-area.css" type="text/css" media="all">
 
 <body>
 
@@ -112,19 +112,18 @@
 									<input name="your-profession" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Profession" type="text">
 								</span><br>
 							</div><br>
-							
 							<div class="percent-one-half"> <br>
 								  <div class="panel panel-default">
 									<div class="panel-body " style="padding: 0">
-										<div class="col-sm-12 btn-group btn-input clearfix open" style="padding: 0;">
+										<div class="col-sm-12 btn-group btn-input clearfix" style="padding: 0;">
 											 <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
-											   <span data-bind="label">Organization Type</span>&nbsp;<span class="caret"></span>
+											   <span data-bind="orgType">Organization Type</span>&nbsp;<span class="caret"></span>
 											 </button>
-											 <ul class="dropdown-menu" role="menu" style="width: 100%; text-align:center">
-											   <li><a href="#connect">NGO</a></li>
-											   <li><a href="#connect">RWA</a></li>
-											   <li><a href="#connect">Researcher</a></li>
-											   <li><a href="#connect">Others</a></li>
+											 <ul class="dropdown-menu">
+											   <li role="presentation"><a role="menuitem" href="#connect">NGO</a></li>
+											   <li role="presentation"><a role="menuitem" href="#connect">RWA</a></li>
+											   <li role="presentation"><a role="menuitem" href="#connect">Researcher</a></li>
+											   <li role="presentation"><a role="menuitem" href="#connect">Others</a></li>
 											 </ul>
 										   </div>
 									</div>
@@ -216,8 +215,18 @@
 		}
 
 		 $(document).ready(function(){
+			// Dropdown box select
+			$( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
+			 
+				var $target = $( event.currentTarget );
+				var dropDownLevelContainer = $target.closest( '.btn-group' ).find( '[data-bind="orgType"]' );
+				// Set text
+				dropDownLevelContainer.text( $target.text() ).end()
+				  .children( '.dropdown-toggle' ).dropdown( 'toggle' ); // Toggle opened dropdown
+			   return false;
+			});
+
 			Dialouge.FocusAreaPage.create("#focusAreaHeader", "#focusAreaSection", ".focus-area-checkbox");
-			$(".dropdown-toggle").dropdown('toggle');
 
 			var queryString = Dialouge.UrlUtils.getQueryString();
 			var pageId =  queryString["id"];

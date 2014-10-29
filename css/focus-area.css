@@ -77,9 +77,6 @@ body {
 .inline-checkbox div  label ,.inline-radiogroup div  label{
 	color: rgba(255, 255, 255, 0.77);
 }
-.inline-radiogroup label:hover {
-    background-color: #00ABEC;
-}
 
 .blue-fixed-btn,.navitem,button.redon,.panel {
     background-color: #00ABEC;
@@ -91,9 +88,23 @@ button.blue-fixed-btn:active,.button.blue-fixed-btn:active,input.blue-fixed-btn:
 	border-radius: 5px;
 	color: #fff;
 }
-button.blue-fixed-btn:hover,.button.blue-fixed-btn:hover {
+
+button.blue-fixed-btn:hover,.button.blue-fixed-btn:hover,.dropdown-menu li a:hover,.inline-radiogroup label:hover,button.dropdown-toggle:hover
+button.blue-fixed-btn:focus,.button.blue-fixed-btn:focus,.dropdown-menu li a:focus,.inline-radiogroup label:focus{
 	background: #FE7E17;
 	color: #fff;
+}
+
+.dropdown-menu {
+	width: 100%; text-align:center;margin: 0;padding: 0;
+}
+
+button.dropdown-toggle,.dropdown-menu {
+	background-color: #E6E6E6;
+}
+
+.dropdown-menu {
+	width: 100%; text-align:center;margin: 0;padding: 0;
 }
 
 .captcha input {
