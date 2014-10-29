@@ -78,19 +78,24 @@ body {
 	color: rgba(255, 255, 255, 0.77);
 }
 .inline-radiogroup label:hover {
-    background-color: #00AFF3;
+    background-color: #00ABEC;
 }
 
 .blue-fixed-btn,.navitem,button.redon,.panel {
-    background-color: #00aff3;
+    background-color: #00ABEC;
 	border-radius: 5px;
 }
 
-button.blue-fixed-btn:active,.button.blue-fixed-btn:active,input.blue-fixed-btn:active,button.blue-fixed-btn:focus,.button.blue-fixed-btn:focus,input.blue-fixed-btn:focus,button.blue-fixed-btn:hover,.button.blue-fixed-btn:hover,input.blue-fixed-btn:hover,#navbar li ul li:hover {
+button.blue-fixed-btn:active,.button.blue-fixed-btn:active,input.blue-fixed-btn:active,button.blue-fixed-btn:focus,.button.blue-fixed-btn:focus,input.blue-fixed-btn:focus,input.blue-fixed-btn:hover,#navbar li ul li:hover {
     background-color: #0171d0;
 	border-radius: 5px;
 	color: #fff;
 }
+button.blue-fixed-btn:hover,.button.blue-fixed-btn:hover {
+	background: #FE7E17;
+	color: #fff;
+}
+
 .captcha input {
 	width: 150px;
 }
