@@ -1,10 +1,21 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v11/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v11/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
 body {
 	background-color: #ececec;
 	width: auto;
 }
-header {
-	style="padding-top: 55px; padding-bottom: 25px; background: none repeat scroll 0% 0% rgb(255, 255, 255); box-shadow: none;" 
-}
+
 .img-center {margin:0 auto;}
 
 .lighter-overlay {
