@@ -113,7 +113,7 @@ line-height: 1.33;
 }
 
 .btn-blue:hover {
-background-color: #3ed5f0;
+background-color: orange;
 }
 
 .aboutus-title{
@@ -177,7 +177,7 @@ background-color: #3ed5f0;
 }
 
 .discovermore:hover{
-	background-color:black;	
+	background-color:orange;	
 }
 .discovermore h3{
 	color:white !important;

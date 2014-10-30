@@ -39,13 +39,12 @@ $(document).ready(function() {
 			});
 			// Mark this link as active
 			parent.addClass("current");
-			
-			// Scroll to the right page
-			$('html, body').animate({
-		      scrollTop: $( $.attr(this, 'href') ).offset().top
-			}, 1000);
-			return false;
 		}
+		// Scroll to the right page
+		$('html, body').animate({
+	      scrollTop: $( $.attr(this, 'href') ).offset().top
+		}, 1000);
+		return false;
 	});
 	onReady()
 });
