@@ -53,15 +53,16 @@
 						<div class="vc_span12 wpb_column column_container">
 							<div class="main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
 							<div class="main-content col-sm-12">
-								<form class="form form-inline" role="form">
-								  <div class="inline-form-group form-group">
-									
-									<input class="form-control" id="nameInput" placeholder="Enter Name">
-									<input class="form-control" id="emailInput" placeholder="Enter Email">
-								  </div>
-									<button class="blue-fixed-btn button" type="submit">Get Updates</button>
-								  
-								</form>
+								<form method="post" class="form form-inline" role="form">
+                                    <div class="inline-form-group form-group">
+                                    <input class="form-control"  name="vzip" id="nameInput" placeholder="Enter Name"/>
+				    <input class="form-control" name="vemail" id="emailInput"  placeholder="Enter Email"/>
+                                    
+                                    <input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
+                                    </div>
+                                    <input type="submit" class="blue-fixed-btn button"  name="submit" id="send" value="Get Update"/>
+                                </form>
+                                <h3><?php include "secure_email_code2.php"?></h3>
 								<div id="focusAreaSection" class="col-sm-12">
 								</div>
 								<div class="button-group col-sm-12">
@@ -81,14 +82,14 @@
 				<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Register or Submit a Proposal</h1><div style="clear:both; width:100%; height:60px"></div>
 					<div class="container">
-						<form action="/patti/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+						<form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
 							<div class="col-sm-12 inline-radiogroup"> <br>
 								<div class="btn-group">
 									<label class="btn" data-bind="css: { 'active': selectedOption() === 'Option 1' }">
-										<input type="radio" name="options" id="proposalRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Submit Proposal'">Submit Proposal
+										<input type="radio" name="options" value ="SubmitProposal" id="proposalRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Submit Proposal'">Submit Proposal
 									</label>
 									<label class="btn" data-bind="css: { 'active': selectedOption() === 'Option 2' }">
-										<input type="radio" name="options" id="seminarRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Register For Seminar'">Register For Seminar
+										<input type="radio" name="options" value ="RegisterForSeminar" id="seminarRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Register For Seminar'">Register For Seminar
 									</label>
 								</div>
 							</div><br>
@@ -138,40 +139,40 @@
 								  <label><input type="checkbox" id="focusAreaCheckbox0">All</label>
 								</div>
 								<div class="checkbox">
-									<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox1">Jobs and Employment</label>
+									<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox1" name="JobsandEmployment">Jobs and Employment</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox2">Enterprise: Trade and Industry</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox2" name = "EnterpriseTradeandIndustry">Enterprise: Trade and Industry</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox3">Women Rights (Safety)</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox3" name = "WomenRightsSafety">Women Rights (Safety)</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox4">Sanitation and Solid Waste Mgmt</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox4" name = "SanitationandSolidWasteMgmt">Sanitation and Solid Waste Mgmt</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox5">Social Welfare and Social Justice</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox5"  name = "SocialWelfareandSocialJustice>Social Welfare and Social Justice</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox6">Transportation</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox6"  name = "Transportation">Transportation</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox7">Energy and Electricity</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox7" name = "EnergyandElectricity">Energy and Electricity</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox8">Education</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox8"  name = "Education">Education</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox9">Health</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox9" name="Health">Health</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox10">Land and Housing</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox10" name="LandandHousing">Land and Housing</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox11">Rural Delhi</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox11" name="RuralDelhi">Rural Delhi</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox12">Water</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox12" name = "Water">Water</label>
 								</div>
 							</div><br>
 							<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span><br>
@@ -184,10 +185,11 @@
 									<img style="max-width:200px; max-height:105px" src="../files/captcha.gif" class="img-responsive" id="captcha" alt="Responsive image">
 							</div>
 							<div class="col-sm-4" style="text-align:right">
-								<button class="blue-fixed-btn button" type="submit">Submit</button>
+								<button name="submit" class="blue-fixed-btn button" type="submit">Submit</button>
 							</div>
 							
 						</form>
+                        <h3><?php include "secure_email_code3.php"?></h3>
 					</div>
 				</div>
 			</div>

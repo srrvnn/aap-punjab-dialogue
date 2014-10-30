@@ -26,25 +26,12 @@
 
 ready = 0;
 $(document).ready(function() {
-
 	ready =1;
 	$('a').click(function(){
-		var parent = $(this).parent();
-		
-		if(parent.hasClass( "headnavs" )) {
-			// A link in navigation header is clicked
-			parent.siblings().each(function(index, field) {
-				// mark all other header elements/links as inactive
-				$(field).removeClass("current");
-			});
-			// Mark this link as active
-			parent.addClass("current");
-		}
-		// Scroll to the right page
-		$('html, body').animate({
-	      scrollTop: $( $.attr(this, 'href') ).offset().top
-		}, 1000);
-		return false;
+		  $('html, body').animate({
+		      scrollTop: $( $.attr(this, 'href') ).offset().top
+		  }, 1000);
+		  return false;
 	});
 	onReady()
 });
@@ -78,7 +65,6 @@ function show(id, value) {
 		<div id="spinner" style="background-image:url('files/icon.ico');">
 		</div>
 	</div>
-	
 	<header id="header">
 		<a class="original-logo" href="#hello" style="display:inline; padding:30px 30px 30px 30px;"><img style="width: auto; height: 13vh;" src="files/DDLogo2.jpg" alt="AAP Logo"></a>
 		<div style="display:inline">
@@ -105,8 +91,7 @@ function show(id, value) {
 
 
 	<div id="intro" style="margin-top: 10px; overflow:auto;padding-top: 25vh;">
-		<h1 class="section-Title aboutus-title"><span>INTRODUCING DELHI DIALOGUE</span></h1>
-		<div class="col-sm-8 col-sm-offset-2" style="margin-top:20px; padding: 30px 15px; background-color: rgba(250,250,250);border: #e6e6e6 1px solid;">
+		<div class="col-sm-8 col-sm-offset-2" style="padding: 30px 15px; background-color: rgba(250,250,250);border: #e6e6e6 1px solid;">
 			<div>
 				<div class="col-sm-6">
 					<iframe width="100%" height="350" src="//www.youtube.com/embed/gq0V8rQ5nVY?wmode=transparent&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
@@ -137,11 +122,9 @@ function show(id, value) {
 		<h1 class="section-Title aboutus-title"><span>ABOUT US</span></h1>
 		<div class="aboutText">
 			<h2>"Delhi Dialogue: Vision 2020"</h2> 
-			<p>Vision 2020 is to make Delhi a world class city in 5 years. Delhi Dialogue is an initiative to build a realistic and practical plan 
-			to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts 
-			from various fields to build plans for different focus areas.</p>
-			<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments, organizations, businesses and civil society 
-			to engage in this initiative. The engagement would happen in the form of round table conferences.</p>
+			<p>An initiative to conduct a comprehensive study of policies for Delhi. This will be used to create a concrete, feasible and long-term roadmap and vision for Delhi.</p>
+			<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments,  organizations, businesses and civil society to engage with us on a 13-point agenda. The engagement would happen in the form of round table conferences.</p>
+			<p>The major areas of discussion and policy research will center around:</p>
 			<ul id="aboutTopicList">
 
 				<li>	Jobs and Employment		</li>
@@ -173,7 +156,7 @@ function show(id, value) {
 					Delhi should have growing employment opportunities across various types of industries. Small businesses needs to be encouraged as viable employment opportunity. Labor reforms are needed to provide fair & conducive work environment.
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=1" class="col-sm-3">
+			<a href="focus-area/main.php?id=1" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -189,7 +172,7 @@ function show(id, value) {
 					 
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=2" class="col-sm-3">
+			<a href="focus-area/main.php?id=2" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -204,7 +187,7 @@ function show(id, value) {
 					 
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=3" class="col-sm-3">
+			<a href="focus-area/main.php?id=3" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -218,7 +201,7 @@ function show(id, value) {
 					<b>Sanitation and Solid Waste Mgmt</b><br/>Comprehensive sanitation, sewage and solid waste management for every living establishment in Delhi. Easy availability of public toilets & waste bins for use. Discourage littering by heavy fines
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=4" class="col-sm-3">
+			<a href="focus-area/main.php?id=4" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -232,7 +215,7 @@ function show(id, value) {
 					<b>Social Welfare and Social Justice</b><br/>Delhi would provide equal opportunities across all sections of society. There would be no appeasement of specific people in a community. Policies would focus on equal access to education, health & job opportunities. 
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=5" class="col-sm-3">
+			<a href="focus-area/main.php?id=5" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -246,7 +229,7 @@ function show(id, value) {
 					<b>Transportation</b><br/>Delhi would have high quality diverse public transport to reduce peak time load on roads. The transportation would include Metro trains, last mile connectivity via feeder bues & private transport vehicles like autorickshaws. 
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=6" class="col-sm-3">
+			<a href="focus-area/main.php?id=6" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -260,7 +243,7 @@ function show(id, value) {
 					<b>Energy and Electricity</b><br/>Delhi has self-sufficient 100% electricity & increase depedence on clean energy
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=7" class="col-sm-3">
+			<a href="focus-area/main.php?id=7" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -274,7 +257,7 @@ function show(id, value) {
 					<b>Education</b><br/>Delhi should have high quality school education system with access to all sections of society. Focus on creation & explansion of world class colleges & universities. 
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=8" class="col-sm-3">
+			<a href="focus-area/main.php?id=8" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -288,7 +271,7 @@ function show(id, value) {
 					<b>Health</b><br/>Delhi would have drastically improved quality of public hospitals & further expand network. Health care delivery systems would be modernized using technology. Promote focus on proactive prevention of diseases to reduce healthcare costs & improve quality of life. 
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=9" class="col-sm-3">
+			<a href="focus-area/main.php?id=9" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -302,7 +285,7 @@ function show(id, value) {
 					<b>Land and Housing</b><br/>Delhi would have transparent land allotment policies, enforce infrastructure guidelines and protect rights of home buyers. Long term policies to prevent mushrooming of unauthorised settlements by ensuring availability of low-cost housing.  
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=10" class="col-sm-3">
+			<a href="focus-area/main.php?id=10" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -316,7 +299,7 @@ function show(id, value) {
 					<b>Rural Delhi</b><br/>Delhi's rural areas would have good quality public infrastrasture including schools & hospitals. 
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=11" class="col-sm-3">
+			<a href="focus-area/main.php?id=11" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -330,7 +313,7 @@ function show(id, value) {
 					<b>Water</b><br/>Every home in Delhi has access to clean piped water. Remove dependence on water tankers. Develop Delhi's water resources & implement ideas like rainwater harvesting
 				</div>
 			</div>
-			<a href="focus-area/main.html?id=12" class="col-sm-3">
+			<a href="focus-area/main.php?id=12" class="col-sm-3">
 				<div class="discovermore">
 					DISCOVER MORE  <img src="files/discovermore.png">
 				</div>
@@ -344,11 +327,8 @@ function show(id, value) {
 	<div id="schedule" style="padding-left: 10vw;padding-right: 10vw;padding-bottom: 50vh; background-color: rgba(255,255,255, 1);">
 		<h1 class="section-Title aboutus-title"><span>Schedule</span></h1>
 		<div class="aboutText">
-			<h2><p>Let's make Delhi a world class city in 5 years. Domain experts & citizens would be engaged to build realistic & practical plan.</p>
-				<p>At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments, 
-				social organizations, businesses and civil society. Other experts & citizens are also encouraged to apply with their proposals.</p>
-				<p>These inputs will be reviewed & subsequently detailed schedule for seminars & round table meetings will be published.</p>
-			</h2>
+			<p><h2>Domain experts & citizens will participate to build realistic & practical plan. At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments, social organizations, businesses and civil society to engage. Experts are also encouraged to apply with their proposals.</p>
+			<p> Similary, citizens are also invited to send proposals for review. These inputs will be reviewed & subsequently detailed schedule for seminars, round table meetings & conferences will be published.</h2></p>
 		</div>
 	</div>
 
@@ -359,16 +339,15 @@ function show(id, value) {
 			<h1 class="section-title">Send us a Message</h1><div style="clear:both; width:100%; height:30px"></div>
 			<div class="percent-one-third" style="margin-left:5vw;margin-right:20vw;">
 				<ul class="contact-info" style="color:white !important;">
-					<li><h2><span class="col-md-12">Aam Aadmi Party Delhi Dialogue Team</span></h2></li><br/>
-					<li><h3><span class="col-md-3"><b>Email : </b></span><span class="col-md-9">newdelhidialogue@gmail.com</span></h3></li>
-					<li><h3><span class="col-md-3"><b>Phone : </b></span><span class="col-md-9">+91 964 332 7265</span></h3></li>
-					<li><h3><span class="col-md-3"><b>Twitter # : </b></span><span class="col-md-9">twitter.com/DelhiDialogue</span></h3></li>
+					<li><h2><span class="col-md-12">Aam Aadmi Party</span></h2></li><br/>
+					<li><h3><span class="col-md-3">Address: </span><span class="col-md-7"><b>A-119, First Floor,<br />Kaushambi, Ghaziabad,<br />Uttar Pradesh - 201010</b></span></h3></li>
+					<li><h3><span class="col-md-3">Phone: </span><span class="col-md-9"><b>+91-9643327265</b></span></h3></li>
 					<div style="clear:both; width:100%; height:10px"></div>
 					<li><span class="col-md-offset-2 col-md-2"><a href="mailto: newdelhidialogue@gmail.com"><img src="files/email.png" height="30" width="30"></a></span><span class="col-md-2"><a href="http://facebook.com/pages/Delhi-Dialogue/576718279124066 "><img src="files/facebook.gif"></a></span><span class="col-md-2"><a href="http://www.twitter.com/DelhiDialogue "><img src="files/twitter.png"></a></span></h3></li>
 				</ul>
 			</div>
-			<div class="percent-one-third" style="padding-top:30px">
-				<form method="post">
+					<div class="percent-one-third" style="padding-top:30px">
+						<form method="post">
 					<div>
 						<span class="name">
 							<input name="your-name" size="40" aria-required="true" aria-invalid="false" placeholder="Name" type="text">
@@ -385,13 +364,17 @@ function show(id, value) {
 						</textarea>
 					</span>
 
-					<input value="Send" class="button black" type="submit">
-						<img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader">
-				</form>
-			</div>
+							<input value="Send" class="button black" type="submit" name="submit">
+                            <img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader"><p></p>
+						</form>
+                        <h3><?php include "secure_email_code.php"?></h3>
+
+					</div>
 			<div style="clear:both; width:100%; height:35px"></div>
-		</div>
-	</div>
+				</div>
+			</div>
+		</section>
+	</div><!--end wrapper-->
 
 
 
