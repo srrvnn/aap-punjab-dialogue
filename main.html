@@ -26,12 +26,26 @@
 
 ready = 0;
 $(document).ready(function() {
+
 	ready =1;
 	$('a').click(function(){
-		  $('html, body').animate({
+		var parent = $(this).parent();
+		
+		if(parent.hasClass( "headnavs" )) {
+			// A link in navigation header is clicked
+			parent.siblings().each(function(index, field) {
+				// mark all other header elements/links as inactive
+				$(field).removeClass("current");
+			});
+			// Mark this link as active
+			parent.addClass("current");
+			
+			// Scroll to the right page
+			$('html, body').animate({
 		      scrollTop: $( $.attr(this, 'href') ).offset().top
-		  }, 1000);
-		  return false;
+			}, 1000);
+			return false;
+		}
 	});
 	onReady()
 });
@@ -65,6 +79,7 @@ function show(id, value) {
 		<div id="spinner" style="background-image:url('files/icon.ico');">
 		</div>
 	</div>
+	
 	<header id="header">
 		<a class="original-logo" href="#hello" style="display:inline; padding:30px 30px 30px 30px;"><img style="width: auto; height: 13vh;" src="files/DDLogo2.jpg" alt="AAP Logo"></a>
 		<div style="display:inline">

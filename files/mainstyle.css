@@ -15,8 +15,17 @@ header {
 	color:black;
 	transition: all 0.2s linear 0s;
 }
-.headnavs > a:hover{
+
+li.headnavs.current > a > span{
 	color:orange !important;
+	border-bottom: 1px solid #FE7E17;
+	padding-bottom: 2px;
+}
+
+.headnavs > a:hover  > span{
+	padding-bottom: 2px;
+	border-bottom: 1px solid black;
+	
 }
 
 .visiontext
@@ -165,7 +174,6 @@ background-color: #3ed5f0;
 	font-weight:400;
 	font-size:18px;
 	font-stretch:ultra-condensed;
-	border-radius:2em;
 }
 
 .discovermore:hover{
@@ -239,7 +247,14 @@ ul#mainnav > li {
 
 #header {   }
 
-html body{font-family:Open Sans;font-weight:300;font-style:normal;font-size:15px;line-height:24px;color:#686868;}html ul#mainnav li a{font-family:Open Sans;font-weight:700;font-style:normal;font-size:14px;line-height:25px;color:#404040;}html h1{font-family:Open Sans;font-weight:300;font-style:normal;font-size:28px;line-height:36px;color:#444444;}html h2{font-family:Open Sans;font-weight:300;font-style:normal;font-size:24px;line-height:32px;color:#444444;}html h3{font-family:Open Sans;font-weight:300;font-style:normal;font-size:18px;line-height:24px;color:#444444;}html h4{font-family:Open Sans;font-weight:300;font-style:normal;font-size:16px;line-height:22px;color:#444444;}html h5{font-family:Open Sans;font-weight:300;font-style:normal;font-size:14px;line-height:20px;color:#444444;}html h6{font-family:Open Sans;font-weight:300;font-style:normal;font-size:13px;line-height:20px;color:#444444;}
+html body{font-weight:300;font-style:normal;font-size:15px;line-height:24px;color:#686868;}
+html ul#mainnav li a{font-weight:700;font-style:normal;font-size:14px;line-height:25px;color:#404040;}
+html h1{font-weight:300;font-style:normal;font-size:28px;line-height:36px;color:#444444;}
+html h2{font-weight:300;font-style:normal;font-size:24px;line-height:32px;color:#444444;}
+html h3{font-weight:300;font-style:normal;font-size:18px;line-height:24px;color:#444444;}
+html h4{font-weight:300;font-style:normal;font-size:16px;line-height:22px;color:#444444;}
+html h5{font-weight:300;font-style:normal;font-size:14px;line-height:20px;color:#444444;}
+html h6{font-weight:300;font-style:normal;font-size:13px;line-height:20px;color:#444444;}
 
 
 .tp-loader.spinner4 {
