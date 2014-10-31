@@ -79,7 +79,10 @@
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
 
 	<!-- preloader-->
-	<div style="display: block;" id="qLoverlay" onLoad='qLoverlayonLoad()'><div id="spinner" style="background-image:url('files/icon.ico');"></div></div>
+	<div style="display: block;" id="qLoverlay">
+		<div id="spinner" style="background-image:url('files/icon.ico');">
+		</div>
+	</div>
 	<header style="padding-top: 10px; padding-bottom: 25px; background: none repeat scroll 0% 0% rgb(255, 255, 255); box-shadow: none;" id="header" class="show-original-logo solid-header">
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
@@ -460,20 +463,15 @@
 		</section>
 	</div><!--end wrapper-->
 
-
-
-
 <link rel="stylesheet" href="files/mainstyle.css" type="text/css" media="all">
 <link rel="stylesheet" id="contact-form-7-css" href="files/styles.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-demo-css" href="files/template-changer.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-delicious-font-css" href="files/css.css" type="text/css" media="all">
-<link rel="stylesheet" id="dt-css-styles-css" href="files/css-styles.css" type="text/css" media="all">
+
 <link rel="stylesheet" id="dt-color-scheme-css" href="files/orange.css" type="text/css" media="all">
 <div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="files/loader.js"></script>
-<script type="text/javascript" src="files/jquery_010.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -482,26 +480,53 @@
 var dt_loader = {"bcolor":""};
 /* ]]> */
 </script>
-<script type="text/javascript" src="files/custom-loader.js"></script>
 <script type="text/javascript">
 /* <![CDATA[ */
 var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default_color":"#ffffff","logo_width":"100","logo_height":"35","init_pt":"55","init_pb":"25","scroll_pt":"15","scroll_pb":"15","scrolling_effect":"1"};
 /* ]]> */
-$(document).ready(function(){
-	// Create scroll effect when clicked on local links
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
 
-	    var target = this.hash;
-	    $target = $(target);
+ready = 0;
+$(document).ready(function() {
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
+	ready =1;
+	$('a').click(function(){
+		var parent = $(this).parent();
+		
+		if(parent.hasClass( "headnavs" )) {
+			// A link in navigation header is clicked
+			parent.siblings().each(function(index, field) {
+				// mark all other header elements/links as inactive
+				$(field).removeClass("current");
+			});
+			// Mark this link as active
+			parent.addClass("current");
+		}
+		// Scroll to the right page
+		$('html, body').animate({
+	      scrollTop: $( $.attr(this, 'href') ).offset().top
+		}, 1000);
+		return false;
 	});
+	onReady()
 });
+
+qLoverlayonLoad = function() {
+	document.getElementById('qLoverlay').innerHTML('<div id="spinner"></div>');
+};
+
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 500);
+    function checkReady() {
+        if (ready) {
+            window.clearInterval(intervalID);
+    				show('qLoverlay', false);
+	    }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
 </script>
 
 </body>
