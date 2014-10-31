@@ -70,7 +70,6 @@
 
 		
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" id="dt-main-css" href="css/main.css" type="text/css" media="all">
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -166,9 +165,12 @@
 					<div class="wpb_wrapper">
 						<h1 class="section-title">ABOUT US</h1>
 						<div class="aboutText">
-							<p><h2>"Delhi Dialogue: Vision 2020"</h2> An initiative to conduct a comprehensive study of policies for Delhi. This will be used to create a concrete, feasible and long-term roadmap and vision for Delhi.</p>
-							<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments,  organizations, businesses and civil society to engage with us on a 13-point agenda. The engagement would happen in the form of round table conferences.</p>
-							<p>The major areas of discussion and policy research will center around:</p>
+							<p><h2>"Delhi Dialogue: Vision 2020"</h2> 
+							<p>Vision 2020 is to make Delhi a world class city in 5 years. Delhi Dialogue is an initiative to build a realistic and practical plan 
+							to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts 
+							from various fields to build plans for different focus areas.</p>
+							<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments, organizations, businesses and civil society 
+							to engage in this initiative. The engagement would happen in the form of round table conferences.</p>
 							<ul id="aboutTopicList">
 
 <li>	Jobs and Employment		</li>
@@ -403,8 +405,11 @@
 					<div class="wpb_wrapper">
 						<h1 class="section-title">SCHEDULE</h1>
 						<div class="aboutText">
-							<p><h2>Domain experts & citizens will participate to build realistic & practical plan. At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments, social organizations, businesses and civil society to engage. Experts are also encouraged to apply with their proposals.</p>
-							<p> Similary, citizens are also invited to send proposals for review. These inputs will be reviewed & subsequently detailed schedule for seminars, round table meetings & conferences will be published.</h2></p>
+						<h2><p>Let's make Delhi a world class city in 5 years. Domain experts & citizens would be engaged to build realistic & practical plan.</p>
+							<p>At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments, 
+							social organizations, businesses and civil society. Other experts & citizens are also encouraged to apply with their proposals.</p>
+							<p>These inputs will be reviewed & subsequently detailed schedule for seminars & round table meetings will be published.</p>
+						</h2>
 						</div>
 					</div>
 				</div>
@@ -430,9 +435,10 @@
 					<div class="percent-one-third" style="margin-left:5vw;margin-right:20vw;">
 
 						<ul class="contact-info" style="color:white !important;">
-							<li><h2><span class="col-md-12">Aam Aadmi Party</span></h2></li><br/>
-							<li><h3><span class="col-md-3">Address: </span><span class="col-md-7"><b>A-119, First Floor,<br />Kaushambi, Ghaziabad,<br />Uttar Pradesh - 201010</b></span></h3></li>
-							<li><h3><span class="col-md-3">Phone: </span><span class="col-md-9"><b>+91-9643327265</b></span></h3></li>
+							<li><h2><span class="col-md-12">Aam Aadmi Party Delhi Dialogue Team</span></h2></li><br/>
+							<li><h3><span class="col-md-3"><b>Email : </b></span><span class="col-md-9">newdelhidialogue@gmail.com</span></h3></li>
+							<li><h3><span class="col-md-3"><b>Phone : </b></span><span class="col-md-9">+91 964 332 7265</span></h3></li>
+							<li><h3><span class="col-md-3"><b>Twitter # : </b></span><span class="col-md-9">twitter.com/DelhiDialogue</span></h3></li>
 							<div style="clear:both; width:100%; height:10px"></div>
 							<li><span class="col-md-offset-2 col-md-2"><a href="mailto: newdelhidialogue@gmail.com"><img src="files/email.png" height="30" width="30"></a></span><span class="col-md-2"><a href="http://facebook.com/pages/Delhi-Dialogue/576718279124066 "><img src="files/facebook.gif"></a></span><span class="col-md-2"><a href="http://www.twitter.com/DelhiDialogue "><img src="files/twitter.png"></a></span></h3></li>
 						</ul>
@@ -490,16 +496,19 @@ $(document).ready(function() {
 
 	ready =1;
 	$('a').click(function(){
-		var parent = $(this).parent();
-		
-		if(parent.hasClass( "headnavs" )) {
+	
+		if($(this).hasClass( "headnavs" )) {
 			// A link in navigation header is clicked
+			var parent = $(this).parent();
 			parent.siblings().each(function(index, field) {
+				// Get each header link
+				var aLink = $(field).children( ".headnavs" );
 				// mark all other header elements/links as inactive
-				$(field).removeClass("current");
+				aLink.removeClass("current");
 			});
+			var aLink = parent.children( ".headnavs" );
 			// Mark this link as active
-			parent.addClass("current");
+			aLink.addClass("current");
 		}
 		// Scroll to the right page
 		$('html, body').animate({
@@ -509,6 +518,7 @@ $(document).ready(function() {
 	});
 	onReady()
 });
+
 
 qLoverlayonLoad = function() {
 	document.getElementById('qLoverlay').innerHTML('<div id="spinner"></div>');
