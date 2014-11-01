@@ -184,7 +184,9 @@ html .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon, html .wpb_
 }
 
 
-html body{font-family:Open Sans;font-weight:300;font-style:normal;font-size:15px;line-height:24px;color:#686868;}html ul#mainnav li a{font-family:Open Sans;font-weight:700;font-style:normal;font-size:14px;line-height:25px;color:#404040;}html h1{font-family:Open Sans;font-weight:300;font-style:normal;font-size:28px;line-height:36px;color:#444444;}html h2{font-family:Open Sans;font-weight:300;font-style:normal;font-size:24px;line-height:32px;color:#444444;}html h3{font-family:Open Sans;font-weight:300;font-style:normal;font-size:18px;line-height:24px;color:#444444;}html h4{font-family:Open Sans;font-weight:300;font-style:normal;font-size:16px;line-height:22px;color:#444444;}html h5{font-family:Open Sans;font-weight:300;font-style:normal;font-size:14px;line-height:20px;color:#444444;}html h6{font-family:Open Sans;font-weight:300;font-style:normal;font-size:13px;line-height:20px;color:#444444;}
+html body{font-family:Open Sans;font-weight:400;font-style:normal;font-size:15px;line-height:24px;color:#686868;}
+html ul#mainnav li a{font-family:Open Sans;font-weight:700;font-style:normal;font-size:14px;line-height:25px;color:#404040;}
+html h1{font-family:Open Sans;font-weight:300;font-style:normal;font-size:28px;line-height:36px;color:#444444;}html h2{font-family:Open Sans;font-weight:300;font-style:normal;font-size:24px;line-height:32px;color:#444444;}html h3{font-family:Open Sans;font-weight:300;font-style:normal;font-size:18px;line-height:24px;color:#444444;}html h4{font-family:Open Sans;font-weight:300;font-style:normal;font-size:16px;line-height:22px;color:#444444;}html h5{font-family:Open Sans;font-weight:300;font-style:normal;font-size:14px;line-height:20px;color:#444444;}html h6{font-family:Open Sans;font-weight:300;font-style:normal;font-size:13px;line-height:20px;color:#444444;}
 
 .tp-caption.medium_grey {
 position:absolute;
@@ -861,7 +863,7 @@ color:#ffa902;
 .btn-blue:focus,
 .btn-blue:active,
 .btn-blue.active {
-  background-color: orange;
+  background-color: #f78d1e;
   border-color: #1a8cbd;
 }
 .btn-blue.disabled:hover,
