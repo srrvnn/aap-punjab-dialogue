@@ -84,12 +84,13 @@
 		<div id="spinner" style="background-image:url('files/icon.ico');">
 		</div>
 	</div>
-	<header style="padding-top: 10px; padding-bottom: 25px; background: none repeat scroll 0% 0% rgb(255, 255, 255); box-shadow: none;" id="header" class="show-original-logo solid-header">
+	<header id="header" class="show-original-logo solid-header scrolled-header" 
+	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
-					<a class="original-logo" href="#home"><img style="width: auto; height: 70px;" src="images/dd-logo.jpg" alt="AAP Logo"></a>
-					<a class="white-logo" href="#home"><img style="width: auto; height: 70px;" src="files/logo-white.png" alt="Patti"></a>
+					<a class="original-logo" href="#home"><img style="width: auto; height: 50px;" src="images/dd-logo.jpg" alt="AAP Logo"></a>
+					<a class="white-logo" href="#home"><img style="width: auto; height: 50px;" src="files/logo-white.png" alt="Patti"></a>
 				</div>
 			</div><!--end one-fourth-->
 
@@ -110,8 +111,8 @@
 		</div><!--end centered-wrapper-->
 	</header>		
 
-	<div id="wrapper">	
-		<div id="home"></div><div style="height: 116px;" class="menu-fixer"></div>
+	<div id="wrapper">
+		<div id="home"></div><div style="height: 70px;" class="menu-fixer"></div>
 		<section>
 			<img class="defaultimg" src="images/main.jpg" style="height:100vh;width:100vw"></img>
 			<div  class="visiontext">
@@ -402,7 +403,7 @@
 			</div>
 
 			<div id="schedule" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
-				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 100px;padding-bottom: 50vh; background-color: rgba(255,255,255, 1);">
+				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 25vh;padding-bottom: 50vh; background-color: rgba(255,255,255, 1);">
 					<div class="wpb_wrapper">
 						<h1 class="section-title">SCHEDULE</h1>
 						<div class="aboutText">
@@ -415,22 +416,8 @@
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-			<div id="contact" style="background-image: url(images/aap-bg.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;margin-top: 50px;">
+			<div id="contact" style="margin-bottom: 70px;"></div>
+			<div style="background-image: url(images/aap-bg.jpg);background-repeat: no-repeat; margin-bottom: 50vh;background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
 				<div class="darker-overlay" style="padding-top: 50px;padding-bottom: 0px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Send us a Message</h1><div style="clear:both; width:100%; height:30px"></div>
 					<div class="percent-one-third" style="margin-left:5vw;margin-right:20vw;">
