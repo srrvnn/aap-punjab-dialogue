@@ -151,7 +151,7 @@
 								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox4" name = "SanitationandSolidWasteMgmt">Sanitation and Solid Waste Mgmt</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox5"  name = "SocialWelfareandSocialJustice>Social Welfare and Social Justice</label>
+								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox5"  name = "SocialWelfareandSocialJustice">Social Welfare and Social Justice</label>
 								</div>
 								<div class="checkbox">
 								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox6"  name = "Transportation">Transportation</label>

@@ -851,13 +851,23 @@ text-shadow:none;
 .tp-caption a:hover {
 color:#ffa902;
 }
+.round {
+	border-radius: 1.5em;
+}
+#contact-form .form-actions button {
+	float:right;
+	margin-right: 15px;
+}
+#contact-form .control-group  label {
+	font-family: 'Open Sans';
+}
+
 .btn-blue {
 	background-color: #29AAE1;
 	border-color: #29AAE1;
 	color:white;
-	border-radius: 1.5em;
 	border: 0;
-	font-family: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans';
 }
 .btn-blue:hover,
 .btn-blue:focus,
@@ -880,4 +890,20 @@ fieldset[disabled] .btn-blue:active,
 fieldset[disabled] .btn-blue.active {
   background-color: #29AAE1;
   border-color: #29AAE1;
+}
+
+label.valid {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  text-indent: -9999px;
+  font-family: 'Open Sans';
+}
+label.error {
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
 }

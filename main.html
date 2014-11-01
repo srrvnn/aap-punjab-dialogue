@@ -75,6 +75,7 @@
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
@@ -154,8 +155,8 @@
 								<p style="font-family: margin: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 16px">
 									Our vision is to make Delhi world class city in 5 years. Delhi Dialogue is an initiative to build realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety etc have been identified. Experts will be involved through seminars & conferences (including researchers, social organizations, bureacrats etc).Citizens are also encouraged to participate.
 								</p>
-								<a href="#topics"><button style="float: left; margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
-									<a href="#schedule"><button style="float: left; margin-top: 10px;" type="button" class="btn-lg btn-blue"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Schedule</button></a>
+								<a href="#topics"><button style="float: left; margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
+									<a href="#schedule"><button style="float: left; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Schedule</button></a>
 							</div>
 						</div> 
 						
@@ -417,47 +418,75 @@
 				</div>
 			</div>
 			<div id="contact" style="margin-bottom: 70px;"></div>
-			<div style="background-image: url(images/aap-bg.jpg);background-repeat: no-repeat; margin-bottom: 50vh;background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
+			<div style="background-image: url(images/aap-bg.jpg);background-repeat: no-repeat;background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
 				<div class="darker-overlay" style="padding-top: 50px;padding-bottom: 0px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Send us a Message</h1><div style="clear:both; width:100%; height:30px"></div>
-					<div class="percent-one-third" style="margin-left:5vw;margin-right:20vw;">
+<div class="col-sm-12">
+						<div class="col-sm-offset-1 col-sm-5">
 
-						<ul class="contact-info" style="color:white !important;">
-							<li><h2><span class="col-md-12">Aam Aadmi Party Delhi Dialogue Team</span></h2></li><br/>
-							<li><h3><span class="col-md-3"><b>Email : </b></span><span class="col-md-9">newdelhidialogue@gmail.com</span></h3></li>
-							<li><h3><span class="col-md-3"><b>Phone : </b></span><span class="col-md-9">+91 964 332 7265</span></h3></li>
-							<li><h3><span class="col-md-3"><b>Twitter # : </b></span><span class="col-md-9">twitter.com/DelhiDialogue</span></h3></li>
-							<div style="clear:both; width:100%; height:10px"></div>
-							<li><span class="col-md-offset-2 col-md-2"><a href="mailto: newdelhidialogue@gmail.com"><img src="files/email.png" height="30" width="30"></a></span><span class="col-md-2"><a href="http://facebook.com/pages/Delhi-Dialogue/576718279124066 "><img src="files/facebook.gif"></a></span><span class="col-md-2"><a href="http://www.twitter.com/DelhiDialogue "><img src="files/twitter.png"></a></span></h3></li>
-						</ul>
+							<ul class="contact-info" style="color:white !important;">
+								<li><h2><span>Aam Aadmi Party Delhi Dialogue Team</span></h2></li>
+								<li><h3><span class="glyphicon glyphicon-envelope"></span> newdelhidialogue@gmail.com</h3></li>
+								<li><h3><span class="glyphicon glyphicon-earphone"></span> +91 964 332 7265</h3></li>
+								<li><h3><a href="http://www.twitter.com/DelhiDialogue "><img height="24px" src="files/twitter.png">twitter.com/DelhiDialogue</a></h3></li>
+								<div style="clear:both; width:100%; height:10px"></div> 	
+							</ul>
 
-					</div>
+						</div>
 
-
-
-					<div class="percent-one-third" style="padding-top:30px">
-						<form action="/patti/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-							<div class="percent-one-half"> <br>
-								<span class="wpcf7-form-control-wrap your-name">
-									<input name="your-name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" type="text">
-								</span><br>
-							</div><br>
-							<div class="percent-one-half column-last"> <br>
-								<span class="wpcf7-form-control-wrap your-email"><input name="your-email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" type="email"></span><br>
-							</div><br>
-
-							<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span><br>
-
-							<input value="Send" class="wpcf7-form-control wpcf7-submit button black" type="submit"><img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader"><p></p>
+						<div class="col-offset-sm-1 col-sm-5" style="padding-top:30px">
+						<form action="" id="contact-form" class="form-horizontal">
+							<fieldset>
+								<div class="control-group col-sm-6">
+								  <div class="controls">
+									<input type="text" class="input-xlarge" placeholder="Name" name="name" id="name">
+								  </div>
+								</div>
+								<div class="control-group col-sm-6">
+								  <div class="controls">
+									<input type="text" class="input-xlarge" placeholder="Email" name="email" id="email">
+								  </div>
+								</div>
+								<div class="control-group col-sm-12">
+								  <div class="controls">
+									<textarea class="input-xlarge" name="message" id="message" placeholder="Message" rows="3"></textarea>
+								  </div>
+								</div>
+								<div class="form-actions">
+								  <button type="submit" class="btn btn-lg btn-blue">Send</button>
+								  <button type="reset" class="btn btn-lg btn-blue">Clear</button>
+								  <img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader"><p></p>
+								</div>
+							  </fieldset>
 						</form>
 						<h3><?php include "secure_email_code.php"?></h3>
+						</div>
 					</div>
-<div style="clear:both; width:100%; height:85px"></div>
+					<div style="clear:both; width:100%; height:85px"></div>
 				</div>
 			</div>
 		</section>
 	</div><!--end wrapper-->
+<footer id="footer">
+		<div id="bottomfooter">		
+			<div class="centered-wrapper">	
+				<div class="percent-two-third">
+					<p>Copyright 2014 - Aam Aadmi Party.All Rights Reserved</p>
+				</div><!--end percent-two-third-->
 
+				<div class="percent-one-third column-last">
+					<ul id="social">
+						<li><a href="https://www.facebook.com/AamAadmiParty" title="facebook" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+						</li><li><a href="https://twitter.com/DelhiDialogue" title="twitter" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>					
+					</ul>				
+					
+				</div><!--end percent-one-third-->
+			</div><!--end centered-wrapper-->				
+		</div><!--end bottomfooter-->
+		
+		<a href="#" class="totop"><i class="fa fa-angle-double-up"></i></a>
+
+	</footer>
 <link rel="stylesheet" href="files/mainstyle.css" type="text/css" media="all">
 <link rel="stylesheet" id="contact-form-7-css" href="files/styles.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-demo-css" href="files/template-changer.css" type="text/css" media="all">
@@ -467,9 +496,11 @@
 <div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div>
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 <script type="text/javascript">
 /* <![CDATA[ */
 var dt_loader = {"bcolor":""};
@@ -505,13 +536,46 @@ $(document).ready(function() {
 		}, 1000);
 		return false;
 	});
-	onReady()
+	onReady();
+	validateContactUsForm();
 });
 
 
 qLoverlayonLoad = function() {
 	document.getElementById('qLoverlay').innerHTML('<div id="spinner"></div>');
 };
+
+function validateContactUsForm() {
+	$('#contact-form').validate(
+	 {
+	  rules: {
+		name: {
+		  minlength: 2,
+		  required: true
+		},
+		email: {
+		  required: true,
+		  email: true
+		},
+		message: {
+		  minlength: 10,
+		  maxlength: 1000,
+		  required: true
+		}
+	  },
+	  highlight: function(element) {
+		$(element).closest('.control-group').removeClass('success').addClass('error');
+	  },
+	  success: function(element) {
+		element
+		.text('OK!').addClass('valid')
+		.closest('.control-group').removeClass('error').addClass('success');
+	  },
+	  submitHandler: function(form) {
+		$(form).ajaxSubmit();
+	  }
+	 });
+}
 
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 500);
