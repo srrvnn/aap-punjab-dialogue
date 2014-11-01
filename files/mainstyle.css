@@ -1,3 +1,7 @@
+		.vertical-align {
+			display: flex;
+			align-items: center;
+		}
 		.center
 		{
 			margin-left: auto;
@@ -6,7 +10,6 @@
 		.issue{
 			padding-top:15px;
 			padding-bottom:15px;
-			overflow:auto;
 			border-bottom:1px solid lightgrey;
 		}
 		.meeting{
@@ -19,6 +22,11 @@
 		{
 			border-right:1px solid lightgrey;
 			overflow:auto;
+		}
+		.issueSummary > img
+		{
+			margin-right:15px;
+			float : left;
 		} 
 
 		.visiontext
@@ -130,7 +138,6 @@ a.headnavs.current > span{
 
 .discovermore{
 	background-color:#00ABEC;
-	margin-top:48px;
 	width:201px;
 	height:48px;
 }
