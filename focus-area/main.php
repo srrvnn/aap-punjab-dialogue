@@ -11,7 +11,7 @@
 	<link rel="stylesheet" id="options-google-fonts" href="../files/css_002.css" type="text/css" media="all">		
 
 	<!-- Page content style -->	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" id="dt-issue-css" href="../css/focus-area.css" type="text/css" media="all">
 
 <body>
@@ -198,7 +198,7 @@
 	<script type="text/javascript" src="../js/focus-area.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 	<script>
 		function initialze(focusAreaId) {
