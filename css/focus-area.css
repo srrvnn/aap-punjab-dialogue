@@ -22,7 +22,9 @@ body {
 	background-color: #ececec;
 	width: auto;
 }
-
+footer {
+	padding: 0 !important;
+}
 .img-center {margin:0 auto;}
 
 .lighter-overlay {
@@ -37,10 +39,11 @@ body {
 .main-content #focusAreaSection {
 	padding: 30px;
 	background-color: #fff;
-	font-family: Domine, museo-slab, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-family: 'Open Sans';
 	line-height: 24px;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
+	color: black;
 }
 
 
@@ -139,4 +142,12 @@ button.dropdown-toggle,.dropdown-menu {
 .button-group a{
 	margin-left: 2em;
 	margin-top: 2em;
+}
+h1.section-title:after {
+	border-bottom: orange 1px solid;
+	width: 220px;
+}
+
+.vertical-align {
+	display: flex !importtant;
 }

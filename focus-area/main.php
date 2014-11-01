@@ -53,15 +53,15 @@
 						<div class="vc_span12 wpb_column column_container">
 							<div class="main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
 							<div class="main-content col-sm-12">
-								<form method="post" class="form form-inline" role="form">
+								<form method="post" class="form form-inline vertical-align" role="form">
                                     <div class="inline-form-group form-group">
-                                    <input class="form-control"  name="vzip" id="nameInput" placeholder="Enter Name"/>
-				    <input class="form-control" name="vemail" id="emailInput"  placeholder="Enter Email"/>
-                                    
-                                    <input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
+										<input class="form-control"  name="vzip" id="nameInput" placeholder="Enter Name"/>
+										<input class="form-control" name="vemail" id="emailInput"  placeholder="Enter Email"/>
+										<input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
                                     </div>
                                     <input type="submit" class="blue-fixed-btn button"  name="submit" id="send" value="Get Update"/>
                                 </form>
+								<div class="message" style="display: none"><span></span></div>
                                 <h3><?php include "secure_email_code2.php"?></h3>
 								<div id="focusAreaSection" class="col-sm-12">
 								</div>
@@ -78,7 +78,7 @@
 		</section>
 
 		<footer class="col-sm-12">
-			<div id="connect" style="background-image: url(../files/aapuday.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
+			<div id="connect" style="background-image: url(../images/aap-bg.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
 				<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Register or Submit a Proposal</h1><div style="clear:both; width:100%; height:60px"></div>
 					<div class="container">
@@ -242,9 +242,11 @@
 			initialze(pageId);
 			
 			$( "#registerBtn" ).click(function() {
+				goToRegistrationPage();
 				$("#seminarRadioBtn").prop("checked", true);
 			});
 			$( "#proposalBtn" ).click(function() {
+				goToRegistrationPage();
 				$("#proposalRadioBtn").prop("checked", true);
 			});
 			$( "#focusAreaCheckbox0" ).click(function() {
@@ -253,6 +255,12 @@
 			});
 		});
 
+		function goToRegistrationPage() {
+			// Scroll to the right page
+			$('html, body').animate({
+				 scrollTop: $( "#connect" ).offset().top
+			}, 1000);
+		}
 	</script>
 </body>
 </html>
