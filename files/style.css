@@ -348,7 +348,7 @@ html .tp-leftarrow.default:hover, html .tp-rightarrow.default:hover {
 	color: #fff;
 }
 
-.darker-overlay input[type=text], .darker-overlay input[type=email], .darker-overlay textarea {
+.darker-overlay input[type=text], .darker-overlay input[type=email], .darker-overlay textarea, .darker-overlay .message {
 	border: 1px solid #fafafa;
 	color: #fafafa; 
 }

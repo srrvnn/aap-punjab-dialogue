@@ -862,6 +862,32 @@ color:#ffa902;
 	font-family: 'Open Sans';
 }
 
+#contact-form .message {
+	border: 3px solid;
+	padding: 10px;
+	margin-top: 20px;
+	font-weight: normal;
+}
+.message.valid {
+	border-color: green !important;
+}
+.message.invalid {
+	border-color: red !important;
+}
+label.success, label.error {
+  padding: 2px 8px;
+  margin-top: 2px;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+}
+label.success {
+  color: green !important;
+}
+label.error {
+  color: red !important;
+}
+
 .btn-blue {
 	background-color: #29AAE1;
 	border-color: #29AAE1;
@@ -892,18 +918,34 @@ fieldset[disabled] .btn-blue.active {
   border-color: #29AAE1;
 }
 
-label.valid {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  text-indent: -9999px;
-  font-family: 'Open Sans';
+.btn-black {
+	background-color: #323232;
+	color:#DDCFCF;
+	border: 0;
+	font-family: 'Open Sans' !important;
+	font-weight: bold !important;
+	text-transform: uppercase;
+	font-size: 16px !important;
 }
-label.error {
-  color: red;
-  padding: 2px 8px;
-  margin-top: 2px;
-  font-family: 'Open Sans';
-  font-weight: normal;
-  font-style: normal;
+.btn-black:hover,
+.btn-black:focus,
+.btn-black:active,
+.btn-black.active {
+	background-color: #FE7E17 !important;
+	border: 0;
+}
+.btn-black.disabled:hover,
+.btn-black.disabled:focus,
+.btn-black.disabled:active,
+.btn-black.disabled.active,
+.btn-black[disabled]:hover,
+.btn-black[disabled]:focus,
+.btn-black[disabled]:active,
+.btn-black[disabled].active,
+fieldset[disabled] .btn-black:hover,
+fieldset[disabled] .btn-black:focus,
+fieldset[disabled] .btn-black:active,
+fieldset[disabled] .btn-black.active {
+  background-color: #A5A5A5;
+  color:#DDCFCF;
 }

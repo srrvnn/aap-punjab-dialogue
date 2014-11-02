@@ -453,12 +453,14 @@
 								  </div>
 								</div>
 								<div class="form-actions">
-								  <button type="submit" class="btn btn-lg btn-blue">Send</button>
-								  <button type="reset" class="btn btn-lg btn-blue">Clear</button>
+								  <button type="submit" class="btn btn-lg btn-black">Send</button>
+								  <button type="reset" class="btn btn-lg btn-black">Clear</button>
 								  <img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader"><p></p>
 								</div>
 							  </fieldset>
+							  <label class="col-sm-12 message" hidden></label>
 						</form>
+						
 						<h3><?php include "secure_email_code.php"?></h3>
 						</div>
 					</div>
@@ -476,7 +478,7 @@
 
 				<div class="percent-one-third column-last">
 					<ul id="social">
-						<li><a href="https://www.facebook.com/AamAadmiParty" title="facebook" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+						<li><a href="https://www.facebook.com/pages/Delhi-Dialogue/576718279124066" title="facebook" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
 						</li><li><a href="https://twitter.com/DelhiDialogue" title="twitter" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>					
 					</ul>				
 					
@@ -537,17 +539,17 @@ $(document).ready(function() {
 		return false;
 	});
 	onReady();
-	validateContactUsForm();
+	initValidation();
 });
-
 
 qLoverlayonLoad = function() {
 	document.getElementById('qLoverlay').innerHTML('<div id="spinner"></div>');
 };
 
-function validateContactUsForm() {
+function initValidation() {
 	$('#contact-form').validate(
 	 {
+	 debug: true, // Do not submit the form
 	  rules: {
 		name: {
 		  minlength: 2,
@@ -563,16 +565,29 @@ function validateContactUsForm() {
 		  required: true
 		}
 	  },
+	  // called when validation failed for each element
 	  highlight: function(element) {
+		// using bootstrap inbuilt classes success and error for auto validation
 		$(element).closest('.control-group').removeClass('success').addClass('error');
+		var messageContainer = $(element.form).find('.message');
+		if(!messageContainer.hasClass('invalid')) {
+			messageContainer.fadeIn();
+			messageContainer.removeClass('valid').addClass('invalid').text("Validation errors occurred. Please confirm the fields and submit it again.");
+		}
+		
 	  },
+	  // called when validation succeeded for each element (once per element)
 	  success: function(element) {
-		element
-		.text('OK!').addClass('valid')
-		.closest('.control-group').removeClass('error').addClass('success');
+		
 	  },
+	  // Called once after validation succeeded for every element
 	  submitHandler: function(form) {
-		$(form).ajaxSubmit();
+		var messageContainer = $(form).find('.message');
+		if(!messageContainer.hasClass('valid')) {
+			messageContainer.fadeIn();
+			messageContainer.removeClass('invalid').addClass('valid').text("Thank you. Your email will be sent after this functionality is fully supported. :)");
+		}
+		//(form).ajaxSubmit();
 	  }
 	 });
 }
