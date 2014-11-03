@@ -82,111 +82,146 @@
 				<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Register or Submit a Proposal</h1><div style="clear:both; width:100%; height:60px"></div>
 					<div class="container">
-						<form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
-							<div class="col-sm-12 inline-radiogroup"> <br>
-								<div class="btn-group">
-									<label class="btn" data-bind="css: { 'active': selectedOption() === 'Option 1' }">
-										<input type="radio" name="options" value ="SubmitProposal" id="proposalRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Submit Proposal'">Submit Proposal
-									</label>
-									<label class="btn" data-bind="css: { 'active': selectedOption() === 'Option 2' }">
-										<input type="radio" name="options" value ="RegisterForSeminar" id="seminarRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Register For Seminar'">Register For Seminar
-									</label>
-								</div>
-							</div><br>
-							<div class="percent-one-half"> <br>
-								<span class="wpcf7-form-control-wrap your-name">
-									<input name="your-name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" type="text">
-								</span><br>
-							</div><br>
-							<div class="percent-one-half column-last"> <br>
-								<span class="wpcf7-form-control-wrap your-email">
-									<input name="your-email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" type="email">
-								</span><br>
-							</div><br>
-							<div class="percent-one-half"> <br>
-								<span class="wpcf7-form-control-wrap your-phone">
-									<input name="your-phone" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone" type="text">
-								</span><br>
-							</div><br>
-							<div class="percent-one-half column-last"> <br>
-								<span class="wpcf7-form-control-wrap">
-									<input name="your-profession" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Profession" type="text">
-								</span><br>
-							</div><br>
-							<div class="percent-one-half"> <br>
-								  <div class="panel panel-default">
-									<div class="panel-body " style="padding: 0">
-										<div class="col-sm-12 btn-group btn-input clearfix" style="padding: 0;">
-											 <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
-											   <span data-bind="orgType">Organization Type</span>&nbsp;<span class="caret"></span>
-											 </button>
-											 <ul class="dropdown-menu">
-											   <li role="presentation"><a role="menuitem" href="#connect">NGO</a></li>
-											   <li role="presentation"><a role="menuitem" href="#connect">RWA</a></li>
-											   <li role="presentation"><a role="menuitem" href="#connect">Researcher</a></li>
-											   <li role="presentation"><a role="menuitem" href="#connect">Others</a></li>
-											 </ul>
-										   </div>
+					<form action="" id="contact-form" class="form-horizontal">
+							<fieldset>
+								<div class="row">
+									<div class="control-group">
+									  <div class="controls inline-radiogroup">
+										<div class="btn-group">
+											<label class="btn" data-bind="css: { 'active': selectedOption() === 'Submit Proposal' }">
+												<input type="radio" name="registrationOptions" value ="SubmitProposal" id="proposalRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Submit Proposal'">Submit Proposal
+											</label>
+											<label class="btn" data-bind="css: { 'active': selectedOption() === 'Register For Seminar' }">
+												<input type="radio" name="registrationOptions" value ="RegisterForSeminar" id="seminarRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Register For Seminar'">Register For Seminar
+											</label>
+										</div>
+									  </div>
 									</div>
-								</div><br>
-							</div><br>
-							<div class="percent-one-half"></div>
-							<div class="percent-one-half">
-								<p style="color: rgba(255, 255, 255, 0.77); font-size: 16px; font-weight: 600;">Select Policy Interest</p><br>
-							</div><br>
-							<div id="focusAreaCheckbox" class="col-sm-12 inline-checkbox">
-								<div class="checkbox">
-								  <label><input type="checkbox" id="focusAreaCheckbox0">All</label>
 								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox1" name="JobsandEmployment">Jobs and Employment</label>
+								<div class="row">
+									<div class="control-group col-sm-6">
+									  <div class="controls">
+										<input type="text" class="input-xlarge" placeholder="Name" name="name" id="name">
+									  </div>
+									</div>
+									<div class="control-group col-sm-6">
+									  <div class="controls">
+										<input type="text" class="input-xlarge" placeholder="Email" name="email" id="email">
+									  </div>
+									</div>
 								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox2" name = "EnterpriseTradeandIndustry">Enterprise: Trade and Industry</label>
+								<div class="row">
+									<div class="control-group col-sm-6">
+									  <div class="controls">
+										<input type="text" class="input-xlarge" placeholder="Phone" name="phone" id="phone">
+									  </div>
+									</div>
+									<div class="control-group col-sm-6">
+									  <div class="controls">
+										<input type="text" class="input-xlarge" placeholder="Profession" name="profession" id="profession">
+									  </div>
+									</div>
 								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox3" name = "WomenRightsSafety">Women Rights (Safety)</label>
+								<div class="row">
+									<div class="control-group col-sm-12">
+									  <div class="controls col-sm-6" style="padding-left:0">
+											<div class="panel panel-default">
+												<div class="panel-body " style="padding: 0">
+												
+													<div class="col-sm-12 btn-group btn-input clearfix" style="padding: 0;">
+														 <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+														 <input type="hidden" placeholder="" name="orgType" id="orgType">
+														   <label data-bind="orgTypeLbl" name="orgTypeLbl" id="orgTypeLbl"></label>&nbsp;<span class="caret"></span>
+														 </button>
+														 <ul class="dropdown-menu">
+														   <li role="presentation"><a role="menuitem" href="#connect">NGO</a></li>
+														   <li role="presentation"><a role="menuitem" href="#connect">RWA</a></li>
+														   <li role="presentation"><a role="menuitem" href="#connect">Researcher</a></li>
+														   <li role="presentation"><a role="menuitem" href="#connect">Others</a></li>
+														 </ul>
+													</div>
+												</div>
+											</div>
+											<div class="container" id="errorContainer"></div>
+									  </div>
+									</div>
 								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox4" name = "SanitationandSolidWasteMgmt">Sanitation and Solid Waste Mgmt</label>
+								<div class="row">
+									<p style="color: rgba(255, 255, 255, 0.77); font-size: 16px; font-weight: 600;">Select Policy Interest</p><br>
 								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox5"  name = "SocialWelfareandSocialJustice">Social Welfare and Social Justice</label>
+								<div class="row">
+									<div id="focusAreaCheckbox" class="control-group col-sm-12">
+										<div class="col-sm-12 controls inline-checkbox">
+											<div class="checkbox">
+											  <label><input type="checkbox" name="focusArea" id="focusAreaCheckbox0">All</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox1" name="focusArea" required>Jobs and Employment</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox2" name = "focusArea">Enterprise: Trade and Industry</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox3" name = "focusArea">Women Rights (Safety)</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox4" name = "focusArea">Sanitation and Solid Waste Mgmt</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox5"  name = "focusArea">Social Welfare and Social Justice</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox6"  name = "focusArea">Transportation</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox7" name = "focusArea">Energy and Electricity</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox8"  name = "focusArea">Education</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox9" name="focusArea">Health</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox10" name="focusArea">Land and Housing</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox11" name="focusArea">Rural Delhi</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox12" name = "focusArea">Water</label>
+											</div>
+										</div>
+										
+									</div>
 								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox6"  name = "Transportation">Transportation</label>
+								<div class="row">
+									<div class="control-group col-sm-12">
+									  <div class="controls">
+										<textarea class="input-xlarge" name="message" id="message" placeholder="Message" rows="3"></textarea>
+									  </div>
+									</div>
 								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox7" name = "EnergyandElectricity">Energy and Electricity</label>
+								<div class="row">
+									<div class="captcha col-sm-8">
+										<div>
+											<label>Word Verification:</label>
+											<input type="text" name="captcha" placeholder="captcha">
+										</div>
+										<img style="max-width:200px; max-height:105px" src="../files/captcha.gif" class="img-responsive" id="captcha" alt="Responsive image">
+									</div>
+									<div class="form-actions col-sm-4">
+									  <button type="submit" class="btn btn-lg btn-black">Send</button>
+									  <button type="reset" class="btn btn-lg btn-black">Clear</button>
+									  <img style="visibility: hidden;" alt="Sending ..." src="../files/ajax-loader.gif" class="ajax-loader"><p></p>
+									</div>
 								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox8"  name = "Education">Education</label>
-								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox9" name="Health">Health</label>
-								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox10" name="LandandHousing">Land and Housing</label>
-								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox11" name="RuralDelhi">Rural Delhi</label>
-								</div>
-								<div class="checkbox">
-								  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox12" name = "Water">Water</label>
-								</div>
-							</div><br>
-							<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span><br>
+							  </fieldset>
+							 <label class="col-sm-12 message" hidden></label>
+						</form>
+						<form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
 							
-							<div class="captcha col-sm-8">
-								<div>
-									<label>Word Verification:</label>
-									<input type="text" name="captcha" placeholder="captcha">
-								</div>
-									<img style="max-width:200px; max-height:105px" src="../files/captcha.gif" class="img-responsive" id="captcha" alt="Responsive image">
-							</div>
-							<div class="col-sm-4" style="text-align:right">
-								<button name="submit" class="blue-fixed-btn button" type="submit">Submit</button>
-							</div>
+							
 							
 						</form>
                         <h3><?php include "secure_email_code3.php"?></h3>
@@ -195,58 +230,45 @@
 			</div>
 		</footer>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="../js/focus-area.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
 
 	<script>
-		function initialze(focusAreaId) {
-			// Assign handlers immediately after making the request,
-			// and remember the jqxhr object for this request
-			var jqxhr = $.getJSON( "../data/issue-details.json", function() {
-			})
-			  .done(function(result) {
-				Dialouge.FocusAreaPage.setContents(result, focusAreaId);
-			  })
-			  .fail(function() {
-				
-			  })
-			  .always(function() {
-			  });
-		}
-
 		 $(document).ready(function(){
+			Dialouge.FocusAreaPage.initOrganizationTypeFields("#orgTypeLbl", "#orgType");
+			Dialouge.FocusAreaPage.initPageContents();
+
+			Dialouge.FocusAreaPage.create("#focusAreaHeader", "#focusAreaSection", ".focus-area-checkbox");
+			var formValidator = Dialouge.FormValidator.validator('#contact-form');	
+			
 			// Dropdown box select
 			$( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 			 
 				var $target = $( event.currentTarget );
-				var dropDownLevelContainer = $target.closest( '.btn-group' ).find( '[data-bind="orgType"]' );
-				// Set text
+				var dropDownLevelContainer = $target.closest( '.btn-group' ).find( '[data-bind="orgTypeLbl"]' );
+				
+				// Set text and toggle opened dropdown
 				dropDownLevelContainer.text( $target.text() ).end()
-				  .children( '.dropdown-toggle' ).dropdown( 'toggle' ); // Toggle opened dropdown
+				  .children( '.dropdown-toggle' ).dropdown( 'toggle' ); // 
+
+				 // Populate hidden element to be used for validation
+				 $("#orgType").val($target.text());
+				 
+				 formValidator.validate();
 			   return false;
+			   
 			});
-
-			Dialouge.FocusAreaPage.create("#focusAreaHeader", "#focusAreaSection", ".focus-area-checkbox");
-
-			var queryString = Dialouge.UrlUtils.getQueryString();
-			var pageId =  queryString["id"];
-			if(pageId) {
-				// Remove section if specified
-				pageId = pageId.replace(/#.*/i, "");
-			}
-			if(!pageId) {
-				pageId = "1"; // default focus issue page Id
-			}
-			initialze(pageId);
 			
 			$( "#registerBtn" ).click(function() {
-				goToRegistrationPage();
+				Dialouge.WindowUtils.goToPage("#connect");
 				$("#seminarRadioBtn").prop("checked", true);
 			});
 			$( "#proposalBtn" ).click(function() {
-				goToRegistrationPage();
+				Dialouge.WindowUtils.goToPage("#connect");
 				$("#proposalRadioBtn").prop("checked", true);
 			});
 			$( "#focusAreaCheckbox0" ).click(function() {
@@ -254,13 +276,6 @@
 				Dialouge.FocusAreaPage.setAllCheckboxStatus(this.checked);
 			});
 		});
-
-		function goToRegistrationPage() {
-			// Scroll to the right page
-			$('html, body').animate({
-				 scrollTop: $( "#connect" ).offset().top
-			}, 1000);
-		}
 	</script>
 </body>
 </html>

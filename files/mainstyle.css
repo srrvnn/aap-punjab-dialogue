@@ -861,7 +861,9 @@ color:#ffa902;
 #contact-form .control-group  label {
 	font-family: 'Open Sans';
 }
-
+#contact-form .control-group > label {
+	display: block;
+}
 #contact-form .message {
 	border: 3px solid;
 	padding: 10px;
