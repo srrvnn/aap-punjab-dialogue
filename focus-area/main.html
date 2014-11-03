@@ -53,15 +53,26 @@
 						<div class="vc_span12 wpb_column column_container">
 							<div class="main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
 							<div class="main-content col-sm-12">
-								<form method="post" class="form form-inline vertical-align" role="form">
-                                    <div class="inline-form-group control-group">
-										<input class="form-control"  name="name" id="nameInput" placeholder="Enter Name"/>
-										<input class="form-control" name="email" id="emailInput"  placeholder="Enter Email"/>
-										<input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
-                                    </div>
-                                    <input type="submit" class="blue-fixed-btn button"  name="submit" id="send" value="Get Update"/>
-                                </form>
-								<div class="message" style="display: none"><span></span></div>
+								 <form id="notification-form" role="form">
+									<div class="form-inline vertical-align row">
+										<div class="form-group inline-form-group">
+										<input name="name" class="form-control" placeholder="Enter Name" id="customerName">
+									  </div>
+									  <div class="form-group inline-form-group">
+										<input name="email" class="form-control" placeholder="Enter Email" id="customerEmail">
+									  </div>
+									  <input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
+									  <input type="submit" class="blue-fixed-btn button"  name="submit" id="send" value="Get Update"/>
+									</div>
+									  <div style="margin-top:20px" class="row">
+										  <ul class="error" style="list-style-type: none;" id="notificationErrorMessage"></ul>
+										  <label class="message" hidden></label>
+									  </div>
+								  
+								</form>
+								
+								
+
                                 <h3><?php include "secure_email_code2.php"?></h3>
 								<div id="focusAreaSection" class="col-sm-12">
 								</div>
@@ -219,11 +230,6 @@
 							  </fieldset>
 							 <label class="col-sm-12 message" hidden></label>
 						</form>
-						<form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
-							
-							
-							
-						</form>
                         <h3><?php include "secure_email_code3.php"?></h3>
 					</div>
 				</div>
@@ -244,7 +250,9 @@
 			focusAreaPage.initPageContents();
 			
 			var registrationFormValidator = Dialouge.FormValidator('#contact-form');
+			var notificationFormValidator = Dialouge.FormValidator('#notification-form', '#notificationErrorMessage');
 			registrationFormValidator.addValidator();
+			notificationFormValidator.addValidator();
 			
 			// Dropdown box select
 			$( document.body ).on( 'click', '.dropdown-menu li', function( event ) {

@@ -45,7 +45,11 @@ footer {
 	font-weight: 500;
 	color: black;
 }
-
+.main-content input {
+	min-width: 250px !important;
+	min-height: 40px !important;
+	margin-right: 40px !important;
+}
 
 .main-header {
 	margin-bottom: .25rem;
@@ -67,6 +71,12 @@ footer {
 	color: rgb(1, 113, 208);
 	font-size: 59px;
 	line-height: 59px;
+}
+#notification-form .message.invalid {
+	color: red;
+}
+#notification-form .message.valid {
+	color: green;
 }
 .blue-fixed-btn {
     min-width: 180px;

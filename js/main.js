@@ -1,21 +1,28 @@
 var Dialouge = function() {
 	
 	// This is not thread safe and not a global/singelton class.
-	FormValidator = function (formId) {
-		var defaultOrgType = "Select Organization Type",
-		formContainer = $(formId),
-		validatorAdded = false;
-		getDefaultOrgType = function() {
+	FormValidator = function (formId, errorLabelId) {
+		var defaultOrgType = "Select Organization Type";
+		var formContainer = $(formId);
+		var errorLabelContainerId = errorLabelId;
+		var errorWrapper;
+		var validatorAdded = false;
+		
+		if(errorLabelContainerId) {
+			errorWrapper = "li";
+		}
+		
+		var getDefaultOrgType = function() {
 			return defaultOrgType;
-		},
-		addValidator = function() {
+		};
+		var addValidator = function() {
 			if(formContainer.length > 0) {
 				initCustomRules();
 				initValidate();
 				validatorAdded = true;
 			}
-		},
-		initCustomRules = function() {
+		};
+		var initCustomRules = function() {
 			$.validator.addMethod("notEqualTo", function (value, element, param) {
 				var target = $( param );
 				if(target.length >0) {
@@ -33,8 +40,8 @@ var Dialouge = function() {
 					return value !== param;
 				}
 			}, "These should be equal");
-		},
-		initValidate = function() {
+		};
+		var initValidate = function() {
 
 			formContainer.validate( {
 			 debug: true, // Do not submit the form
@@ -44,6 +51,8 @@ var Dialouge = function() {
 				var controlContainer = $(element).closest('.control-group');
 				error.appendTo( controlContainer );
 			  },
+			  errorLabelContainer : errorLabelContainerId,
+			  wrapper : errorWrapper,
 			  rules: {
 				registrationOptions: {
 				  required: true
@@ -81,13 +90,19 @@ var Dialouge = function() {
 				}
 			  },
 			  messages: {
+				name : "Please enter your name",
+				email : "Please enter a valid email address",
 				registrationOptions: "Please choose 'Registration For Seminar' or 'Submit Proposal'",
 			  },
 
-			  // called when validation failed for each element
+			  // called when validation failed for any element
 			  highlight: function(element) {
 				// using bootstrap inbuilt classes success and error for auto validation
-				$(element.form).find("label[for=" + element.name + "]").removeClass('success').addClass('error');
+				var highlightedElement = $(element.form).find("label[for=" + element.name + "]");
+				if(highlightedElement.length == 0) {
+					highlightedElement = $(element.form).find("label[for=" + element.id + "]");
+				}
+				highlightedElement.removeClass('error').removeClass('success');
 				
 				// Update common message label
 				var messageContainer = $(element.form).find('.message');
@@ -95,6 +110,24 @@ var Dialouge = function() {
 					messageContainer.fadeIn();
 					messageContainer.removeClass('valid').addClass('invalid').text("Validation errors occurred. Please confirm the fields and submit it again.");
 				}
+				
+			  },
+			  // called when validation succeeded for any element
+			  unhighlight: function(element) {
+				// using bootstrap inbuilt classes success and error for auto validation
+				var unhighlightedElement = $(element.form).find("label[for=" + element.name + "]");
+				if(unhighlightedElement.length == 0) {
+					unhighlightedElement = $(element.form).find("label[for=" + element.id + "]");
+				}
+				unhighlightedElement.remove();
+				
+				var erroredLabels = $(element.form).find("label[class=error]");
+				if(erroredLabels.length == 0) {
+					// Clear common message label
+					var messageContainer = $(element.form).find('.message');
+					messageContainer.fadeOut();
+				}
+				
 				
 			  },
 			  // called when validation succeeded for each element (once per element)
@@ -107,16 +140,19 @@ var Dialouge = function() {
 				if(!messageContainer.hasClass('valid')) {
 					messageContainer.fadeIn();
 					messageContainer.removeClass('invalid').addClass('valid').text("Thank you. Your email will be sent after this functionality is fully supported. :)");
+					messageContainer.fadeOut( 10000, function() {
+						messageContainer.removeClass('valid')
+					});
 				}
 				//(form).ajaxSubmit();
 			  }
 			 });
-		},
-		validate = function() {
+		};
+		var validate = function() {
 			if(validatorAdded) {
 				formContainer.valid();
 			}
-		}
+		};
 		//public members
 		return {
 			getDefaultOrgType : getDefaultOrgType,
