@@ -503,6 +503,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+<script src="./js/main.js"></script>
+
 <script type="text/javascript">
 /* <![CDATA[ */
 var dt_loader = {"bcolor":""};
@@ -539,58 +541,13 @@ $(document).ready(function() {
 		return false;
 	});
 	onReady();
-	initValidation();
+	var contactUsFormValidator = Dialouge.FormValidator('#contact-form');
+	contactUsFormValidator.addValidator();
 });
 
 qLoverlayonLoad = function() {
 	document.getElementById('qLoverlay').innerHTML('<div id="spinner"></div>');
 };
-
-function initValidation() {
-	$('#contact-form').validate(
-	 {
-	 debug: true, // Do not submit the form
-	  rules: {
-		name: {
-		  minlength: 2,
-		  required: true
-		},
-		email: {
-		  required: true,
-		  email: true
-		},
-		message: {
-		  minlength: 10,
-		  maxlength: 1000,
-		  required: true
-		}
-	  },
-	  // called when validation failed for each element
-	  highlight: function(element) {
-		// using bootstrap inbuilt classes success and error for auto validation
-		$(element).closest('.control-group').removeClass('success').addClass('error');
-		var messageContainer = $(element.form).find('.message');
-		if(!messageContainer.hasClass('invalid')) {
-			messageContainer.fadeIn();
-			messageContainer.removeClass('valid').addClass('invalid').text("Validation errors occurred. Please confirm the fields and submit it again.");
-		}
-		
-	  },
-	  // called when validation succeeded for each element (once per element)
-	  success: function(element) {
-		
-	  },
-	  // Called once after validation succeeded for every element
-	  submitHandler: function(form) {
-		var messageContainer = $(form).find('.message');
-		if(!messageContainer.hasClass('valid')) {
-			messageContainer.fadeIn();
-			messageContainer.removeClass('invalid').addClass('valid').text("Thank you. Your email will be sent after this functionality is fully supported. :)");
-		}
-		//(form).ajaxSubmit();
-	  }
-	 });
-}
 
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 500);
