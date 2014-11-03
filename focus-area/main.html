@@ -54,9 +54,9 @@
 							<div class="main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
 							<div class="main-content col-sm-12">
 								<form method="post" class="form form-inline vertical-align" role="form">
-                                    <div class="inline-form-group form-group">
-										<input class="form-control"  name="vzip" id="nameInput" placeholder="Enter Name"/>
-										<input class="form-control" name="vemail" id="emailInput"  placeholder="Enter Email"/>
+                                    <div class="inline-form-group control-group">
+										<input class="form-control"  name="name" id="nameInput" placeholder="Enter Name"/>
+										<input class="form-control" name="email" id="emailInput"  placeholder="Enter Email"/>
 										<input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
                                     </div>
                                     <input type="submit" class="blue-fixed-btn button"  name="submit" id="send" value="Get Update"/>
@@ -239,11 +239,12 @@
 
 	<script>
 		 $(document).ready(function(){
-			Dialouge.FocusAreaPage.initOrganizationTypeFields("#orgTypeLbl", "#orgType");
-			Dialouge.FocusAreaPage.initPageContents();
-
-			Dialouge.FocusAreaPage.create("#focusAreaHeader", "#focusAreaSection", ".focus-area-checkbox");
-			var formValidator = Dialouge.FormValidator.validator('#contact-form');	
+			var focusAreaPage = Dialouge.FocusAreaPage("#focusAreaHeader", "#focusAreaSection", ".focus-area-checkbox");
+			focusAreaPage.initOrganizationTypeFields("#orgTypeLbl", "#orgType");
+			focusAreaPage.initPageContents();
+			
+			var registrationFormValidator = Dialouge.FormValidator('#contact-form');
+			registrationFormValidator.addValidator();
 			
 			// Dropdown box select
 			$( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
@@ -258,7 +259,7 @@
 				 // Populate hidden element to be used for validation
 				 $("#orgType").val($target.text());
 				 
-				 formValidator.validate();
+				 registrationFormValidator.validate();
 			   return false;
 			   
 			});
@@ -273,7 +274,7 @@
 			});
 			$( "#focusAreaCheckbox0" ).click(function() {
 				//select/deselect all checkboxes with class "focus-area-checkbox" 
-				Dialouge.FocusAreaPage.setAllCheckboxStatus(this.checked);
+				focusAreaPage.setAllCheckboxStatus(this.checked);
 			});
 		});
 	</script>
