@@ -435,7 +435,7 @@
 						</div>
 
 						<div class="col-offset-sm-1 col-sm-5" style="padding-top:30px">
-						<form action="" id="contact-form" class="form-horizontal">
+						<form action="contact-us.php" id="contact-form" class="form-horizontal">
 							<fieldset>
 								<div class="control-group col-sm-6">
 								  <div class="controls">
@@ -453,11 +453,12 @@
 								  </div>
 								</div>
 								<div class="form-actions">
-								  <button type="submit" class="btn btn-lg btn-black">Send</button>
+									
+								  <button type="submit" id="contactBtn" class="btn btn-lg btn-black"><span></span>Send</button>
 								  <button type="reset" class="btn btn-lg btn-black">Clear</button>
-								  <img style="visibility: hidden;" alt="Sending ..." src="files/ajax-loader.gif" class="ajax-loader"><p></p>
 								</div>
 							  </fieldset>
+							  	
 							  <label class="col-sm-12 message" hidden></label>
 						</form>
 						
@@ -516,6 +517,9 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 /* ]]> */
 
 ready = 0;
+
+
+	
 $(document).ready(function() {
 
 	ready =1;
@@ -540,9 +544,12 @@ $(document).ready(function() {
 		}, 1000);
 		return false;
 	});
+	
 	onReady();
 	var contactUsFormValidator = Dialouge.FormValidator('#contact-form');
-	contactUsFormValidator.addValidator();
+	
+	// Validate all inputs and call Dialouge.MainPage.contactUsCallBack() if all inputs are valid.
+	contactUsFormValidator.addValidator(Dialouge.MainPage.contactUsCallBack);
 });
 
 qLoverlayonLoad = function() {

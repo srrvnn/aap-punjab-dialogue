@@ -6,6 +6,7 @@ var Dialouge = function() {
 		var formContainer = $(formId);
 		var errorLabelContainerId = errorLabelId;
 		var errorWrapper;
+		var _successCallBack;
 		var validatorAdded = false;
 		
 		if(errorLabelContainerId) {
@@ -15,11 +16,12 @@ var Dialouge = function() {
 		var getDefaultOrgType = function() {
 			return defaultOrgType;
 		};
-		var addValidator = function() {
+		var addValidator = function(successCallBack) {
 			if(formContainer.length > 0) {
 				initCustomRules();
 				initValidate();
 				validatorAdded = true;
+				_successCallBack = successCallBack;
 			}
 		};
 		var initCustomRules = function() {
@@ -44,7 +46,6 @@ var Dialouge = function() {
 		var initValidate = function() {
 
 			formContainer.validate( {
-			 debug: true, // Do not submit the form
 			 ignore : [], // Do not ignore hidden/disable etc elements
 			 errorPlacement: function(error, element) {
 				// Add error label next to control-group class
@@ -137,17 +138,11 @@ var Dialouge = function() {
 			  // Called once after validation succeeded for every element
 			  submitHandler: function(form) {
 				var messageContainer = $(form).find('.message');
-				if(!messageContainer.hasClass('valid')) {
-					messageContainer.fadeIn();
-					messageContainer.removeClass('invalid').addClass('valid').text("Thank you. Your email will be sent after this functionality is fully supported. :)");
-					messageContainer.fadeOut( 10000, function() {
-						messageContainer.removeClass('valid')
-					});
-				}
-				//(form).ajaxSubmit();
+				return _successCallBack(form, messageContainer);
 			  }
 			 });
 		};
+		
 		var validate = function() {
 			if(validatorAdded) {
 				formContainer.valid();
@@ -168,10 +163,48 @@ var Dialouge = function() {
 			$('html, body').animate({
 				 scrollTop: $( pageId ).offset().top
 			}, 1000);
+		},
+		showErrorMessage = function(messageContainer, message, displayPeriod) {
+			if(!messageContainer.hasClass('invalid')) {
+				messageContainer.fadeIn();
+				messageContainer.removeClass('valid').addClass('invalid').text(message);
+				if(displayPeriod > 0) {
+					messageContainer.fadeOut( displayPeriod, function() {
+						messageContainer.removeClass('invalid')
+					});
+				}
+			}
+		},
+		showSuccessMessage = function(messageContainer, message, displayPeriod) {
+			if(!messageContainer.hasClass('valid')) {
+				messageContainer.fadeIn();
+				messageContainer.removeClass('invalid').addClass('valid').text(message);
+				if(displayPeriod > 0) {
+					messageContainer.fadeOut( 10000, function() {
+					messageContainer.removeClass('valid')
+					});
+				}
+			}
+		},
+		startSpinner = function (buttonId) {
+			var spinnerContainer = $(buttonId).children().first();
+			if(!spinnerContainer.hasClass('glyphicon-refresh-animate')) {
+					spinnerContainer.addClass('glyphicon').addClass('glyphicon-refresh').addClass('glyphicon-refresh-animate');
+			}
+		},
+		stopSpinner = function (buttonId) {
+			var spinnerContainer = $(buttonId).children().first();
+			if(spinnerContainer.hasClass('glyphicon-refresh-animate')) {
+					spinnerContainer.removeClass('glyphicon').removeClass('glyphicon-refresh').removeClass('glyphicon-refresh-animate');
+			}
 		};
 		//public members
 		return {
-			goToPage : goToPage
+			goToPage : goToPage,
+			startSpinner : startSpinner,
+			stopSpinner : stopSpinner,
+			showErrorMessage : showErrorMessage,
+			showSuccessMessage : showSuccessMessage
 		};
 	})(),
 	
@@ -205,8 +238,9 @@ var Dialouge = function() {
 			getQueryString : getQueryString
 		};
 	})(),
+
 	// This is not thread safe and not a global/singelton class
-		FocusAreaPage = function (headerId, sectionId, checkBoxClassName) {
+	FocusAreaPage = function (headerId, sectionId, checkBoxClassName) {
 		var headerContainer = $(headerId),
 		sectionContainer = $(sectionId),
 		checkboxes = $(checkBoxClassName),
@@ -287,11 +321,50 @@ var Dialouge = function() {
 			initOrganizationTypeFields : initOrganizationTypeFields
 		};
 	};
+		// This is not thread safe and not a global/singelton class
+	MainPage = (function () {
+
+		// Call back function to be called after contact us form validation is successful
+		contactUsCallBack = function (form, messageContainer) {
+
+			var postUrl = $(form).attr( "action" );
+	 
+			Dialouge.WindowUtils.startSpinner('#contactBtn');
+			var statusMessage = "Interal Error. We are sorry. Please try again later.";
+			$.post( postUrl, 
+					$(form).serialize(),
+					function() {},
+					"json")
+			  .done(function(response) {
+				//var jsonResponse = $.parseJSON( '{ "name": "John" }' );
+				var status = response["status"];
+					
+				if(status == 'Completed') {
+					statusMessage = "Thank you. Your request has been sent. We will contact you soon.";
+					Dialouge.WindowUtils.showSuccessMessage(messageContainer, statusMessage, 10000);
+				} else {
+					Dialouge.WindowUtils.showErrorMessage(messageContainer, statusMessage, 4000);
+				}
+			  })
+			  .fail(function() {
+				Dialouge.WindowUtils.showErrorMessage(messageContainer, statusMessage, 4000);
+			  })
+			  .always(function() {
+				Dialouge.WindowUtils.stopSpinner('#contactBtn');
+			});
+		};	
+		//public members
+		return {
+			contactUsCallBack : contactUsCallBack
+		};
+	})();
+
 	return {
 		FormValidator : FormValidator,
 		UrlUtils : UrlUtils,
 		WindowUtils : WindowUtils,
 		ConstantUtils : ConstantUtils,
-		FocusAreaPage : FocusAreaPage
+		FocusAreaPage : FocusAreaPage,
+		MainPage : MainPage
 	};
 }();
