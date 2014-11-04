@@ -107,11 +107,8 @@ var Dialouge = function() {
 				
 				// Update common message label
 				var messageContainer = $(element.form).find('.message');
-				if(!messageContainer.hasClass('invalid')) {
-					messageContainer.fadeIn();
-					messageContainer.removeClass('valid').addClass('invalid').text("Validation errors occurred. Please confirm the fields and submit it again.");
-				}
-				
+				var statusMessage = "Validation errors occurred. Please confirm the fields and submit it again.";
+				Dialouge.WindowUtils.showErrorMessage(messageContainer, statusMessage, 0);
 			  },
 			  // called when validation succeeded for any element
 			  unhighlight: function(element) {
@@ -128,8 +125,6 @@ var Dialouge = function() {
 					var messageContainer = $(element.form).find('.message');
 					messageContainer.fadeOut();
 				}
-				
-				
 			  },
 			  // called when validation succeeded for each element (once per element)
 			  success: function(element) {
