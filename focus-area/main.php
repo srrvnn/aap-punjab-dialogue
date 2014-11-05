@@ -53,7 +53,7 @@
 						<div class="vc_span12 wpb_column column_container">
 							<div class="main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
 							<div class="main-content col-sm-12">
-								 <form id="notification-form" role="form">
+								 <form id="notification-form" action="../contact-us.php" role="form">
 									<div class="form-inline vertical-align row">
 										<div class="form-group inline-form-group">
 										<input name="name" class="form-control" placeholder="Enter Name" id="customerName">
@@ -62,7 +62,9 @@
 										<input name="email" class="form-control" placeholder="Enter Email" id="customerEmail">
 									  </div>
 									  <input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
-									  <input type="submit" class="blue-fixed-btn button"  name="submit" id="send" value="Get Update"/>
+									  <button type="submit" class="blue-fixed-btn button"  name="submit" id="send">
+										<span></span>Get Update
+									  </button>
 									</div>
 									  <div style="margin-top:20px" class="row">
 										  <ul class="error" style="list-style-type: none;" id="notificationErrorMessage"></ul>
@@ -93,17 +95,17 @@
 				<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Register or Submit a Proposal</h1><div style="clear:both; width:100%; height:60px"></div>
 					<div class="container">
-					<form action="" id="contact-form" class="form-horizontal">
+					<form action="../contact-us.php" id="contact-form" class="form-horizontal">
 							<fieldset>
 								<div class="row">
 									<div class="control-group">
 									  <div class="controls inline-radiogroup">
 										<div class="btn-group">
-											<label class="btn" data-bind="css: { 'active': selectedOption() === 'Submit Proposal' }">
-												<input type="radio" name="registrationOptions" value ="SubmitProposal" id="proposalRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Submit Proposal'">Submit Proposal
+											<label class="btn">
+												<input type="radio" name="registrationOptions" value ="Submit Proposal" id="proposalRadioBtn" >Submit Proposal
 											</label>
-											<label class="btn" data-bind="css: { 'active': selectedOption() === 'Register For Seminar' }">
-												<input type="radio" name="registrationOptions" value ="RegisterForSeminar" id="seminarRadioBtn" data-bind="checked: selectedOption, checkedValue: 'Register For Seminar'">Register For Seminar
+											<label class="btn"">
+												<input type="radio" name="registrationOptions" value ="Register For Seminar" id="seminarRadioBtn">Register For Seminar
 											</label>
 										</div>
 									  </div>
@@ -222,7 +224,7 @@
 										<img style="max-width:200px; max-height:105px" src="../files/captcha.gif" class="img-responsive" id="captcha" alt="Responsive image">
 									</div>
 									<div class="form-actions col-sm-4">
-									  <button type="submit" class="btn btn-lg btn-black">Send</button>
+									  <button type="submit" class="btn btn-lg btn-black"><span></span>Send</button>
 									  <button type="reset" class="btn btn-lg btn-black">Clear</button>
 									  <img style="visibility: hidden;" alt="Sending ..." src="../files/ajax-loader.gif" class="ajax-loader"><p></p>
 									</div>
@@ -251,8 +253,8 @@
 			
 			var registrationFormValidator = Dialouge.FormValidator('#contact-form');
 			var notificationFormValidator = Dialouge.FormValidator('#notification-form', '#notificationErrorMessage');
-			registrationFormValidator.addValidator();
-			notificationFormValidator.addValidator();
+			registrationFormValidator.addValidator(focusAreaPage.registrationCallBack);
+			notificationFormValidator.addValidator(focusAreaPage.getUpdatesCallBack);
 			
 			// Dropdown box select
 			$( document.body ).on( 'click', '.dropdown-menu li', function( event ) {

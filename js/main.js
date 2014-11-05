@@ -2,7 +2,6 @@ var Dialouge = function() {
 	
 	// This is not thread safe and not a global/singelton class.
 	FormValidator = function (formId, errorLabelId) {
-		var defaultOrgType = "Select Organization Type";
 		var formContainer = $(formId);
 		var errorLabelContainerId = errorLabelId;
 		var errorWrapper;
@@ -12,10 +11,7 @@ var Dialouge = function() {
 		if(errorLabelContainerId) {
 			errorWrapper = "li";
 		}
-		
-		var getDefaultOrgType = function() {
-			return defaultOrgType;
-		};
+
 		var addValidator = function(successCallBack) {
 			if(formContainer.length > 0) {
 				initCustomRules();
@@ -46,6 +42,7 @@ var Dialouge = function() {
 		var initValidate = function() {
 
 			formContainer.validate( {
+			debug : true,
 			 ignore : [], // Do not ignore hidden/disable etc elements
 			 errorPlacement: function(error, element) {
 				// Add error label next to control-group class
@@ -78,7 +75,7 @@ var Dialouge = function() {
 				  minlength: 10
 				},
 				orgType: {
-				  notEqualTo: defaultOrgType
+				  notEqualTo: Dialouge.ConstantUtils.DD_ORG_TYPE_MESSAGE
 				},
 				focusArea: {
 				  required: true,
@@ -133,7 +130,10 @@ var Dialouge = function() {
 			  // Called once after validation succeeded for every element
 			  submitHandler: function(form) {
 				var messageContainer = $(form).find('.message');
-				return _successCallBack(form, messageContainer);
+				_successCallBack(form, messageContainer);
+				
+				// _successCallBack send Post Ajax call to server, hence never submit the form
+				return false;
 			  }
 			 });
 		};
@@ -145,7 +145,6 @@ var Dialouge = function() {
 		};
 		//public members
 		return {
-			getDefaultOrgType : getDefaultOrgType,
 			addValidator : addValidator,
 			validate : validate
 		};
@@ -181,37 +180,126 @@ var Dialouge = function() {
 				}
 			}
 		},
-		startSpinner = function (buttonId) {
-			var spinnerContainer = $(buttonId).children().first();
-			if(!spinnerContainer.hasClass('glyphicon-refresh-animate')) {
-					spinnerContainer.addClass('glyphicon').addClass('glyphicon-refresh').addClass('glyphicon-refresh-animate');
+		startSpinner = function (button) {
+			if(button === undefined) {
+				return false;
 			}
+			var spinnerContainer = button.children().first();
+			if(spinnerContainer && !spinnerContainer.hasClass('glyphicon-refresh-animate')) {
+				spinnerContainer.addClass('glyphicon').addClass('glyphicon-refresh').addClass('glyphicon-refresh-animate');
+				return true;
+			}
+			return false;
 		},
-		stopSpinner = function (buttonId) {
-			var spinnerContainer = $(buttonId).children().first();
-			if(spinnerContainer.hasClass('glyphicon-refresh-animate')) {
-					spinnerContainer.removeClass('glyphicon').removeClass('glyphicon-refresh').removeClass('glyphicon-refresh-animate');
+		stopSpinner = function (button) {
+			if(button === undefined) {
+				return false;
 			}
-		};
+			var spinnerContainer = button.children().first();
+			if(spinnerContainer && spinnerContainer.hasClass('glyphicon-refresh-animate')) {
+				spinnerContainer.removeClass('glyphicon').removeClass('glyphicon-refresh').removeClass('glyphicon-refresh-animate');
+				return true;
+			}
+			return false;
+		},
+		enableButton = function(button) {
+            button.removeClass("disabled");
+        },
+        disableButton = function(button) {
+        	button.addClass("disabled");
+        },
+        isButtonEnabled = function(button) {
+            return !button.hasClass("disabled");
+        };
 		//public members
 		return {
 			goToPage : goToPage,
 			startSpinner : startSpinner,
 			stopSpinner : stopSpinner,
 			showErrorMessage : showErrorMessage,
-			showSuccessMessage : showSuccessMessage
+			showSuccessMessage : showSuccessMessage,
+			enableButton : enableButton,
+			disableButton : disableButton,
+			isButtonEnabled : isButtonEnabled
 		};
 	})(),
-	
 	// This is thread safe and a global/singelton class
-	ConstantUtils = (function () {
-		var orgTypeMessage = "Select Organization Type",
-		getOrgTypeMessage = function() {
-			return orgTypeMessage;
-		};
+	FormUtils = (function () {
+		// Call back function to be called after form validation is successful
+		var formValidationSuccessCallBack = function (form, messageContainer, successMessage) {
+			if(form === undefined || messageContainer === undefined) {
+				return false;
+			}
+			var submitButton = $(form).find( "button[type='submit']" );
+			if( submitButton === undefined || submitButton.length === 0) {
+				return false;
+			}
+			if(successMessage === undefined) {
+				successMessage = Dialouge.ConstantUtils.GENERIC_REQUEST_SENT_MESSAGE;
+			}
+			try {
+				Dialouge.WindowUtils.startSpinner(submitButton);
+				Dialouge.WindowUtils.disableButton(submitButton);
+				
+				var postUrl = $(form).attr( "action" );
+				$.post( postUrl, 
+						$(form).serialize(),
+						function() {},
+						"json")
+				  .done(function(response) {
+					var status = response["status"];
+					if(status == 'Completed') {
+						Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
+							successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
+					} else {
+						Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+							Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
+					}
+				  })
+				  .fail(function() {
+					Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+						Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
+				  })
+				  .always(function() {
+					Dialouge.WindowUtils.stopSpinner(submitButton);
+					Dialouge.WindowUtils.enableButton(submitButton);
+				});
+			} catch (ex) {
+                Dialouge.WindowUtils.stopSpinner(submitButton);
+                Dialouge.WindowUtils.enableButton(submitButton);
+				return false;
+            }
+		};	
 		//public members
 		return {
-			getOrgTypeMessage : getOrgTypeMessage
+			formValidationSuccessCallBack : formValidationSuccessCallBack
+		};
+	})(),
+
+		
+	// This is thread safe and a global/singelton class
+	ConstantUtils = (function () {
+		var SUCCESS_MESSAGE_ACTIVE_PERIOD = 10000,
+		FAILED_MESSAGE_ACTIVE_PERIOD = 4000,
+		DD_ORG_TYPE_MESSAGE = "Select Organization Type",
+		CONTACT_US_REQUEST_SENT_MESSAGE = "Thank you. Your request has been sent. We will contact you soon.",
+		GET_UPDATES_REQUEST_SENT_MESSAGE = "Thank you. We will send you regular notification on the subject.",
+		REGISTRATION_SUUCESSFUL_MESSAGE = "Thank you. You are successfully registered for the Seminar",
+		SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE = "Thank you. Your proposal was successfully submitted.",
+		GENERIC_REQUEST_SENT_MESSAGE = "Thank you for you interest.",
+		INTERNAL_ERROR_MESSAGE = "Internal Error. We are sorry. Please try again later.";
+
+		//public members
+		return {
+			DD_ORG_TYPE_MESSAGE : DD_ORG_TYPE_MESSAGE,
+			INTERNAL_ERROR_MESSAGE : INTERNAL_ERROR_MESSAGE,
+			SUCCESS_MESSAGE_ACTIVE_PERIOD : SUCCESS_MESSAGE_ACTIVE_PERIOD,
+			CONTACT_US_REQUEST_SENT_MESSAGE : CONTACT_US_REQUEST_SENT_MESSAGE,
+			GET_UPDATES_REQUEST_SENT_MESSAGE : GET_UPDATES_REQUEST_SENT_MESSAGE,
+			REGISTRATION_SUUCESSFUL_MESSAGE : REGISTRATION_SUUCESSFUL_MESSAGE,
+			SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE : SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE,
+			GENERIC_REQUEST_SENT_MESSAGE : GENERIC_REQUEST_SENT_MESSAGE,
+			FAILED_MESSAGE_ACTIVE_PERIOD : FAILED_MESSAGE_ACTIVE_PERIOD
 		};
 	})(),
 	
@@ -297,13 +385,27 @@ var Dialouge = function() {
 			  });
 		},
 		initOrganizationTypeFields = function(orgTypeLblId, orgTypeId) {
-			var orgTypeMessage = Dialouge.ConstantUtils.getOrgTypeMessage();
+			var orgTypeMessage = Dialouge.ConstantUtils.DD_ORG_TYPE_MESSAGE;
 			$(orgTypeLblId).text(orgTypeMessage);
 			$(orgTypeId).val(orgTypeMessage);
 		},
 		setFocusArea = function(focusArea) {
 			setHeader(focusArea.name);
 			setSection(focusArea.longDesc);
+		},
+		// Call back function to be called after "Get Update" form validation is successful
+		getUpdatesCallBack = function (form, messageContainer) {
+			return Dialouge.FormUtils.formValidationSuccessCallBack(form, messageContainer, Dialouge.ConstantUtils.GET_UPDATES_REQUEST_SENT_MESSAGE);
+		},
+		// Call back function to be called after "Registration/Submit Proposal" form validation is successful
+		registrationCallBack = function (form, messageContainer) {
+			var checkedOptionContainer = $(form).find( "input[name='registrationOptions']:checked" );
+			var successMessage = Dialouge.ConstantUtils.REGISTRATION_SUUCESSFUL_MESSAGE;
+
+			if(checkedOptionContainer.val() === 'Submit Proposal') {
+				successMessage = Dialouge.ConstantUtils.SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE;
+			}
+			return Dialouge.FormUtils.formValidationSuccessCallBack(form, messageContainer, successMessage);
 		};
 		//public members
 		return {
@@ -313,40 +415,16 @@ var Dialouge = function() {
 			setContents : setContents,
 			getTotalFocusAreas: getTotalFocusAreas,
 			initPageContents : initPageContents,
-			initOrganizationTypeFields : initOrganizationTypeFields
+			initOrganizationTypeFields : initOrganizationTypeFields,
+			getUpdatesCallBack : getUpdatesCallBack,
+			registrationCallBack : registrationCallBack
 		};
 	};
 		// This is not thread safe and not a global/singelton class
 	MainPage = (function () {
-
 		// Call back function to be called after contact us form validation is successful
 		contactUsCallBack = function (form, messageContainer) {
-
-			var postUrl = $(form).attr( "action" );
-	 
-			Dialouge.WindowUtils.startSpinner('#contactBtn');
-			var statusMessage = "Interal Error. We are sorry. Please try again later.";
-			$.post( postUrl, 
-					$(form).serialize(),
-					function() {},
-					"json")
-			  .done(function(response) {
-				//var jsonResponse = $.parseJSON( '{ "name": "John" }' );
-				var status = response["status"];
-					
-				if(status == 'Completed') {
-					statusMessage = "Thank you. Your request has been sent. We will contact you soon.";
-					Dialouge.WindowUtils.showSuccessMessage(messageContainer, statusMessage, 10000);
-				} else {
-					Dialouge.WindowUtils.showErrorMessage(messageContainer, statusMessage, 4000);
-				}
-			  })
-			  .fail(function() {
-				Dialouge.WindowUtils.showErrorMessage(messageContainer, statusMessage, 4000);
-			  })
-			  .always(function() {
-				Dialouge.WindowUtils.stopSpinner('#contactBtn');
-			});
+			return Dialouge.FormUtils.formValidationSuccessCallBack(form, messageContainer, Dialouge.ConstantUtils.CONTACT_US_REQUEST_SENT_MESSAGE);
 		};	
 		//public members
 		return {
@@ -356,6 +434,7 @@ var Dialouge = function() {
 
 	return {
 		FormValidator : FormValidator,
+		FormUtils : FormUtils,
 		UrlUtils : UrlUtils,
 		WindowUtils : WindowUtils,
 		ConstantUtils : ConstantUtils,
