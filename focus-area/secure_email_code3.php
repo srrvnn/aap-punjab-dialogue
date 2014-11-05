@@ -2,7 +2,12 @@
 if(isset($_POST["submit"])){
 //Checking for blank Fields..
     if($_POST["options"]==""){
-        echo "Choose one of the options..";
+        $output = array(
+            "message" => "choose one of the options",
+            "messageId"=> "4",
+            "status" => "ValidationError"
+        );
+        echo json_encode($output);
     }else{
         //if($_POST["options"]==""&&$_POST["options1"]!="")
         //{
@@ -117,7 +122,12 @@ if(isset($_POST["submit"])){
         $email= filter_var($email, FILTER_VALIDATE_EMAIL);
 
         if (!$email){
-            echo "Invalid Sender's Email";
+            $output = array(
+                "message" => "Email is invalid!",
+                "messageId"=> "1",
+                "status" => "ValidationError"
+            );
+            echo json_encode($output);
         }
         else{
 
@@ -144,8 +154,13 @@ if(isset($_POST["submit"])){
             //print_r($response);
             curl_close($rest);
             // Send mail by PHP Mail Function
-            //mail("vijay.sirohi@gmail.com", "User added", "Contact us");
-            echo "Thank you for registering with us";
+            mail("vijay.sirohi@gmail.com", "User added", "Contact us");
+            $output = array(
+                "message" => "Thanks for registering with us!",
+                "messageId"=> "3",
+                "status" => "Completed"
+            );
+            echo json_encode($output);
         }
     }
 }

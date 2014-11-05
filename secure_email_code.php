@@ -2,7 +2,12 @@
 if(isset($_POST["submit"])){
 //Checking for blank Fields..
 if($_POST["your-name"]==""||$_POST["your-email"]==""){
-echo "Fill All Fields..";
+    $output = array(
+        "message" => "Fields can not be empty",
+        "messageId"=> "2",
+        "status" => "ValidationError"
+    );
+    echo json_encode($output);
 }else{
 // Check if the "Sender's Email" input field is filled out
 $email=$_POST['your-email'];
@@ -14,11 +19,16 @@ $email=$_POST['your-email'];
  $email= filter_var($email, FILTER_VALIDATE_EMAIL);
 
  if (!$email){
-echo "Invalid Sender's Email";
+     $output = array(
+         "message" => "Email is invalid!",
+         "messageId"=> "1",
+         "status" => "ValidationError"
+     );
+     echo json_encode($output);
  }
  else{
  $name = $_POST['your-name'];
-     $message = $_POST['your-message'];
+ $message = $_POST['your-message'];
 
  // message lines should not exceed 70 characters (PHP rule), so wrap it
  $url = 'https://api.parse.com/1/classes/contactus';
@@ -42,8 +52,14 @@ echo "Invalid Sender's Email";
  //print_r($response);  
  curl_close($rest);  
  // Send mail by PHP Mail Function
+
  mail("vijay.sirohi@gmail.com", "User added", "Contact us");
- echo "Your mail has been sent successfuly ! Thank you for your feedback";
+     $output = array(
+         "message" => "Email was sent successfully!",
+         "messageId"=> "3",
+         "status" => "Completed"
+     );
+     echo json_encode($output);
  }
 }
 }
