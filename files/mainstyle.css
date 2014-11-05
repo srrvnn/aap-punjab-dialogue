@@ -934,6 +934,7 @@ fieldset[disabled] .btn-blue.active {
 .btn-black:active,
 .btn-black.active {
 	background-color: #FE7E17 !important;
+	color: white !important;
 	border: 0;
 }
 .btn-black.disabled:hover,
@@ -949,7 +950,7 @@ fieldset[disabled] .btn-black:focus,
 fieldset[disabled] .btn-black:active,
 fieldset[disabled] .btn-black.active {
   background-color: #A5A5A5;
-  color:#DDCFCF;
+  color: white !important;
 }
 .glyphicon-refresh-animate {
     -animation: spin .7s infinite linear;

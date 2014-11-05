@@ -165,7 +165,7 @@
 											  <label><input type="checkbox" name="focusArea" id="focusAreaCheckbox0">All</label>
 											</div>
 											<div class="checkbox">
-												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox1" name="focusArea" required>Jobs and Employment</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox1" name="focusArea">Jobs and Employment</label>
 											</div>
 											<div class="checkbox">
 											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox2" name = "focusArea">Enterprise: Trade and Industry</label>
