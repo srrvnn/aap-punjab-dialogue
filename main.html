@@ -461,8 +461,6 @@
 							  	
 							  <label class="col-sm-12 message" hidden></label>
 						</form>
-						
-						<h3><?php include "secure_email_code.php"?></h3>
 						</div>
 					</div>
 					<div style="clear:both; width:100%; height:85px"></div>

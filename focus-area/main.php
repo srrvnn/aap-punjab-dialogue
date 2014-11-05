@@ -54,7 +54,7 @@
 							<div class="main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
 							<div class="main-content col-sm-12">
 								 <form id="notification-form" action="../contact-us.php" role="form">
-									<div class="form-inline vertical-align row">
+									<div class="form-inline vertical-align">
 										<div class="form-group inline-form-group">
 										<input name="name" class="form-control" placeholder="Enter Name" id="customerName">
 									  </div>
@@ -66,16 +66,12 @@
 										<span></span>Get Update
 									  </button>
 									</div>
-									  <div style="margin-top:20px" class="row">
+									  <div style="margin-top:30px; margin-bottom: 30px">
 										  <ul class="error" style="list-style-type: none;" id="notificationErrorMessage"></ul>
 										  <label class="message" hidden></label>
 									  </div>
 								  
 								</form>
-								
-								
-
-                                <h3><?php include "secure_email_code2.php"?></h3>
 								<div id="focusAreaSection" class="col-sm-12">
 								</div>
 								<div class="button-group col-sm-12">
@@ -232,7 +228,6 @@
 							  </fieldset>
 							 <label class="col-sm-12 message" hidden></label>
 						</form>
-                        <h3><?php include "secure_email_code3.php"?></h3>
 					</div>
 				</div>
 			</div>
