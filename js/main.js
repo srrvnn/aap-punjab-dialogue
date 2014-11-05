@@ -42,6 +42,7 @@ var Dialouge = function() {
 		var initValidate = function() {
 
 			formContainer.validate( {
+			// Never post form to the server (debug=true) and always send Post Ajax call to avoid full page load
 			debug : true,
 			 ignore : [], // Do not ignore hidden/disable etc elements
 			 errorPlacement: function(error, element) {
