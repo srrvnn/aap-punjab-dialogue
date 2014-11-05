@@ -2,7 +2,12 @@
 if(isset($_POST["submit"])){
 //Checking for blank Fields..
     if($_POST["vemail"]==""||$_POST["vzip"]==""){
-        echo "Fill All Fields..";
+        $output = array(
+            "message" => "Fields can not be empty",
+            "messageId"=> "2",
+            "status" => "ValidationError"
+        );
+        echo json_encode($output);
     }else{
 // Check if the "Sender's Email" input field is filled out
         $email=$_POST['vemail'];
@@ -14,7 +19,12 @@ if(isset($_POST["submit"])){
         $email= filter_var($email, FILTER_VALIDATE_EMAIL);
 
         if (!$email){
-            echo "Invalid Sender's Email";
+            $output = array(
+                "message" => "Email is invalid!",
+                "messageId"=> "1",
+                "status" => "ValidationError"
+            );
+            echo json_encode($output);
         }
         else{
             $zip = $_POST['vzip'];
@@ -42,8 +52,13 @@ if(isset($_POST["submit"])){
             //print_r($response);
             curl_close($rest);
             // Send mail by PHP Mail Function
-            //mail("vijay.sirohi@gmail.com", "User added", "Contact us");
-            echo "Thank you for your subscription";
+            mail("vijay.sirohi@gmail.com", "User added", "Contact us");
+            $output = array(
+                "message" => "Thanks for requesting for updates!",
+                "messageId"=> "3",
+                "status" => "Completed"
+            );
+            echo json_encode($output);
         }
     }
 }
