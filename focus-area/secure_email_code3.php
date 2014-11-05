@@ -1,7 +1,6 @@
 <?php
-if(isset($_POST["submit"])){
 //Checking for blank Fields..
-    if($_POST["options"]==""){
+    if($_POST["participationOption"]==""){
         $output = array(
             "message" => "choose one of the options",
             "messageId"=> "4",
@@ -19,16 +18,16 @@ if(isset($_POST["submit"])){
         //}
         //$selected_radio = $_POST['gender'];
         //echo $_POST["options1"];
-        $options = $_POST["options"];
+        $participationOption = $_POST["participationOption"];
         //echo $options1;
 
 // Check if the "Sender's Email" input field is filled out
-        $name=$_POST['your-name'];
-        $email =$_POST['your-email'];
-        $phone = $_POST['your-phone'];
-        $profession = $_POST['your-profession'];
-        $policy = $_POST['your-policy'];
-        $message = $_POST['your-message'];
+        $name=$_POST['name'];
+        $email =$_POST['email'];
+        $phone = $_POST['phone'];
+        $profession = $_POST['profession'];
+		$orgType = $_POST['orgType'];
+        $message = $_POST['message'];
         $selectedtopics="";
 
         if ($_POST['All']=="on")
@@ -111,10 +110,6 @@ if(isset($_POST["submit"])){
 
         }
 
-        echo $selectedtopics;
-
-        //echo $profession;
-
         // Sanitize e-mail address
         $email =filter_var($email, FILTER_SANITIZE_EMAIL);
 
@@ -140,7 +135,7 @@ if(isset($_POST["submit"])){
                 "X-Parse-Application-Id: " . $appId,
                 "X-Parse-REST-API-Key: " . $restKey
             );
-            $objectData = "{\"email\":\"$email\", \"name\":\"$zip\", \"phone\":\"$phone\", \"profession\":\"$profession\",\"options\":\"$options\",\"policy\":\"$policy\",\"message\":\"$message\",\"topics\":\"$selectedtopics\"}";
+            $objectData = "{\"email\":\"$email\", \"name\":\"$name\", \"phone\":\"$phone\", \"profession\":\"$profession\",\"participationOption\":\"$participationOption\",  \"orgType\":\"$orgType\", \"message\":\"$message\",\"topics\":\"$selectedtopics\"}";
              //,  }";
             $rest = curl_init();
             curl_setopt($rest,CURLOPT_URL,$url);
@@ -150,7 +145,7 @@ if(isset($_POST["submit"])){
             curl_setopt($rest,CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($rest,CURLOPT_RETURNTRANSFER, true);
             $response = curl_exec($rest);
-            echo $response;
+
             //print_r($response);
             curl_close($rest);
             // Send mail by PHP Mail Function
@@ -160,8 +155,9 @@ if(isset($_POST["submit"])){
                 "messageId"=> "3",
                 "status" => "Completed"
             );
+
+            //$output = array_merge( $output, $response );
             echo json_encode($output);
         }
     }
-}
 ?>

@@ -1,7 +1,6 @@
 <?php
-if(isset($_POST["submit"])){
 //Checking for blank Fields..
-if($_POST["your-name"]==""||$_POST["your-email"]==""){
+if($_POST["name"]==""||$_POST["email"]==""){
     $output = array(
         "message" => "Fields can not be empty",
         "messageId"=> "2",
@@ -10,7 +9,7 @@ if($_POST["your-name"]==""||$_POST["your-email"]==""){
     echo json_encode($output);
 }else{
 // Check if the "Sender's Email" input field is filled out
-$email=$_POST['your-email'];
+$email=$_POST['email'];
  
  // Sanitize e-mail address
  $email =filter_var($email, FILTER_SANITIZE_EMAIL);
@@ -27,8 +26,8 @@ $email=$_POST['your-email'];
      echo json_encode($output);
  }
  else{
- $name = $_POST['your-name'];
- $message = $_POST['your-message'];
+ $name = $_POST['name'];
+ $message = $_POST['message'];
 
  // message lines should not exceed 70 characters (PHP rule), so wrap it
  $url = 'https://api.parse.com/1/classes/contactus';
@@ -61,6 +60,5 @@ $email=$_POST['your-email'];
      );
      echo json_encode($output);
  }
-}
 }
 ?>

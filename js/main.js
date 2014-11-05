@@ -53,7 +53,7 @@ var Dialouge = function() {
 			  errorLabelContainer : errorLabelContainerId,
 			  wrapper : errorWrapper,
 			  rules: {
-				registrationOptions: {
+				participationOption: {
 				  required: true
 				},
 				name: {
@@ -91,7 +91,7 @@ var Dialouge = function() {
 			  messages: {
 				name : "Please enter your name",
 				email : "Please enter a valid email address",
-				registrationOptions: "Please choose 'Registration For Seminar' or 'Submit Proposal'",
+				participationOption: "Please choose 'Registration For Seminar' or 'Submit Proposal'",
 			  },
 
 			  // called when validation failed for any element
@@ -160,25 +160,21 @@ var Dialouge = function() {
 			}, 1000);
 		},
 		showErrorMessage = function(messageContainer, message, displayPeriod) {
-			if(!messageContainer.hasClass('invalid')) {
-				messageContainer.fadeIn();
-				messageContainer.removeClass('valid').addClass('invalid').text(message);
-				if(displayPeriod > 0) {
-					messageContainer.fadeOut( displayPeriod, function() {
-						messageContainer.removeClass('invalid')
-					});
-				}
+			messageContainer.fadeIn();
+			messageContainer.removeClass('valid').addClass('invalid').text(message);
+			if(displayPeriod > 0) {
+				messageContainer.fadeOut( displayPeriod, function() {
+					messageContainer.removeClass('invalid')
+				});
 			}
 		},
 		showSuccessMessage = function(messageContainer, message, displayPeriod) {
-			if(!messageContainer.hasClass('valid')) {
-				messageContainer.fadeIn();
-				messageContainer.removeClass('invalid').addClass('valid').text(message);
-				if(displayPeriod > 0) {
-					messageContainer.fadeOut( 10000, function() {
-					messageContainer.removeClass('valid')
-					});
-				}
+			messageContainer.fadeIn();
+			messageContainer.removeClass('invalid').addClass('valid').text(message);
+			if(displayPeriod > 0) {
+				messageContainer.fadeOut( 10000, function() {
+				messageContainer.removeClass('valid')
+				});
 			}
 		},
 		startSpinner = function (button) {
@@ -329,7 +325,7 @@ var Dialouge = function() {
 		sectionContainer = $(sectionId),
 		checkboxes = $(checkBoxClassName),
 		getHeader = function() {
-			return this.headerContainer;
+			return headerContainer;
 		},
 		getTotalFocusAreas = function() {
 			return checkboxes.length;
@@ -396,11 +392,15 @@ var Dialouge = function() {
 		},
 		// Call back function to be called after "Get Update" form validation is successful
 		getUpdatesCallBack = function (form, messageContainer) {
+			var focusAreaNameContainer = $(form).find( "input[type='hidden'][name='focusarea']" );
+			var headerContanier = getHeader();
+			$(focusAreaNameContainer).val(headerContanier.text());
+			
 			return Dialouge.FormUtils.formValidationSuccessCallBack(form, messageContainer, Dialouge.ConstantUtils.GET_UPDATES_REQUEST_SENT_MESSAGE);
 		},
 		// Call back function to be called after "Registration/Submit Proposal" form validation is successful
 		registrationCallBack = function (form, messageContainer) {
-			var checkedOptionContainer = $(form).find( "input[name='registrationOptions']:checked" );
+			var checkedOptionContainer = $(form).find( "input[name='participationOption']:checked" );
 			var successMessage = Dialouge.ConstantUtils.REGISTRATION_SUUCESSFUL_MESSAGE;
 
 			if(checkedOptionContainer.val() === 'Submit Proposal') {

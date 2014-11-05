@@ -1,7 +1,6 @@
 <?php
-if(isset($_POST["submit"])){
 //Checking for blank Fields..
-    if($_POST["vemail"]==""||$_POST["vzip"]==""){
+    if($_POST["email"]==""||$_POST["name"]==""){
         $output = array(
             "message" => "Fields can not be empty",
             "messageId"=> "2",
@@ -10,7 +9,7 @@ if(isset($_POST["submit"])){
         echo json_encode($output);
     }else{
 // Check if the "Sender's Email" input field is filled out
-        $email=$_POST['vemail'];
+        $email=$_POST['email'];
 
         // Sanitize e-mail address
         $email =filter_var($email, FILTER_SANITIZE_EMAIL);
@@ -27,7 +26,7 @@ if(isset($_POST["submit"])){
             echo json_encode($output);
         }
         else{
-            $zip = $_POST['vzip'];
+            $zip = $_POST['name'];
             $focusarea = $_POST['focusarea'];
 
             // message lines should not exceed 70 characters (PHP rule), so wrap it
@@ -61,5 +60,4 @@ if(isset($_POST["submit"])){
             echo json_encode($output);
         }
     }
-}
 ?>
