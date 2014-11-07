@@ -3,60 +3,7 @@
 <html class=" js webgl no-touch rgba opacity cssanimations csstransforms csstransforms3d csstransitions js_active  vc_desktop  vc_transform " lang="en-US"><head>
 <meta charset="utf-8"/>
 <style>
-.tp-loader.spinner4 {
-  margin: -20px 0px 0px -20px;
-  width: 40px;
-  height: 40px;
-  text-align: center; 
-  -webkit-animation: tp-rotate 2.0s infinite linear;
-  animation: tp-rotate 2.0s infinite linear;
-}
-#spinner {
-	position: absolute;
-	height:41px;
-	width:41px;
-	top: 50%;
-	left: 50%;
-	margin-left: -17px;
-	margin-top: -17px;
-	border: 3px solid rgba(226, 226, 226, 0.75);
-	border-radius:100%;
-	-webkit-animation: rotation 1s infinite linear;
-	-moz-animation: rotation 1s infinite linear;
-	-o-animation: rotation 1s infinite linear;
-	animation: rotation 1s infinite linear;
-}
 
-.no-csstransforms #spinner {
-	background:url(images/preloader.gif) no-repeat scroll 0 0;
-	width: 38px;
-	height: 38px;
-	border: 0;
-	margin-left: -19px;
-	margin-top: -19px;	
-}
-
-.no-csstransforms #spinner:before {
-	border: 0;
-}	
-
-#spinner:before {
-   content:"";
-	 background-image:url('files/icon.ico');
-   display:block;
-   position:absolute;
-   height:100%;
-   width:100%;
-   border-top:3px solid rgba(0,0,0,1);
-   border-left: 3px solid #000;
-   border-bottom:3px solid transparent;
-   border-right: 3px solid #000;
-   border-radius:100%;
-	border-top-color: #FE7E17;
-	border-left-color: #FE7E17;
-	border-right-color: #FE7E17;
-
-}
 </style>
 		
 			
@@ -80,11 +27,6 @@
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
 
-	<!-- preloader-->
-	<div style="display: block;" id="qLoverlay">
-		<div id="spinner" style="background-image:url('files/icon.ico');">
-		</div>
-	</div>
 	<header id="header" class="show-original-logo solid-header scrolled-header" 
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
@@ -542,31 +484,11 @@ $(document).ready(function() {
 		}, 1000);
 		return false;
 	});
-	
-	onReady();
 	var contactUsFormValidator = Dialouge.FormValidator('#contact-form');
 	
 	// Validate all inputs and call Dialouge.MainPage.contactUsCallBack() if all inputs are valid.
 	contactUsFormValidator.addValidator(Dialouge.MainPage.contactUsCallBack);
 });
-
-qLoverlayonLoad = function() {
-	document.getElementById('qLoverlay').innerHTML('<div id="spinner"></div>');
-};
-
-function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 500);
-    function checkReady() {
-        if (ready) {
-            window.clearInterval(intervalID);
-    				show('qLoverlay', false);
-	    }
-    }
-}
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
 </script>
 
 </body>
