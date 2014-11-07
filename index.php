@@ -4,9 +4,7 @@
 <meta charset="utf-8"/>
 <style>
 
-</style>
-		
-			
+</style>			
 		<!-- mobile meta tag -->		
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="generator" content="Delhi Dialogue Portal by AAP">
@@ -14,26 +12,19 @@
 		
 		<!-- Custom Favicon -->
 		<link rel="icon" type="image/png" href="files/icon.ico">			
-		<link rel="stylesheet" id="rs-plugin-settings-css" href="files/settings.css" type="text/css" media="all">
-		<link rel="stylesheet" id="dt-default-style-css" href="files/style.css" type="text/css" media="all">
-
-		
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/header.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
-
 	<header id="header" class="show-original-logo solid-header scrolled-header" 
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
 					<a class="original-logo" href="#home"><img style="width: auto; height: 50px;" src="images/dd-logo.jpg" alt="AAP Logo"></a>
-					<a class="white-logo" href="#home"><img style="width: auto; height: 50px;" src="files/logo-white.png" alt="Patti"></a>
 				</div>
 			</div><!--end one-fourth-->
 
@@ -52,8 +43,7 @@
 				</nav><!--end navigation-->				
 			</div><!--end three-fourth-->
 		</div><!--end centered-wrapper-->
-	</header>		
-
+	</header>
 	<div id="wrapper">
 		<div id="home"></div><div style="height: 70px;" class="menu-fixer"></div>
 		<section>
@@ -430,12 +420,7 @@
 		<a href="#" class="totop"><i class="fa fa-angle-double-up"></i></a>
 
 	</footer>
-<link rel="stylesheet" href="files/mainstyle.css" type="text/css" media="all">
-<link rel="stylesheet" id="contact-form-7-css" href="files/styles.css" type="text/css" media="all">
-<link rel="stylesheet" id="dt-demo-css" href="files/template-changer.css" type="text/css" media="all">
-<link rel="stylesheet" id="dt-delicious-font-css" href="files/css.css" type="text/css" media="all">
 
-<link rel="stylesheet" id="dt-color-scheme-css" href="files/orange.css" type="text/css" media="all">
 <div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div>
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
