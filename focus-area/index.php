@@ -22,7 +22,7 @@
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
-					<a class="original-logo" href="../main.php#home"><img style="width: auto; height: 50px;" src="../images/dd-logo.jpg" alt="AAP Logo"></a>
+					<a class="original-logo" href="../index.php#home"><img style="width: auto; height: 50px;" src="../images/dd-logo.jpg" alt="AAP Logo"></a>
 					
 				</div>
 			</div><!--end one-fourth-->
@@ -32,11 +32,11 @@
 				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
 					<div class="menu-one-page-menu-container">
 						<ul style="padding-top: 10px;" id="mainnav" class="sf-menu sf-js-enabled sf-arrows">
-							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="../main.php#home"><span>HOME</span></a></li>
-							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="../main.php#about"><span>ABOUT US</span></a></li>
-							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="../main.php#topics"><span>FOCUS AREAS</span></a></li>
-							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="../main.php#schedule"><span>SCHEDULE</span></a></li>
-							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="../main.php#contact"><span>CONTACT</span></a></li>
+							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="../index.php#home"><span>HOME</span></a></li>
+							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="../index.php#about"><span>ABOUT US</span></a></li>
+							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="../index.php#topics"><span>FOCUS AREAS</span></a></li>
+							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="../index.php#schedule"><span>SCHEDULE</span></a></li>
+							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="../index.php#contact"><span>CONTACT</span></a></li>
 						</ul>
 					</div>				
 				</nav><!--end navigation-->				

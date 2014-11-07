@@ -212,7 +212,7 @@
 										Delhi should have growing employment opportunities across various types of industries. Small businesses needs to be encouraged as viable employment opportunity. Labor reforms are needed to provide fair & conducive work environment.
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=1">
+									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -228,7 +228,7 @@
 									<b>Enterprise: Trade and Industry</b><br/>Being India's capital, Delhi should be India's premier services hub and trading zone. Simplify laws, provide excellent infrastructure & incentivize enterpreneurship. It should be straightforward to build a new company in Delhi.
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=2">
+									<a href="focus-area/index.php?id=2">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -244,7 +244,7 @@
 									<b>Women Rights (Safety)</b><br/>Delhi would have world class laws for upholding women rights at workplace, public places & home. We envision a Delhi in which women will be acknowledged and treated as equal citizens in their own right.</i>
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=3">
+									<a href="focus-area/index.php?id=3">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -260,7 +260,7 @@
 									<b>Sanitation and Solid Waste Mgmt</b><br/>Comprehensive sanitation, sewage and solid waste management for every living establishment in Delhi. Easy availability of public toilets & waste bins for use. Discourage littering by heavy fines
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=4">
+									<a href="focus-area/index.php?id=4">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -276,7 +276,7 @@
 									<b>Social Welfare and Social Justice</b><br/>Delhi would provide equal opportunities across all sections of society. There would be no appeasement of specific people in a community. Policies would focus on equal access to education, health & job opportunities. 
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=5">
+									<a href="focus-area/index.php?id=5">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -292,7 +292,7 @@
 									<b>Transportation</b><br/>Delhi would have high quality diverse public transport to reduce peak time load on roads. The transportation would include Metro trains, last mile connectivity via feeder bues & private transport vehicles like autorickshaws. 
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=6">
+									<a href="focus-area/index.php?id=6">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -308,7 +308,7 @@
 									<b>Energy and Electricity</b><br/>Delhi has self-sufficient 100% electricity & increase depedence on clean energy
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=7">
+									<a href="focus-area/index.php?id=7">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -324,7 +324,7 @@
 									<b>Education</b><br/>Delhi should have high quality school education system with access to all sections of society. Focus on creation & explansion of world class colleges & universities. 
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=8">
+									<a href="focus-area/index.php?id=8">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -340,7 +340,7 @@
 									<b>Health</b><br/>Delhi would have drastically improved quality of public hospitals & further expand network. Health care delivery systems would be modernized using technology. Promote focus on proactive prevention of diseases to reduce healthcare costs & improve quality of life. 
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=9">
+									<a href="focus-area/index.php?id=9">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -357,7 +357,7 @@
 									<b>Land and Housing</b><br/>Delhi would have transparent land allotment policies, enforce infrastructure guidelines and protect rights of home buyers. Long term policies to prevent mushrooming of unauthorised settlements by ensuring availability of low-cost housing.  
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=10"">
+									<a href="focus-area/index.php?id=10"">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -373,7 +373,7 @@
 									<b>Rural Delhi</b><br/>Delhi's rural areas would have good quality public infrastrasture including schools & hospitals. 
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=11">
+									<a href="focus-area/index.php?id=11">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -389,7 +389,7 @@
 									<b>Water</b><br/>Every home in Delhi has access to clean piped water. Remove dependence on water tankers. Develop Delhi's water resources & implement ideas like rainwater harvesting
 								</div>
 								<div class="col-sm-3">
-									<a href="focus-area/main.php?id=12">
+									<a href="focus-area/index.php?id=12">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
