@@ -149,13 +149,12 @@
             //print_r($response);
             curl_close($rest);
             // Send mail by PHP Mail Function
-            mail("vijay.sirohi@gmail.com", "User added", "Contact us");
+            mail("delhidialogue@aamaadmiparty.org", "User Registrered", $participationOption);
             $output = array(
                 "message" => "Thanks for registering with us!",
                 "messageId"=> "3",
                 "status" => "Completed"
             );
-
             //$output = array_merge( $output, $response );
             echo json_encode($output);
         }

@@ -12,19 +12,20 @@
 		
 		<!-- Custom Favicon -->
 		<link rel="icon" type="image/png" href="files/icon.ico">			
-		<link rel="stylesheet" href="css/header.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/header.css" type="text/css" media="all">  
 		<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">		
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
+
 	<header id="header" class="show-original-logo solid-header scrolled-header" 
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
-					<a class="original-logo" href="#home"><img style="width: auto; height: 50px;" src="images/dd-logo.jpg" alt="AAP Logo"></a>
+					<a class="original-logo" href="#home"><img style="height: 50px; 175px" src="images/dd-logo.jpg" alt="AAP Logo"></a>
 				</div>
 			</div><!--end one-fourth-->
 
@@ -43,7 +44,8 @@
 				</nav><!--end navigation-->				
 			</div><!--end three-fourth-->
 		</div><!--end centered-wrapper-->
-	</header>
+	</header>		
+	
 	<div id="wrapper">
 		<div id="home"></div><div style="height: 70px;" class="menu-fixer"></div>
 		<section>
@@ -385,9 +387,8 @@
 								  </div>
 								</div>
 								<div class="form-actions">
-									
-								  <button type="submit" id="contactBtn" class="btn btn-lg btn-black"><span></span>Send</button>
-								  <button type="reset" class="btn btn-lg btn-black">Clear</button>
+									<button type="reset" class="btn btn-lg btn-black">Clear</button>
+									<button type="submit" id="contactBtn" class="btn btn-lg btn-black"><span></span>Send</button>
 								</div>
 							  </fieldset>
 							  	
@@ -423,11 +424,11 @@
 
 <div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div>
 
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 <script src="./js/main.js"></script>
 

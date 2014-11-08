@@ -57,7 +57,7 @@ var Dialouge = function() {
 				  required: true
 				},
 				name: {
-				  minlength: 2,
+				  minlength: 3,
 				  maxlength: 50,
 				  required: true
 				},
@@ -89,9 +89,10 @@ var Dialouge = function() {
 				}
 			  },
 			  messages: {
-				name : "Please enter your name",
+				name : "Please enter a valid name.",
 				email : "Please enter a valid email address",
 				participationOption: "Please choose 'Registration For Seminar' or 'Submit Proposal'",
+				orgType : "Please select you organization type."
 			  },
 
 			  // called when validation failed for any element
@@ -105,8 +106,7 @@ var Dialouge = function() {
 				
 				// Update common message label
 				var messageContainer = $(element.form).find('.message');
-				var statusMessage = "Validation errors occurred. Please confirm the fields and submit it again.";
-				Dialouge.WindowUtils.showErrorMessage(messageContainer, statusMessage, 0);
+				Dialouge.WindowUtils.showErrorMessage(messageContainer, Dialouge.ConstantUtils.VALIDATION_ERROR_MESSAGE, 0);
 			  },
 			  // called when validation succeeded for any element
 			  unhighlight: function(element) {
@@ -281,10 +281,11 @@ var Dialouge = function() {
 		DD_ORG_TYPE_MESSAGE = "Select Organization Type",
 		CONTACT_US_REQUEST_SENT_MESSAGE = "Thank you. Your request has been sent. We will contact you soon.",
 		GET_UPDATES_REQUEST_SENT_MESSAGE = "Thank you. We will send you regular notification on the subject.",
-		REGISTRATION_SUUCESSFUL_MESSAGE = "Thank you. You are successfully registered for the Seminar",
-		SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE = "Thank you. Your proposal was successfully submitted.",
+		REGISTRATION_SUUCESSFUL_MESSAGE = "Thank you for registering with us.",
+		SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE = "Thank you for your participation. Your ideas and proposals are sent. You will hear from us soon if your idea/proposal is selected.",
 		GENERIC_REQUEST_SENT_MESSAGE = "Thank you for you interest.",
-		INTERNAL_ERROR_MESSAGE = "Internal Error. We are sorry. Please try again later.";
+		INTERNAL_ERROR_MESSAGE = "Internal Error. We are sorry. Please try again later.",
+		VALIDATION_ERROR_MESSAGE = "Please enter correct information and try again.";
 
 		//public members
 		return {
@@ -296,7 +297,8 @@ var Dialouge = function() {
 			REGISTRATION_SUUCESSFUL_MESSAGE : REGISTRATION_SUUCESSFUL_MESSAGE,
 			SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE : SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE,
 			GENERIC_REQUEST_SENT_MESSAGE : GENERIC_REQUEST_SENT_MESSAGE,
-			FAILED_MESSAGE_ACTIVE_PERIOD : FAILED_MESSAGE_ACTIVE_PERIOD
+			FAILED_MESSAGE_ACTIVE_PERIOD : FAILED_MESSAGE_ACTIVE_PERIOD,
+			VALIDATION_ERROR_MESSAGE : VALIDATION_ERROR_MESSAGE
 		};
 	})(),
 	

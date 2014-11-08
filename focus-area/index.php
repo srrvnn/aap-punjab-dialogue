@@ -11,7 +11,7 @@
 	<link rel="stylesheet" id="options-google-fonts" href="../files/css_002.css" type="text/css" media="all">		
 
 	<!-- Page content style -->	
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" id="dt-issue-css" href="../css/focus-area.css" type="text/css" media="all">
 
 <body>
@@ -22,7 +22,7 @@
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
-					<a class="original-logo" href="../index.php#home"><img style="width: auto; height: 50px;" src="../images/dd-logo.jpg" alt="AAP Logo"></a>
+					<a class="original-logo" href="../index.php"><img style="width: 175px; height: 50px;" src="../images/dd-logo.jpg" alt="AAP Logo"></a>
 					
 				</div>
 			</div><!--end one-fourth-->
@@ -77,7 +77,7 @@
 								<div class="button-group col-sm-12">
 									<a href="#connect" id="registerBtn" class="blue-fixed-btn button" role="button">Register</a>
 									<a href="#connect" id="proposalBtn" class="blue-fixed-btn button" role="button">Submit Proposal</a>
-									<a href="#" id="discussBtn" class="blue-fixed-btn button" role="button">Discuss Online</a>
+									<a href="http://discuss.aamaadmiparty.org/discussions/policies/delhi-dialogue" id="discussBtn" class="blue-fixed-btn button" role="button">Discuss Online</a>
 								</div>
 							</div>
 						</div>
@@ -98,10 +98,10 @@
 									  <div class="controls inline-radiogroup">
 										<div class="btn-group">
 											<label class="btn">
-												<input type="radio" name="participationOption" value ="Submit Proposal" id="proposalRadioBtn" >Submit Proposal
+												<input type="radio" name="participationOption" style="vertical-align: middle; margin-right:5px" value ="Submit Proposal" id="proposalRadioBtn" >Submit Proposal
 											</label>
 											<label class="btn"">
-												<input type="radio" name="participationOption" value ="Register For Seminar" id="seminarRadioBtn">Register For Seminar
+												<input type="radio" name="participationOption" style="vertical-align: middle; margin-right:5px" value ="Register For Seminar" id="seminarRadioBtn">Register For Seminar
 											</label>
 										</div>
 									  </div>
@@ -220,8 +220,8 @@
 										<img style="max-width:200px; max-height:105px" src="../files/captcha.gif" class="img-responsive" id="captcha" alt="Responsive image">
 									</div>
 									<div class="form-actions col-sm-4">
-									  <button type="submit" class="btn btn-lg btn-black"><span></span>Send</button>
 									  <button type="reset" class="btn btn-lg btn-black">Clear</button>
+									  <button type="submit" class="btn btn-lg btn-black"><span></span>Send</button>
 									  <img style="visibility: hidden;" alt="Sending ..." src="../files/ajax-loader.gif" class="ajax-loader"><p></p>
 									</div>
 								</div>
@@ -232,12 +232,11 @@
 				</div>
 			</div>
 		</footer>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
-	
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
 
 	<script>

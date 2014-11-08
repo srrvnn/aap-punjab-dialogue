@@ -52,7 +52,7 @@ $email=$_POST['email'];
  curl_close($rest);  
  // Send mail by PHP Mail Function
 
- mail("vijay.sirohi@gmail.com", "User added", "Contact us");
+ mail("delhidialogue@aamaadmiparty.org", "User added", "Contact us");
      $output = array(
          "message" => "Email was sent successfully!",
          "messageId"=> "3",
