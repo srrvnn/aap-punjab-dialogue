@@ -53,7 +53,7 @@
 						<div class="vc_span12 wpb_column column_container">
 							<div class="main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
 							<div class="main-content col-sm-12">
-								 <form id="notification-form" action="secure_email_code2.php" role="form">
+								 <form id="notification-form" action="../services/get-updates.php" role="form">
 									<div class="form-inline vertical-align">
 										<div class="form-group inline-form-group">
 										<input name="name" class="form-control" placeholder="Enter Name" id="customerName">
@@ -91,7 +91,7 @@
 				<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Register or Submit a Proposal</h1><div style="clear:both; width:100%; height:60px"></div>
 					<div class="container">
-					<form action="secure_email_code3.php" id="contact-form" class="form-horizontal">
+					<form action="../services/particate.php" id="contact-form" class="form-horizontal">
 							<fieldset>
 								<div class="row">
 									<div class="control-group">
