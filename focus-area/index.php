@@ -98,10 +98,10 @@
 									  <div class="controls inline-radiogroup">
 										<div class="btn-group">
 											<label class="btn">
-												<input type="radio" name="participationOption" style="vertical-align: middle; margin-right:5px" value ="Submit Proposal" id="proposalRadioBtn" >Submit Proposal
+												<input type="radio" name="participationOption" style="vertical-align: top; margin-right:5px" value ="Submit Proposal" id="proposalRadioBtn" >Submit Proposal
 											</label>
 											<label class="btn"">
-												<input type="radio" name="participationOption" style="vertical-align: middle; margin-right:5px" value ="Register For Seminar" id="seminarRadioBtn">Register For Seminar
+												<input type="radio" name="participationOption" style="vertical-align: top; margin-right:5px" value ="Register For Seminar" id="seminarRadioBtn">Register For Seminar
 											</label>
 										</div>
 									  </div>
