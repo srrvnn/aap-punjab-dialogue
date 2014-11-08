@@ -5,14 +5,9 @@
 
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Navbar and Register Proposal Style -->
-	<link rel="stylesheet" href="../files/mainstyle.css" type="text/css" media="all">
-	<link rel="stylesheet" id="dt-default-style-css" href="../files/style.css" type="text/css" media="all">
-	<link rel="stylesheet" id="options-google-fonts" href="../files/css_002.css" type="text/css" media="all">		
-
-	<!-- Page content style -->	
+	<link rel="stylesheet" href="../css/header.css" type="text/css" media="all">  
+	<link rel="stylesheet" href="../css/focus-area.css" type="text/css" media="all">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" id="dt-issue-css" href="../css/focus-area.css" type="text/css" media="all">
 
 <body>
 
@@ -62,8 +57,8 @@
 										<input name="email" class="form-control" placeholder="Enter Email" id="customerEmail">
 									  </div>
 									  <input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
-									  <button type="submit" class="blue-fixed-btn button"  name="submit" id="send">
-										<span></span>Get Update
+									  <button type="submit" class="disabled blue-fixed-btn button"  name="submit" id="btnUpdate" disabled>
+										<span name="spinner"></span><span>Loading...</span>
 									  </button>
 									</div>
 									  <div style="margin-top:30px; margin-bottom: 30px">
@@ -220,9 +215,8 @@
 										<img style="max-width:200px; max-height:105px" src="../files/captcha.gif" class="img-responsive" id="captcha" alt="Responsive image">
 									</div>
 									<div class="form-actions col-sm-4">
-									  <button type="reset" class="btn btn-lg btn-black">Clear</button>
-									  <button type="submit" class="btn btn-lg btn-black"><span></span>Send</button>
-									  <img style="visibility: hidden;" alt="Sending ..." src="../files/ajax-loader.gif" class="ajax-loader"><p></p>
+										<button type="reset" id="btnClear" class="btn btn-lg btn-black" disabled>Loading...</button>
+									  <button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</button>
 									</div>
 								</div>
 							  </fieldset>
@@ -280,6 +274,12 @@
 				//select/deselect all checkboxes with class "focus-area-checkbox" 
 				focusAreaPage.setAllCheckboxStatus(this.checked);
 			});
+			$("#btnUpdate").removeAttr("disabled");
+			$( "#btnUpdate" ).children().last().text("Get Update");
+			$("#btnSend").removeAttr("disabled");
+			$( "#btnSend").children().last().text("Send");
+			$("#btnClear").removeAttr("disabled");
+			$( "#btnClear" ).text("Clear");
 		});
 	</script>
 </body>

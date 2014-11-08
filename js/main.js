@@ -205,8 +205,8 @@ var Dialouge = function() {
         disableButton = function(button) {
         	button.addClass("disabled");
         },
-        isButtonEnabled = function(button) {
-            return !button.hasClass("disabled");
+        isButtonDisabled = function(button) {
+            return button.hasClass("disabled");
         };
 		//public members
 		return {
@@ -217,7 +217,7 @@ var Dialouge = function() {
 			showSuccessMessage : showSuccessMessage,
 			enableButton : enableButton,
 			disableButton : disableButton,
-			isButtonEnabled : isButtonEnabled
+			isButtonDisabled : isButtonDisabled
 		};
 	})(),
 	// This is thread safe and a global/singelton class
@@ -228,7 +228,7 @@ var Dialouge = function() {
 				return false;
 			}
 			var submitButton = $(form).find( "button[type='submit']" );
-			if( submitButton === undefined || submitButton.length === 0) {
+			if( submitButton === undefined || submitButton.length === 0 || Dialouge.WindowUtils.isButtonDisabled(submitButton)) {
 				return false;
 			}
 			if(successMessage === undefined) {

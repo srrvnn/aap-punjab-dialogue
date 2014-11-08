@@ -387,8 +387,8 @@
 								  </div>
 								</div>
 								<div class="form-actions">
-									<button type="reset" class="btn btn-lg btn-black">Clear</button>
-									<button type="submit" id="contactBtn" class="btn btn-lg btn-black"><span></span>Send</button>
+									<button type="reset" id="btnClear" class="btn btn-lg btn-black" disabled>Loading...</button>
+									<button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</button>
 								</div>
 							  </fieldset>
 							  	
@@ -474,6 +474,12 @@ $(document).ready(function() {
 	
 	// Validate all inputs and call Dialouge.MainPage.contactUsCallBack() if all inputs are valid.
 	contactUsFormValidator.addValidator(Dialouge.MainPage.contactUsCallBack);
+	
+	$("#btnSend").removeAttr("disabled");
+	$( "#btnSend").children().last().text("Send");
+	$("#btnClear").removeAttr("disabled");
+	$( "#btnClear" ).text("Clear");
+	$( "#btnClear" ).text("Clear");
 });
 </script>
 
