@@ -41,35 +41,36 @@
 	<div id="wrapper">	
 	<div style="height: 70px;" class="menu-fixer"></div>
 		<section class="col-sm-12" style="background-color: rgba(236, 236, 236, 0.36)">
-			<article id="page-82" class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 col-sm-12 begin-content">
-				<section style="border: 1px solid #e3e3e3">
-					
-					<div class="lighter-overlay">
+			<article id="page-82" style="padding:0" class="container col-sm-offset-2 col-sm-8 begin-content">
+				<section class="row" style="border: 1px solid #e3e3e3">
+					<div class="row uniform-sides lighter-overlay">
 						<div class="vc_span12 wpb_column column_container">
-							<div class="main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
-							<div class="main-content col-sm-12">
-								 <form id="notification-form" action="../services/get-updates.php" role="form">
-									<div class="form-inline vertical-align">
-										<div class="form-group inline-form-group">
-										<input name="name" class="form-control" placeholder="Enter Name" id="customerName">
-									  </div>
-									  <div class="form-group inline-form-group">
-										<input name="email" class="form-control" placeholder="Enter Email" id="customerEmail">
-									  </div>
-									  <input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
-									  <button type="submit" class="disabled blue-fixed-btn button"  name="submit" id="btnUpdate" disabled>
-										<span name="spinner"></span><span>Loading...</span>
-									  </button>
-									</div>
-									  <div style="margin-top:30px; margin-bottom: 30px">
-										  <ul class="error" style="list-style-type: none;" id="notificationErrorMessage"></ul>
-										  <label class="message" hidden></label>
-									  </div>
-								  
-								</form>
-								<div id="focusAreaSection" class="col-sm-12">
+							<div class="col-sm-12 main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
+							<div class="main-content uniform-sides col-sm-12">
+								<div class="notification-form-container row">
+									 <form id="notification-form" action="../services/get-updates.php" role="form">
+										<div class="row form-inline " style="margin-left:15px">
+											<div class="row form-group inline-form-group">
+												<input name="name" class="form-control" placeholder="Enter Name" id="customerName">
+											 
+												<input name="email" class="form-control" placeholder="Enter Email" id="customerEmail">
+											 
+											  <input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
+											  <button type="submit" class="col-sm-4 blue-fixed-btn button"  name="submit" id="btnUpdate" disabled>
+												<span name="spinner"></span><span>Loading...</span>
+											  </button>
+											</div>
+										  <div class="row fixed-margin-bottom" style="margin-left:15px">
+											  <ul class="error" style="list-style-type: none;" id="notificationErrorMessage"></ul>
+											  <label class="message" hidden></label>
+										  </div>
+										</div>
+									</form>
 								</div>
-								<div class="button-group col-sm-12">
+								<div id="focusAreaSection" class=" col-sm-12">
+									
+								</div>
+								<div class="row button-group col-sm-12">
 									<a href="#connect" id="registerBtn" class="blue-fixed-btn button" role="button">Register</a>
 									<a href="#connect" id="proposalBtn" class="blue-fixed-btn button" role="button">Submit Proposal</a>
 									<a href="http://discuss.aamaadmiparty.org/discussions/policies/delhi-dialogue" id="discussBtn" class="blue-fixed-btn button" role="button">Discuss Online</a>
