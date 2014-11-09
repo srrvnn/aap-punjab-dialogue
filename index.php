@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/header.css" type="text/css" media="all">  
 		<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">		
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">	 
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
@@ -45,7 +45,6 @@
 			</div><!--end three-fourth-->
 		</div><!--end centered-wrapper-->
 	</header>		
-	
 	<div id="wrapper">
 		<div id="home"></div><div style="height: 70px;" class="menu-fixer"></div>
 		<section>
@@ -139,13 +138,14 @@
 					<div class="wpb_wrapper">
 						<h1 class="section-title">FOCUS AREAS</h1>
 						<div>
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
 									<img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment">
-									<b>Jobs and Employment</b><br/>
+									<span><b>Jobs and Employment</b><br/>
 										Delhi should have growing employment opportunities across various types of industries. Small businesses needs to be encouraged as viable employment opportunity. Labor reforms are needed to provide fair & conducive work environment.
+									</span>
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -156,12 +156,14 @@
 								</div>
 							</div>
 
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class= 'row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Industry.jpg" class="img-responsive" alt="Enterprise: Trade and Industry">
-									<b>Enterprise: Trade and Industry</b><br/>Being India's capital, Delhi should be India's premier services hub and trading zone. Simplify laws, provide excellent infrastructure & incentivize enterpreneurship. It should be straightforward to build a new company in Delhi.
+									<span>
+										<b>Enterprise: Trade and Industry</b><br/>Being India's capital, Delhi should be India's premier services hub and trading zone. Simplify laws, provide excellent infrastructure & incentivize enterpreneurship. It should be straightforward to build a new company in Delhi.
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=2">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -171,13 +173,14 @@
 									</a>
 								</div>
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Women.jpg" class="img-responsive" alt="Women Rights (Safety)">
-									<b>Women Rights (Safety)</b><br/>Delhi would have world class laws for upholding women rights at workplace, public places & home. We envision a Delhi in which women will be acknowledged and treated as equal citizens in their own right.</i>
+									<span>
+										<b>Women Rights (Safety)</b><br/>Delhi would have world class laws for upholding women rights at workplace, public places & home. We envision a Delhi in which women will be acknowledged and treated as equal citizens in their own right.</i>
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=3">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -187,13 +190,14 @@
 									</a>
 								</div>
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Sanitation.jpg" class="img-responsive" alt="Sanitation and Solid Waste Mgmt">
-									<b>Sanitation and Solid Waste Mgmt</b><br/>Comprehensive sanitation, sewage and solid waste management for every living establishment in Delhi. Easy availability of public toilets & waste bins for use. Discourage littering by heavy fines
+									<span>
+										<b>Sanitation and Solid Waste Mgmt</b><br/>Comprehensive sanitation, sewage and solid waste management for every living establishment in Delhi. Easy availability of public toilets & waste bins for use. Discourage littering by heavy fines
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=4">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -203,13 +207,14 @@
 									</a>
 								</div>
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/SocialWelfare.jpg" class="img-responsive" alt="Social Welfare and Social Justice">
-									<b>Social Welfare and Social Justice</b><br/>Delhi would provide equal opportunities across all sections of society. There would be no appeasement of specific people in a community. Policies would focus on equal access to education, health & job opportunities. 
+									<span>
+										<b>Social Welfare and Social Justice</b><br/>Delhi would provide equal opportunities across all sections of society. There would be no appeasement of specific people in a community. Policies would focus on equal access to education, health & job opportunities. 
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=5">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -219,13 +224,14 @@
 									</a>
 								</div>
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Transport.jpg" class="img-responsive" alt="Transport">
-									<b>Transportation</b><br/>Delhi would have high quality diverse public transport to reduce peak time load on roads. The transportation would include Metro trains, last mile connectivity via feeder bues & private transport vehicles like autorickshaws. 
+									<span>
+										<b>Transportation</b><br/>Delhi would have high quality diverse public transport to reduce peak time load on roads. The transportation would include Metro trains, last mile connectivity via feeder bues & private transport vehicles like autorickshaws. 
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=6">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -235,13 +241,14 @@
 									</a>
 								</div>
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Electricity.jpg" class="img-responsive" alt="Energy and Electricity">
-									<b>Energy and Electricity</b><br/>Delhi has self-sufficient 100% electricity & increase depedence on clean energy
+									<span>
+										<b>Energy and Electricity</b><br/>Delhi has self-sufficient 100% electricity & increase depedence on clean energy
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=7">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -251,13 +258,14 @@
 									</a>
 								</div>
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Education.jpg" class="img-responsive" alt="Education">
-									<b>Education</b><br/>Delhi should have high quality school education system with access to all sections of society. Focus on creation & explansion of world class colleges & universities. 
+									<span>
+										<b>Education</b><br/>Delhi should have high quality school education system with access to all sections of society. Focus on creation & explansion of world class colleges & universities. 
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=8">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -267,13 +275,14 @@
 									</a>
 								</div>
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Health.jpg" class="img-responsive" alt="Health">
-									<b>Health</b><br/>Delhi would have drastically improved quality of public hospitals & further expand network. Health care delivery systems would be modernized using technology. Promote focus on proactive prevention of diseases to reduce healthcare costs & improve quality of life. 
+									<span>
+										<b>Health</b><br/>Delhi would have drastically improved quality of public hospitals & further expand network. Health care delivery systems would be modernized using technology. Promote focus on proactive prevention of diseases to reduce healthcare costs & improve quality of life. 
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=9">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -282,16 +291,16 @@
 										</div>
 									</a>
 								</div>
-								
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Housing.jpg" class="img-responsive" alt="Land and Housing">
-									<b>Land and Housing</b><br/>Delhi would have transparent land allotment policies, enforce infrastructure guidelines and protect rights of home buyers. Long term policies to prevent mushrooming of unauthorised settlements by ensuring availability of low-cost housing.  
+									<span>
+										<b>Land and Housing</b><br/>Delhi would have transparent land allotment policies, enforce infrastructure guidelines and protect rights of home buyers. Long term policies to prevent mushrooming of unauthorised settlements by ensuring availability of low-cost housing.  
+									</span>									
 								</div>
-								<div class="col-sm-3">
-									<a href="focus-area/index.php?id=10"">
+								<div class="issueDetails col-sm-3 col-xm-12">
+									<a href="focus-area/index.php?id=10">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
@@ -300,13 +309,14 @@
 									</a>
 								</div>
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Rural.jpg" class="img-responsive" alt="Rural Delhi">
-									<b>Rural Delhi</b><br/>Delhi's rural areas would have good quality public infrastrasture including schools & hospitals. 
+									<span>
+										<b>Rural Delhi</b><br/>Delhi's rural areas would have good quality public infrastrasture including schools & hospitals. 
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=11">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -316,13 +326,14 @@
 									</a>
 								</div>
 							</div>
-
-							<div class= 'issue vertical-align'>
-								<div class="issueSummary col-sm-9">
+							<div class='row issue'>
+								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Water.jpg" class="img-responsive" alt="Water">
-									<b>Water</b><br/>Every home in Delhi has access to clean piped water. Remove dependence on water tankers. Develop Delhi's water resources & implement ideas like rainwater harvesting
+									<span>
+										<b>Water</b><br/>Every home in Delhi has access to clean piped water. Remove dependence on water tankers. Develop Delhi's water resources & implement ideas like rainwater harvesting
+									</span>									
 								</div>
-								<div class="col-sm-3">
+								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=12">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -369,7 +380,7 @@
 						</div>
 
 						<div class="col-offset-sm-1 col-sm-5" style="padding-top:30px">
-						<form action="services/contact-us.php" id="contact-form" class="form-horizontal">
+						<form action="secure_email_code.php" id="contact-form" class="form-horizontal">
 							<fieldset>
 								<div class="control-group col-sm-6">
 								  <div class="controls">
@@ -474,7 +485,6 @@ $(document).ready(function() {
 	
 	// Validate all inputs and call Dialouge.MainPage.contactUsCallBack() if all inputs are valid.
 	contactUsFormValidator.addValidator(Dialouge.MainPage.contactUsCallBack);
-	
 	$("#btnSend").removeAttr("disabled");
 	$( "#btnSend").children().last().text("Send");
 	$("#btnClear").removeAttr("disabled");
