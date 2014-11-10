@@ -103,9 +103,9 @@
 							<div >
 								<object width="100%" height="349">
 								  <param name="movie"
-										 value="http://www.youtube.com/v/YCepHID3YBM"></param>
+										 value="http://www.youtube.com/v/MYg42BjiFFM"></param>
 								  <param name="allowScriptAccess" value="always"></param>
-								  <embed src="http://www.youtube.com/v/YCepHID3YBM"
+								  <embed src="http://www.youtube.com/v/MYg42BjiFFM"
 										 type="application/x-shockwave-flash" wmode="Opaque"
 										 allowscriptaccess="always" frameborder="0" allowfullscreen="1" 
 										 width="100%" height="349"></embed>
