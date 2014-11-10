@@ -412,7 +412,7 @@
 						</div>
 
 						<div class="col-offset-sm-1 col-sm-5" style="padding-top:30px">
-						<form action="secure_email_code.php" id="contact-form" class="form-horizontal">
+						<form action="services/contact-us.php" id="contact-form" class="form-horizontal">
 							<fieldset>
 								<div class="control-group col-sm-6">
 								  <div class="controls">
