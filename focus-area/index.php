@@ -1,3 +1,32 @@
+<?php
+	global $focus_area_details;
+	// Default focus area Id
+	$requested_focus_area_id="1";
+
+	if(isset($_GET["id"]) && !empty($_GET["id"])) {
+		$requested_focus_area_id = htmlspecialchars($_GET["id"]);
+	}
+	// Read the file contents into a string variable,
+	// and parse the string into a data structure
+	$contents = file_get_contents("../data/abc.json");
+	$contents = utf8_encode($contents); 
+	$all_focus_areas_details = json_decode($contents, true);
+	
+	// Find focus area details from "id" request parameter
+	if(isset ($all_focus_areas_details)) {
+		foreach ($all_focus_areas_details as $a_focus_area_details) {
+			if($a_focus_area_details["id"] == $requested_focus_area_id) {
+				$focus_area_details = $a_focus_area_details;
+				break;
+			}
+		}
+	} else {
+		$focus_area_details["longDesc"] = "We encountered an Internal error. Please try again later.";
+	}
+	if(!isset ($focus_area_details)) {
+		$focus_area_details["longDesc"] = "Invalid request. Focus Area requested is not supported. Please make sure that you entered a valid URL.";
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +39,7 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 <body>
-
+	<!-- Initialize all variables here using Php-->
 	<!-- preloader-->
 	<header id="header" class="show-original-logo solid-header scrolled-header" 
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
@@ -45,7 +74,9 @@
 				<section class="row" style="border: 1px solid #e3e3e3">
 					<div class="row uniform-sides lighter-overlay">
 						<div class="vc_span12 wpb_column column_container">
-							<div class="col-sm-12 main-header"><h2>Focus Area</h2><h1 id="focusAreaHeader"></h1></div>
+							<div class="col-sm-12 main-header"><h2>Focus Area</h2>
+								<h1 id="focusAreaHeader">
+									<?php echo $focus_area_details["name"] ?></h1></div>
 							<div class="main-content uniform-sides col-sm-12">
 								<div class="notification-form-container row">
 									 <form id="notification-form" action="../services/get-updates.php" role="form">
@@ -68,12 +99,12 @@
 									</form>
 								</div>
 								<div id="focusAreaSection" class=" col-sm-12">
-									
+									<?php echo $focus_area_details["longDesc"]; ?>
 								</div>
 								<div class="row button-group col-sm-12">
 									<a href="#connect" id="registerBtn" class="blue-fixed-btn button" role="button">Register</a>
 									<a href="#connect" id="proposalBtn" class="blue-fixed-btn button" role="button">Submit Proposal</a>
-									<a href="http://discuss.aamaadmiparty.org/discussions/policies/delhi-dialogue" id="discussBtn" class="blue-fixed-btn button" role="button">Discuss Online</a>
+									<a href="<?php echo $focus_area_details["discussionUrl"] ?>" id="discussBtn" class="blue-fixed-btn button" role="button">Discuss Online</a>
 								</div>
 							</div>
 						</div>
@@ -238,8 +269,7 @@
 		 $(document).ready(function(){
 			var focusAreaPage = Dialouge.FocusAreaPage("#focusAreaHeader", "#focusAreaSection", ".focus-area-checkbox");
 			focusAreaPage.initOrganizationTypeFields("#orgTypeLbl", "#orgType");
-			focusAreaPage.initPageContents();
-			
+
 			var registrationFormValidator = Dialouge.FormValidator('#contact-form');
 			var notificationFormValidator = Dialouge.FormValidator('#notification-form', '#notificationErrorMessage');
 			registrationFormValidator.addValidator(focusAreaPage.registrationCallBack);
