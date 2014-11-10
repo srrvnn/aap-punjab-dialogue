@@ -91,6 +91,15 @@ top:80vh;left:50vw;opacity:1;transform:translate(-50%, 0%);text-transform:upperc
 	font-size: 20px;
 	line-height: 1.33;
 }
+@media only screen 
+and (max-width : 768px) {
+	.btn-xl {
+	padding: 10px 15px;
+	font-size: 12px;
+	line-height: 1.33;
+}
+}
+
 .btn-orange { 
 	color:#fff;
 	background:orange;
