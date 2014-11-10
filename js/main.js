@@ -347,59 +347,15 @@ var Dialouge = function() {
 		getCheckBoxes = function() {
 			return checkboxes;
 		},
-		setHeader = function(header) {
-			headerContainer.text(header);
-		},
-		setSection = function(section) {
-			sectionContainer.html("<p>" + section + "</p>");
-		},
 		setAllCheckboxStatus = function(checked) {
 			checkboxes.each(function() {
 				this.checked = checked;
 			});
 		},
-		setContents = function(focusAreas, currentFocusAreaId) {
-			if(focusAreas.length !== checkboxes.length) {
-				console.log("mismatch");
-			}
-			checkboxes.each(function(index, checkbox) {
-				var focusArea = focusAreas[index];
-				if(currentFocusAreaId == focusArea.id) {
-					this.checked = true;
-					setFocusArea(focusArea);
-				}
-			});
-		},
-		initPageContents = function() {
-			var queryString = Dialouge.UrlUtils.getQueryString();
-			var focusAreaId = queryString["id"];
-			if(focusAreaId) {
-				// Remove section if specified
-				focusAreaId = focusAreaId.replace(/#.*/i, "");
-			}
-			if(!focusAreaId) {
-				focusAreaId = "1"; // default focus issue page Id
-			}
-			// Load focus page data from issue-details.JSON file
-			var jqxhr = $.getJSON( "../data/issue-details.json", function() {
-			})
-			  .done(function(result) {
-				setContents(result, focusAreaId);
-			  })
-			  .fail(function() {
-				
-			  })
-			  .always(function() {
-			  });
-		},
 		initOrganizationTypeFields = function(orgTypeLblId, orgTypeId) {
 			var orgTypeMessage = Dialouge.ConstantUtils.DD_ORG_TYPE_MESSAGE;
 			$(orgTypeLblId).text(orgTypeMessage);
 			$(orgTypeId).val(orgTypeMessage);
-		},
-		setFocusArea = function(focusArea) {
-			setHeader(focusArea.name);
-			setSection(focusArea.longDesc);
 		},
 		// Call back function to be called after "Get Update" form validation is successful
 		getUpdatesCallBack = function (form, messageContainer) {
@@ -424,9 +380,7 @@ var Dialouge = function() {
 			getHeader : getHeader,
 			getCheckBoxes : getCheckBoxes,
 			setAllCheckboxStatus : setAllCheckboxStatus,
-			setContents : setContents,
 			getTotalFocusAreas: getTotalFocusAreas,
-			initPageContents : initPageContents,
 			initOrganizationTypeFields : initOrganizationTypeFields,
 			getUpdatesCallBack : getUpdatesCallBack,
 			registrationCallBack : registrationCallBack
