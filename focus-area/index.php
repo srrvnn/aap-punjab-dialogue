@@ -41,7 +41,7 @@
 	<div id="wrapper">	
 	<div style="height: 70px;" class="menu-fixer"></div>
 		<section class="col-sm-12" style="background-color: rgba(236, 236, 236, 0.36)">
-			<article id="page-82" style="padding:0" class="container col-sm-offset-2 col-sm-8 begin-content">
+			<article id="page-82" style="padding:0" class="container col-sm-offset-1 col-sm-10 col-lg-offset-2 col-lg-8 begin-content">
 				<section class="row" style="border: 1px solid #e3e3e3">
 					<div class="row uniform-sides lighter-overlay">
 						<div class="vc_span12 wpb_column column_container">

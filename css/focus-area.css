@@ -76,7 +76,7 @@ footer{padding:0 !important;}
 .lighter-overlay{background-color:#fff;}
 .main-content{background-color:#ececec;}
 .main-content #focusAreaSection{min-height:100px;padding:30px;background-color:#fff;font-family:'Open Sans';line-height:24px;font-size:16px;font-weight:500;color:black;}
-.main-content input{min-width:250px !important;height:40px !important;margin-right:40px !important;}
+.main-content input{min-width:205px !important;height:40px !important;margin-right:40px !important;}
 .main-header{margin-bottom:.25rem;padding:0 1.5em 1em;line-height:1em;}
 .main-header *{font-family:"alternate-gothic-no-3-d", sans-serif;font-weight:normal;text-transform:uppercase;}
 .main-header h2{font-size:22px;line-height:22px;margin:4px 0 0 2px;color:#808285;}
@@ -92,6 +92,7 @@ footer{padding:0 !important;}
 	padding:30px!important;
 }
 .fixed-margin-bottom = { margin-bottom:30px !important }
+.blue-fixed-btn { width: 205px !important; }
 .blue-fixed-btn,
 .panel{background-color:#00ABEC;border-radius:5px;}
 button.blue-fixed-btn:active,
@@ -113,9 +114,9 @@ button.dropdown-toggle,
 .captcha > *{float:left;margin-right:16px;}
 .captcha div > *{float:top;}
 .inline-form-group > input{margin-right:1em}
-.inline-form-group > * {margin-bottom:30px;float:left;max-width:250px;}
+.inline-form-group > * {margin-bottom:30px;float:left;width:205px !important;}
 .button-group{text-align:center;}
-.button-group a{margin-left:2em;margin-top:2em;}
+.button-group a{margin-left:1em;margin-right:1em;margin-top:2em;}
 h1.section-title:after{border-bottom:orange 1px solid;width:220px;}
 .vertical-align{display:flex !importtant;}
 #notification-form .message.invalid{color:red;}
@@ -137,7 +138,7 @@ and (max-width : 768px) {
 	}
 	.fixed-margin-bottom = { margin-bottom:15px !important }
 	.menu-fixer > section {padding:0}
-	.inline-form-group > * {margin-bottom:15px;float:left;max-width:250px;}
+	.inline-form-group > * {margin-bottom:15px;float:left;max-width:205px!important;}
 	.main-header h1{color:rgb(1, 113, 208);font-size: 48px;line-height: 49px;}
 }
 .round{border-radius:1.5em !important;}
