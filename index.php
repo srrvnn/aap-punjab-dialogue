@@ -81,19 +81,13 @@
 					<img src="images/main/xs_lsp.jpg" alt="Welcome To Delhi Dialog">
 				</noscript>
 			</span>
-			<div  class="visiontext">
-			 	<span id="vision">It all starts with a vision</span><br />
-				<div class="playintro">											
-					<a class="oval_parent" href="#intro">
-						<div  class="dt-service-wrapper oval" style="background-color:orange;">
-							<div id="oval" class="dt-service-item oval" style="color:blue;">
-								<span>Watch Intro</span>
-							</div>
-						</div>
+			<div class="visiontext">
+			 	<span id="vision">It all starts with a vision</span><br />				
+			</div>
+			<div class="watch-intro"><a href="#intro">
+						<span class="btn-xl btn-orange round">Watch Intro</button>
 					</a>
 				</div>
-			</div>
-
 	
 			<div id="intro" style="margin-top: 10px; padding-top: 100px;" class="lighter-overlay">
 				<h1 class="section-title">INTRODUCING DELHI DIALOGUE</h1>
@@ -113,8 +107,8 @@
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div>
-								<h1 style="font-size: 56px;  line-height: 56px;	color: #f78d1e; font-family: Corbel, 'Myriad Pro', 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;font-weight: 600;	margin-top: 0;">
+							<div class="intro-header">
+								<h1>
 									Make Delhi world class city in 5 years
 								</h1>
 								<p style="font-family: margin: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 16px">

@@ -77,3 +77,31 @@ html ul#mainnav li a{font-family:Open Sans;font-weight:700;font-style:normal;fon
 .show-original-logo .white-logo{display:none;}
 a{color:#FE7E17;}
 .nav-btn:hover{color:#FE7E17;}
+.visiontext{position:absolute;background:none repeat scroll 0% 0% transparent;z-index:2 !important;
+padding:10px 30px;letter-spacing:0px;font-size:4.8vw;font-weight:bold;color:white;white-space:nowrap;line-height:1.13;
+top:50vh;left:50vw;opacity:1;transform:translate(-50%, 0%);text-transform:uppercase;
+}
+.watch-intro{position:absolute;background:none repeat scroll 0% 0% transparent;z-index:2 !important; 
+top:80vh;left:50vw;opacity:1;transform:translate(-50%, 0%);text-transform:uppercase;
+}
+.watch-intro > * {text-align:center;font-weight:bold}
+#vision{padding:10px 10px 10px 10px;border:1px solid white;}
+.btn-xl {
+	padding: 15px 25px;
+	font-size: 20px;
+	line-height: 1.33;
+}
+.btn-orange { 
+	color:#fff;
+	background:orange;
+	text-transform: uppercase;
+}
+.btn-orange:active,.btn-orange:focus,.btn-orange:hover,{background:#FE7E17;border-color: #adadad;}
+.container {
+    display: table;
+    vertical-align: middle;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
