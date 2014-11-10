@@ -248,6 +248,7 @@ var Dialouge = function() {
 					if(status == 'Completed') {
 						Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
 							successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
+						clearFields(form);
 					} else {
 						Dialouge.WindowUtils.showErrorMessage(messageContainer, 
 							Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
@@ -266,7 +267,15 @@ var Dialouge = function() {
                 Dialouge.WindowUtils.enableButton(submitButton);
 				return false;
             }
-		};	
+		},
+		clearFields = function(form) {
+			var clearButtonContainer = $(form).find( "button[type='reset']" );
+			if(clearButtonContainer.length == 1) {
+				clearButtonContainer.trigger( "click" );
+				return true;
+			}
+			return false;
+		};
 		//public members
 		return {
 			formValidationSuccessCallBack : formValidationSuccessCallBack
