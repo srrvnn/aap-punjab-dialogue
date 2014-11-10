@@ -10,6 +10,7 @@ a:hover{color:#444;}
 .percent-three-fourth,
 .percent-one-fourth{position:relative;margin-right:4%;float:left;margin-bottom:20px;}
 .column-last{margin-right:0!important;clear:right;}
+.mainImg img { height:100vh;width:100vw;}
 #header{position:fixed;z-index:4000;display:block;width:100%;top:0;-webkit-transition:all 0.2s linear;-moz-transition:all 0.2s linear;-o-transition:all 0.2s linear;transition:all 0.2s linear;}
 #header .percent-one-fourth,
 #header .percent-three-fourth{margin-bottom:0;}

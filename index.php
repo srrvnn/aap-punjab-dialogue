@@ -6,7 +6,7 @@
 
 </style>			
 		<!-- mobile meta tag -->		
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content="Delhi Dialogue Portal by AAP">
 		<title>Delhi Dialogue </title>
 		
@@ -15,7 +15,8 @@
 		<link rel="stylesheet" href="css/header.css" type="text/css" media="all">  
 		<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">	 
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="js/picturefill.js"></script>		
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
@@ -48,7 +49,38 @@
 	<div id="wrapper">
 		<div id="home"></div><div style="height: 70px;" class="menu-fixer"></div>
 		<section>
-			<img class="defaultimg" src="images/main.jpg" style="height:100vh;width:100vw"></img>
+			<span class="mainImg" data-picture data-alt="Welcome To Delhi Dialog">
+				<span data-src="images/main/xs_lsp.jpg"></span>
+
+				<!-- Smartphones (landscape) -->
+				<span data-src="images/main/xs_lsp.jpg" data-media="only screen and (max-device-height : 480px) and (max-device-width : 768px) and (orientation : landscape)"></span>
+				<!-- Smartphones (portrait) -->
+				<span data-src="images/main/xs_prt.jpg" data-media="only screen and (max-device-width : 480px) and (max-device-height : 768px) and (orientation : portrait)"></span>
+
+				<!-- Tablets (landscape) -->
+				<span data-src="images/main/md_lsp.jpg" data-media="only screen and (min-device-height : 481px) and (max-device-width : 1280px) and (orientation : landscape)"></span>
+
+				<!-- Tablets (portrait) -->
+				<span data-src="images/main/sm_prt.jpg" data-media="only screen and (min-device-width : 481px) and (max-device-height : 1280px) and (orientation : portrait)"></span>
+
+				<!-- Desktops and laptops -->
+				<span data-src="images/main/lg_lsp.jpg" data-media="only screen and (min-width : 1025px) and (max-width: 1600px)"></span>
+				
+				<!-- Desktops and laptops -->
+				<span data-src="images/main/xl_lsp.jpg" data-media="only screen and (min-width : 1601px) and (max-width: 1920px)"></span>
+				
+				<!-- Exrta Large screens -->
+				<span data-src="images/main/xxl_lsp.jpg" data-media="only screen and (min-width : 1921px)"></span>
+				
+				<!--[if (lt IE 9) & (!IEMobile)]>
+					<span data-src="images/main/md_lsp.jpg"></span>
+				<![endif]-->
+
+				<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+				<noscript>
+					<img src="images/main/xs_lsp.jpg" alt="Welcome To Delhi Dialog">
+				</noscript>
+			</span>
 			<div  class="visiontext">
 			 	<span id="vision">It all starts with a vision</span><br />
 				<div class="playintro">											
