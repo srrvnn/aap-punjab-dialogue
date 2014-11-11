@@ -239,14 +239,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="captcha col-sm-8">
-										<div>
-											<label>Word Verification:</label>
-											<input type="text" name="captcha" placeholder="captcha">
-										</div>
-										<img style="max-width:200px; max-height:105px" src="../files/captcha.gif" class="img-responsive" id="captcha" alt="Responsive image">
-									</div>
-									<div class="form-actions col-sm-4">
+									<div class="form-actions col-sm-offset-8 col-sm-4">
 										<button type="reset" id="btnClear" class="btn btn-lg btn-black" disabled>Loading...</button>
 									  <button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</button>
 									</div>
