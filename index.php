@@ -186,7 +186,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Industry.jpg" class="img-responsive" alt="Enterprise: Trade and Industry">
 									<span>
-										<b>Enterprise: Trade and Industry</b><br/>Being India's capital, Delhi should be India's premier services hub and trading zone. Simplify laws, provide excellent infrastructure & incentivize enterpreneurship. It should be straightforward to build a new company in Delhi.
+										<b>Enterprise: Trade and Industry</b><br/>Being the capital of India, Delhi should be its premier services hub and trading zone with excellent infrastructure. Laws should be simplified and entrepreneurship should be incentivized. Additionally, establishing a new company in Delhi should be straightforward.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -203,7 +203,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Women.jpg" class="img-responsive" alt="Women Rights (Safety)">
 									<span>
-										<b>Women Rights (Safety)</b><br/>Delhi would have world class laws for upholding women rights at workplace, public places & home. We envision a Delhi in which women will be acknowledged and treated as equal citizens in their own right.</i>
+										<b>Women Rights and Safety</b><br/>Delhi should have stringent laws to uphold women’s rights at the workplace and at home. We envision a Delhi in which women will be acknowledged and treated as equal citizens in their own right</i>
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -220,7 +220,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Sanitation.jpg" class="img-responsive" alt="Sanitation and Solid Waste Mgmt">
 									<span>
-										<b>Sanitation and Solid Waste Mgmt</b><br/>Comprehensive sanitation, sewage and solid waste management for every living establishment in Delhi. Easy availability of public toilets & waste bins for use. Discourage littering by heavy fines
+										<b>Sanitation and Solid Waste Management</b><br/>There should be comprehensive sanitation, sewage and solid waste management for every living establishment in Delhi as well as easy availability of public toilets and waste bins. Littering should be discouraged by heavy fines.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -237,7 +237,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/SocialWelfare.jpg" class="img-responsive" alt="Social Welfare and Social Justice">
 									<span>
-										<b>Social Welfare and Social Justice</b><br/>Delhi would provide equal opportunities across all sections of society. There would be no appeasement of specific people in a community. Policies would focus on equal access to education, health & job opportunities. 
+										<b>Social Welfare and Social Justice</b><br/>Delhi should provide equal opportunities across all sections of the society. There should beno appeasement of specific people in a community. Policies should focus on equal access to education, health and job opportunities
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -254,7 +254,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Transport.jpg" class="img-responsive" alt="Transport">
 									<span>
-										<b>Transportation</b><br/>Delhi would have high quality diverse public transport to reduce peak time load on roads. The transportation would include Metro trains, last mile connectivity via feeder bues & private transport vehicles like autorickshaws. 
+										<b>Transportation</b><br/>Delhi should have high quality diverse public transport to reduce peak time load on roads. The transportation should include Metro trains, last mile connectivity via feeder buses & private transport vehicles like autorickshaws
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -271,7 +271,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Electricity.jpg" class="img-responsive" alt="Energy and Electricity">
 									<span>
-										<b>Energy and Electricity</b><br/>Delhi has self-sufficient 100% electricity & increase depedence on clean energy
+										<b>Energy and Electricity</b><br/>Delhi should have 24 hour electricity and become 100% self-sufficient electricity state. Delhi should use clean and renewable energy sources.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -288,7 +288,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Education.jpg" class="img-responsive" alt="Education">
 									<span>
-										<b>Education</b><br/>Delhi should have high quality school education system with access to all sections of society. Focus on creation & explansion of world class colleges & universities. 
+										<b>Education</b><br/>Delhi should have high quality school education system accessible to all sections of the society. Focus should be laid on creation and expansion of world class colleges and universities.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -305,7 +305,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Health.jpg" class="img-responsive" alt="Health">
 									<span>
-										<b>Health</b><br/>Delhi would have drastically improved quality of public hospitals & further expand network. Health care delivery systems would be modernized using technology. Promote focus on proactive prevention of diseases to reduce healthcare costs & improve quality of life. 
+										<b>Health</b><br/>Delhi should have high quality public hospitals with and expanding outreach. Health care delivery systems should be modernized using latest in technology. Focus on proactive prevention of diseases to reduce healthcare costs and to improve the quality of life should be promoted.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -322,7 +322,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Housing.jpg" class="img-responsive" alt="Land and Housing">
 									<span>
-										<b>Land and Housing</b><br/>Delhi would have transparent land allotment policies, enforce infrastructure guidelines and protect rights of home buyers. Long term policies to prevent mushrooming of unauthorised settlements by ensuring availability of low-cost housing.  
+										<b>Land and Housing</b><br/>Delhi should have transparent land allotment policies and infrastructure guidelines. Rights of home buyers should be protected. Long term policies should be implemented to prevent mushrooming of unauthorized settlements by ensuring availability of low-cost housing.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -339,7 +339,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Rural.jpg" class="img-responsive" alt="Rural Delhi">
 									<span>
-										<b>Rural Delhi</b><br/>Delhi's rural areas would have good quality public infrastrasture including schools & hospitals. 
+										<b>Rural Delhi</b><br/>Delhi's rural areas should have proper public infrastructure for schools, hospitals, roads and public parks. Delhi’s rural areas should have prosperous farmers using state of art technology.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -356,7 +356,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Water.jpg" class="img-responsive" alt="Water">
 									<span>
-										<b>Water</b><br/>Every home in Delhi has access to clean piped water. Remove dependence on water tankers. Develop Delhi's water resources & implement ideas like rainwater harvesting
+										<b>Water</b><br/>Every home in Delhi should have access to clean water. Dependence on water tankers should be eliminated. Delhi's water resources should be developed and ideas like rainwater harvesting should be implemented.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
