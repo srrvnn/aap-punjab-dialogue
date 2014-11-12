@@ -37,10 +37,18 @@
 	<link rel="stylesheet" href="../css/header.css" type="text/css" media="all">  
 	<link rel="stylesheet" href="../css/focus-area.css" type="text/css" media="all">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+</head>
 <body>
-	<!-- Initialize all variables here using Php-->
-	<!-- preloader-->
+	<!-- Following script is for Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-56660930-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
 	<header id="header" class="show-original-logo solid-header scrolled-header" 
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
