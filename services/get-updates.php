@@ -42,7 +42,15 @@ $mail->addCC('delhidialog1@gmail.com');
         else{
             $name = $_POST['name'];
             $focusarea = $_POST['focusarea'];
+			
+			// Remove all unwanted characters from input fields value
+			$unwantedChars = array("\r\n", "\n", "\r", "\t");
 
+			if(isset($focusarea) && !empty($focusarea)) {
+				$focusarea = str_replace($unwantedChars, "", $focusarea);
+			} else {
+				$focusarea = "Unknown";
+			}
             // message lines should not exceed 70 characters (PHP rule), so wrap it
             $url = 'https://api.parse.com/1/classes/getupdates';
             $appId = 'yVjYjEx1SN7YTAkALF07teCzVeG906SnADSlrSEa';
