@@ -104,17 +104,9 @@
 				<div class="col-sm-10 col-sm-offset-1" style=" background-color: rgba(250,250,250);border: #e6e6e6 1px solid;">
 					<div class="row" style="margin: 30px 0 30px;">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div >
-								<object width="100%" height="349">
-								  <param name="movie"
-										 value="http://www.youtube.com/v/MYg42BjiFFM"></param>
-								  <param name="allowScriptAccess" value="always"></param>
-								  <embed src="http://www.youtube.com/v/MYg42BjiFFM"
-										 type="application/x-shockwave-flash" wmode="Opaque"
-										 allowscriptaccess="always" frameborder="0" allowfullscreen="1" 
-										 width="100%" height="349"></embed>
-								</object>
-							</div>
+							<iframe class="youtube-player" type="text/html" width="100%" height="349"
+									src="http://www.youtube.com/embed/MYg42BjiFFM" frameborder="0" allowfullscreen="1">
+								</iframe>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
 							<div class="intro-header">
