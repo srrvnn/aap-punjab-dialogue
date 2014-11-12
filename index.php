@@ -168,7 +168,7 @@
 								<div class="issueSummary col-xm-12 col-sm-9">
 									<img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment">
 									<span><b>Jobs and Employment</b><br/>
-										Delhi should have growing employment opportunities across various types of industries. Small businesses needs to be encouraged as viable employment opportunity. Labor reforms are needed to provide fair & conducive work environment.
+										Delhi should have growing employment opportunities across various types of industries. Small businesses need to be encouraged as a viable employment opportunity. Labor reforms are needed to provide fair and productive work environment.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12" >
@@ -203,7 +203,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Women.jpg" class="img-responsive" alt="Women Rights (Safety)">
 									<span>
-										<b>Women Rights and Safety</b><br/>Delhi should have stringent laws to uphold women’s rights at the workplace and at home. We envision a Delhi in which women will be acknowledged and treated as equal citizens in their own right</i>
+										<b>Women Rights and Safety</b><br/>Delhi should have stringent laws to uphold women’s rights at the workplace and at home. We envision a Delhi in which women will be acknowledged and treated as equal citizens in their own right.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -237,7 +237,8 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/SocialWelfare.jpg" class="img-responsive" alt="Social Welfare and Social Justice">
 									<span>
-										<b>Social Welfare and Social Justice</b><br/>Delhi should provide equal opportunities across all sections of the society. There should beno appeasement of specific people in a community. Policies should focus on equal access to education, health and job opportunities
+										<b>Social Welfare and Social Justice</b><br/>
+										Delhi should provide equal opportunities across all sections of the society. There should be no appeasement of specific people in a community. Policies should focus on equal access to education, health and job opportunities.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -254,7 +255,7 @@
 								<div class="issueSummary col-sm-9 col-xm-12">
 									<img src="images/Transport.jpg" class="img-responsive" alt="Transport">
 									<span>
-										<b>Transportation</b><br/>Delhi should have high quality diverse public transport to reduce peak time load on roads. The transportation should include Metro trains, last mile connectivity via feeder buses & private transport vehicles like autorickshaws
+										<b>Transportation</b><br/>Delhi should have high quality diverse public transport to reduce peak time load on roads. The transportation should include Metro trains, last mile connectivity via feeder buses & private transport vehicles like autorickshaws.
 									</span>									
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
