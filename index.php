@@ -398,7 +398,7 @@
 
 							<ul class="contact-info" style="color:white !important;">
 								<li><h2><span>Aam Aadmi Party Delhi Dialogue Team</span></h2></li>
-								<li><h3><span class="glyphicon glyphicon-envelope"></span> newdelhidialogue@gmail.com</h3></li>
+								<li><h3><span class="glyphicon glyphicon-envelope"></span> delhidialogue@aamaadmiparty.org</h3></li>
 								<li><h3><span class="glyphicon glyphicon-earphone"></span> +91 964 332 7265</h3></li>
 								<li><h3><a href="http://www.twitter.com/DelhiDialogue "><img height="24px" src="files/twitter.png">twitter.com/DelhiDialogue</a></h3></li>
 								<div style="clear:both; width:100%; height:10px"></div> 	
