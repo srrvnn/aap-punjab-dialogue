@@ -31,6 +31,24 @@
   ga('create', 'UA-56660930-1', 'auto');
   ga('send', 'pageview');
 </script>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1540899709487892',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 	<header id="header" class="show-original-logo solid-header scrolled-header" 
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
@@ -50,6 +68,9 @@
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#topics"><span>FOCUS AREAS</span></a></li>
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#schedule"><span>SCHEDULE</span></a></li>
 							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="#contact"><span>CONTACT</span></a></li>
+							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
+								<div class="fb-like" data-href="https://www.facebook.com/TheDelhiDialogue" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+							</li>
 						</ul>
 					</div>				
 				</nav><!--end navigation-->				
@@ -105,7 +126,7 @@
 					<div class="row" style="margin: 30px 0 30px;">
 						<div class="col-sm-12 col-md-6 col-lg-6">
 							<iframe class="youtube-player" type="text/html" width="100%" height="349"
-									src="http://www.youtube.com/embed/MYg42BjiFFM" frameborder="0" allowfullscreen="1">
+									src="http://www.youtube.com/embed/WMnpUE8-qfU" frameborder="0" allowfullscreen="1">
 								</iframe>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
