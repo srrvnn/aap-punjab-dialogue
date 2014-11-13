@@ -5,13 +5,13 @@ $mail->isSMTP();
 $mail->SMTPAuth = true; // There was a syntax error here (SMPTAuth)
 $mail->Host = "smtp.gmail.com";  // Specify main and backup SMTP servers
 $mail->Mailer = "smtp";
-$mail->Username = "delhidialog1@gmail.com";                 // SMTP username
+$mail->Username = "team@delhidialogue.co.in";                 // SMTP username
 $mail->Password = "AAP@tech";                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
-$mail->From = 'delhidialog1@gmail.com';
+$mail->From = 'team@delhidialogue.co.in';
 $mail->FromName = 'Arvind Kejriwal (On Behalf of the Delhi Dialogue Team)';
-$mail->addCC('delhidialog1@gmail.com');
+$mail->addCC('team@delhidialogue.co.in');
 
 
     // Your code here to handle a successful verification

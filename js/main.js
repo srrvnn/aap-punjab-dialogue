@@ -245,7 +245,13 @@ var Dialouge = function() {
 						"json")
 				  .done(function(response) {
 					var status = response["status"];
+
 					if(status == 'Completed') {
+						Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
+							successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
+						clearFields(form);
+					} else if(status == 'MailingError') {
+						successMessage = successMessage + " " + Dialouge.ConstantUtils.EMAIL_FAILED_MESSAGE;
 						Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
 							successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
 						clearFields(form);
@@ -290,6 +296,7 @@ var Dialouge = function() {
 		DD_ORG_TYPE_MESSAGE = "Select Organization Type",
 		CONTACT_US_REQUEST_SENT_MESSAGE = "Thank you. Your request has been sent. We will contact you soon.",
 		GET_UPDATES_REQUEST_SENT_MESSAGE = "Thank you. We will send you regular notification on the subject.",
+		EMAIL_FAILED_MESSAGE = "You will receive an email from us soon.",
 		REGISTRATION_SUUCESSFUL_MESSAGE = "Thank you for registering with us.",
 		SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE = "Thank you for your participation. Your ideas and proposals are sent. You will hear from us soon if your idea/proposal is selected.",
 		GENERIC_REQUEST_SENT_MESSAGE = "Thank you for you interest.",
@@ -307,7 +314,8 @@ var Dialouge = function() {
 			SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE : SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE,
 			GENERIC_REQUEST_SENT_MESSAGE : GENERIC_REQUEST_SENT_MESSAGE,
 			FAILED_MESSAGE_ACTIVE_PERIOD : FAILED_MESSAGE_ACTIVE_PERIOD,
-			VALIDATION_ERROR_MESSAGE : VALIDATION_ERROR_MESSAGE
+			VALIDATION_ERROR_MESSAGE : VALIDATION_ERROR_MESSAGE,
+			EMAIL_FAILED_MESSAGE : EMAIL_FAILED_MESSAGE
 		};
 	})(),
 	
