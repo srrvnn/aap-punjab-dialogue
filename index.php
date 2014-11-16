@@ -447,10 +447,10 @@
 		</section>
 	</div><!--end wrapper-->
 	<!-- Pranay added style in footer,bottomfooter and percent two third -->
-<footer id="footer"style="padding-top: 22px; padding-bottom: 15px;">
+<footer id="footer"style="padding-top: 22px; padding-bottom: 15px">
 		<div id="bottomfooter" style="height: 35px;">		
 			<div class="centered-wrapper">	
-				<div class="percent-two-third" style="padding-top: 5px; margin-bottom: 0px;">
+				<div class="percent-two-third" style="padding-top: 5px; margin-bottom: 0px">
 					<p>Copyright 2014 - Aam Aadmi Party. All Rights Reserved</p>
 				</div><!--end percent-two-third-->
 
