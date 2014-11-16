@@ -63,7 +63,6 @@ ul{margin-top:0;margin-bottom:10px;}
 .form-control:-ms-input-placeholder{color:#777;}
 @-ms-viewport{width:device-width;}
 fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.fa-bars:before{content:"\f0c9";}
 .menu-item a:hover{text-decoration:none !important;}
 .menu-item a{text-decoration:none !important;}
 a{outline:none !important;text-decoration:none !important;}
@@ -123,9 +122,8 @@ and (max-width : 768px) {
 	background-color: rgba(0,0,0, 0.70);
 }
 .popup-container h4 {
-	font-family: arial, arial!important;
+	font-family: Open Sans, arial!important;
 	font-size: 28px!important;
-	font-weight: 100!important;
 	text-align: center;
 	color:white!important;
 }
@@ -155,7 +153,7 @@ border-top-style: none!important;
 text-align: center!important;
 }
 .social-popup .modal-body span {
-	text-align:center; margin:20px font-family: arial, arial;font-size: 14px;font-weight: 400;color:white;
+	text-align:center; margin:20px; font-family: Open Sans, arial;font-size: 14px;font-weight: 400;color:white;
 }
 .social-popup .modal-header .close  {
 	background-color: rgba(5,151,242,0.9);opacity: 100;color: white;width: 32px;height: 32px;font-size: 26px;font-weight: 400;top: 0;position: absolute;right: 0;

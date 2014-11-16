@@ -31,7 +31,7 @@
             </div>
             <div class="modal-body" style="text-align:center; padding:20px">
 				<div style="text-align:center;">
-					<p><span>Welcome to Delhi Dialogue, Let's work together to make Delhi a world class City. Please share this initiative with your friends and like us to receive frequent updates.</span></p>
+					<p><span>All of us share the vision to make Delhi a world class city ! Please "Like" and "Share" our Facebook Page. Your like will help us spread the message. Thank you !</span></p>
 				</div>
 				<div class="fb_like_share">
 					<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDelhiDialogue&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=<?=$facebook_app_id?>" scrolling="no" frameborder="0" style="height:20px;width:100px" allowTransparency="true"></iframe>
