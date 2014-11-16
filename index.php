@@ -491,8 +491,10 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 ready = 0;
 $(document).ready(function() {
 	// Show model once per session after 20 seconds
-	var options = { "backdrop" : "static" };
-	if($('#basicModal').attr("aria-hidden") === "false") {
+	var onloadPopupContainer = $('#basicModal');
+	if(onloadPopupContainer.length > 0 && onloadPopupContainer.attr("aria-hidden") === "false") {
+		// Show model once per session after 20 seconds
+		var options = { "backdrop" : "static" }
 		setTimeout(function(){
 			$('#basicModal').modal(options);
 		}, 90000);
