@@ -75,7 +75,7 @@ body{background-color:#ececec;width:auto;}
 footer{padding:0 !important;}
 .lighter-overlay{background-color:#fff;}
 .main-content{background-color:#ececec;}
-.main-content #focusAreaSection{min-height:100px;padding:30px;background-color:#fff;font-family:'Open Sans';line-height:24px;font-size:16px;font-weight:500;color:black;}
+.main-content #focusAreaSection{min-height:100px;padding:30px;background-color:#fff;font-family:'Open Sans';line-height:24px;font-size:16px;font-weight:400;color:black;}
 .main-content input{min-width:205px !important;height:40px !important;margin-right:40px !important;}
 .main-header{margin-bottom:.25rem;padding:0 1.5em 1em;line-height:1em;}
 .main-header *{font-family:"alternate-gothic-no-3-d", sans-serif;font-weight:normal;text-transform:uppercase;}

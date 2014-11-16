@@ -23,7 +23,7 @@ a:hover{color:#444;}
 #navigation.desktop{display:block !important;}
 ul#mainnav{float:right;position:relative;display:block;z-index:1001;padding-top:10px;margin-right:-10px;}
 ul#mainnav li{display:inline-block;float:left;position:relative;z-index:1000;}
-ul#mainnav > li{background:url(../images/nav-bg.png) no-repeat scroll right center;}
+ul#mainnav > li{background:url(/images/nav-bg.png) no-repeat scroll right center;}
 ul#mainnav > li:last-child{background:none;}
 ul#mainnav li a{font:14px/20px 'Open Sans', Open Sans, Helvetica, Arial, sans-serif;position:relative;font-weight:700;color:#404040;margin:0 10px;padding:0 15px 0;height:25px;line-height:25px;display:inline-block;*display:block;-webkit-transition:all 0.2s linear;-moz-transition:all 0.2s linear;-o-transition:all 0.2s linear;transition:all 0.2s linear;z-index:100;}
 ul#mainnav > li > a:hover > span{padding-bottom:2px;}
@@ -67,7 +67,7 @@ fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:i
 .menu-item a:hover{text-decoration:none !important;}
 .menu-item a{text-decoration:none !important;}
 a{outline:none !important;text-decoration:none !important;}
-ul#mainnav > li{background:url('../images/nav-bg.png') no-repeat scroll right center transparent;}
+ul#mainnav > li{background:url('/images/nav-bg.png') no-repeat scroll right center transparent;}
 .menu-item > a:hover > span{padding-bottom:2px;border-bottom:1px solid black;}
 html body{background:#efefef;}
 #header{background:#ffffff;}
@@ -113,4 +113,55 @@ and (max-width : 768px) {
 .vertical-center-row {
     display: table-cell;
     vertical-align: middle;
+}
+.social-popup {
+ 
+ background-color: rgba(0,0,0,0.7);
+ background-image: url(./images/business03.jpg);
+}
+.popup-container {
+	background-color: rgba(0,0,0, 0.70);
+}
+.popup-container h4 {
+	font-family: arial, arial!important;
+	font-size: 28px!important;
+	font-weight: 100!important;
+	text-align: center;
+	color:white!important;
+}
+.modal-header {
+	border-bottom: 0 !important;
+}
+.modal-header:after {
+	display: block;
+	content: "";
+	height: 1.2px;
+	width: 320px;
+	margin: 15px auto 20px;
+	position: relative;
+	border-bottom: 5px solid #0597F2!important;
+}
+.modal-body {
+	border-bottom: 5px solid #0597F2!important;
+}
+.model-body p{
+font-family: arial, arial;
+font-size: 14px;
+font-weight: 400;
+color:white;
+}
+.modal-footer {
+border-top-style: none!important;
+text-align: center!important;
+}
+.social-popup .modal-body span {
+	text-align:center; margin:20px font-family: arial, arial;font-size: 14px;font-weight: 400;color:white;
+}
+.social-popup .modal-header .close  {
+	background-color: rgba(5,151,242,0.9);opacity: 100;color: white;width: 32px;height: 32px;font-size: 26px;font-weight: 400;top: 0;position: absolute;right: 0;
+}
+.fb_like_share iframe {
+	height: 20px !important;
+	width: 100px !important;
+	margin: 40px 0 10px !important;
 }

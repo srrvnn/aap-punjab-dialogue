@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	global $focus_area_details;
 	// Default focus area Id
 	$requested_focus_area_id="1";
@@ -33,12 +34,20 @@
 	<title>Delhi Dialogue</title>
 
 	<meta charset="utf-8"/>
+	<meta property="og:title" content="Delhi Dialogue" />
+	<meta property="og:site_name" content="Delhi Dialogue" />
+	<meta property="og:url" content="http://www.delhidialogue.in" />
+	<meta property="og:image" content="http://www.delhidialogue.in/images/main/xxl_lsp.jpg" />
+	<meta property="og:description" content="Delhi Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
+	<meta property="fb:app_id" content="1540899709487892" />
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/header.css" type="text/css" media="all">  
 	<link rel="stylesheet" href="../css/focus-area.css" type="text/css" media="all">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 <body>
+
 	<!-- Following script is for Google Analytics -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -49,34 +58,16 @@
 	  ga('create', 'UA-56660930-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
-	<div id="fb-root"></div>
-	<script>
-	  window.fbAsyncInit = function() {
-		FB.init({
-		  appId      : '1540899709487892',
-		  xfbml      : true,
-		  version    : 'v2.2'
-		});
-	  };
-
-	  (function(d, s, id){
-		 var js, fjs = d.getElementsByTagName(s)[0];
-		 if (d.getElementById(id)) {return;}
-		 js = d.createElement(s); js.id = id;
-		 js.src = "//connect.facebook.net/en_US/sdk.js";
-		 fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
+<?php include '../utils/onload_popover.php';?>
 	<header id="header" class="show-original-logo solid-header scrolled-header" 
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
-					<a class="original-logo" href="../index.php"><img style="width: 175px; height: 50px;" src="../images/dd-logo.jpg" alt="AAP Logo"></a>
+					<a class="original-logo" href="../index.php"><img style="width: 175px; height: 50px;" src="/images/dd-logo.jpg" alt="AAP Logo"></a>
 					
 				</div>
 			</div><!--end one-fourth-->
-
 			<a class="nav-btn "><i class="fa fa-bars"></i></a>
 			<div class="percent-three-fourth column-last">	
 				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
@@ -87,8 +78,8 @@
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="../index.php#topics"><span>FOCUS AREAS</span></a></li>
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="../index.php#schedule"><span>SCHEDULE</span></a></li>
 							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="../index.php#contact"><span>CONTACT</span></a></li>
-							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
-								<div class="fb-like" data-href="https://www.facebook.com/TheDelhiDialogue" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+							<li style="padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
+								<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDelhiDialogue&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=<?=$facebook_app_id?>" scrolling="no" frameborder="0" style="height: 20px; width: 50px;" allowTransparency="true"></iframe>
 							</li>
 						</ul>
 					</div>				
@@ -143,7 +134,7 @@
 		</section>
 
 		<footer class="col-sm-12">
-			<div id="connect" style="background-image: url(../images/aap-bg.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
+			<div id="connect" style="background-image: url(/images/aap-bg.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
 				<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Register or Submit a Proposal</h1><div style="clear:both; width:100%; height:60px"></div>
 					<div class="container">
@@ -156,7 +147,7 @@
 											<label class="btn">
 												<input type="radio" name="participationOption" style="vertical-align: top; margin-right:5px" value ="Submit Proposal" id="proposalRadioBtn" >Submit Proposal
 											</label>
-											<label class="btn"">
+											<label class="btn">
 												<input type="radio" name="participationOption" style="vertical-align: top; margin-right:5px" value ="Register For Seminar" id="seminarRadioBtn">Register For Seminar
 											</label>
 										</div>
@@ -270,7 +261,7 @@
 								<div class="row">
 									<div class="form-actions col-sm-offset-8 col-sm-4">
 										<button type="reset" id="btnClear" class="btn btn-lg btn-black" disabled>Loading...</button>
-									  <button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</button>
+									  <button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</span></button>
 									</div>
 								</div>
 							  </fieldset>
@@ -280,6 +271,7 @@
 				</div>
 			</div>
 		</footer>
+	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
 
@@ -289,6 +281,13 @@
 
 	<script>
 		 $(document).ready(function(){
+		 	// Show model once per session after 20 seconds
+			var options = { "backdrop" : "static" };
+			if($('#basicModal').attr("aria-hidden") === "false") {
+				setTimeout(function(){
+					$('#basicModal').modal(options);
+				}, 20000);
+			}
 			var focusAreaPage = Dialouge.FocusAreaPage("#focusAreaHeader", "#focusAreaSection", ".focus-area-checkbox");
 			focusAreaPage.initOrganizationTypeFields("#orgTypeLbl", "#orgType");
 

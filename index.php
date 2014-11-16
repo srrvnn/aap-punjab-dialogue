@@ -1,23 +1,27 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
-
 <html class=" js webgl no-touch rgba opacity cssanimations csstransforms csstransforms3d csstransitions js_active  vc_desktop  vc_transform " lang="en-US">
 <head>
-<meta charset="utf-8"/>
-<style>
+	<meta charset="utf-8"/>		
+	<!-- mobile meta tag -->		
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Delhi Dialogue Portal by AAP">
+	<title>Delhi Dialogue </title>
 
-</style>			
-		<!-- mobile meta tag -->		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="generator" content="Delhi Dialogue Portal by AAP">
-		<title>Delhi Dialogue </title>
-		
-		<!-- Custom Favicon -->
-		<link rel="icon" type="image/png" href="files/icon.ico">			
-		<link rel="stylesheet" href="css/header.css" type="text/css" media="all">  
-		<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<script src="js/picturefill.js"></script>		
+	<meta property="og:title" content="Delhi Dialogue" />
+	<meta property="og:site_name" content="Delhi Dialogue" />
+	<meta property="og:url" content="http://lit-woodland-2116.herokuapp.com/" />
+	<meta property="og:image" content="http://www.delhidialogue.in/images/main/xxl_lsp.jpg" />
+	<meta property="og:description" content="Delhi Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
+	<meta property="fb:app_id" content="1540899709487892" />
+	
+	<!-- Custom Favicon -->
+	<link rel="icon" type="image/png" href="files/icon.ico">			
+	<link rel="stylesheet" href="css/header.css" type="text/css" media="all">  
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="js/picturefill.js"></script>
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
@@ -31,25 +35,8 @@
   ga('create', 'UA-56660930-1', 'auto');
   ga('send', 'pageview');
 </script>
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1540899709487892',
-      xfbml      : true,
-      version    : 'v2.2'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-	<header id="header" class="show-original-logo solid-header scrolled-header" 
+<?php include './utils/onload_popover.php';?>
+<header id="header" class="show-original-logo solid-header scrolled-header" 
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
@@ -69,7 +56,7 @@
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#schedule"><span>SCHEDULE</span></a></li>
 							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="#contact"><span>CONTACT</span></a></li>
 							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
-								<div class="fb-like" data-href="https://www.facebook.com/TheDelhiDialogue" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+								<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDelhiDialogue&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=<?=$facebook_app_id?>" scrolling="no" frameborder="0" style="height: 20px; width: 50px;" allowTransparency="true"></iframe>
 							</li>
 						</ul>
 					</div>				
@@ -77,6 +64,7 @@
 			</div><!--end three-fourth-->
 		</div><!--end centered-wrapper-->
 	</header>		
+	
 	<div id="wrapper">
 		<div id="home"></div><div style="height: 70px;" class="menu-fixer"></div>
 		<section>
@@ -116,7 +104,7 @@
 			 	<span id="vision">It all starts with a vision</span><br />				
 			</div>
 			<div class="watch-intro"><a href="#intro">
-						<span class="btn-xl btn-orange round">Watch Intro</button>
+						<span class="btn-xl btn-orange round">Watch Intro</span>
 					</a>
 				</div>
 	
@@ -126,7 +114,7 @@
 					<div class="row" style="margin: 30px 0 30px;">
 						<div class="col-sm-12 col-md-6 col-lg-6">
 							<iframe class="youtube-player" type="text/html" width="100%" height="349"
-									src="http://www.youtube.com/embed/WMnpUE8-qfU" frameborder="0" allowfullscreen="1">
+									src="http://www.youtube.com/embed/MYg42BjiFFM" frameborder="0" allowfullscreen="1">
 								</iframe>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
@@ -141,9 +129,6 @@
 									<a href="#schedule"><button style="float: left; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Schedule</button></a>
 							</div>
 						</div> 
-						
-					</div>
-					<div>
 						
 					</div>
 				</div>
@@ -449,7 +434,7 @@
 								</div>
 								<div class="form-actions">
 									<button type="reset" id="btnClear" class="btn btn-lg btn-black" disabled>Loading...</button>
-									<button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</button>
+									<button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</span></button>
 								</div>
 							  </fieldset>
 							  	
@@ -504,11 +489,14 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 /* ]]> */
 
 ready = 0;
-
-
-	
 $(document).ready(function() {
-
+	// Show model once per session after 20 seconds
+	var options = { "backdrop" : "static" };
+	if($('#basicModal').attr("aria-hidden") === "false") {
+		setTimeout(function(){
+			$('#basicModal').modal(options);
+		}, 20000);
+	}
 	ready =1;
 	$('a').click(function(){
 	
