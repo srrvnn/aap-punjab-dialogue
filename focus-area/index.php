@@ -36,8 +36,8 @@
 	<meta charset="utf-8"/>
 	<meta property="og:title" content="Delhi Dialogue" />
 	<meta property="og:site_name" content="Delhi Dialogue" />
-	<meta property="og:url" content="http://www.delhidialogue.in" />
-	<meta property="og:image" content="http://www.delhidialogue.in/images/main/xxl_lsp.jpg" />
+	<meta property="og:url" content="//www.delhidialogue.in" />
+	<meta property="og:image" content="//www.delhidialogue.in/images/main/xxl_lsp.jpg" />
 	<meta property="og:description" content="Delhi Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
 	<meta property="fb:app_id" content="1540899709487892" />
 	
@@ -68,7 +68,6 @@
 					
 				</div>
 			</div><!--end one-fourth-->
-			<a class="nav-btn "><i class="fa fa-bars"></i></a>
 			<div class="percent-three-fourth column-last">	
 				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
 					<div class="menu-one-page-menu-container">
@@ -124,7 +123,7 @@
 								<div class="row button-group col-sm-12">
 									<a href="#connect" id="registerBtn" class="blue-fixed-btn button" role="button">Register</a>
 									<a href="#connect" id="proposalBtn" class="blue-fixed-btn button" role="button">Submit Proposal</a>
-									<a href="<?php echo $focus_area_details["discussionUrl"] ?>" id="discussBtn" class="blue-fixed-btn button" role="button">Discuss Online</a>
+									<a href="<?php echo $focus_area_details["discussionUrl"] ?>" id="discussBtn" class="blue-fixed-btn button" role="button" target="_blank">Discuss Online</a>
 								</div>
 							</div>
 						</div>

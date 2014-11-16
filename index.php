@@ -10,8 +10,8 @@
 
 	<meta property="og:title" content="Delhi Dialogue" />
 	<meta property="og:site_name" content="Delhi Dialogue" />
-	<meta property="og:url" content="http://lit-woodland-2116.herokuapp.com/" />
-	<meta property="og:image" content="http://www.delhidialogue.in/images/main/xxl_lsp.jpg" />
+	<meta property="og:url" content="//www.delhidialogue.in/" />
+	<meta property="og:image" content="//www.delhidialogue.in/images/main/xxl_lsp.jpg" />
 	<meta property="og:description" content="Delhi Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
 	<meta property="fb:app_id" content="1540899709487892" />
 	
@@ -45,7 +45,6 @@
 				</div>
 			</div><!--end one-fourth-->
 
-			<a class="nav-btn "><i class="fa fa-bars"></i></a>
 			<div class="percent-three-fourth column-last">	
 				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
 					<div class="menu-one-page-menu-container">
@@ -408,7 +407,7 @@
 								<li><h2><span>Aam Aadmi Party Delhi Dialogue Team</span></h2></li>
 								<li><h3><span class="glyphicon glyphicon-envelope"></span> delhidialogue@aamaadmiparty.org</h3></li>
 								<li><h3><span class="glyphicon glyphicon-earphone"></span> +91 964 332 7265</h3></li>
-								<li><h3><a href="http://www.twitter.com/DelhiDialogue "><img height="24px" src="files/twitter.png">twitter.com/DelhiDialogue</a></h3></li>
+								<li><h3><a href="https://www.twitter.com/DelhiDialogue "><img height="24px" src="files/twitter.png">twitter.com/DelhiDialogue</a></h3></li>
 								<div style="clear:both; width:100%; height:10px"></div> 	
 							</ul>
 
