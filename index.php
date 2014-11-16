@@ -55,7 +55,7 @@
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#schedule"><span>SCHEDULE</span></a></li>
 							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="#contact"><span>CONTACT</span></a></li>
 							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
-								<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDelhiDialogue&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=<?=$facebook_app_id?>" scrolling="no" frameborder="0" style="height: 20px; width: 50px;" allowTransparency="true"></iframe>
+								<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FTheDelhiDialogue&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=<?=$facebook_app_id?>" scrolling="no" frameborder="0" style="height: 20px; width: 50px;" allowTransparency="true"></iframe>
 							</li>
 						</ul>
 					</div>				
