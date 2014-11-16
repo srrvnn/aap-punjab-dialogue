@@ -78,7 +78,7 @@ var Dialouge = function() {
 				orgType: {
 				  notEqualTo: Dialouge.ConstantUtils.DD_ORG_TYPE_MESSAGE
 				},
-				focusArea: {
+				'focusArea[]': {
 				  required: true,
 				  minlength: 1
 				},
@@ -91,6 +91,9 @@ var Dialouge = function() {
 			  messages: {
 				name : "Please enter a valid name.",
 				email : "Please enter a valid email address",
+				'focusArea[]': {
+					required: "You must select at least 1 Focus Area"
+				},
 				participationOption: "Please choose 'Registration For Seminar' or 'Submit Proposal'",
 				orgType : "Please select you organization type."
 			  },
@@ -98,9 +101,17 @@ var Dialouge = function() {
 			  // called when validation failed for any element
 			  highlight: function(element) {
 				// using bootstrap inbuilt classes success and error for auto validation
-				var highlightedElement = $(element.form).find("label[for=" + element.name + "]");
+					$element = $( element ),
+				type = element.type;
+				var name = element.name;
+				var id = element.id;
+				if ( type === "checkbox" ) {
+					name = "'" + name + "'";
+					id = "'" + id + "'";
+				}				
+				var highlightedElement = $(element.form).find("label[for=" + name + "]");
 				if(highlightedElement.length == 0) {
-					highlightedElement = $(element.form).find("label[for=" + element.id + "]");
+					highlightedElement = $(element.form).find("label[for=" + id + "]");
 				}
 				highlightedElement.removeClass('error').removeClass('success');
 				
@@ -111,9 +122,16 @@ var Dialouge = function() {
 			  // called when validation succeeded for any element
 			  unhighlight: function(element) {
 				// using bootstrap inbuilt classes success and error for auto validation
-				var unhighlightedElement = $(element.form).find("label[for=" + element.name + "]");
+				type = element.type;
+				var name = element.name;
+				var id = element.id;
+				if ( type === "checkbox" ) {
+					name = "'" + name + "'";
+					id = "'" + id + "'";
+				}
+				var unhighlightedElement = $(element.form).find("label[for=" + name + "]");
 				if(unhighlightedElement.length == 0) {
-					unhighlightedElement = $(element.form).find("label[for=" + element.id + "]");
+					unhighlightedElement = $(element.form).find("label[for=" + id + "]");
 				}
 				unhighlightedElement.remove();
 				

@@ -450,7 +450,7 @@
 		<div id="bottomfooter">		
 			<div class="centered-wrapper">	
 				<div class="percent-two-third">
-					<p>Copyright 2014 - Aam Aadmi Party.All Rights Reserved</p>
+					<p>Copyright 2014 - Aam Aadmi Party. All Rights Reserved</p>
 				</div><!--end percent-two-third-->
 
 				<div class="percent-one-third column-last">

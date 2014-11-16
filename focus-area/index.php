@@ -208,46 +208,46 @@
 									<div id="focusAreaCheckbox" class="control-group col-sm-12">
 										<div class="col-sm-12 controls inline-checkbox">
 											<div class="checkbox">
-											  <label><input type="checkbox" name="focusArea" id="focusAreaCheckbox0">All</label>
+											  <label><input type="checkbox" name="allFocusAreas" id="focusAreaCheckbox0">All</label>
 											</div>
 											<div class="checkbox">
-												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox1" name="focusArea">Jobs and Employment</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Jobs and Employment">Jobs and Employment</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox2" name = "focusArea">Enterprise: Trade and Industry</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Enterprise: Trade and Industry">Enterprise: Trade and Industry</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox3" name = "focusArea">Women Rights (Safety)</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Women Rights & Safety">Women Rights & Safety</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox4" name = "focusArea">Sanitation and Solid Waste Mgmt</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Sanitation and Solid Waste Management">Sanitation and Solid Waste Management</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox5"  name = "focusArea">Social Welfare and Social Justice</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox"  name="focusArea[]" value="Social Welfare and Social Justice">Social Welfare and Social Justice</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox6"  name = "focusArea">Transportation</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox"  name="focusArea[]" value="Transportation">Transportation</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox7" name = "focusArea">Energy and Electricity</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Energy and Electricity">Energy and Electricity</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox8"  name = "focusArea">Education</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox"  name="focusArea[]" value="Education">Education</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox9" name="focusArea">Health</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Health">Health</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox10" name="focusArea">Land and Housing</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Land and Housing">Land and Housing</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox11" name="focusArea">Rural Delhi</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Rural Delhi">Rural Delhi</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox12" name = "focusArea">Water</label>
+											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Water">Water</label>
 											</div>
 										</div>
-										
+										<label class="control-label" for="focusAreaCheckbox"></label>
 									</div>
 								</div>
 								<div class="row">

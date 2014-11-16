@@ -41,87 +41,12 @@ $mail->addCC('team@delhidialogue.co.in');
         $profession = $_POST['profession'];
 		$orgType = $_POST['orgType'];
         $message = $_POST['message'];
-        $selectedtopics="";
-
-        if ($_POST['All']=="on")
-            $selectedtopics = 'All';
-        else {
-            if ($_POST['JobsandEmployment']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Jobs and Employment";
-
-            }
-            if ($_POST['EnterpriseTradeandIndustry']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Enterprise Trade and Industry";
-            }
-            if ($_POST['WomenRightsSafety']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Women Rights (Safety)";
-            }
-            if ($_POST['SanitationandSolidWasteMgmt']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Sanitation and Solid Waste Mgmt";
-            }
-            if ($_POST['SocialWelfareandSocialJustice']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Social Welfare and Social Justice";
-            }
-            if ($_POST['Transportation']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Transportation";
-            }
-            if ($_POST['EnergyandElectricity']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Energy and Electricity";
-            }
-            if ($_POST['Education']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Education";
-            }
-            if ($_POST['Health']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Health";
-            }
-            if ($_POST['LandandHousing']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Land and Housing";
-            }
-            if ($_POST['RuralDelhi']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Rural Delhi";
-            }
-            if ($_POST['Water']=="on")
-            {
-                if ($selectedtopics != "")
-                    $selectedtopics .="__";
-                $selectedtopics .="Water";
-            }
-
-
-        }
+        $focusArea="";
+		
+		// Use __ as separator to store Focus areas
+		if(isset($_POST['focusArea']) && !empty($_POST['focusArea'])) {
+			$focusArea = join("__", $_POST['focusArea']);
+		}
         // Sanitize e-mail address
         $email =filter_var($email, FILTER_SANITIZE_EMAIL);
 
@@ -146,7 +71,7 @@ $mail->addCC('team@delhidialogue.co.in');
                 "X-Parse-Application-Id: " . $appId,
                 "X-Parse-REST-API-Key: " . $restKey
             );
-            $objectData = "{\"email\":\"$email\", \"name\":\"$name\", \"phone\":\"$phone\", \"profession\":\"$profession\",\"participationOption\":\"$participationOption\",  \"orgType\":\"$orgType\", \"message\":\"$message\",\"topics\":\"$selectedtopics\"}";
+            $objectData = "{\"email\":\"$email\", \"name\":\"$name\", \"phone\":\"$phone\", \"profession\":\"$profession\",\"participationOption\":\"$participationOption\",  \"orgType\":\"$orgType\", \"message\":\"$message\",\"topics\":\"$focusArea\"}";
              //,  }";
             $rest = curl_init();
             curl_setopt($rest,CURLOPT_URL,$url);
