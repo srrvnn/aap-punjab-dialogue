@@ -258,7 +258,12 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="form-actions col-sm-offset-8 col-sm-4">
+									<div class="control-group col-xs-12 col-sm-7">
+									  <div class="controls">
+										 <?php require($_SERVER["DOCUMENT_ROOT"] . "/widgets/contact-us-capcha.html"); ?>
+									  </div>
+									</div>
+									<div class="form-actions col-xs-12 col-sm-5">
 										<button type="reset" id="btnClear" class="btn btn-lg btn-black" disabled>Loading...</button>
 									  <button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</span></button>
 									</div>

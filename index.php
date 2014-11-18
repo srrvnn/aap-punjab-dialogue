@@ -22,12 +22,6 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="js/picturefill.js"></script>
-	<script type="text/javascript">
-        var RecaptchaOptions = {
-			theme : 'custom',
-			custom_theme_widget: 'recaptcha_widget'
-        };
-    </script>
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
@@ -439,38 +433,7 @@
 								</div>
 								<div class="control-group col-xs-12 col-sm-7">
 								  <div class="controls">
-									 <div id="recaptcha_widget">
-                                        <div id="recaptcha_image"></div>
-                                        <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
-                                        <span class="recaptcha_only_if_image">Enter the words above:</span>
-                                        <span class="recaptcha_only_if_audio">Enter the numbers you hear:</span>
-                                        <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
-                                        <div class="recaptcha_widget_img">
-											<a href="javascript:Recaptcha.reload()">
-												<img id="recaptcha_reload" src="http://www.google.com/recaptcha/api/img/blackglass/refresh.gif" 
-												alt="Get a new challenge"></a>
-											<span class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')">
-												<img id="recaptcha_switch_audio" alt="Get an audio challenge" 
-													src="http://www.google.com/recaptcha/api/img/blackglass/audio.gif"></a></span>
-											<span class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')">
-												<img id="recaptcha_switch_img" alt="Get a visual challenge" 
-													src="http://www.google.com/recaptcha/api/img/blackglass/text.gif"></a></span>
-											<span><a href="javascript:Recaptcha.showhelp()">
-												<img id="recaptcha_help_img" alt="Get Help" 
-													src="http://www.google.com/recaptcha/api/img/blackglass/help.gif"></a></span>
-										</div>
-									</div>
-									 <script type="text/javascript"
-										src="http://www.google.com/recaptcha/api/challenge?k=6Ldv6f0SAAAAABsCcWCSh0KFDf490o9nQscJLojJ">
-									 </script>
-									 <noscript>
-									   <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Ldv6f0SAAAAABsCcWCSh0KFDf490o9nQscJLojJ"
-											height="300" width="500" frameborder="0"></iframe><br>
-									   <textarea name="recaptcha_challenge_field" rows="3" cols="40">
-									   </textarea>
-									   <input type="hidden" name="recaptcha_response_field"
-											value="manual_challenge">
-									 </noscript>
+									 <?php require($_SERVER["DOCUMENT_ROOT"] . "/widgets/contact-us-capcha.html"); ?>
 								  </div>
 								</div>
 								<div class="form-actions col-xs-12 col-sm-5">
