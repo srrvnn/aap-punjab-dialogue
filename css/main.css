@@ -178,3 +178,16 @@ to{-webkit-transform:rotate(360deg);}
 @keyframes spin{from{transform:scale(1) rotate(0deg);}
 to{transform:scale(1) rotate(360deg);}
 }
+#recaptcha_widget {
+	display: inline-block;
+	border: 1px solid;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+}
+.recaptcha_widget_img img {
+	width: 30px;
+	height: 20px;
+}

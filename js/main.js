@@ -86,6 +86,10 @@ var Dialouge = function() {
 				  minlength: 10,
 				  maxlength: 1000,
 				  required: true
+				},
+				recaptcha_response_field: {
+				  maxlength: 50,
+				  required: true
 				}
 			  },
 			  messages: {
@@ -149,14 +153,38 @@ var Dialouge = function() {
 			  // Called once after validation succeeded for every element
 			  submitHandler: function(form) {
 				var messageContainer = $(form).find('.message');
-				_successCallBack(form, messageContainer);
-				
+
+				var recaptchaChallengeFieldContainer = $(form).find( "input[name='recaptcha_challenge_field']" );
+				if(!($.trim(recaptchaChallengeFieldContainer))) {
+					// JS not enabled or present get from <noscript>
+					recaptchaChallengeFieldContainer = $(form).find( "textarea[name='recaptcha_challenge_field']" );
+				}
+				var recaptchaResponseFieldContainer = $(form).find( "input[name='recaptcha_response_field']" );
+				var params = { "recaptcha_challenge_field" : recaptchaChallengeFieldContainer.val(), 
+								"recaptcha_response_field" : recaptchaResponseFieldContainer.val()};
+				var verifyCapchaUrl = "/services/verify-capcha.php"
+				$.post( verifyCapchaUrl,
+							params,
+							function() {},
+							"json")
+					  .done(function(response) {
+						if(typeof response !== 'undefined' && response['status'] === 'ValidCapcha') {
+							// Validation succeeded. Submit the form by calling success callback
+							_successCallBack(form, messageContainer);
+						} else {
+							Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+							Dialouge.ConstantUtils.CAPCHA_VALIDATION_FAILED_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
+						}
+					  })
+					  .fail(function() { // Add metrics here
+						Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+							Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
+					  });
 				// _successCallBack send Post Ajax call to server, hence never submit the form
 				return false;
 			  }
 			 });
 		};
-		
 		var validate = function() {
 			if(validatorAdded) {
 				formContainer.valid();
@@ -338,6 +366,7 @@ var Dialouge = function() {
 		SUBMIT_PROPOSAL_SUCCESSFUL_MESSAGE = "Thank you for your participation. Your ideas and proposals are sent. You will hear from us soon if your idea/proposal is selected.",
 		GENERIC_REQUEST_SENT_MESSAGE = "Thank you for you interest.",
 		INTERNAL_ERROR_MESSAGE = "Internal Error. We are sorry. Please try again later.",
+		CAPCHA_VALIDATION_FAILED_MESSAGE = "Please enter a valid capcha and try again."
 		VALIDATION_ERROR_MESSAGE = "Please enter correct information and try again.";
 
 		//public members
@@ -352,7 +381,8 @@ var Dialouge = function() {
 			GENERIC_REQUEST_SENT_MESSAGE : GENERIC_REQUEST_SENT_MESSAGE,
 			FAILED_MESSAGE_ACTIVE_PERIOD : FAILED_MESSAGE_ACTIVE_PERIOD,
 			VALIDATION_ERROR_MESSAGE : VALIDATION_ERROR_MESSAGE,
-			EMAIL_FAILED_MESSAGE : EMAIL_FAILED_MESSAGE
+			EMAIL_FAILED_MESSAGE : EMAIL_FAILED_MESSAGE,
+			CAPCHA_VALIDATION_FAILED_MESSAGE : CAPCHA_VALIDATION_FAILED_MESSAGE
 		};
 	})(),
 	

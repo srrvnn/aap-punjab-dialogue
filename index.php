@@ -22,6 +22,12 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="js/picturefill.js"></script>
+	<script type="text/javascript">
+        var RecaptchaOptions = {
+			theme : 'custom',
+			custom_theme_widget: 'recaptcha_widget'
+        };
+    </script>
 </head>
 
 <body style="width: auto;" class="home page page-id-82 page-template page-template-template-homepage-php wpb-js-composer js-comp-ver-4.0.4 vc_responsive">
@@ -102,7 +108,7 @@
 			<div class="visiontext">
 			 	<span id="vision">It all starts with a vision</span><br />				
 			</div>
-			<div class="watch-intro"><a href="#intro">
+			<div class="watch-intro"><a href="#intro" class="autoScroll">
 						<span class="btn-xl btn-orange round">Watch Intro</span>
 					</a>
 				</div>
@@ -431,7 +437,43 @@
 									<textarea class="input-xlarge" name="message" id="message" placeholder="Message" rows="3"></textarea>
 								  </div>
 								</div>
-								<div class="form-actions">
+								<div class="control-group col-xs-12 col-sm-7">
+								  <div class="controls">
+									 <div id="recaptcha_widget">
+                                        <div id="recaptcha_image"></div>
+                                        <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
+                                        <span class="recaptcha_only_if_image">Enter the words above:</span>
+                                        <span class="recaptcha_only_if_audio">Enter the numbers you hear:</span>
+                                        <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
+                                        <div class="recaptcha_widget_img">
+											<a href="javascript:Recaptcha.reload()">
+												<img id="recaptcha_reload" src="http://www.google.com/recaptcha/api/img/blackglass/refresh.gif" 
+												alt="Get a new challenge"></a>
+											<span class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')">
+												<img id="recaptcha_switch_audio" alt="Get an audio challenge" 
+													src="http://www.google.com/recaptcha/api/img/blackglass/audio.gif"></a></span>
+											<span class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')">
+												<img id="recaptcha_switch_img" alt="Get a visual challenge" 
+													src="http://www.google.com/recaptcha/api/img/blackglass/text.gif"></a></span>
+											<span><a href="javascript:Recaptcha.showhelp()">
+												<img id="recaptcha_help_img" alt="Get Help" 
+													src="http://www.google.com/recaptcha/api/img/blackglass/help.gif"></a></span>
+										</div>
+									</div>
+									 <script type="text/javascript"
+										src="http://www.google.com/recaptcha/api/challenge?k=6Ldv6f0SAAAAABsCcWCSh0KFDf490o9nQscJLojJ">
+									 </script>
+									 <noscript>
+									   <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Ldv6f0SAAAAABsCcWCSh0KFDf490o9nQscJLojJ"
+											height="300" width="500" frameborder="0"></iframe><br>
+									   <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+									   </textarea>
+									   <input type="hidden" name="recaptcha_response_field"
+											value="manual_challenge">
+									 </noscript>
+								  </div>
+								</div>
+								<div class="form-actions col-xs-12 col-sm-5">
 									<button type="reset" id="btnClear" class="btn btn-lg btn-black" disabled>Loading...</button>
 									<button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</span></button>
 								</div>
@@ -498,7 +540,7 @@ $(document).ready(function() {
 	}
 	ready =1;
 	$('a').click(function(){
-	
+		var autoScroll = false;
 		if($(this).hasClass( "headnavs" )) {
 			// A link in navigation header is clicked
 			var parent = $(this).parent();
@@ -511,12 +553,17 @@ $(document).ready(function() {
 			var aLink = parent.children( ".headnavs" );
 			// Mark this link as active
 			aLink.addClass("current");
+			autoScroll = true;
+		} else if($(this).hasClass( "autoScroll" )) {
+			autoScroll = true;
 		}
-		// Scroll to the right page
-		$('html, body').animate({
-	      scrollTop: $( $.attr(this, 'href') ).offset().top
-		}, 1000);
-		return false;
+		if(autoScroll) {
+			// Scroll to the right page
+			$('html, body').animate({
+			  scrollTop: $( $.attr(this, 'href') ).offset().top
+			}, 1000);
+			return false;
+		}
 	});
 	var contactUsFormValidator = Dialouge.FormValidator('#contact-form');
 	
