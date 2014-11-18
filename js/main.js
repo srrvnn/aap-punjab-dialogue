@@ -195,6 +195,24 @@ var Dialouge = function() {
 				});
 			}
 		},
+		openPageLoadPopup = function(popupContainer) {
+			var setSessionUrl = "/utils/set-sessions.php";
+			// Set hide_page_load_popup session variable to true
+			var sessions = { "hide_page_load_popup" : 'true' };
+			$.post( setSessionUrl,
+						sessions,
+						function() {},
+						"json")
+				  .done(function(response) {
+					if(typeof response !== 'undefined' && response['hide_page_load_popup'] === 'success') {
+						// hide_page_load_popup variable was not already set, hence show the popup
+						var options = { "backdrop" : "static" }
+						$(popupContainer).modal(options);
+					}
+				  })
+				  .fail(function() { // Add metrics here
+				  });
+		},
 		startSpinner = function (button) {
 			if(button === undefined) {
 				return false;
@@ -235,7 +253,8 @@ var Dialouge = function() {
 			showSuccessMessage : showSuccessMessage,
 			enableButton : enableButton,
 			disableButton : disableButton,
-			isButtonDisabled : isButtonDisabled
+			isButtonDisabled : isButtonDisabled,
+			openPageLoadPopup : openPageLoadPopup
 		};
 	})(),
 	// This is thread safe and a global/singelton class

@@ -282,11 +282,10 @@
 		 $(document).ready(function(){
 		 	var onloadPopupContainer = $('#basicModal');
 			if(onloadPopupContainer.length > 0 && onloadPopupContainer.attr("aria-hidden") === "false") {
-				// Show model once per session after 20 seconds
-				var options = { "backdrop" : "static" }
+				// Show model once per session after 60 seconds
 				setTimeout(function(){
-					$('#basicModal').modal(options);
-				}, 90000);
+					Dialouge.WindowUtils.openPageLoadPopup('#basicModal');
+				}, 60000);
 			}
 			var focusAreaPage = Dialouge.FocusAreaPage("#focusAreaHeader", "#focusAreaSection", ".focus-area-checkbox");
 			focusAreaPage.initOrganizationTypeFields("#orgTypeLbl", "#orgType");

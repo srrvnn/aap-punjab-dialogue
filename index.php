@@ -446,8 +446,7 @@
 			</div>
 		</section>
 	</div><!--end wrapper-->
-	<!-- Pranay added style in footer,bottomfooter and percent two third -->
-<footer id="footer"style="padding-top: 22px; padding-bottom: 15px">
+<footer id="footer" style="padding-top: 22px; padding-bottom: 15px">
 		<div id="bottomfooter" style="height: 35px;">		
 			<div class="centered-wrapper">	
 				<div class="percent-two-third" style="padding-top: 5px; margin-bottom: 0px">
@@ -456,7 +455,7 @@
 
 				<div class="percent-one-third column-last">
 					<ul id="social">
-						<li><a href="https://www.facebook.com/pages/Delhi-Dialogue/576718279124066" title="facebook" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+						<li><a href="https://www.facebook.com/TheDelhiDialogue" title="facebook" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
 						</li><li><a href="https://twitter.com/DelhiDialogue" title="twitter" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>					
 					</ul>				
 					
@@ -490,13 +489,11 @@ var dt_styles = {"header_bg":"255,255,255","header_scroll_opacity":"90","default
 
 ready = 0;
 $(document).ready(function() {
-	// Show model once per session after 20 seconds
 	var onloadPopupContainer = $('#basicModal');
 	if(onloadPopupContainer.length > 0 && onloadPopupContainer.attr("aria-hidden") === "false") {
-		// Show model once per session after 20 seconds
-		var options = { "backdrop" : "static" }
+		// Show model once per session after 90 seconds
 		setTimeout(function(){
-			$('#basicModal').modal(options);
+			Dialouge.WindowUtils.openPageLoadPopup('#basicModal');
 		}, 90000);
 	}
 	ready =1;
