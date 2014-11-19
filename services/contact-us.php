@@ -1,4 +1,10 @@
 <?php
+class ContactUsResponse {
+    public $status = "InvalidParameters";
+	public $message = "Required parameters are not passed or empty";
+	public $messageId = "2";
+}
+
 require 'PHPMailer-master/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 $mail->isSMTP();
@@ -13,18 +19,14 @@ $mail->From = 'team@delhidialogue.co.in';
 $mail->FromName = 'Arvind Kejriwal (On Behalf of the Delhi Dialogue Team)';
 $mail->addCC('team@delhidialogue.co.in');
 
-
+	$response = new ContactUsResponse();
+	$is_debug = isset($_GET['q121_aap_dd_debug_counter']);
     // Your code here to handle a successful verification
 //Checking for blank Fields..
-    if ($_POST["name"] == "" || $_POST["email"] == "") {
-        $output = array(
-            "message" => "Fields can not be empty",
-            "messageId" => "2",
-            "status" => "ValidationError"
-        );
-        echo json_encode($output);
+    if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) || empty($_POST["email"])) {
+        echo json_encode($response);
     } else {
-// Check if the "Sender's Email" input field is filled out
+		// Check if the "Sender's Email" input field is filled out
         $email = $_POST['email'];
 
         // Sanitize e-mail address
@@ -34,13 +36,19 @@ $mail->addCC('team@delhidialogue.co.in');
         $email = filter_var($email, FILTER_VALIDATE_EMAIL);
 
         if (!$email) {
-            $output = array(
-                "message" => "Email is invalid!",
-                "messageId" => "1",
-                "status" => "ValidationError"
-            );
-            echo json_encode($output);
+            $response->status = "ValidationError";
+			$response->message = "Email is invalid!";
+            echo json_encode($response);
         } else {
+			require_once('verify-capcha.php');
+			$capchaResponse = verify_capcha($_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"], $is_debug);
+			if($is_debug) {
+				echo "verify_capcha_status = ".var_dump($capchaResponse);
+			}
+			if($capchaResponse->status !== "ValidCapcha") {
+				echo json_encode($capchaResponse);
+				return;
+			}
             $name = $_POST['name'];
             $message = $_POST['message'];
 
@@ -53,6 +61,7 @@ $mail->addCC('team@delhidialogue.co.in');
                 "X-Parse-Application-Id: " . $appId,
                 "X-Parse-REST-API-Key: " . $restKey
             );
+			// TODO:: Need to check parse response, add metrics and return appropriate error on failure
             $objectData = "{\"email\":\"$email\", \"name\":\"$name\", \"message\":\"$message\"}";
             $rest = curl_init();
             curl_setopt($rest, CURLOPT_URL, $url);
@@ -61,10 +70,10 @@ $mail->addCC('team@delhidialogue.co.in');
             curl_setopt($rest, CURLOPT_HTTPHEADER, $headers);
             curl_setopt($rest, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($rest, CURLOPT_RETURNTRANSFER, true);
-            $response = curl_exec($rest);
+            $res = curl_exec($rest);
             curl_close($rest);
-            // Send mail by PHP Mail Function
 
+            // Send mail by PHP Mail Function
             $mail->addAddress("$email", "$name");     // Add a recipient
             $mail->Subject = 'Welcome to Delhi Dialogue';
             $mail->Body = "Dear $name,\n\n Thank you for writing to the team at Delhi Dialogue. We appreciate your feedback and inputs. The strong secretariat at Delhi Dialogue will have a look at your suggestions and surely keep them in mind whilst thinking of Delhi's future.
@@ -76,17 +85,15 @@ $mail->addCC('team@delhidialogue.co.in');
             $mail->AltBody = '';
 
             if (!$mail->send()) {
-                $output = array(
-                    "message" => "Message could not be sent!",
-                    "messageId" => "10",
-                    "status" => "MailingError");
+                $response->message = "Record updated but mail could not be sent!";
+				$response->messageId = "10";
+				$response->status = "MailingError";
             } else {
-                $output = array(
-                    "message" => "Email was sent successfully!",
-                    "messageId" => "3",
-                    "status" => "Completed");
+				$response->message = "Record updated and email was sent successfully!";
+				$response->messageId = "3";
+				$response->status = "Completed";
             }
-            echo json_encode($output);
+            echo json_encode($response);
         }
     }
 ?>

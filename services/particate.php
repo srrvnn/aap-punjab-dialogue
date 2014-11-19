@@ -1,4 +1,10 @@
 <?php
+class ParticipateResponse {
+    public $status = "InvalidParameters";
+	public $message = "Required parameters are not passed or empty";
+	public $messageId = "2";
+}
+
 require 'PHPMailer-master/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 $mail->isSMTP();
@@ -12,29 +18,16 @@ $mail->Port = 465;                                    // TCP port to connect to
 $mail->From = 'team@delhidialogue.co.in';
 $mail->FromName = 'Arvind Kejriwal (On Behalf of the Delhi Dialogue Team)';
 $mail->addCC('team@delhidialogue.co.in');
-//Checking for blank Fields..
-    if($_POST["participationOption"]==""){
-        $output = array(
-            "message" => "choose one of the options",
-            "messageId"=> "4",
-            "status" => "ValidationError"
-        );
-        echo json_encode($output);
-    }else{
-        //if($_POST["options"]==""&&$_POST["options1"]!="")
-        //{
-        //    $options = $_POST["options1"];
-        //}
-        //elseif($_POST["options"]!=""&&$_POST["options1"]=="")
-        //{
-        //    $options = $_POST["options"];
-        //}
-        //$selected_radio = $_POST['gender'];
-        //echo $_POST["options1"];
-        $participationOption = $_POST["participationOption"];
-        //echo $options1;
 
-// Check if the "Sender's Email" input field is filled out
+$response = new ParticipateResponse();
+$is_debug = isset($_GET['q121_aap_dd_debug_counter']);
+//Checking for blank Fields..
+    if(!isset($_POST["participationOption"]) || empty($_POST["participationOption"])){
+        echo json_encode($response);
+    } else{
+        $participationOption = $_POST["participationOption"];
+ 
+		// Check if the "Sender's Email" input field is filled out
         $name=$_POST['name'];
         $email =$_POST['email'];
         $phone = $_POST['phone'];
@@ -54,14 +47,21 @@ $mail->addCC('team@delhidialogue.co.in');
         $email= filter_var($email, FILTER_VALIDATE_EMAIL);
 
         if (!$email){
-            $output = array(
-                "message" => "Email is invalid!",
-                "messageId"=> "1",
-                "status" => "ValidationError"
-            );
-            echo json_encode($output);
+            $response->message = "Email is invalid!";
+			$response->messageId = "1";
+			$response->status = "ValidationError";
+            echo json_encode($response);
         }
         else{
+			require_once('verify-capcha.php');
+			$capchaResponse = verify_capcha($_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"], $is_debug);
+			if($is_debug) {
+				echo "verify_capcha_status = ".var_dump($capchaResponse);
+			}
+			if($capchaResponse->status !== "ValidCapcha") {
+				echo json_encode($capchaResponse);
+				return;
+			}
             // message lines should not exceed 70 characters (PHP rule), so wrap it
             $url = 'https://api.parse.com/1/classes/submission';
             $appId = 'yVjYjEx1SN7YTAkALF07teCzVeG906SnADSlrSEa';
@@ -72,7 +72,7 @@ $mail->addCC('team@delhidialogue.co.in');
                 "X-Parse-REST-API-Key: " . $restKey
             );
             $objectData = "{\"email\":\"$email\", \"name\":\"$name\", \"phone\":\"$phone\", \"profession\":\"$profession\",\"participationOption\":\"$participationOption\",  \"orgType\":\"$orgType\", \"message\":\"$message\",\"topics\":\"$focusArea\"}";
-             //,  }";
+
             $rest = curl_init();
             curl_setopt($rest,CURLOPT_URL,$url);
             curl_setopt($rest,CURLOPT_POST,1);
@@ -80,9 +80,8 @@ $mail->addCC('team@delhidialogue.co.in');
             curl_setopt($rest,CURLOPT_HTTPHEADER,$headers);
             curl_setopt($rest,CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($rest,CURLOPT_RETURNTRANSFER, true);
-            $response = curl_exec($rest);
+            $res = curl_exec($rest);
 
-            //print_r($response);
             curl_close($rest);
             // Send mail by PHP Mail Function
             $mail->addAddress("$email", "$name");     // Add a recipient
@@ -95,19 +94,15 @@ $mail->addCC('team@delhidialogue.co.in');
             \nYours sincerely,\nArvind Kejriwal\n(On Behalf of the Delhi Dialogue Team)";
             $mail->AltBody = '';
             if (!$mail->send()) {
-                    $output = array(
-                       "message" => "Message could not be sent.",
-                        "messageId" => "4",
-                "status" => "MailingError"
-                    );
+                $response->message = "Record Updated. Message could not be sent.";
+                $response->messageId = "4";
+                $response->status = "MailingError";
             } else {
-                    $output = array(
-                        "message" => "Thanks for requesting for updates!",
-                        "messageId" => "3",
-                        "status" => "Completed"
-                    );
+				$response->message = "Record updated. Message sent.";
+                $response->messageId = "3";
+                $response->status = "Completed";
             }
-            echo json_encode($output);
+            echo json_encode($response);
         }
     }
 ?>

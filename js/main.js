@@ -106,17 +106,7 @@ var Dialouge = function() {
 			  highlight: function(element) {
 				// using bootstrap inbuilt classes success and error for auto validation
 					$element = $( element ),
-				type = element.type;
-				var name = element.name;
-				var id = element.id;
-				if ( type === "checkbox" ) {
-					name = "'" + name + "'";
-					id = "'" + id + "'";
-				}				
-				var highlightedElement = $(element.form).find("label[for=" + name + "]");
-				if(highlightedElement.length == 0) {
-					highlightedElement = $(element.form).find("label[for=" + id + "]");
-				}
+				highlightedElement = getLabelInForm(element);
 				highlightedElement.removeClass('error').removeClass('success');
 				
 				// Update common message label
@@ -126,17 +116,7 @@ var Dialouge = function() {
 			  // called when validation succeeded for any element
 			  unhighlight: function(element) {
 				// using bootstrap inbuilt classes success and error for auto validation
-				type = element.type;
-				var name = element.name;
-				var id = element.id;
-				if ( type === "checkbox" ) {
-					name = "'" + name + "'";
-					id = "'" + id + "'";
-				}
-				var unhighlightedElement = $(element.form).find("label[for=" + name + "]");
-				if(unhighlightedElement.length == 0) {
-					unhighlightedElement = $(element.form).find("label[for=" + id + "]");
-				}
+				unhighlightedElement = getLabelInForm(element);
 				unhighlightedElement.remove();
 				
 				var erroredLabels = $(element.form).find("label[class=error]");
@@ -153,37 +133,26 @@ var Dialouge = function() {
 			  // Called once after validation succeeded for every element
 			  submitHandler: function(form) {
 				var messageContainer = $(form).find('.message');
-
-				var recaptchaChallengeFieldContainer = $(form).find( "input[name='recaptcha_challenge_field']" );
-				if(!($.trim(recaptchaChallengeFieldContainer))) {
-					// JS not enabled or present get from <noscript>
-					recaptchaChallengeFieldContainer = $(form).find( "textarea[name='recaptcha_challenge_field']" );
-				}
-				var recaptchaResponseFieldContainer = $(form).find( "input[name='recaptcha_response_field']" );
-				var params = { "recaptcha_challenge_field" : recaptchaChallengeFieldContainer.val(), 
-								"recaptcha_response_field" : recaptchaResponseFieldContainer.val()};
-				var verifyCapchaUrl = "/services/verify-capcha.php"
-				$.post( verifyCapchaUrl,
-							params,
-							function() {},
-							"json")
-					  .done(function(response) {
-						if(typeof response !== 'undefined' && response['status'] === 'ValidCapcha') {
-							// Validation succeeded. Submit the form by calling success callback
-							_successCallBack(form, messageContainer);
-						} else {
-							Dialouge.WindowUtils.showErrorMessage(messageContainer, 
-							Dialouge.ConstantUtils.CAPCHA_VALIDATION_FAILED_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
-						}
-					  })
-					  .fail(function() { // Add metrics here
-						Dialouge.WindowUtils.showErrorMessage(messageContainer, 
-							Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
-					  });
-				// _successCallBack send Post Ajax call to server, hence never submit the form
+				// Validation succeeded. Submit the form by calling success callback
+				_successCallBack(form, messageContainer);
 				return false;
 			  }
 			 });
+		},
+		getLabelInForm = function(element) {
+			type = element.type;
+			var name = element.name;
+			var id = element.id;
+			if ( type === "checkbox" ) {
+				// Checkbox id/name might be in form id="id[]"
+				name = "'" + name + "'";
+				id = "'" + id + "'";
+			}
+			var labelElement = $(element.form).find("label[for=" + name + "]");
+			if(labelElement.length == 0) {
+				labelElement = $(element.form).find("label[for=" + id + "]");
+			}
+			return labelElement;
 		};
 		var validate = function() {
 			if(validatorAdded) {
@@ -302,27 +271,41 @@ var Dialouge = function() {
 			try {
 				Dialouge.WindowUtils.startSpinner(submitButton);
 				Dialouge.WindowUtils.disableButton(submitButton);
-				
+
+				// Capcha fields are also part of the form and will be sent to server for validation
+				var params = $(form).serialize();
 				var postUrl = $(form).attr( "action" );
 				$.post( postUrl, 
-						$(form).serialize(),
+						params,
 						function() {},
 						"json")
 				  .done(function(response) {
-					var status = response["status"];
-
-					if(status == 'Completed') {
-						Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
-							successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
-						clearFields(form);
-					} else if(status == 'MailingError') {
-						successMessage = successMessage + " " + Dialouge.ConstantUtils.EMAIL_FAILED_MESSAGE;
-						Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
-							successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
-						clearFields(form);
-					} else {
+				
+					if(typeof response === 'undefined' || typeof response["status"] === 'undefined') {
 						Dialouge.WindowUtils.showErrorMessage(messageContainer, 
 							Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
+					} else {
+						var status = response["status"];
+						if(status === 'InvalidCapcha') {
+							Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+								Dialouge.ConstantUtils.CAPCHA_VALIDATION_FAILED_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
+						} else if(status == 'ValidationError') {
+							var errorMessage = Dialouge.ConstantUtils.VALIDATION_ERROR_MESSAGE + ". " + response['message'];
+							Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+								errorMessage, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
+						} else if(status == 'Completed') {
+							Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
+								successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
+							clearFields(form);
+						} else if(status == 'MailingError') {
+							successMessage = successMessage + " " + Dialouge.ConstantUtils.EMAIL_FAILED_MESSAGE;
+							Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
+								successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
+							clearFields(form);
+						} else {
+							Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+								Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
+						}
 					}
 				  })
 				  .fail(function() {
