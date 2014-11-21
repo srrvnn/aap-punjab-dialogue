@@ -315,6 +315,9 @@ var Dialouge = function() {
 				  .always(function() {
 					Dialouge.WindowUtils.stopSpinner(submitButton);
 					Dialouge.WindowUtils.enableButton(submitButton);
+					try {
+						Recaptcha.reload();
+					} catch(ex){}
 				});
 			} catch (ex) {
                 Dialouge.WindowUtils.stopSpinner(submitButton);

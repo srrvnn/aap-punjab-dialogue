@@ -157,7 +157,7 @@ label.error{color:red !important;}
 .btn-blue:hover,
 .btn-blue:focus,
 .btn-blue:active{background-color:#f78d1e;border-color:#1a8cbd;}
-.btn-black{background-color:#323232;color:#DDCFCF;border:0;font-family:'Open Sans' !important;font-weight:bold !important;text-transform:uppercase;font-size:16px !important;}
+.btn-black{background-color:#323232;color:#DDCFCF;border:0;font-family:'Open Sans' !important;font-weight:bold !important;text-transform:uppercase;font-size:16px !important;min-width: 84px;min-height: 44px;margin-bottom: 10px;}
 .btn-black:hover,
 .btn-black:focus,
 .btn-black:active{background-color:#FE7E17 !important;color:white !important;border:0;}

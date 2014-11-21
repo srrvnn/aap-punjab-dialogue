@@ -177,3 +177,6 @@ text-align: center!important;
 	width: 30px;
 	height: 20px;
 }
+#recaptcha_challenge_image,#recaptcha_image {
+	width: 220px!important; height: 57px!important;
+}
