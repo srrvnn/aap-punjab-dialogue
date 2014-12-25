@@ -30,7 +30,7 @@ ul#mainnav > li > a:hover > span{padding-bottom:2px;}
 ul#mainnav > li.current-menu-item > a span{padding-bottom:2px;}
 ul#mainnav li a:hover,
 ul#mainnav li a:active{color:#323232;}
-.centered-wrapper{width:1120px;margin:0 auto;}
+.centered-wrapper{width:1280px;margin:0 auto;}
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 body{margin:0;}
 header,
@@ -78,7 +78,7 @@ a{color:#FE7E17;}
 .nav-btn:hover{color:#FE7E17;}
 .visiontext{position:absolute;background:none repeat scroll 0% 0% transparent;z-index:2 !important;
 padding:10px 30px;letter-spacing:0px;font-size:4.8vw;font-weight:bold;color:white;white-space:nowrap;line-height:1.13;
-top:50vh;left:50vw;opacity:1;transform:translate(-50%, 0%);text-transform:uppercase;
+top:60vh;left:12vw;width:70vw;opacity:1;text-transform:uppercase;
 }
 .watch-intro{position:absolute;background:none repeat scroll 0% 0% transparent;z-index:2 !important; 
 top:80vh;left:50vw;opacity:1;transform:translate(-50%, 0%);text-transform:uppercase;

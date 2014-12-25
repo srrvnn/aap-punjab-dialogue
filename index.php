@@ -41,7 +41,22 @@
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
-					<a class="original-logo" href="#home"><img style="height: 50px; 175px" src="images/dd-logo.jpg" alt="AAP Logo"></a>
+					<a class="original-logo" href="#home">
+						<span style="height: 50px; max-width: 447px"  data-picture data-alt="AAP Delhi Dialogue">
+							<span data-src="images/aap_logo_lg.png"></span>
+
+							<!-- Smartphones (portrait) -->
+							<span data-src="images/aap_logo_sm.png" data-media="only screen and (max-device-width : 480px) and (max-device-height : 768px) and (orientation : portrait)"></span>
+
+							<!--[if (lt IE 9) & (!IEMobile)]>
+								<span data-src="images/aap_logo_sm.png"></span>
+							<![endif]-->
+
+							<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+							<noscript>
+								<img src="images/aap_logo_lg.png" alt="AAP Delhi Dialogue">
+							</noscript>
+						</span>
 				</div>
 			</div><!--end one-fourth-->
 
