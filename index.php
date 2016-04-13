@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html class=" js webgl no-touch rgba opacity cssanimations csstransforms csstransforms3d csstransitions js_active  vc_desktop  vc_transform " lang="en-US">
 <head>
-	<meta charset="utf-8"/>		
-	<!-- mobile meta tag -->		
+	<meta charset="utf-8"/>
+	<!-- mobile meta tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="generator" content="Delhi Dialogue Portal by AAP">
 	<title>Delhi Dialogue </title>
@@ -14,10 +14,10 @@
 	<meta property="og:image" content="//www.delhidialogue.in/images/main/xxl_lsp.jpg" />
 	<meta property="og:description" content="Delhi Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
 	<meta property="fb:app_id" content="1540899709487892" />
-	
+
 	<!-- Custom Favicon -->
-	<link rel="icon" type="image/png" href="files/icon.ico">			
-	<link rel="stylesheet" href="css/header.css" type="text/css" media="all">  
+	<link rel="icon" type="image/png" href="files/icon.ico">
+	<link rel="stylesheet" href="css/header.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -36,12 +36,12 @@
   ga('send', 'pageview');
 </script>
 <?php include './utils/onload_popover.php';?>
-<header id="header" class="show-original-logo solid-header scrolled-header" 
+<header id="header" class="show-original-logo solid-header scrolled-header"
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
-					<a class="original-logo" href="#home">
+					<a class="original-logo" href="#home"></a>
 						<span style="height: 50px; max-width: 447px"  data-picture data-alt="AAP Delhi Dialogue">
 							<span data-src="images/aap_logo_lg.png"></span>
 
@@ -60,7 +60,7 @@
 				</div>
 			</div><!--end one-fourth-->
 
-			<div class="percent-three-fourth column-last">	
+			<div class="percent-three-fourth column-last">
 				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
 					<div class="menu-one-page-menu-container">
 						<ul style="padding-top: 10px;" id="mainnav" class="sf-menu sf-js-enabled sf-arrows">
@@ -73,12 +73,12 @@
 								<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FTheDelhiDialogue&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=<?=$facebook_app_id?>" scrolling="no" frameborder="0" style="height: 20px; width: 50px;" allowTransparency="true"></iframe>
 							</li>
 						</ul>
-					</div>				
-				</nav><!--end navigation-->				
+					</div>
+				</nav><!--end navigation-->
 			</div><!--end three-fourth-->
 		</div><!--end centered-wrapper-->
-	</header>		
-	
+	</header>
+
 	<div id="wrapper">
 		<div id="home"></div><div style="height: 70px;" class="menu-fixer"></div>
 		<section>
@@ -98,13 +98,13 @@
 
 				<!-- Desktops and laptops -->
 				<span data-src="images/main/lg_lsp.jpg" data-media="only screen and (min-width : 1025px) and (max-width: 1600px)"></span>
-				
+
 				<!-- Desktops and laptops -->
 				<span data-src="images/main/xl_lsp.jpg" data-media="only screen and (min-width : 1601px) and (max-width: 1920px)"></span>
-				
+
 				<!-- Exrta Large screens -->
 				<span data-src="images/main/xxl_lsp.jpg" data-media="only screen and (min-width : 1921px)"></span>
-				
+
 				<!--[if (lt IE 9) & (!IEMobile)]>
 					<span data-src="images/main/md_lsp.jpg"></span>
 				<![endif]-->
@@ -115,13 +115,13 @@
 				</noscript>
 			</span>
 			<div class="visiontext">
-			 	<span id="vision">It all starts with a vision</span><br />				
+			 	<span id="vision">It all starts with a vision</span><br />
 			</div>
 			<div class="watch-intro"><a href="#intro" class="autoScroll">
 						<span class="btn-xl btn-orange round">Watch Intro</span>
 					</a>
 				</div>
-	
+
 			<div id="intro" style="margin-top: 10px; padding-top: 100px;" class="lighter-overlay">
 				<h1 class="section-title">INTRODUCING DELHI DIALOGUE</h1>
 				<div class="col-sm-10 col-sm-offset-1" style=" background-color: rgba(250,250,250);border: #e6e6e6 1px solid;">
@@ -142,22 +142,22 @@
 								<a href="#topics"><button style="float: left; margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
 									<a href="#schedule"><button style="float: left; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Schedule</button></a>
 							</div>
-						</div> 
-						
+						</div>
+
 					</div>
 				</div>
-			</div> 
+			</div>
 
 			<div id="about">
 				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
 					<div class="wpb_wrapper">
 						<h1 class="section-title">ABOUT US</h1>
 						<div class="aboutText">
-							<p><h2>"Delhi Dialogue: Vision 2020"</h2> 
-							<p>Vision 2020 is to make Delhi a world class city in 5 years. Delhi Dialogue is an initiative to build a realistic and practical plan 
-							to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts 
+							<p><h2>"Delhi Dialogue: Vision 2020"</h2>
+							<p>Vision 2020 is to make Delhi a world class city in 5 years. Delhi Dialogue is an initiative to build a realistic and practical plan
+							to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts
 							from various fields to build plans for different focus areas.</p>
-							<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments, organizations, businesses and civil society 
+							<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments, organizations, businesses and civil society
 							to engage in this initiative. The engagement would happen in the form of round table conferences.</p>
 							<ul id="aboutTopicList">
 
@@ -209,7 +209,7 @@
 									<img src="images/Industry.jpg" class="img-responsive" alt="Enterprise: Trade and Industry">
 									<span>
 										<b>Enterprise: Trade and Industry</b><br/>Being the capital of India, Delhi should be its premier services hub and trading zone with excellent infrastructure. Laws should be simplified and entrepreneurship should be incentivized. Additionally, establishing a new company in Delhi should be straightforward.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=2">
@@ -226,7 +226,7 @@
 									<img src="images/Women.jpg" class="img-responsive" alt="Women Rights (Safety)">
 									<span>
 										<b>Women Rights and Safety</b><br/>Delhi should have stringent laws to uphold women’s rights at the workplace and at home. We envision a Delhi in which women will be acknowledged and treated as equal citizens in their own right.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=3">
@@ -243,7 +243,7 @@
 									<img src="images/Sanitation.jpg" class="img-responsive" alt="Sanitation and Solid Waste Mgmt">
 									<span>
 										<b>Sanitation and Solid Waste Management</b><br/>There should be comprehensive sanitation, sewage and solid waste management for every living establishment in Delhi as well as easy availability of public toilets and waste bins. Littering should be discouraged by heavy fines.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=4">
@@ -261,7 +261,7 @@
 									<span>
 										<b>Social Welfare and Social Justice</b><br/>
 										Delhi should provide equal opportunities across all sections of the society. There should be no appeasement of specific people in a community. Policies should focus on equal access to education, health and job opportunities.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=5">
@@ -278,7 +278,7 @@
 									<img src="images/Transport.jpg" class="img-responsive" alt="Transport">
 									<span>
 										<b>Transportation</b><br/>Delhi should have high quality diverse public transport to reduce peak time load on roads. The transportation should include Metro trains, last mile connectivity via feeder buses & private transport vehicles like autorickshaws.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=6">
@@ -295,7 +295,7 @@
 									<img src="images/Electricity.jpg" class="img-responsive" alt="Energy and Electricity">
 									<span>
 										<b>Energy and Electricity</b><br/>Delhi should have 24 hour electricity and become 100% self-sufficient electricity state. Delhi should use clean and renewable energy sources.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=7">
@@ -312,7 +312,7 @@
 									<img src="images/Education.jpg" class="img-responsive" alt="Education">
 									<span>
 										<b>Education</b><br/>Delhi should have high quality school education system accessible to all sections of the society. Focus should be laid on creation and expansion of world class colleges and universities.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=8">
@@ -329,7 +329,7 @@
 									<img src="images/Health.jpg" class="img-responsive" alt="Health">
 									<span>
 										<b>Health</b><br/>Delhi should have high quality public hospitals with and expanding outreach. Health care delivery systems should be modernized using latest in technology. Focus on proactive prevention of diseases to reduce healthcare costs and to improve the quality of life should be promoted.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=9">
@@ -346,7 +346,7 @@
 									<img src="images/Housing.jpg" class="img-responsive" alt="Land and Housing">
 									<span>
 										<b>Land and Housing</b><br/>Delhi should have transparent land allotment policies and infrastructure guidelines. Rights of home buyers should be protected. Long term policies should be implemented to prevent mushrooming of unauthorized settlements by ensuring availability of low-cost housing.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=10">
@@ -363,7 +363,7 @@
 									<img src="images/Rural.jpg" class="img-responsive" alt="Rural Delhi">
 									<span>
 										<b>Rural Delhi</b><br/>Delhi's rural areas should have proper public infrastructure for schools, hospitals, roads and public parks. Delhi’s rural areas should have prosperous farmers using state of art technology.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=11">
@@ -380,7 +380,7 @@
 									<img src="images/Water.jpg" class="img-responsive" alt="Water">
 									<span>
 										<b>Water</b><br/>Every home in Delhi should have access to clean water. Dependence on water tankers should be eliminated. Delhi's water resources should be developed and ideas like rainwater harvesting should be implemented.
-									</span>									
+									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=12">
@@ -393,8 +393,8 @@
 								</div>
 							</div>
 						</div>
-					</div> 
-				</div> 
+					</div>
+				</div>
 			</div>
 
 			<div id="schedule" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
@@ -403,7 +403,7 @@
 						<h1 class="section-title">SCHEDULE</h1>
 						<div class="aboutText">
 						<h2><p>Let's make Delhi a world class city in 5 years. Domain experts & citizens would be engaged to build realistic & practical plan.</p>
-							<p>At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments, 
+							<p>At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments,
 							social organizations, businesses and civil society. Other experts & citizens are also encouraged to apply with their proposals.</p>
 							<p>These inputs will be reviewed & subsequently detailed schedule for seminars & round table meetings will be published.</p>
 						</h2>
@@ -423,7 +423,7 @@
 								<li><h3><span class="glyphicon glyphicon-envelope"></span> delhidialogue@aamaadmiparty.org</h3></li>
 								<li><h3><span class="glyphicon glyphicon-earphone"></span> +91 964 332 7265</h3></li>
 								<li><h3><a href="https://www.twitter.com/DelhiDialogue "><img height="24px" src="files/twitter.png">twitter.com/DelhiDialogue</a></h3></li>
-								<div style="clear:both; width:100%; height:10px"></div> 	
+								<div style="clear:both; width:100%; height:10px"></div>
 							</ul>
 
 						</div>
@@ -456,7 +456,7 @@
 									<button type="submit" id="btnSend" class="btn btn-lg btn-black" disabled><span name="spinner"></span><span>Loading...</span></button>
 								</div>
 							  </fieldset>
-							  	
+
 							  <label class="col-sm-12 message" hidden></label>
 						</form>
 						</div>
@@ -467,8 +467,8 @@
 		</section>
 	</div><!--end wrapper-->
 <footer id="footer" style="padding-top: 22px; padding-bottom: 15px">
-		<div id="bottomfooter" style="height: 35px;">		
-			<div class="centered-wrapper">	
+		<div id="bottomfooter" style="height: 35px;">
+			<div class="centered-wrapper">
 				<div class="percent-two-third" style="padding-top: 5px; margin-bottom: 0px">
 					<p>Copyright 2014 - Aam Aadmi Party. All Rights Reserved</p>
 				</div><!--end percent-two-third-->
@@ -476,13 +476,13 @@
 				<div class="percent-one-third column-last">
 					<ul id="social">
 						<li><a href="https://www.facebook.com/TheDelhiDialogue" title="facebook" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-						</li><li><a href="https://twitter.com/DelhiDialogue" title="twitter" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>					
-					</ul>				
-					
+						</li><li><a href="https://twitter.com/DelhiDialogue" title="twitter" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					</ul>
+
 				</div><!--end percent-one-third-->
-			</div><!--end centered-wrapper-->				
+			</div><!--end centered-wrapper-->
 		</div><!--end bottomfooter-->
-		
+
 		<a href="#" class="totop"><i class="fa fa-angle-double-up"></i></a>
 
 	</footer>
@@ -544,7 +544,7 @@ $(document).ready(function() {
 		}
 	});
 	var contactUsFormValidator = Dialouge.FormValidator('#contact-form');
-	
+
 	// Validate all inputs and call Dialouge.MainPage.contactUsCallBack() if all inputs are valid.
 	contactUsFormValidator.addValidator(Dialouge.MainPage.contactUsCallBack);
 	$("#btnSend").removeAttr("disabled");
