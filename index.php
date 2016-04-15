@@ -420,9 +420,10 @@
 
 							<ul class="contact-info" style="color:white !important;">
 								<li><h2><span>Aam Aadmi Party Delhi Dialogue Team</span></h2></li>
-								<li><h3><span class="glyphicon glyphicon-envelope"></span> delhidialogue@aamaadmiparty.org</h3></li>
+								<li><h3><span class="glyphicon glyphicon-envelope"></span> aappunjabdialogue@gmail.com </h3></li>
 								<li><h3><span class="glyphicon glyphicon-earphone"></span> +91 964 332 7265</h3></li>
-								<li><h3><a href="https://www.twitter.com/DelhiDialogue "><img height="24px" src="files/twitter.png">twitter.com/DelhiDialogue</a></h3></li>
+								<li><h3><a href="https://www.facebook.com/punjabdialogue/"><img height="24px" src="files/facebook.gif">facebook.com/punjabdialogue</a></h3></li>
+								<li><h3><a href="https://www.twitter.com/pbdialogue "><img height="24px" src="files/twitter.png">twitter.com/pbdialogue</a></h3></li>
 								<div style="clear:both; width:100%; height:10px"></div>
 							</ul>
 
