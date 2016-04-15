@@ -161,18 +161,29 @@
 							to engage in this initiative. The engagement would happen in the form of round table conferences.</p>
 							<ul id="aboutTopicList">
 
-<li>	Jobs and Employment		</li>
-<li>	Enterprise: Trade and Industry		</li>
-<li>	Women Rights & Safety		</li>
-<li>	Sanitation and Solid Waste Mgmt		</li>
-<li>	Social Welfare and Social Justice		</li>
-<li>	Transportation		</li>
-<li>	Energy and Electricity		</li>
-<li>	Education		</li>
-<li>	Health		</li>
-<li>	Land and Housing		</li>
-<li>	Rural Delhi		</li>
-<li>	Water		</li>
+<li>   Youth    </li>
+<li>   Farmers and laborers    </li>
+<li>   Women    </li>
+<li>   Dalits    </li>
+<li>   Traders    </li>
+<li>   Industrialists    </li>
+<li>   Professionals    </li>
+<li>   Government Employees    </li>
+<li>   Servicemen and Ex-servicemen    </li>
+<li>   NRIs    </li>
+<li>   Agriculture    </li>
+<li>   Drug Abuse    </li>
+<li>   Health    </li>
+<li>   Education    </li>
+<li>   Transport and Road Safety    </li>
+<li>   Water and Electricity    </li>
+<li>   Empoyment and Skill Development    </li>
+<li>   Police Reform    </li>
+<li>   Mafias and corruption    </li>
+<li>   Industry and Trade    </li>
+<li>   Housing and Real Estate    </li>
+<li>   Fiscal Reforms    </li>
+
 							</ul>
 							<i class="col-md-12">Citizens will also be invited to give their suggestions on different policy areas through our website, Whatsapp, Text Messaging and registering for policy roundtables.</i>
 
@@ -186,11 +197,199 @@
 					<div class="wpb_wrapper">
 						<h1 class="section-title">FOCUS AREAS</h1>
 						<div>
+
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
-									<img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment">
-									<span><b>Jobs and Employment</b><br/>
-										Delhi should have growing employment opportunities across various types of industries. Small businesses need to be encouraged as a viable employment opportunity. Labor reforms are needed to provide fair and productive work environment.
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Youth</b><br/>
+										Punjabi youth need to be empowered so that they can lead the state and country into a new era of progress. The drug mafia must be eliminated from Punjab, and gainful employment opportunities created.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Farmers and laborers</b><br/>
+										Punjab is the bread basket of India, and yet the Punjabi famer is forced to commit suicides. The farmers of Punjab should be lifted out of debt, and the farming profession should become more profitable.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Women</b><br/>
+										Punjab should have stringent laws to uphold women’s rights at the workplace and at home. We envision a Punjab in which women will be acknowledged and treated as equal citizens in their own right.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Dalits</b><br/>
+										Punjab has the highest proportion of Dalits of all states in India. Dalits must be treated as equal citizens and all measures should be taken for their welfare and social upliftment.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Traders</b><br/>
+										Punjab has a huge trading community, who are running their businesses despite all odds. The tax regime must be simplified and made friendlier, and the state should provide an environment where it is easy to open and operate new businesses legally.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Industrialists</b><br/>
+										The manufacturing and other industries need to be stimulated to set up shop in Punjab so as to boost the economic growth rate and employment. The power tariffs and tax rates must be rationalized and made competitive with neighbouring states.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Professionals</b><br/>
+										Punjab has a large number of doctors, lawyers and other professionals whose rights must be protected, and an environment provided where they can execute their duties without feeling threatened.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Government Employees</b><br/>
+										Government employees in Punjab should be provided with the basic social security and welfare schemes, especially after retirement.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Servicemen and Ex-servicemen</b><br/>
+										The brave soldiers from Punjab who serve our country deserve our deepest respect and a special place in the society. Punjab should have a special grievance cell for their needs and they should be offered priority service in public matters.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>NRIs</b><br/>
+										The Punjabi NRI community is a vast asset for the state. They should be engaged with the development process, tapping their expertise in various walks of life. Their concerns should be properly addressed.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Agriculture</b><br/>
+										Agriculture in Punjab should be made more profitable to eliminate farm debt. Crop diversification, dairy farming and other allied agricultural activities need to be spread in a big way. There is also an urgent to make agriculture sustainable.
+									</span>
+								</div>
+								<div class="issueDetails col-sm-3 col-xm-12" >
+									<a href="focus-area/index.php?id=1">
+										<div class="dt-service-wrapper discovermore">
+											<div class="dt-service-item">
+												DISCOVER MORE  <img src="files/discovermore.png">
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class= 'row issue'>
+								<div class="issueSummary col-xm-12 col-sm-9">
+									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
+									<span><b>Drug Abuse</b><br/>
+										The widespread drug abuse among Punjabis needs to be eliminated. A large number of rehabilitation centers which provide quality care should be established.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12" >
@@ -206,9 +405,10 @@
 
 							<div class= 'row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Industry.jpg" class="img-responsive" alt="Enterprise: Trade and Industry">
+									<!-- <img src="images/Industry.jpg" class="img-responsive" alt="Enterprise: Trade and Industry"> -->
 									<span>
-										<b>Enterprise: Trade and Industry</b><br/>Being the capital of India, Delhi should be its premier services hub and trading zone with excellent infrastructure. Laws should be simplified and entrepreneurship should be incentivized. Additionally, establishing a new company in Delhi should be straightforward.
+										<b>Health</b><br/>
+										Quality healthcare should be available locally and cheaply to all citizens. Punjab should have high quality public hospitals with modern, latest technology.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -223,9 +423,10 @@
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Women.jpg" class="img-responsive" alt="Women Rights (Safety)">
+									<!-- <img src="images/Women.jpg" class="img-responsive" alt="Women Rights (Safety)"> -->
 									<span>
-										<b>Women Rights and Safety</b><br/>Delhi should have stringent laws to uphold women’s rights at the workplace and at home. We envision a Delhi in which women will be acknowledged and treated as equal citizens in their own right.
+										<b>Education</b><br/>
+										Punjab should have government schools that are better than private schools. Colleges and universities for higher education should be modern and teach the latest curricule to bolster employability of graduates.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -240,9 +441,10 @@
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Sanitation.jpg" class="img-responsive" alt="Sanitation and Solid Waste Mgmt">
+									<!-- <img src="images/Sanitation.jpg" class="img-responsive" alt="Sanitation and Solid Waste Mgmt"> -->
 									<span>
-										<b>Sanitation and Solid Waste Management</b><br/>There should be comprehensive sanitation, sewage and solid waste management for every living establishment in Delhi as well as easy availability of public toilets and waste bins. Littering should be discouraged by heavy fines.
+										<b>Transport and Road Safety</b><br/>
+										The existing inter-state government network of buses in Punjab should be strengthened and new modern buses acquired. The cities and villages must have proper public transport facilities.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -257,10 +459,10 @@
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/SocialWelfare.jpg" class="img-responsive" alt="Social Welfare and Social Justice">
+									<!-- <img src="images/SocialWelfare.jpg" class="img-responsive" alt="Social Welfare and Social Justice"> -->
 									<span>
-										<b>Social Welfare and Social Justice</b><br/>
-										Delhi should provide equal opportunities across all sections of the society. There should be no appeasement of specific people in a community. Policies should focus on equal access to education, health and job opportunities.
+										<b>Water and Electricity</b><br/>
+										Every home in Punjab should have access to clean water. The ground water levels should be replenished to healthy levels. There should be 24*7 supply of quality electricity to every home and business in Punjab.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -275,9 +477,10 @@
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Transport.jpg" class="img-responsive" alt="Transport">
+									<!-- <img src="images/Transport.jpg" class="img-responsive" alt="Transport"> -->
 									<span>
-										<b>Transportation</b><br/>Delhi should have high quality diverse public transport to reduce peak time load on roads. The transportation should include Metro trains, last mile connectivity via feeder buses & private transport vehicles like autorickshaws.
+										<b>Empoyment and Skill Development</b><br/>
+										Punjab should provide employment opportunities for all its youth across various sectors. Small businesses need to be encouraged as a viable employment opportunity. Manufacturing industry needs to be revived with vigour.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -292,9 +495,10 @@
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Electricity.jpg" class="img-responsive" alt="Energy and Electricity">
+									<!-- <img src="images/Electricity.jpg" class="img-responsive" alt="Energy and Electricity"> -->
 									<span>
-										<b>Energy and Electricity</b><br/>Delhi should have 24 hour electricity and become 100% self-sufficient electricity state. Delhi should use clean and renewable energy sources.
+										<b>Police Reform</b><br/>
+										Punjab Police is an asset that if properly used can bring wonders to the state. All appointments in police should be made non-political and the police force should be modernized with latest technology.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -309,9 +513,10 @@
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Education.jpg" class="img-responsive" alt="Education">
+									<!-- <img src="images/Education.jpg" class="img-responsive" alt="Education"> -->
 									<span>
-										<b>Education</b><br/>Delhi should have high quality school education system accessible to all sections of the society. Focus should be laid on creation and expansion of world class colleges and universities.
+										<b>Mafias and corruption</b><br/>
+										The deep rooted corruption in Punjab needs to end immediately. The mafia raj established by the Akalis in all spheres of public activity must be demolished.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -326,9 +531,10 @@
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Health.jpg" class="img-responsive" alt="Health">
+									<!-- <img src="images/Health.jpg" class="img-responsive" alt="Health"> -->
 									<span>
-										<b>Health</b><br/>Delhi should have high quality public hospitals with and expanding outreach. Health care delivery systems should be modernized using latest in technology. Focus on proactive prevention of diseases to reduce healthcare costs and to improve the quality of life should be promoted.
+										<b>Industry and Trade</b><br/>
+										Punjab should be a premier services hub and trading zone with excellent infrastructure. Laws should be simplified and entrepreneurship should be incentivized. Additionally, establishing a new company in Punjab should be straightforward.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -343,9 +549,10 @@
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Housing.jpg" class="img-responsive" alt="Land and Housing">
+									<!-- <img src="images/Housing.jpg" class="img-responsive" alt="Land and Housing"> -->
 									<span>
-										<b>Land and Housing</b><br/>Delhi should have transparent land allotment policies and infrastructure guidelines. Rights of home buyers should be protected. Long term policies should be implemented to prevent mushrooming of unauthorized settlements by ensuring availability of low-cost housing.
+										<b>Housing and Real Estate</b><br/>
+										Punjab should have transparent land allotment policies and infrastructure guidelines. Rights of home buyers should be protected, while giving incentivizing developers to deliver quality products on time.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
@@ -360,30 +567,14 @@
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Rural.jpg" class="img-responsive" alt="Rural Delhi">
+									<!-- <img src="images/Rural.jpg" class="img-responsive" alt="Rural Delhi"> -->
 									<span>
-										<b>Rural Delhi</b><br/>Delhi's rural areas should have proper public infrastructure for schools, hospitals, roads and public parks. Delhi’s rural areas should have prosperous farmers using state of art technology.
+										<b>Fiscal Reforms</b><br/>
+										The massive debt on the Punjab state government must be handled with utmost importance. A prudent fiscal policy should be introduced, and new loans should be raised mostly on the capital account and not on the revenue account.
 									</span>
 								</div>
 								<div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=11">
-										<div class="dt-service-wrapper discovermore">
-											<div class="dt-service-item">
-												DISCOVER MORE  <img src="files/discovermore.png">
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
-									<img src="images/Water.jpg" class="img-responsive" alt="Water">
-									<span>
-										<b>Water</b><br/>Every home in Delhi should have access to clean water. Dependence on water tankers should be eliminated. Delhi's water resources should be developed and ideas like rainwater harvesting should be implemented.
-									</span>
-								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
-									<a href="focus-area/index.php?id=12">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
 												DISCOVER MORE  <img src="files/discovermore.png">
