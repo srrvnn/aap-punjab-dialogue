@@ -124,7 +124,7 @@
 				</div>
 
 			<div id="intro" style="margin-top: 10px; padding-top: 100px;" class="lighter-overlay">
-				<h1 class="section-title">INTRODUCING DELHI DIALOGUE</h1>
+				<h1 class="section-title">INTRODUCING PUNJAB DIALOGUE</h1>
 				<div class="col-sm-10 col-sm-offset-1" style=" background-color: rgba(250,250,250);border: #e6e6e6 1px solid;">
 					<div class="row" style="margin: 30px 0 30px;">
 						<div class="col-sm-12 col-md-6 col-lg-6">
@@ -135,10 +135,11 @@
 						<div class="col-sm-12 col-md-6 col-lg-6">
 							<div class="intro-header">
 								<h1>
-									Make Delhi world class city in 5 years
+									Bring prosperity to Punjab in 5 years
 								</h1>
 								<p style="font-family: margin: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 16px">
-									Our vision is to make Delhi world class city in 5 years. Delhi Dialogue is an initiative to build realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety etc have been identified. Experts will be involved through seminars & conferences (including researchers, social organizations, bureacrats etc).Citizens are also encouraged to participate.
+									Vision is to bring prosperity back to Punjab and provide governance & facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve the vision. Many focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas.
+									Invitations will be sent to domain experts, researchers, scientists, experts from governments, organizations, businesses and civil society to engage in this initiative. The engagement would happen in the form of round table conferences.
 								</p>
 								<a href="#topics"><button style="float: left; margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
 									<a href="#schedule"><button style="float: left; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Schedule</button></a>
@@ -154,12 +155,9 @@
 					<div class="wpb_wrapper">
 						<h1 class="section-title">ABOUT US</h1>
 						<div class="aboutText">
-							<p><h2>"Delhi Dialogue: Vision 2020"</h2>
-							<p>Vision 2020 is to make Delhi a world class city in 5 years. Delhi Dialogue is an initiative to build a realistic and practical plan
-							to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts
-							from various fields to build plans for different focus areas.</p>
-							<p>Invitations will be sent to domain experts, researchers, scientists, experts from governments, organizations, businesses and civil society
-							to engage in this initiative. The engagement would happen in the form of round table conferences.</p>
+							<p><h2>"Punjab Dialogue: Vision 2020"</h2>
+							<p>Vision is to bring prosperity back to Punjab and provide governance & facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve the vision. Many focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas.
+Invitations will be sent to domain experts, researchers, scientists, experts from governments, organizations, businesses and civil society to engage in this initiative. The engagement would happen in the form of round table conferences.</p>
 							<ul id="aboutTopicList">
 
 <li>   Youth    </li>
@@ -594,7 +592,7 @@
 					<div class="wpb_wrapper">
 						<h1 class="section-title">SCHEDULE</h1>
 						<div class="aboutText">
-						<h2><p>Let's make Delhi a world class city in 5 years. Domain experts & citizens would be engaged to build realistic & practical plan.</p>
+						<h2><p>Let's make prosperity to Punjab in 5 years. Domain experts & citizens would be engaged to build realistic & practical plan.</p>
 							<p>At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments,
 							social organizations, businesses and civil society. Other experts & citizens are also encouraged to apply with their proposals.</p>
 							<p>These inputs will be reviewed & subsequently detailed schedule for seminars & round table meetings will be published.</p>
