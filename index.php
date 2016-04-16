@@ -204,7 +204,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjabi youth need to be empowered so that they can lead the state and country into a new era of progress. The drug mafia must be eliminated from Punjab, and gainful employment opportunities created.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -212,7 +212,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -221,7 +221,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab is the bread basket of India, and yet the Punjabi famer is forced to commit suicides. The farmers of Punjab should be lifted out of debt, and the farming profession should become more profitable.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -229,7 +229,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -238,7 +238,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab should have stringent laws to uphold women’s rights at the workplace and at home. We envision a Punjab in which women will be acknowledged and treated as equal citizens in their own right.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -246,7 +246,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -255,7 +255,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab has the highest proportion of Dalits of all states in India. Dalits must be treated as equal citizens and all measures should be taken for their welfare and social upliftment.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -263,7 +263,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -272,7 +272,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab has a huge trading community, who are running their businesses despite all odds. The tax regime must be simplified and made friendlier, and the state should provide an environment where it is easy to open and operate new businesses legally.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -280,7 +280,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -289,7 +289,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										The manufacturing and other industries need to be stimulated to set up shop in Punjab so as to boost the economic growth rate and employment. The power tariffs and tax rates must be rationalized and made competitive with neighbouring states.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -297,7 +297,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -306,7 +306,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab has a large number of doctors, lawyers and other professionals whose rights must be protected, and an environment provided where they can execute their duties without feeling threatened.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -314,7 +314,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -323,7 +323,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Government employees in Punjab should be provided with the basic social security and welfare schemes, especially after retirement.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -331,7 +331,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -340,7 +340,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										The brave soldiers from Punjab who serve our country deserve our deepest respect and a special place in the society. Punjab should have a special grievance cell for their needs and they should be offered priority service in public matters.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -348,7 +348,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -357,7 +357,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										The Punjabi NRI community is a vast asset for the state. They should be engaged with the development process, tapping their expertise in various walks of life. Their concerns should be properly addressed.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -365,7 +365,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -374,7 +374,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Agriculture in Punjab should be made more profitable to eliminate farm debt. Crop diversification, dairy farming and other allied agricultural activities need to be spread in a big way. There is also an urgent to make agriculture sustainable.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -382,7 +382,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-9">
@@ -391,7 +391,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										The widespread drug abuse among Punjabis needs to be eliminated. A large number of rehabilitation centers which provide quality care should be established.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12" >
+								<!-- <div class="issueDetails col-sm-3 col-xm-12" >
 									<a href="focus-area/index.php?id=1">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -399,7 +399,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 
 							<div class= 'row issue'>
@@ -410,7 +410,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Quality healthcare should be available locally and cheaply to all citizens. Punjab should have high quality public hospitals with modern, latest technology.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=2">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -418,7 +418,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
@@ -428,7 +428,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab should have government schools that are better than private schools. Colleges and universities for higher education should be modern and teach the latest curricule to bolster employability of graduates.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=3">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -436,7 +436,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
@@ -446,7 +446,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										The existing inter-state government network of buses in Punjab should be strengthened and new modern buses acquired. The cities and villages must have proper public transport facilities.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=4">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -454,7 +454,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
@@ -464,7 +464,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Every home in Punjab should have access to clean water. The ground water levels should be replenished to healthy levels. There should be 24*7 supply of quality electricity to every home and business in Punjab.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=5">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -472,7 +472,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
@@ -482,7 +482,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab should provide employment opportunities for all its youth across various sectors. Small businesses need to be encouraged as a viable employment opportunity. Manufacturing industry needs to be revived with vigour.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=6">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -490,7 +490,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
@@ -500,7 +500,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab Police is an asset that if properly used can bring wonders to the state. All appointments in police should be made non-political and the police force should be modernized with latest technology.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=7">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -508,7 +508,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
@@ -518,7 +518,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										The deep rooted corruption in Punjab needs to end immediately. The mafia raj established by the Akalis in all spheres of public activity must be demolished.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=8">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -526,7 +526,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
@@ -536,7 +536,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab should be a premier services hub and trading zone with excellent infrastructure. Laws should be simplified and entrepreneurship should be incentivized. Additionally, establishing a new company in Punjab should be straightforward.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=9">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -544,7 +544,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
@@ -554,7 +554,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										Punjab should have transparent land allotment policies and infrastructure guidelines. Rights of home buyers should be protected, while giving incentivizing developers to deliver quality products on time.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=10">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -562,7 +562,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class='row issue'>
 								<div class="issueSummary col-sm-9 col-xm-12">
@@ -572,7 +572,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 										The massive debt on the Punjab state government must be handled with utmost importance. A prudent fiscal policy should be introduced, and new loans should be raised mostly on the capital account and not on the revenue account.
 									</span>
 								</div>
-								<div class="issueDetails col-sm-3 col-xm-12">
+								<!-- <div class="issueDetails col-sm-3 col-xm-12">
 									<a href="focus-area/index.php?id=11">
 										<div class="dt-service-wrapper discovermore">
 											<div class="dt-service-item">
@@ -580,7 +580,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 											</div>
 										</div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
