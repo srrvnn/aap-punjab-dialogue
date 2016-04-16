@@ -69,9 +69,9 @@
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#topics"><span>FOCUS AREAS</span></a></li>
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#schedule"><span>SCHEDULE</span></a></li>
 							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="#contact"><span>CONTACT</span></a></li>
-							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
+							<!-- <li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
 								<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FTheDelhiDialogue&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=<?=$facebook_app_id?>" scrolling="no" frameborder="0" style="height: 20px; width: 50px;" allowTransparency="true"></iframe>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</nav><!--end navigation-->
@@ -82,7 +82,7 @@
 	<div id="wrapper">
 		<div id="home"></div><div style="height: 70px;" class="menu-fixer"></div>
 		<section>
-			<span class="mainImg" data-picture data-alt="Welcome To Delhi Dialog">
+			<span class="mainImg" data-picture data-alt="Welcome To Punjab Dialoge">
 				<span data-src="images/main/xs_lsp.jpg"></span>
 
 				<!-- Smartphones (landscape) -->
@@ -610,11 +610,11 @@
 						<div class="col-sm-offset-1 col-sm-5">
 
 							<ul class="contact-info" style="color:white !important;">
-								<li><h2><span>Aam Aadmi Party Delhi Dialogue Team</span></h2></li>
+								<li><h2><span>Aam Aadmi Party Punjab Dialogue Team</span></h2></li>
 								<li><h3><span class="glyphicon glyphicon-envelope"></span> aappunjabdialogue@gmail.com </h3></li>
 								<li><h3><span class="glyphicon glyphicon-earphone"></span> +91 964 332 7265</h3></li>
-								<li><h3><a href="https://www.facebook.com/punjabdialogue/"><img height="24px" src="files/facebook.gif">facebook.com/punjabdialogue</a></h3></li>
-								<li><h3><a href="https://www.twitter.com/pbdialogue "><img height="24px" src="files/twitter.png">twitter.com/pbdialogue</a></h3></li>
+								<li><h3><a href="https://www.facebook.com/punjabdialogue"><img height="24px" src="files/facebook.gif">facebook.com/punjabdialogue</a></h3></li>
+								<li><h3><a href="https://www.twitter.com/pbdialogue"><img height="24px" src="files/twitter.png">twitter.com/pbdialogue</a></h3></li>
 								<div style="clear:both; width:100%; height:10px"></div>
 							</ul>
 
@@ -667,8 +667,8 @@
 
 				<div class="percent-one-third column-last">
 					<ul id="social">
-						<li><a href="https://www.facebook.com/TheDelhiDialogue" title="facebook" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-						</li><li><a href="https://twitter.com/DelhiDialogue" title="twitter" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/punjabdialogue" title="facebook" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+						</li><li><a href="https://www.twitter.com/pbdialogue" title="twitter" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
 					</ul>
 
 				</div><!--end percent-one-third-->
