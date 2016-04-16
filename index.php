@@ -35,7 +35,6 @@
   ga('create', 'UA-56660930-1', 'auto');
   ga('send', 'pageview');
 </script>
-<?php include './utils/onload_popover.php';?>
 <header id="header" class="show-original-logo solid-header scrolled-header"
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
@@ -198,7 +197,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 						<div>
 
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Youth</b><br/>
 										Punjabi youth need to be empowered so that they can lead the state and country into a new era of progress. The drug mafia must be eliminated from Punjab, and gainful employment opportunities created.
@@ -215,7 +214,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Farmers and laborers</b><br/>
 										Punjab is the bread basket of India, and yet the Punjabi famer is forced to commit suicides. The farmers of Punjab should be lifted out of debt, and the farming profession should become more profitable.
@@ -232,7 +231,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Women</b><br/>
 										Punjab should have stringent laws to uphold women’s rights at the workplace and at home. We envision a Punjab in which women will be acknowledged and treated as equal citizens in their own right.
@@ -249,7 +248,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Dalits</b><br/>
 										Punjab has the highest proportion of Dalits of all states in India. Dalits must be treated as equal citizens and all measures should be taken for their welfare and social upliftment.
@@ -266,7 +265,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Traders</b><br/>
 										Punjab has a huge trading community, who are running their businesses despite all odds. The tax regime must be simplified and made friendlier, and the state should provide an environment where it is easy to open and operate new businesses legally.
@@ -283,7 +282,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Industrialists</b><br/>
 										The manufacturing and other industries need to be stimulated to set up shop in Punjab so as to boost the economic growth rate and employment. The power tariffs and tax rates must be rationalized and made competitive with neighbouring states.
@@ -300,7 +299,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Professionals</b><br/>
 										Punjab has a large number of doctors, lawyers and other professionals whose rights must be protected, and an environment provided where they can execute their duties without feeling threatened.
@@ -317,7 +316,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Government Employees</b><br/>
 										Government employees in Punjab should be provided with the basic social security and welfare schemes, especially after retirement.
@@ -334,7 +333,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Servicemen and Ex-servicemen</b><br/>
 										The brave soldiers from Punjab who serve our country deserve our deepest respect and a special place in the society. Punjab should have a special grievance cell for their needs and they should be offered priority service in public matters.
@@ -351,7 +350,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>NRIs</b><br/>
 										The Punjabi NRI community is a vast asset for the state. They should be engaged with the development process, tapping their expertise in various walks of life. Their concerns should be properly addressed.
@@ -368,7 +367,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Agriculture</b><br/>
 										Agriculture in Punjab should be made more profitable to eliminate farm debt. Crop diversification, dairy farming and other allied agricultural activities need to be spread in a big way. There is also an urgent to make agriculture sustainable.
@@ -385,7 +384,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class= 'row issue'>
-								<div class="issueSummary col-xm-12 col-sm-9">
+								<div class="issueSummary col-xm-12 col-sm-12">
 									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Drug Abuse</b><br/>
 										The widespread drug abuse among Punjabis needs to be eliminated. A large number of rehabilitation centers which provide quality care should be established.
@@ -403,7 +402,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 							</div>
 
 							<div class= 'row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Industry.jpg" class="img-responsive" alt="Enterprise: Trade and Industry"> -->
 									<span>
 										<b>Health</b><br/>
@@ -421,7 +420,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Women.jpg" class="img-responsive" alt="Women Rights (Safety)"> -->
 									<span>
 										<b>Education</b><br/>
@@ -439,7 +438,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Sanitation.jpg" class="img-responsive" alt="Sanitation and Solid Waste Mgmt"> -->
 									<span>
 										<b>Transport and Road Safety</b><br/>
@@ -457,7 +456,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/SocialWelfare.jpg" class="img-responsive" alt="Social Welfare and Social Justice"> -->
 									<span>
 										<b>Water and Electricity</b><br/>
@@ -475,7 +474,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Transport.jpg" class="img-responsive" alt="Transport"> -->
 									<span>
 										<b>Empoyment and Skill Development</b><br/>
@@ -493,7 +492,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Electricity.jpg" class="img-responsive" alt="Energy and Electricity"> -->
 									<span>
 										<b>Police Reform</b><br/>
@@ -511,7 +510,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Education.jpg" class="img-responsive" alt="Education"> -->
 									<span>
 										<b>Mafias and corruption</b><br/>
@@ -529,7 +528,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Health.jpg" class="img-responsive" alt="Health"> -->
 									<span>
 										<b>Industry and Trade</b><br/>
@@ -547,7 +546,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Housing.jpg" class="img-responsive" alt="Land and Housing"> -->
 									<span>
 										<b>Housing and Real Estate</b><br/>
@@ -565,7 +564,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div> -->
 							</div>
 							<div class='row issue'>
-								<div class="issueSummary col-sm-9 col-xm-12">
+								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Rural.jpg" class="img-responsive" alt="Rural Delhi"> -->
 									<span>
 										<b>Fiscal Reforms</b><br/>
