@@ -10,8 +10,8 @@
 
 	<meta property="og:title" content="Punjab Dialogue" />
 	<meta property="og:site_name" content="Punjab Dialogue" />
-	<meta property="og:url" content="//www.delhidialogue.in/" />
-	<meta property="og:image" content="//www.delhidialogue.in/images/main/xxl_lsp.jpg" />
+	<meta property="og:url" content="//www.punjabdialogue.in/" />
+	<meta property="og:image" content="//www.punjabdialogue.in/images/PunjabDD1.jpg" />
 	<meta property="og:description" content="Punjab Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like youth, farmers, women have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
 	<meta property="fb:app_id" content="1540899709487892" />
 
@@ -83,35 +83,36 @@
 		<div id="home"></div><div style="height: 70px;" class="menu-fixer"></div>
 		<section>
 			<span class="mainImg" data-picture data-alt="Welcome To Punjab Dialoge">
-				<span data-src="images/main/xs_lsp.jpg"></span>
+				<span data-src="images/PunjabDD1.jpg"></span>
 
 				<!-- Smartphones (landscape) -->
-				<span data-src="images/main/xs_lsp.jpg" data-media="only screen and (max-device-height : 480px) and (max-device-width : 768px) and (orientation : landscape)"></span>
+				<span data-src="images/PunjabDD1.jpg" data-media="only screen and (max-device-height : 480px) and (max-device-width : 768px) and (orientation : landscape)"></span>
+
 				<!-- Smartphones (portrait) -->
-				<span data-src="images/main/xs_prt.jpg" data-media="only screen and (max-device-width : 480px) and (max-device-height : 768px) and (orientation : portrait)"></span>
+				<span data-src="images/PunjabDD1.jpg" data-media="only screen and (max-device-width : 480px) and (max-device-height : 768px) and (orientation : portrait)"></span>
 
 				<!-- Tablets (landscape) -->
-				<span data-src="images/main/md_lsp.jpg" data-media="only screen and (min-device-height : 481px) and (max-device-width : 1280px) and (orientation : landscape)"></span>
+				<span data-src="images/PunjabDD1.jpg" data-media="only screen and (min-device-height : 481px) and (max-device-width : 1280px) and (orientation : landscape)"></span>
 
 				<!-- Tablets (portrait) -->
-				<span data-src="images/main/sm_prt.jpg" data-media="only screen and (min-device-width : 481px) and (max-device-height : 1280px) and (orientation : portrait)"></span>
+				<span data-src="images/PunjabDD1.jpg" data-media="only screen and (min-device-width : 481px) and (max-device-height : 1280px) and (orientation : portrait)"></span>
 
 				<!-- Desktops and laptops -->
-				<span data-src="images/main/lg_lsp.jpg" data-media="only screen and (min-width : 1025px) and (max-width: 1600px)"></span>
+				<span data-src="images/PunjabDD1.jpg" data-media="only screen and (min-width : 1025px) and (max-width: 1600px)"></span>
 
 				<!-- Desktops and laptops -->
-				<span data-src="images/main/xl_lsp.jpg" data-media="only screen and (min-width : 1601px) and (max-width: 1920px)"></span>
+				<span data-src="images/PunjabDD1.jpg" data-media="only screen and (min-width : 1601px) and (max-width: 1920px)"></span>
 
 				<!-- Exrta Large screens -->
-				<span data-src="images/main/xxl_lsp.jpg" data-media="only screen and (min-width : 1921px)"></span>
+				<span data-src="images/PunjabDD1.jpg" data-media="only screen and (min-width : 1921px)"></span>
 
 				<!--[if (lt IE 9) & (!IEMobile)]>
-					<span data-src="images/main/md_lsp.jpg"></span>
+					<span data-src="images/PunjabDD1.jpg"></span>
 				<![endif]-->
 
 				<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
 				<noscript>
-					<img src="images/main/xs_lsp.jpg" alt="Welcome To Delhi Dialog">
+					<img src="images/PunjabDD1.jpg" alt="Welcome To Punjab Dialoge">
 				</noscript>
 			</span>
 			<div class="visiontext">
