@@ -5,14 +5,14 @@
 	<meta charset="utf-8"/>
 	<!-- mobile meta tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="generator" content="Delhi Dialogue Portal by AAP">
-	<title>Delhi Dialogue </title>
+	<meta name="generator" content="Punjab Dialogue Portal by AAP">
+	<title>Punjab Dialogue</title>
 
-	<meta property="og:title" content="Delhi Dialogue" />
-	<meta property="og:site_name" content="Delhi Dialogue" />
+	<meta property="og:title" content="Punjab Dialogue" />
+	<meta property="og:site_name" content="Punjab Dialogue" />
 	<meta property="og:url" content="//www.delhidialogue.in/" />
 	<meta property="og:image" content="//www.delhidialogue.in/images/main/xxl_lsp.jpg" />
-	<meta property="og:description" content="Delhi Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
+	<meta property="og:description" content="Punjab Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like youth, farmers, women have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
 	<meta property="fb:app_id" content="1540899709487892" />
 
 	<!-- Custom Favicon -->
@@ -42,19 +42,19 @@
 			<div class="percent-one-fourth ">
 				<div class="logo">
 					<a class="original-logo" href="#home"></a>
-						<span style="height: 50px; max-width: 447px"  data-picture data-alt="AAP Delhi Dialogue">
-							<span data-src="images/aap_logo_lg.png"></span>
+						<span style="height: 50px; max-width: 447px"  data-picture data-alt="AAP Punjab Dialogue">
+							<span data-src="images/punjab_dialogue.png"></span>
 
 							<!-- Smartphones (portrait) -->
-							<span data-src="images/aap_logo_sm.png" data-media="only screen and (max-device-width : 480px) and (max-device-height : 768px) and (orientation : portrait)"></span>
+							<!-- <span data-src="images/punjab_dialogue.png" data-media="only screen and (max-device-width : 480px) and (max-device-height : 768px) and (orientation : portrait)"></span> -->
 
 							<!--[if (lt IE 9) & (!IEMobile)]>
-								<span data-src="images/aap_logo_sm.png"></span>
+								<span data-src="images/punjab_dialogue.png"></span>
 							<![endif]-->
 
 							<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
 							<noscript>
-								<img src="images/aap_logo_lg.png" alt="AAP Delhi Dialogue">
+								<img src="images/punjab_dialogue.png" alt="AAP Punjab Dialogue">
 							</noscript>
 						</span>
 				</div>
