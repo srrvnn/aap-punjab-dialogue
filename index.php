@@ -602,7 +602,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 				</div>
 			</div>
 			<div id="contact" style="margin-bottom: 70px;"></div>
-			<div style="background-image: url(images/punjab-people.jpg);background-repeat: no-repeat;background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
+			<div style="background-image: url(images/punjab_people.jpg);background-repeat: no-repeat;background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
 				<div class="darker-overlay" style="padding-top: 50px;padding-bottom: 0px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Send us a Message</h1><div style="clear:both; width:100%; height:30px"></div>
 <div class="col-sm-12">
