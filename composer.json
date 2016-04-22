@@ -7,7 +7,9 @@
         }
     ],
     "require": {
-    	"google/recaptcha": "~1.1",
+    	"google/recaptcha": "~1.1"
+    },
+    "require-dev": {
         "heroku/heroku-buildpack-php": "^101.0"
     }
 }
