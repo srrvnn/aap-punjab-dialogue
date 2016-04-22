@@ -127,12 +127,12 @@
 				<h1 class="section-title">INTRODUCING PUNJAB DIALOGUE</h1>
 				<div class="col-sm-10 col-sm-offset-1" style=" background-color: rgba(250,250,250);border: #e6e6e6 1px solid;">
 					<div class="row" style="margin: 30px 0 30px;">
-						<div class="col-sm-12 col-md-6 col-lg-6">
+						<!-- <div class="col-sm-12 col-md-6 col-lg-6">
 							<iframe class="youtube-player" type="text/html" width="100%" height="349"
 									src="http://www.youtube.com/embed/MYg42BjiFFM" frameborder="0" allowfullscreen="1">
 								</iframe>
-						</div>
-						<div class="col-sm-12 col-md-6 col-lg-6">
+						</div> -->
+						<div class="col-sm-12 col-md-12 col-lg-12">
 							<div class="intro-header">
 								<h1>
 									Bring prosperity to Punjab in 5 years
