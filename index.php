@@ -156,8 +156,7 @@
 						<h1 class="section-title">ABOUT US</h1>
 						<div class="aboutText">
 							<p><h2>"Punjab Dialogue: Vision 2020"</h2>
-							<p>Vision is to bring prosperity back to Punjab and provide governance & facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve the vision. Many focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas.
-Invitations will be sent to domain experts, researchers, scientists, experts from governments, organizations, businesses and civil society to engage in this initiative. The engagement would happen in the form of round table conferences.</p>
+							<p>Our vision is to bring prosperity back to Punjab and provide governance and facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve this vision. Many focus groups like youth, farmers, women, Dalits, traders and many focus areas like agriculture, industry, education, health and job creation have been identified. Consultations will be held with experienced experts in these sectors and with citizens of Punjab to discuss these critical social issues. Together, we will design an actionable blueprint for a new Punjab.</p>
 							<ul id="aboutTopicList">
 
 <li>   Youth    </li>
@@ -184,7 +183,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 <li>   Fiscal Reforms    </li>
 
 							</ul>
-							<i class="col-md-12">Citizens will also be invited to give their suggestions on different policy areas through our website, Whatsapp, Text Messaging and registering for policy roundtables.</i>
+							<i class="col-md-12">Citizens will also be invited to give their suggestions on different policy areas through our website, WhatsApp, Facebook and Twitter.</i>
 
 						</div>
 					</div>
@@ -592,10 +591,8 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 					<div class="wpb_wrapper">
 						<h1 class="section-title">SCHEDULE</h1>
 						<div class="aboutText">
-						<h2><p>Let's make prosperity to Punjab in 5 years. Domain experts & citizens would be engaged to build realistic & practical plan.</p>
-							<p>At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments,
-							social organizations, businesses and civil society. Other experts & citizens are also encouraged to apply with their proposals.</p>
-							<p>These inputs will be reviewed & subsequently detailed schedule for seminars & round table meetings will be published.</p>
+						<h2><p>Let's bring prosperity to Punjab in 5 years.</p>
+							<p>At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments, social organizations, businesses and civil society. Other experts & citizens are also encouraged to apply with their proposals.</p> <p> These inputs will be reviewed and subsequently detailed blueprints will be published.</p>
 						</h2>
 						</div>
 					</div>
