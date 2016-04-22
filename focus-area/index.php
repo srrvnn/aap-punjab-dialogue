@@ -10,9 +10,9 @@
 	// Read the file contents into a string variable,
 	// and parse the string into a data structure
 	$contents = file_get_contents("../data/focus-areas-details.json");
-	$contents = utf8_encode($contents); 
+	$contents = utf8_encode($contents);
 	$all_focus_areas_details = json_decode($contents, true);
-	
+
 	// Find focus area details from "id" request parameter
 	if(isset ($all_focus_areas_details)) {
 		foreach ($all_focus_areas_details as $a_focus_area_details) {
@@ -29,20 +29,25 @@
 	}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html class=" js webgl no-touch rgba opacity cssanimations csstransforms csstransforms3d csstransitions js_active  vc_desktop  vc_transform " lang="en-US">
 <head>
-	<title>Delhi Dialogue</title>
-
 	<meta charset="utf-8"/>
-	<meta property="og:title" content="Delhi Dialogue" />
-	<meta property="og:site_name" content="Delhi Dialogue" />
-	<meta property="og:url" content="//www.delhidialogue.in" />
-	<meta property="og:image" content="//www.delhidialogue.in/images/main/xxl_lsp.jpg" />
-	<meta property="og:description" content="Delhi Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
-	<meta property="fb:app_id" content="1540899709487892" />
-	
+	<!-- mobile meta tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/header.css" type="text/css" media="all">  
+	<meta name="generator" content="Punjab Dialogue Portal by AAP">
+	<title>Punjab Dialogue</title>
+
+	<meta property="og:title" content="Punjab Dialogue" />
+	<meta property="og:site_name" content="Punjab Dialogue" />
+	<meta property="og:url" content="//www.punjabdialogue.org/" />
+	<meta property="og:image" content="//www.punjabdialogue.org/images/xxl_lsp.jpg" />
+	<meta property="og:description" content="Punjab Dialogue is an initiative to build a realistic and practical plan to achieve the vision. 12 focus areas like youth, farmers, women have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas."/>
+	<meta property="fb:app_id" content="1540899709487892" />
+
+	<!-- Custom Favicon -->
+	<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="files/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/header.css" type="text/css" media="all">
 	<link rel="stylesheet" href="../css/focus-area.css" type="text/css" media="all">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
@@ -58,17 +63,16 @@
 	  ga('create', 'UA-56660930-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
-<?php include '../utils/onload_popover.php';?>
-	<header id="header" class="show-original-logo solid-header scrolled-header" 
+	<header id="header" class="show-original-logo solid-header scrolled-header"
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
 		<div class="centered-wrapper">
 			<div class="percent-one-fourth ">
 				<div class="logo">
-					<a class="original-logo" href="../index.php"><img style="width: 175px; height: 50px;" src="/images/dd-logo.jpg" alt="AAP Logo"></a>
-					
+					<a class="original-logo" href="../index.php"><img style="width: 175px; height: 50px;" src="/images/punjab_dialogue.png" alt="AAP Punjab Dialogue"></a>
+
 				</div>
 			</div><!--end one-fourth-->
-			<div class="percent-three-fourth column-last">	
+			<div class="percent-three-fourth column-last">
 				<nav style="overflow: visible;" id="navigation" class="light-header desktop">
 					<div class="menu-one-page-menu-container">
 						<ul style="padding-top: 10px;" id="mainnav" class="sf-menu sf-js-enabled sf-arrows">
@@ -77,16 +81,13 @@
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="../index.php#topics"><span>FOCUS AREAS</span></a></li>
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="../index.php#schedule"><span>SCHEDULE</span></a></li>
 							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="../index.php#contact"><span>CONTACT</span></a></li>
-							<li style="padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
-								<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FTheDelhiDialogue&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=<?=$facebook_app_id?>" scrolling="no" frameborder="0" style="height: 20px; width: 50px;" allowTransparency="true"></iframe>
-							</li>
 						</ul>
-					</div>				
-				</nav><!--end navigation-->				
+					</div>
+				</nav><!--end navigation-->
 			</div><!--end three-fourth-->
 		</div><!--end centered-wrapper-->
 	</header>
-	<div id="wrapper">	
+	<div id="wrapper">
 	<div style="height: 70px;" class="menu-fixer"></div>
 		<section class="col-sm-12" style="background-color: rgba(236, 236, 236, 0.36)">
 			<article id="page-82" style="padding:0" class="container col-sm-offset-1 col-sm-10 col-lg-offset-2 col-lg-8 begin-content">
@@ -102,9 +103,9 @@
 										<div class="row form-inline " style="margin-left:15px">
 											<div class="row form-group inline-form-group">
 												<input name="name" class="form-control" placeholder="Enter Name" id="customerName">
-											 
+
 												<input name="email" class="form-control" placeholder="Enter Email" id="customerEmail">
-											 
+
 											  <input type="hidden" class="form-control" name="focusarea" id="focusarea" value="Electricity"/>
 											  <button type="submit" class="col-sm-4 blue-fixed-btn button"  name="submit" id="btnUpdate" disabled>
 												<span name="spinner"></span><span>Loading...</span>
@@ -123,7 +124,6 @@
 								<div class="row button-group col-sm-12">
 									<a href="#connect" id="registerBtn" class="blue-fixed-btn button" role="button">Register</a>
 									<a href="#connect" id="proposalBtn" class="blue-fixed-btn button" role="button">Submit Proposal</a>
-									<a href="<?php echo $focus_area_details["discussionUrl"] ?>" id="discussBtn" class="blue-fixed-btn button" role="button" target="_blank">Discuss Online</a>
 								</div>
 							</div>
 						</div>
@@ -182,7 +182,7 @@
 									  <div class="controls col-sm-6" style="padding-left:0">
 											<div class="panel panel-default">
 												<div class="panel-body " style="padding: 0">
-												
+
 													<div class="col-sm-12 btn-group btn-input clearfix" style="padding: 0;">
 														 <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
 														 <input type="hidden" placeholder="" name="orgType" id="orgType">
@@ -211,40 +211,70 @@
 											  <label><input type="checkbox" name="allFocusAreas" id="focusAreaCheckbox0">All</label>
 											</div>
 											<div class="checkbox">
-												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Jobs and Employment">Jobs and Employment</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Youth"> Youth</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Enterprise: Trade and Industry">Enterprise: Trade and Industry</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Farmers and laborers"> Farmers and laborers</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Women Rights & Safety">Women Rights & Safety</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Women"> Women</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Sanitation and Solid Waste Management">Sanitation and Solid Waste Management</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Dalits"> Dalits</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox"  name="focusArea[]" value="Social Welfare and Social Justice">Social Welfare and Social Justice</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Traders"> Traders</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox"  name="focusArea[]" value="Transportation">Transportation</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Industrialists"> Industrialists</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Energy and Electricity">Energy and Electricity</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Professionals"> Professionals</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox"  name="focusArea[]" value="Education">Education</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Government Employees"> Government Employees</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Health">Health</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Servicemen and Ex-servicemen"> Servicemen and Ex-servicemen</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Land and Housing">Land and Housing</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="NRIs"> NRIs</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Rural Delhi">Rural Delhi</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Agriculture"> Agriculture</label>
 											</div>
 											<div class="checkbox">
-											  <label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Water">Water</label>
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Drug Abuse"> Drug Abuse</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Health"> Health</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Education"> Education</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Transport and Road Safety"> Transport and Road Safety</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Water and Electricity"> Water and Electricity</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Empoyment and Skill Development"> Empoyment and Skill Development</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Police Reform"> Police Reform</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Mafias and corruption"> Mafias and corruption</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Industry and Trade"> Industry and Trade</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Housing and Real Estate"> Housing and Real Estate</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" class="focus-area-checkbox" id="focusAreaCheckbox" name="focusArea[]" value="Fiscal Reforms"> Fiscal Reforms</label>
 											</div>
 										</div>
 										<label class="control-label" for="focusAreaCheckbox"></label>
@@ -260,7 +290,7 @@
 								<div class="row">
 									<div class="control-group col-xs-12 col-sm-12 col-md-6">
 									  <div class="controls">
-										 <?php require($_SERVER["DOCUMENT_ROOT"] . "/widgets/contact-us-capcha.html"); ?>
+										 <div class="g-recaptcha" data-sitekey="6LfDHR4TAAAAAK3tAB55qyZVu7Kcvx53H6W9Dk2m"></div>
 									  </div>
 									</div>
 									<div class="form-actions col-xs-12 col-sm-12 col-md-6">
@@ -299,25 +329,25 @@
 			var notificationFormValidator = Dialouge.FormValidator('#notification-form', '#notificationErrorMessage');
 			registrationFormValidator.addValidator(focusAreaPage.registrationCallBack);
 			notificationFormValidator.addValidator(focusAreaPage.getUpdatesCallBack);
-			
+
 			// Dropdown box select
 			$( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
-			 
+
 				var $target = $( event.currentTarget );
 				var dropDownLevelContainer = $target.closest( '.btn-group' ).find( '[data-bind="orgTypeLbl"]' );
-				
+
 				// Set text and toggle opened dropdown
 				dropDownLevelContainer.text( $target.text() ).end()
-				  .children( '.dropdown-toggle' ).dropdown( 'toggle' ); // 
+				  .children( '.dropdown-toggle' ).dropdown( 'toggle' ); //
 
 				 // Populate hidden element to be used for validation
 				 $("#orgType").val($target.text());
-				 
+
 				 registrationFormValidator.validate();
 			   return false;
-			   
+
 			});
-			
+
 			$( "#registerBtn" ).click(function() {
 				Dialouge.WindowUtils.goToPage("#connect");
 				$("#seminarRadioBtn").prop("checked", true);
@@ -327,7 +357,7 @@
 				$("#proposalRadioBtn").prop("checked", true);
 			});
 			$( "#focusAreaCheckbox0" ).click(function() {
-				//select/deselect all checkboxes with class "focus-area-checkbox" 
+				//select/deselect all checkboxes with class "focus-area-checkbox"
 				focusAreaPage.setAllCheckboxStatus(this.checked);
 			});
 			$("#btnUpdate").removeAttr("disabled");
