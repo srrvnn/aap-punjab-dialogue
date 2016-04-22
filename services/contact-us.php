@@ -19,10 +19,12 @@ $mail->From = 'team@delhidialogue.co.in';
 $mail->FromName = 'Arvind Kejriwal (On Behalf of the Delhi Dialogue Team)';
 $mail->addCC('team@delhidialogue.co.in');
 
+$secret = '6LfDHR4TAAAAAEO7WlESvnf4_5Vdccwfirg514Yw';
+
 	$response = new ContactUsResponse();
 	$is_debug = isset($_GET['q121_aap_dd_debug_counter']);
     // Your code here to handle a successful verification
-//Checking for blank Fields..
+    //Checking for blank Fields..
     if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) || empty($_POST["email"])) {
         echo json_encode($response);
     } else {
@@ -40,12 +42,13 @@ $mail->addCC('team@delhidialogue.co.in');
 			$response->message = "Email is invalid!";
             echo json_encode($response);
         } else {
-			require_once('verify-capcha.php');
-			$capchaResponse = verify_capcha($_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"], $is_debug);
+
+            $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+			$capchaResponse = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 			if($is_debug) {
 				echo "verify_capcha_status = ".var_dump($capchaResponse);
 			}
-			if($capchaResponse->status !== "ValidCapcha") {
+			if(!$capchaResponse->isSuccess()) {
 				echo json_encode($capchaResponse);
 				return;
 			}

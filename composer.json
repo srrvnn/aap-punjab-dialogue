@@ -6,5 +6,7 @@
             "email": "srrvnn@live.com"
         }
     ],
-    "require": {}
+    "require": {
+    	"google/recaptcha": "~1.1"
+    }
 }

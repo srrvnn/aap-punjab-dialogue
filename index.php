@@ -639,7 +639,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 								</div>
 								<div class="control-group col-xs-12 col-sm-12 col-md-6">
 								  <div class="controls">
-									 <?php require($_SERVER["DOCUMENT_ROOT"] . "/widgets/contact-us-capcha.html"); ?>
+								  	<div class="g-recaptcha" data-sitekey="6LfDHR4TAAAAAK3tAB55qyZVu7Kcvx53H6W9Dk2m"></div>
 								  </div>
 								</div>
 								<div class="form-actions col-xs-12 col-sm-12 col-md-6">
@@ -685,6 +685,7 @@ Invitations will be sent to domain experts, researchers, scientists, experts fro
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <script src="./js/main.js"></script>
 
