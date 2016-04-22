@@ -101,7 +101,7 @@
 				<span data-src="images/lg_lsp.jpg" data-media="only screen and (min-width : 1025px) and (max-width: 1600px)"></span>
 
 				<!-- Desktops and laptops -->
-				<span data-src="images/xs_lsp.jpg" data-media="only screen and (min-width : 1601px) and (max-width: 1920px)"></span>
+				<span data-src="images/xl_lsp.jpg" data-media="only screen and (min-width : 1601px) and (max-width: 1920px)"></span>
 
 				<!-- Exrta Large screens -->
 				<span data-src="images/xxl_lsp.jpg" data-media="only screen and (min-width : 1921px)"></span>
