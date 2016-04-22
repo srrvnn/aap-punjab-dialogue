@@ -16,7 +16,8 @@
 	<meta property="fb:app_id" content="1540899709487892" />
 
 	<!-- Custom Favicon -->
-	<link rel="icon" type="image/png" href="files/icon.ico">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/header.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
