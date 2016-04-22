@@ -47,7 +47,7 @@
 	<!-- Custom Favicon -->
 	<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="files/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/header.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/header.css" type="text/css" media="all">
 	<link rel="stylesheet" href="../css/focus-area.css" type="text/css" media="all">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
