@@ -22,7 +22,7 @@
 			}
 		}
 	} else {
-		$focus_area_details["longDesc"] = "We encountered an Internal error. Please try again later.";
+		$focus_area_details["longDesc"] = "We encountered an internal error. Please try again later.";
 	}
 	if(!isset ($focus_area_details)) {
 		$focus_area_details["longDesc"] = "Invalid request. Focus Area requested is not supported. Please make sure that you entered a valid URL.";
