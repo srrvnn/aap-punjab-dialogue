@@ -78,7 +78,7 @@ a{color:#FE7E17;}
 .nav-btn:hover{color:#FE7E17;}
 .visiontext{position:absolute;background:none repeat scroll 0% 0% #516C80;z-index:2 !important;
 padding:10px 30px;letter-spacing:0px;font-size:4vw;font-weight:bold;color:white;white-space:nowrap;line-height:1.13;
-top:20vh;left:0;right:0;width:1000px;overflow:hidden;margin:auto;opacity:1;text-transform:uppercase;
+top:20vh;left:0;right:0;width:65vw;overflow:hidden;margin:auto;opacity:1;text-transform:uppercase;text-align: center;
 }
 .watch-intro{position:absolute;background:none repeat scroll 0% 0% transparent;z-index:2 !important;
 top:80vh;left:50vw;opacity:1;transform:translate(-50%, 0%);text-transform:uppercase;
