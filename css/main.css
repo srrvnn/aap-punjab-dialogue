@@ -192,5 +192,5 @@ to{transform:scale(1) rotate(360deg);}
 	height: 20px;
 }
 .fb-like span {
-	vertical-align: sub;
+	vertical-align: sub !important;
 }
