@@ -43,6 +43,7 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <div id="fb-root"></div>
 <header id="header" class="show-original-logo solid-header scrolled-header"
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
@@ -79,6 +80,9 @@
 							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="#contact"><span>CONTACT</span></a></li>
 							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
 								<div class="fb-like" data-href="https://www.facebook.com/punjabdialogue/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+							</li>
+							<li style="overflow: hidden;padding-left:20px" id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
+							<a href="https://twitter.com/pbdialogue" class="twitter-follow-button" data-show-count="false">Follow @pbdialogue</a>
 							</li>
 						</ul>
 					</div>
