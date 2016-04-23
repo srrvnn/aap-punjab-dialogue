@@ -133,7 +133,7 @@
 		</section>
 
 		<footer class="col-sm-12">
-			<div id="connect" style="background-image: url(/images/aap-bg.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
+			<div id="connect" style="background-image: url(/images/punjab_people.jpg);background-repeat: no-repeat; background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
 				<div class="darker-overlay" style="padding-top: 100px;padding-bottom: 100px; background-color: rgba(0,0,0, 0.70);">
 					<h1 class="section-title">Register or Submit a Proposal</h1><div style="clear:both; width:100%; height:60px"></div>
 					<div class="container">
