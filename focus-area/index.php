@@ -9,7 +9,7 @@
 	}
 	// Read the file contents into a string variable,
 	// and parse the string into a data structure
-	$contents = file_get_contents("../data/delhi-focus.json");
+	$contents = file_get_contents("../data/punjab-focus.json");
 	$contents = utf8_encode($contents);
 	$all_focus_areas_details = json_decode($contents, true);
 
