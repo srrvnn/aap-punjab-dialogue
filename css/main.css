@@ -141,6 +141,7 @@ and (max-width : 768px) {
 	font-weight: 600;
 	margin-top: 0;
 	margin: 50px 0;
+	text-align: center;
 }
 html body{background:#efefef;}
 #wrapper{background:#ffffff;}

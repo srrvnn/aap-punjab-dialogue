@@ -155,7 +155,7 @@
 
 							<a href="#topics"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
 
-							<a href="#schedule"><button style="margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Schedule</button></a>
+							<a href="#schedule"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Schedule</button></a>
 
 							</div>
 
