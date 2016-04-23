@@ -176,28 +176,28 @@
 							<p>Together, we will chart out a vision for a new Punjab.</p>
 							<ul id="aboutTopicList">
 
-<li>   Youth    </li>
-<li>   Farmers and laborers    </li>
-<li>   Women    </li>
-<li>   Dalits    </li>
-<li>   Traders    </li>
-<li>   Industrialists    </li>
-<li>   Professionals    </li>
-<li>   Government Employees    </li>
-<li>   Servicemen and Ex-servicemen    </li>
-<li>   NRIs    </li>
-<li>   Agriculture    </li>
-<li>   Drug Abuse    </li>
-<li>   Health    </li>
-<li>   Education    </li>
-<li>   Transport and Road Safety    </li>
-<li>   Water and Electricity    </li>
-<li>   Empoyment and Skill Development    </li>
-<li>   Police Reform    </li>
-<li>   Mafias and corruption    </li>
-<li>   Industry and Trade    </li>
-<li>   Housing and Real Estate    </li>
-<li>   Fiscal Reforms    </li>
+							<li>   Youth    </li>
+							<li>   Farmers and laborers    </li>
+							<li>   Women    </li>
+							<li>   Dalits    </li>
+							<li>   Traders    </li>
+							<li>   Industrialists    </li>
+							<li>   Professionals    </li>
+							<li>   Government Employees    </li>
+							<li>   Servicemen and Ex-servicemen    </li>
+							<li>   NRIs    </li>
+							<li>   Agriculture    </li>
+							<li>   Drug Abuse    </li>
+							<li>   Health    </li>
+							<li>   Education    </li>
+							<li>   Transport and Road Safety    </li>
+							<li>   Water and Electricity    </li>
+							<li>   Empoyment and Skill Development    </li>
+							<li>   Police Reform    </li>
+							<li>   Mafias and corruption    </li>
+							<li>   Industry and Trade    </li>
+							<li>   Housing and Real Estate    </li>
+							<li>   Fiscal Reforms    </li>
 
 							</ul>
 							<i class="col-md-12">Citizens will also be invited to give their suggestions on different policy areas through our website, WhatsApp, Facebook and Twitter.</i>
