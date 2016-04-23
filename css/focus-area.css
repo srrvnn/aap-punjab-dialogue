@@ -129,7 +129,7 @@ to{-webkit-transform:rotate(360deg);}
 @keyframes spin{from{transform:scale(1) rotate(0deg);}
 to{transform:scale(1) rotate(360deg);}
 }
-@media only screen 
+@media only screen
 and (max-width : 768px) {
 	.begin-content {padding:0}
 	.lighter-overlay{padding:15px 15px 0}
@@ -151,3 +151,4 @@ and (max-width : 768px) {
 label.success, label.error{padding:2px 8px;margin-top:2px;font-family:'Open Sans';font-weight:normal;font-style:normal;}
 label.success{color:green !important;}
 label.error{color:red !important;}
+#focusAreaSection ul { list-style: inherit; }

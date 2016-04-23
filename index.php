@@ -171,7 +171,7 @@
 						<h1 class="section-title">ABOUT US</h1>
 						<div class="aboutText">
 							<p><h2>"Punjab Dialogue: Vision 2022"</h2>
-							<p>Aam Aadmi's Party vision is to bring prosperity back to Punjab and provide governance, policies and facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve this vision.</p>
+							<p>Aam Aadmi Party's vision is to bring prosperity back to Punjab and provide governance, policies and facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve this vision.</p>
 							<p>Many focus groups like youth, farmers, women, Dalits, traders and many focus areas like agriculture, industry, education, health and job creation have been identified. Consultations will be held with experts in these sectors and with citizens of Punjab to identify critical problems and arrive at practical solutions.</p>
 							<p>Together, we will chart out a vision for a new Punjab.</p>
 							<ul id="aboutTopicList">
