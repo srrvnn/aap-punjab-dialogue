@@ -119,7 +119,7 @@
 			 	<span id="vision">It all starts with a vision</span><br />
 			</div>
 			<div class="watch-intro"><a href="#intro" class="autoScroll">
-						<span class="btn-xl btn-orange round">Watch Intro</span>
+						<span class="btn-xl btn-orange round">Read Intro</span>
 					</a>
 				</div>
 
@@ -138,8 +138,11 @@
 									Bring prosperity to Punjab in 5 years
 								</h1>
 								<p style="font-family: margin: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 16px">
-									Vision is to bring prosperity back to Punjab and provide governance & facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve the vision. Many focus areas like education, industry, women safety have been identified. This initiative will engage domain experts from various fields to build plans for different focus areas.
-									Invitations will be sent to domain experts, researchers, scientists, experts from governments, organizations, businesses and civil society to engage in this initiative. The engagement would happen in the form of round table conferences.
+									Punjab, once the state with the highest per capita income in India, is today besotted with a widespread drug abuse problem and a severe agrarian crisis. There is deep-rooted corruption in the government and the current political leadership has established mafias in almost every sphere of public life.
+								</p>
+
+								<p style="font-family: margin: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 16px">
+									The Aam Aadmi Party is fighting this rot. Its dream is to make a new Punjab that is vibrant and prosperous. Punjab Dialogue is the party's vehicle to engage with the common man, learn his problems and deliver a manifesto that impacts people's lives in a real way.
 								</p>
 								<a href="#topics"><button style="float: left; margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
 									<a href="#schedule"><button style="float: left; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Schedule</button></a>
@@ -155,7 +158,7 @@
 					<div class="wpb_wrapper">
 						<h1 class="section-title">ABOUT US</h1>
 						<div class="aboutText">
-							<p><h2>"Punjab Dialogue: Vision 2020"</h2>
+							<p><h2>"Punjab Dialogue: Vision 2022"</h2>
 							<p>Our vision is to bring prosperity back to Punjab and provide governance and facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve this vision. Many focus groups like youth, farmers, women, Dalits, traders and many focus areas like agriculture, industry, education, health and job creation have been identified. Consultations will be held with experienced experts in these sectors and with citizens of Punjab to discuss these critical social issues. Together, we will design an actionable blueprint for a new Punjab.</p>
 							<ul id="aboutTopicList">
 
