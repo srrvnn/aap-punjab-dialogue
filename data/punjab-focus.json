@@ -4,5 +4,59 @@
     "name": "Youth",
     "shortDesc": "Punjabi youth need to be empowered so that they can lead the state and country into a new era of progress. The drug mafia must be eliminated from Punjab, and gainful employment opportunities created.",
     "longDesc": "<p> Punjabi youth have the happy stereotypical image of being well-built, hard-working and brave. Many of the hockey players in the Indian team come from Punjab. The Punjabi soldier in the Indian armed forces has added many a star to their glory. Unfortunately, that image today is confined to folklore and media depictions. Having lost one generation to extremism, we are losing the current generation of drugs. The drug epidemic has been caused by the widespread unemployment and the politician-police-drug nexus. We need to take urgent steps to reverse this situation.</p><ul><li> Eliminate the drug mafia and open quality rehabilitation centers across the state.</li><li>Provide quality education, ensuring that university graduates are employable</li><li>Provide employment opportunities in the state by stimulating industrial growth and business opportunities.</li><li>Create an infrastructure of rural libraries, gyms and sports clubs.</li></ul>"
-  }
+  },
+  {
+    "id" : 2,
+    "name" : "Farmers and laborers",
+    "shortDesc" : "Punjab is the bread basket of India, and yet the Punjabi famer is forced to commit suicides. The farmers of Punjab should be lifted out of debt, and the farming profession should become more profitable.",
+    "longDesc" : "<p> Even though Punjab comprises just 1.5% of the area of India, the hard-working Punjabi farmer contributes up to 50 percent of wheat, 30 percent of rice, and 10 percent of cotton to the national pool. The yields per hectare have plateaued, and so have the farmer’s incomes. There is a massive debt on the famers, totaling to about Rs. 50,000 crore. The individual loan sizes of a meagre couple of lakh rupees have led to a large number of suicides, a sitution which is extremely sad and calls for immediate rectification. Our policy towards farmers should be based on</p><ul><li>Eliminating Farm Debt - Reducing input costs, enhancing farm incomes via crop diversification and allied agricultural activities like dairy farming.</li><li>Loans from formal sources – We need to expand the outreach of formal sources of credit so that the farmer is not left at the mercy of informal sources that charge exorbitant rates of interest.</li><li>Generating employment – The secondary and tertiary sectors should be expanded so that the growing population is easily absorbed into the job economy.</li></ul>"
+  },
+  {
+    "id" : 3,
+    "name" : "Women",
+    "shortDesc" : "Punjab should have stringent laws to uphold women’s rights at the workplace and at home. We envision a Punjab in which women will be acknowledged and treated as equal citizens in their own right.",
+    "longDesc" : "<p> The Constitution of India not only grants equality to women but also empowers the State to adopt measures of positive discrimination in favor of women. Despite the solemn assurances enshrined in the Indian Constitution women in Punjab continue to be treated as second class citizens by every conceivable index. </p><p> Female feticide continues to be a major problem and the sex ratio is alarmingly low. </p> <p> The impunity and utter inability of the criminal justice system and the state to provide solutions, security or justice to our girls and women, has created a situation demanding urgent attention. Clearly what is required is a carefully crafted set of policies and affirmative action together with continuous efforts to change patriarchal mindsets and attitudes at all levels.</p><p> We envision a Punjab in which women will be acknowledged and treated as equal citizens in their own right; where they will not be governed by male-dominated values which determine their societal and familial roles. </p>"
+  },
+  {
+    "id" : 4,
+    "name" : "Dalits",
+    "shortDesc" : "Punjab has the highest proportion of Dalits of all states in India. Dalits must be treated as equal citizens and all measures should be taken for their welfare and social upliftment.",
+    "longDesc" : "<p>Dalits form 34% of the Punjab population, the largest fraction amongst all states in India. Despite constitutional provisions of safeguarding their rights, Dalits continue to be second-class citizens in Punjab, being denied equality and basic social rights and atrocities afflicted upon them. The recent barbaric murder of Bhim Tank in Abohar vividly highlights this tragedy. </p><p>We need to make sure that this inequality is completely weeded out from the Punjabi society. Dalit education and employment should be a special focus area. Strict action should be taken against perpetrators of atrocities against Dalits so that this one-third of the society regains its pride and status as equals to all other citizens.</p>"
+  },
+  {
+    "id" : 5,
+    "name" : "Traders",
+    "shortDesc" : "Punjab has a huge trading community, who are running their businesses despite all odds. The tax regime must be simplified and made friendlier, and the state should provide an environment where it is easy to open and operate new businesses legally. ",
+    "longDesc" : "<p>The huge trading community of Punjab forms a cornerstone of our economy. Despite all odds, they manage to operate their businesses. We need to encourage traders and small business owners via the following steps:</p><ul><li>Lower and simplify the VAT structure to increase compliance</li><li>Ensure proper market infrastructure like roads, water and electricity</li><li>Simplify the procedures for opening a new business, implement a true single-window clearance.</li><li>Put an end to the inspector raj which is a nuisance.</li><li>Encourage the growth of cottage industries, especially in the rural areas.</li></ul>"
+  },
+  {
+    "id" : 6,
+    "name" : "Industrialists",
+    "shortDesc" : "The manufacturing and other industries need to be stimulated to set up shop in Punjab so as to boost the economic growth rate and employment. The power tariffs and tax rates must be rationalized and made competitive with neighbouring states. ",
+    "longDesc" : "<p>The industrial entrepreneurs have Punjab have put its name in the international hall of fame. Ludhiana and Jallandhar were at one-point world famous hubs for textiles, bicycles, heavy machinery, sports goods, etc. Mandi Gobindgarh had a lot of steel rolling mills. Due to regressive policies of the state, most of these have shut shop or moved out of state. We need to encourage the industrialists to set up new ventures, which will boost the economy and provide jobs. The strategy to encourage that would be</p><ul><li>Lower the power tariff to competitive levels</li><li>Lower the tax rates to competitive levels</li><li>Simplify the process of land procurement</li></ul>"
+  },
+  {
+    "id" : 7,
+    "name" : "Professionals",
+    "shortDesc" : "Punjab has a large number of doctors, lawyers and other professionals whose rights must be protected, and an environment provided where they can execute their duties without feeling threatened.",
+    "longDesc" : "<p> The working professionals in Punjab like doctors, lawyers and researchers are doing a commendable service to the society. It is paramount that their interests and rights be looked after by the state. </p><ul><li>It must be ensured that professionals can execute their duties and tasks without being worried about issues of public order.</li><li>There must be rule of law whenever a liability issue arises.</li><li>Proper modern infrastructure at affordable prices should be provided so that private practitioners can open their ventures and execute their jobs in the most efficient manner.</li></ul>"
+  },
+  {
+    "id" : 8,
+    "name" : "Government Employees",
+    "shortDesc" : "Government employees in Punjab should be provided with the basic social security and welfare schemes, especially after retirement.",
+    "longDesc" : "<p> There is a large body of government employees in Punjab who work in diverse fields and make up the core strength of government services.</p><ul><li>Punjab state must ensure that all government employees get competitive salaries, are given adequate healthcare, and retirement benefits. </li><li>Modern tools and IT infrastructure should be introduced to improve the efficiency and delivery of services. </li><li>There should be reward mechanisms for outstanding employees, and opportunities for taking leadership of specific projects.</li></ul>"
+  },
+  {
+    "id" : 9,
+    "name" : "Servicemen and Ex-servicemen",
+    "shortDesc" : "The brave soldiers from Punjab who serve our country deserve our deepest respect and a special place in the society. Punjab should have a special grievance cell for their needs and they should be offered priority service in public matters.",
+    "longDesc" : "<p> Punjabi people are known for their valor. The Punjabi men in the Indian armed forces are a matter of pride for Punjab and all steps should be taken to ensure their dignity, and respect in society. </p><p>A big challenge facing this community is that of land-grab. There have been several incidents of land-grab when the soldier is out serving on the border, putting his life on the line for his countrymen. This abhorrent practice must immediately stop. A special Grievance Cell should be set up to address the complaints and issues of servicemen.</p>"
+  },
+  {
+    "id" : 10,
+    "name" : "NRIs",
+    "shortDesc" : "The Punjabi NRI community is a vast asset for the state. They should be engaged with the development process, tapping their expertise in various walks of life. Their concerns should be properly addressed.",
+    "longDesc" : "<p> Punjab has a huge diaspora. Among them, there are people who are wealthy and have established themselves at the top of their respective fields, and there are people who drive taxis and work in restaurants. </p><p>One of the biggest issues facing the NRI community is that of land-grab. People illegally take over their land while they are absent for several years at a time. This practice must stop, and a special grievance cell must be set up to address NRI issues. </p><p>The state must make efforts to engage the NRI community in the process of governance and put to best use the massive amounts of expertise and resources at their disposal. </p>"
+  },
 ]
