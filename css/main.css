@@ -107,7 +107,7 @@ url('ytp-regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
 .issueSummary{overflow:auto}
 .issueSummary img {margin-right:15px;margin-bottom:15px;float:left;width:191px;height:101px}
 .issueDetails {float:left;height:101px;border-left:1px solid lightgrey;}
-@media only screen 
+@media only screen
 and (max-width : 768px) {
 	.issueSummary > span {float:left;}
 	.vertical-align{display:flex;align-items:center;}
@@ -125,16 +125,16 @@ a{outline:none !important;text-decoration:none !important;}
 .discovermore> .dt-service-item{width:201px !important;height:48px !important;transition:all 0.2s linear 0s;padding:10px 10px 10px 10px;color:white;font-weight:400;font-size:18px;font-stretch:ultra-condensed;margin-top:26px}
 #oval{padding:0.67em 1em 0.5em;}
 .oval{border-radius:2em;color:white !important;color:#FFF;width:15vw;font-size:1.4vw !important;font-family:"Avenir","Corbel","Myriad Pro","Lucida Sans","Lucida Grande",Arial,Helvetica,sans-serif;}
-.intro-header h1 { 
+.intro-header h1 {
 	font-size: 56px; line-height: 56px;	color: #f78d1e; font-weight: 600; margin-top: 0;
 }
-@media only screen 
+@media only screen
 and (max-width : 768px) {
-	.intro-header h1 { 
+	.intro-header h1 {
 		font-size: 36px; line-height: 36px;	color: #f78d1e; font-weight: 500; margin-top: 0; text-align: center;
 	}
 }
-		
+
 html body{background:#efefef;}
 #wrapper{background:#ffffff;}
 #footer{background:#ffffff;}
@@ -190,4 +190,7 @@ to{transform:scale(1) rotate(360deg);}
 .recaptcha_widget_img img {
 	width: 30px;
 	height: 20px;
+}
+.fb-like span {
+	vertical-align: sub;
 }

@@ -81,7 +81,7 @@
 							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
 								<div class="fb-like" data-href="https://www.facebook.com/punjabdialogue/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 							</li>
-							<li style="overflow: hidden;padding-left:20px" id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
+							<li style="overflow: hidden;padding-left:25px;padding-top:2px;" id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
 							<a href="https://twitter.com/pbdialogue" class="twitter-follow-button" data-show-count="false">Follow @pbdialogue</a>
 							</li>
 						</ul>
