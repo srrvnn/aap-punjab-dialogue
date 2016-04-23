@@ -58,5 +58,41 @@
     "name" : "NRIs",
     "shortDesc" : "The Punjabi NRI community is a vast asset for the state. They should be engaged with the development process, tapping their expertise in various walks of life. Their concerns should be properly addressed.",
     "longDesc" : "<p> Punjab has a huge diaspora. Among them, there are people who are wealthy and have established themselves at the top of their respective fields, and there are people who drive taxis and work in restaurants. </p><p>One of the biggest issues facing the NRI community is that of land-grab. People illegally take over their land while they are absent for several years at a time. This practice must stop, and a special grievance cell must be set up to address NRI issues. </p><p>The state must make efforts to engage the NRI community in the process of governance and put to best use the massive amounts of expertise and resources at their disposal. </p>"
+  },
+  {
+    "id" : 11,
+    "name" : "Agriculture",
+    "shortDesc" : "Agriculture in Punjab should be made more profitable to eliminate farm debt. Crop diversification, dairy farming and other allied agricultural activities need to be spread in a big way. There is also an urgent to make agriculture sustainable.",
+    "longDesc" : "<p> Punjab is the food basket of India. The fertile land together with the Green revolution technology created a boom in the agricultural output during the 1970’s and 1980’s. Even though Punjab comprises just 1.5% of the area of India, it contributes up to 50 percent of wheat, 30 percent of rice, and 10 percent of cotton to the national pool.However, the Green revolution is now behind us. The yields per hectare have plateaued, and so have the farmer’s incomes. The excessive use of pesticides has ruined our soil, excessive draft of ground water has led to a abysmally low ground water levels. Our agriculture policy needs to be based on: </p><ul><li>Income enhancement - Reducing input costs and enhancing farm incomes via allied agricultural activities like dairy farming.</li><li>Creating vibrant markets for produce other than wheat and rice.</li><li>Reviving the extension system that transmits the knowhow from scientific experts to farmers.</li></ul>"
+  },
+  {
+    "id" : 12,
+    "name" : "Drug Abuse",
+    "shortDesc" : "The widespread drug abuse among Punjabis needs to be eliminated. A large number of rehabilitation centers which provide quality care should be established.",
+    "longDesc" : "<p> The drug epidemic in Punjab has reached massive proportions. According to some studies, as much has 67% of all households in Punjab have at least one addict. The state has by far the largest number of cases registered under the NDPS act. The drug epidemic has been caused by the widespread unemployment and the politician-police-drug nexus. In order to curb this menace, we need to have a two-pronged approach</p><ul><li>Stop the supply chain of drugs by eliminating the state actors involved in the drug trade and taking strict action against offenders.</li><li>Set-up quality rehabilitation centers all across the state that have sensitive staff can provide quality care.</li></ul>"
+  },
+  {
+    "id" : 13,
+    "name" : "Health",
+    "shortDesc" : "Quality healthcare should be available locally and cheaply to all citizens. Punjab should have high quality public hospitals with modern, latest technology. ",
+    "longDesc" : "<p> The citizens of Punjab have lost faith in the healthcare services provided by the state and spend exorbitant amounts on questionable private healthcare. The government hospitals and dispensaries sometimes have only a shameful 50% of the needed medicine stock. Punjab healthcare system should include:</p><ul><li>Expanding and strengthening of public health systems, while making them accountable. This will be done by creating a network of quality clinics at the village level, and polyclinics at higher levels. The civil hospitals will also be modernized with the latest modern facilities.</li><li>All medicines and tests will be done free of cost at the government healthcare facilities.</li><li>Focus on disease prevention, primary healthcare and on diseases with high mortality rates.</li><li>Realigning the relationship between the pharmaceutical and healthcare industry to maximize public welfare.</li></ul>"
+  },
+  {
+    "id" : 14,
+    "name" : "Education",
+    "shortDesc" : "Punjab should have government schools that are better than private schools. Colleges and universities for higher education should be modern and teach the latest curricule to bolster employability of graduates.",
+    "longDesc" : "<p> The education statistics of Punjab are shocking. The state has a lowly 21st rank among the Indian states in terms of literacy rate. The percentage of students of the age group 6-14 going to private schools is as large as 40%. There are 13,392 teachers posts in government schools that remain vacant. In light of all these, the education policy in Punjab must be focused on:</p><ul><li>Lifting government schools to a level such that they become better than the best private schools, and providing government schools with the best classrooms and infrastructure possible.</li><li>Filling up all teacher’s vacant posts, and ensuring that teachers and principals get proper training.</li><li>Decentralizing power by giving more power to school officials in various spheres, including how to spend money.</li><li>Forming School Management Committees that oversee the overall functioning of the school and also ideate about how to make them better.</li></ul>"
+  },
+  {
+    "id" : 15,
+    "name" : "Transport and Road Safety",
+    "shortDesc" : "The existing inter-state government network of buses in Punjab should be strengthened and new modern buses acquired. The cities and villages must have proper public transport facilities.",
+    "longDesc" : "<p> Transport options in Punjab should be high-quality and diverse. The state also suffers from an epidemic of road accidents. Important considerations are as follows:</p><ul><li>Make the government buses better than private buses.</li><li>Encourage partnership and dialogue between Punjab Roadways and PRTC to ensure maximum ease to people. </li><li>The schedule of buses should be designed to maximize the profitability.</li><li>The road network should be expanded, and the incomplete flyovers and projects should be completed with utmost urgency.</li><li>Road safety laws must be stringent, and their implementation strict.</li><li>The procedures to obtain a driving license should be rigorous in scope and implementation.</li></ul>"
+  },
+  {
+    "id" : 16,
+    "name" : "Water and Electricity",
+    "shortDesc" : "Every home in Punjab should have access to clean water. The ground water levels should be replenished to healthy levels. There should be 24*7 supply of quality electricity to every home and business in Punjab.",
+    "longDesc" : "<p> Punjab should be able to provide for the basic energy needs to all its three crore citizens. It has large, ever-growing and unmatched energy requirements. We envision in the future an economy supported only by clean and renewable resources.Energy policy needs to be based on:<li>Meeting expanding demand for energy to enhance quality of life and economic activities.</li><li>Preventing inefficient energy use and encouraging adoption of energy conservation techniques.</li><li>Phased shift to renewable energy.</li><li>Minimizing consumer expenditure and maximizing efficient, effective and transparent competition amongst power distribution companies.Due to over-exploitation of ground water, Punjab faces a looming crisis. The lowering water table contaminates water with heavy metals, which have also raised concerns about cancer. Our water policy needs to be based on:</li><li>Ensuring that each home, colony and living establishment gets a water connection to sustain basic life and economic activities.</li><li>Prioritizing the development of local and decentralized water resources exploring the ideas of rainwater harvesting, watershed development, soil-water conservation programs and other small projects to boost the ground water levels.</li>"
   }
 ]
