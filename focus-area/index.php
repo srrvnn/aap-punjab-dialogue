@@ -84,6 +84,8 @@
 	    document.getElementById('focusAreaHeader').innerHTML = focusAreaContent.gsx$name.$t;
 	    document.getElementById('focusAreaSection').innerHTML = focusAreaContent.gsx$longdesc.$t;
 
+	    window.sashi = focusAreaContent.gsx$longdesc.$t;
+
 	    // for (var i = logs.length-1; i >= 0; i--) {
 	      // var elLog = document.createElement('div');
 
