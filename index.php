@@ -78,8 +78,13 @@ request.onload = function() {
 
     	var div = document.createElement('div');
 
-    	div.innerHTML = '<div class="issueSummary col-xm-12 col-sm-12"><span class="focus-area-short-name"><br/><span class="focus-area-short-shortdesc"></span></div><div class="issueDetails col-sm-3 col-xm-12"><a class="focus-area-short-anchor" href="#"><div class="dt-service-wrapper discovermore"><div class="dt-service-item">DISCOVER MORE  <img src="files/discovermore.png"></div></div></a></div>';
+    	div.innerHTML = '<div class="issueSummary col-xm-12 col-sm-12"><span class="focus-area-short-name"></span><br/><span class="focus-area-short-shortdesc"></span></div><div class="issueDetails col-sm-3 col-xm-12"><a class="focus-area-short-anchor" href="#"><div class="dt-service-wrapper discovermore"><div class="dt-service-item">DISCOVER MORE  <img src="files/discovermore.png"></div></div></a></div>';
+
     	div.className = 'row issue';
+
+    	console.log(div);
+    	console.log(div.querySelector);
+    	console.log(div.querySelector('.focus-area-short-name'));
 
     	div.querySelector('.focus-area-short-name').innerHTML = focusArea.gsx$name.$t;
     	div.querySelector('.focus-area-short-shortdesc').innerHTML = focusArea.gsx$shortdesc.$t;
