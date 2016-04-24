@@ -57,7 +57,8 @@
 
 	// script to retreive what I am learning currently and display it on the page
 	var request = new XMLHttpRequest();
-	request.open('GET', 'https://spreadsheets.google.com/feeds/list/1rsbYQME5EBWRAj07x5EG3ifhmoweCLKnFuXDNnhyR3o/od6/public/values?alt=json', true);
+
+	request.open('GET', 'https://spreadsheets.google.com/feeds/list/15Kc87FXPUjLQqjgWeY4zrnvRJlqEINDiimgXFoWxsn8/od6/public/values?alt=json', true);
 
 	request.onload = function() {
 
@@ -70,7 +71,21 @@
 
 	    console.dir(data);
 
+	    var focusAreaId = '<?php echo $requested_focus_area_id ;?>';
+
+	    console.log(focusAreaId);
+
 	    // iterate over links
+
+	    var focusAreaContent = logs.find(function(log) {
+
+	    	var section = log.gsx$section.$t;
+
+	    	console.log(section);
+	    	return section === 'focus-area-' + focusAreaId;
+	    });
+
+	    console.log(focusAreaContent);
 
 	    // for (var i = logs.length-1; i >= 0; i--) {
 	      // var elLog = document.createElement('div');
