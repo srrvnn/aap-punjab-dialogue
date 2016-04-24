@@ -76,7 +76,6 @@
 							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="#home"><span>HOME</span></a></li>
 							<li style="overflow: visible;" id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a class="headnavs" href="#intro"><span>INTRO</span></a></li>
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#topics"><span>FOCUS AREAS</span></a></li>
-							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#schedule"><span>SCHEDULE</span></a></li>
 							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="#contact"><span>CONTACT</span></a></li>
 							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
 								<div class="fb-like" data-href="https://www.facebook.com/punjabdialogue/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
@@ -588,18 +587,6 @@
 				</div>
 			</div>
 
-			<div id="schedule" class="  wpb_row vc_row-fluid no-margin " style="" data-token="o90fv">
-				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 25vh;padding-bottom: 50vh; background-color: rgba(255,255,255, 1);">
-					<div class="wpb_wrapper">
-						<h1 class="section-title">SCHEDULE</h1>
-						<div class="aboutText">
-						<h2><p>Let's bring prosperity to Punjab in 5 years.</p>
-							<p>At this time, invitations are being sent to well known domain experts, researchers, scientists, experts from governments, social organizations, businesses and civil society. Other experts & citizens are also encouraged to apply with their proposals.</p> <p> These inputs will be reviewed and subsequently detailed blueprints will be published.</p>
-						</h2>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div id="contact" style="margin-bottom: 70px;"></div>
 			<div style="background-image: url(images/punjab_people.jpg);background-repeat: no-repeat;background-size:100% 100%; background-attachment: fixed;background-position: 50% 0;">
 				<div class="darker-overlay" style="padding-top: 50px;padding-bottom: 0px; background-color: rgba(0,0,0, 0.70);">
