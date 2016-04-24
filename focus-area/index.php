@@ -48,6 +48,7 @@
 	<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="files/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="../css/header.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/spin.css" type="text/css" media="all">
 	<link rel="stylesheet" href="../css/focus-area.css" type="text/css" media="all">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
@@ -194,7 +195,7 @@
 									</form>
 								</div>
 								<div id="focusAreaSection" class=" col-sm-12">
-									<?php echo $focus_area_details["longDesc"]; ?>
+									<div class='uil-spin-css' style='-webkit-transform:scale(0.32)'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
 								</div>
 								<div class="row button-group col-sm-12">
 									<a href="#connect" id="registerBtn" class="blue-fixed-btn button" role="button">Register</a>
