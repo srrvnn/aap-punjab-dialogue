@@ -202,3 +202,8 @@ to{transform:scale(1) rotate(360deg);}
 .fb-like span {
 	vertical-align: sub !important;
 }
+
+.focus-area-short-name {
+
+	font-weight: bold;
+}
