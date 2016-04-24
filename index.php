@@ -82,13 +82,9 @@ request.onload = function() {
 
     	div.className = 'row issue';
 
-    	console.log(div);
-    	console.log(div.querySelector);
-    	console.log(div.querySelector('.focus-area-short-name'));
-
     	div.querySelector('.focus-area-short-name').innerHTML = focusArea.gsx$name.$t;
     	div.querySelector('.focus-area-short-shortdesc').innerHTML = focusArea.gsx$shortdesc.$t;
-    	div.querySelector('.focus-area-short-anchor').href = 'focus-area/index.php?id=' + focusArea.gsx$section.replace('focus-area-','');
+    	div.querySelector('.focus-area-short-anchor').href = 'focus-area/index.php?id=' + focusArea.gsx$section.$t.replace('focus-area-','');
 
     	focusAreasInfo.appendChild(div);
     });
