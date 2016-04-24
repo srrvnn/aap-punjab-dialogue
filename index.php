@@ -61,15 +61,30 @@ request.onload = function() {
     var focusAreasList = document.createDocumentFragment();
     var focusAreasInfo = document.createDocumentFragment();
 
+    var focusAreaShortTemplate = document.getElementById('focus-area-short-template');
+
     focusAreas.forEach(function(focusArea) {
+
+    	// add name to the list
 
     	var li = document.createElement('li');
     	li.innerHTML = focusArea.gsx$name.$t;
 
     	focusAreasList.appendChild(li);
+
+    	// add name and short desc to the big list
+
+    	var div = focusAreaShortTemplate.content.cloneNode(true);
+
+    	div.querySelector('.focus-area-short-name').innerHTML = focusArea.gsx$name.$t;
+    	div.querySelector('.focus-area-short-shortdesc').innerHTML = focusArea.gsx$shortdesc.$t;
+    	div.querySelector('.focus-area-short-anchor').href = 'focus-area/index.php?id=' + focusArea.gsx$section.replace('focus-area-','');
+
+    	focusAreasInfo.appendChild(div);
     });
 
     document.getElementById('aboutTopicList').appendChild(focusAreasList);
+    document.getElementById('focus-area-short').appendChild(focusAreasInfo);
 
   } else {
 
@@ -202,8 +217,6 @@ request.send();
 
 							<ul id="aboutTopicList"></ul>
 
-							<i class="col-md-12">Citizens will also be invited to give their suggestions on different policy areas through our website, WhatsApp, Facebook and Twitter.</i>
-
 						</div>
 					</div>
 				</div>
@@ -213,11 +226,32 @@ request.send();
 				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
 					<div class="wpb_wrapper">
 						<h1 class="section-title">FOCUS AREAS</h1>
-						<div>
 
+						<!-- TEMPLATE FOR SHORT DESC, USED BY JS -->
+
+						<template id="focus-area-short-template">
+						    <div class= "row issue">
+						    	<div class="issueSummary col-xm-12 col-sm-12">
+						    		<span class="focus-area-short-name"><span><br/>
+						    		<span class="focus-area-short-shortdesc"></span>
+						    	</div>
+						    	<div class="issueDetails col-sm-3 col-xm-12" >
+						    		<a class="focus-area-short-anchor" href="">
+						    			<div class="dt-service-wrapper discovermore">
+						    				<div class="dt-service-item">
+						    					DISCOVER MORE  <img src="files/discovermore.png">
+						    				</div>
+						    			</div>
+						    		</a>
+						    	</div>
+						    </div>
+						</template>
+
+						<!-- /TEMPLATE -->
+
+						<div id="focus-area-short">
 							<div class= 'row issue'>
 								<div class="issueSummary col-xm-12 col-sm-12">
-									<!-- <img src="images/Employment.jpg" class="img-responsive" alt="Jobs and Employment"> -->
 									<span><b>Youth</b><br/>
 										Punjabi youth need to be empowered so that they can lead the state and country into a new era of progress. The drug mafia must be eliminated from Punjab, and gainful employment opportunities created.
 									</span>
@@ -419,7 +453,6 @@ request.send();
 									</a>
 								</div>
 							</div>
-
 							<div class= 'row issue'>
 								<div class="issueSummary col-sm-12 col-xm-12">
 									<!-- <img src="images/Industry.jpg" class="img-responsive" alt="Enterprise: Trade and Industry"> -->
