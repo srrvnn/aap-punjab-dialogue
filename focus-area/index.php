@@ -56,7 +56,6 @@
 
 	<script>
 
-	// script to retreive what I am learning currently and display it on the page
 	var request = new XMLHttpRequest();
 
 	request.open('GET', 'https://spreadsheets.google.com/feeds/list/15Kc87FXPUjLQqjgWeY4zrnvRJlqEINDiimgXFoWxsn8/od6/public/values?alt=json', true);
@@ -65,19 +64,14 @@
 
 	  if (request.status >= 200 && request.status < 400) {
 
-	    // Success!
 	    var data = JSON.parse(request.responseText);
 	    var logs = data.feed.entry;
-	    var elLogs = document.createElement('div');
 
 	    var focusAreaId = '<?php echo $requested_focus_area_id ;?>';
-
-	    // iterate over links
 
 	    var focusAreaContent = logs.find(function(log) {
 
 	    	var section = log.gsx$section.$t;
-
 	    	return section === 'focus-area-' + focusAreaId;
 	    });
 
@@ -86,45 +80,15 @@
 
 	    window.longdesc = focusAreaContent.gsx$longdesc.$t;
 
-	    // for (var i = logs.length-1; i >= 0; i--) {
-	      // var elLog = document.createElement('div');
-
-	      // var log = logs[i];
-
-	      // var logLink = log.gsx$link.$t;
-	      // var logTitle = log.gsx$title.$t;
-	      // var logTime = String(log.gsx$date.$t).replace(/ at(.*)/, '');
-
-	      // create anchor tags
-
-	      // var aLink = document.createElement('a');
-	      // aLink.href = logLink;
-	      // aLink.innerHTML = logTitle;
-	      // aLink.className = 'mild';
-
-	      // var spanTime = document.createElement('span');
-	      // spanTime.innerHTML = logTime;
-
-	      // append them on the page
-
-	      // elLog.className = 'log';
-	      // elLog.appendChild(aLink);
-	      // elLog.appendChild(spanTime);
-
-	      // elLogs.appendChild(elLog);
-	    // }
-
-	    // document.querySelector('#logs').innerHTML = elLogs.innerHTML;
-
 	  } else {
 
-	  	console.log('there was an error the server');
+	  	console.log('There was a server error accessing the GA spreadsheets.');
 	  }
 	};
 
 	request.onerror = function() {
 
-	  console.log('there was an error in the request');
+	  console.log('There was an error in sending the GA spreadsheets request.');
 	};
 
 	request.send();

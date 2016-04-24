@@ -44,6 +44,48 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<script>
+
+var request = new XMLHttpRequest();
+
+request.open('GET', 'https://spreadsheets.google.com/feeds/list/15Kc87FXPUjLQqjgWeY4zrnvRJlqEINDiimgXFoWxsn8/od6/public/values?alt=json', true);
+
+request.onload = function() {
+
+  if (request.status >= 200 && request.status < 400) {
+
+    var data = JSON.parse(request.responseText);
+    var focusAreas = data.feed.entry;
+
+    var focusAreasList = document.createDocumentFragment();
+    var focusAreasInfo = document.createDocumentFragment();
+
+    focusAreas.forEach(function(focusArea) {
+
+    	var li = document.createElement('li');
+    	li.innerHTML = focusArea.gsx$name.$t;
+
+    	focusAreasList.appendChild(li);
+    });
+
+    document.getElementById('aboutTopicList').appendChild(focusAreasList);
+
+  } else {
+
+  	console.log('There was a server error accessing the GA spreadsheets.');
+  }
+};
+
+request.onerror = function() {
+
+  console.log('There was an error in sending the GA spreadsheets request.');
+};
+
+request.send();
+
+</script>
+
 <div id="fb-root"></div>
 <header id="header" class="show-original-logo solid-header scrolled-header"
 	style="padding-top: 10px; padding-bottom: 10px;box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px; background: rgba(255, 255, 255, 0.901961);">
@@ -158,32 +200,8 @@
 
 							</div>
 
-							<ul id="aboutTopicList">
+							<ul id="aboutTopicList"></ul>
 
-							<li>   Youth    </li>
-							<li>   Farmers and laborers    </li>
-							<li>   Women    </li>
-							<li>   Dalits    </li>
-							<li>   Traders    </li>
-							<li>   Industrialists    </li>
-							<li>   Professionals    </li>
-							<li>   Government Employees    </li>
-							<li>   Servicemen and Ex-servicemen    </li>
-							<li>   NRIs    </li>
-							<li>   Agriculture    </li>
-							<li>   Drug Abuse    </li>
-							<li>   Health    </li>
-							<li>   Education    </li>
-							<li>   Transport and Road Safety    </li>
-							<li>   Water and Electricity    </li>
-							<li>   Empoyment and Skill Development    </li>
-							<li>   Police Reform    </li>
-							<li>   Mafias and corruption    </li>
-							<li>   Industry and Trade    </li>
-							<li>   Housing and Real Estate    </li>
-							<li>   Fiscal Reforms    </li>
-
-							</ul>
 							<i class="col-md-12">Citizens will also be invited to give their suggestions on different policy areas through our website, WhatsApp, Facebook and Twitter.</i>
 
 						</div>
