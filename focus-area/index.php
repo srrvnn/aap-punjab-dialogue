@@ -57,7 +57,7 @@
 
 	// script to retreive what I am learning currently and display it on the page
 	var request = new XMLHttpRequest();
-	request.open('GET', 'https://spreadsheets.google.com/feeds/list/19w9sl1c9HuxkUeRkT7ThCQSfD-mjGTrm6FJE2B4hn6k/od6/public/values?alt=json', true);
+	request.open('GET', 'https://spreadsheets.google.com/feeds/list/1rsbYQME5EBWRAj07x5EG3ifhmoweCLKnFuXDNnhyR3o/od6/public/values?alt=json', true);
 
 	request.onload = function() {
 
@@ -104,13 +104,13 @@
 
 	  } else {
 
-	  	// something went wrong
+	  	console.log('there was an error the server');
 	  }
 	};
 
 	request.onerror = function() {
 
-	  // There was a connection error of some sort
+	  console.log('there was an error in the request');
 	};
 
 	request.send();
