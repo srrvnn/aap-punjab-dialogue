@@ -69,11 +69,7 @@
 	    var logs = data.feed.entry;
 	    var elLogs = document.createElement('div');
 
-	    console.dir(data);
-
 	    var focusAreaId = '<?php echo $requested_focus_area_id ;?>';
-
-	    console.log(focusAreaId);
 
 	    // iterate over links
 
@@ -81,11 +77,11 @@
 
 	    	var section = log.gsx$section.$t;
 
-	    	console.log(section);
 	    	return section === 'focus-area-' + focusAreaId;
 	    });
 
-	    console.log(focusAreaContent);
+	    document.getElementById('focusAreaHeader').innerHTML = focusAreaContent.gsx$name.$t;
+	    document.getElementById('focusAreaSection').innerHTML = focusAreaContent.gsx$longdesc.$t;
 
 	    // for (var i = logs.length-1; i >= 0; i--) {
 	      // var elLog = document.createElement('div');
