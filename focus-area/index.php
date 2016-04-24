@@ -82,7 +82,7 @@
 	    });
 
 	    document.getElementById('focusAreaHeader').innerHTML = focusAreaContent.gsx$name.$t;
-	    document.getElementById('focusAreaSection').innerHTML = focusAreaContent.gsx$longdesc.$t.split('\n').join('<br/>');
+	    document.getElementById('focusAreaSection').innerHTML = focusAreaContent.gsx$longdesc.$t.split('\n').join('<br/><br/>');
 
 	    window.longdesc = focusAreaContent.gsx$longdesc.$t;
 
