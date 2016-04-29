@@ -63,8 +63,6 @@ request.onload = function() {
 
     var focusAreaShortTemplate = document.getElementById('focus-area-short-template');
 
-    console.log(focusAreaShortTemplate);
-
     focusAreas.forEach(function(focusArea) {
 
     	// add name to the list
@@ -197,7 +195,48 @@ request.send();
 					</a>
 				</div>
 
-			<div id="intro">
+			<div id="intro" style="margin-top: 10px; padding-top: 100px;" class="lighter-overlay">
+							<h1 class="section-title">INTRODUCING PUNJAB DIALOGUE</h1>
+							<div class="col-sm-10 col-sm-offset-1" style=" background-color: rgba(250,250,250);border: #e6e6e6 1px solid;">
+								<div class="row" style="margin: 30px 0 30px;">
+									<div class="col-sm-12 col-md-6 col-lg-6">
+										<iframe class="youtube-player" type="text/html" width="100%" height="349"
+												src="https://www.youtube.com/watch?v=C29QY-jQxLQ" frameborder="0" allowfullscreen="1">
+											</iframe>
+									</div>
+									<div class="col-sm-12 col-md-6 col-lg-6">
+										<div class="intro-header">
+											<h1>
+												Bring prosperity to Punjab in 5 years
+											</h1>
+											<p style="font-family: margin: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 16px">
+
+												Punjab, once the state with the highest per capita income in India, is today besotted with widespread drug abuse and a severe agrarian crisis. There is deep-rooted corruption in the government and the current political leadership has established mafias in almost every sphere of public life.
+											</p>
+											<p>Aam Aadmi Party's vision is to bring prosperity back to Punjab and provide governance, policies and facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve this vision.</p>
+											<p>Many focus groups like youth, farmers, women, Dalits, traders and many focus areas like agriculture, industry, education, health and job creation have been identified. Consultations will be held with experts in these sectors and with citizens of Punjab to identify critical problems and arrive at practical solutions.</p>
+											<p>Together, we will chart out a vision for a new Punjab.</p>
+											<div style="margin: 30px 0; text-align: center">
+
+											<div style="margin: 30px 0; text-align: center">
+
+											<a href="#topics"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
+
+											<a href="#contact"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Contact</button></a>
+
+											</div>
+
+											<ul id="aboutTopicList"></ul>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+<!-- 			<div id="intro">
 				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
 					<div class="wpb_wrapper">
 						<h1 class="section-title">INTRODUCING PUNJAB DIALOGUE</h1>
@@ -226,7 +265,8 @@ request.send();
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
+
 			<div id="topics">
 				<br/>
 				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
