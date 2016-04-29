@@ -201,7 +201,7 @@ request.send();
 								<div class="row" style="margin: 30px 0 30px;">
 									<div class="col-sm-12 col-md-6 col-lg-6">
 										<iframe class="youtube-player" type="text/html" width="100%" height="349"
-												src="https://www.youtube.com/watch?v=C29QY-jQxLQ" frameborder="0" allowfullscreen="1">
+												src="https://www.youtube.com/embed/C29QY-jQxLQ" frameborder="0" allowfullscreen="1">
 											</iframe>
 									</div>
 									<div class="col-sm-12 col-md-6 col-lg-6">
