@@ -68,11 +68,13 @@ request.onload = function() {
     	// add name to the list
 
     	var li = document.createElement('li');
-    	var a = document.createElement('a');
-    	a.href = "#" + focusArea.gsx$section.$t;
-    	a.innerHTML = focusArea.gsx$name.$t;
+    	li.innerHTML = focusArea.gsx$name.$t;
 
-    	li.appendChild(a);
+    	// var a = document.createElement('a');
+    	// a.href = "#" + focusArea.gsx$section.$t;
+    	// a.innerHTML = focusArea.gsx$name.$t;
+    	// li.appendChild(a);
+
     	focusAreasList.appendChild(li);
 
     	// add name and short desc to the big list
