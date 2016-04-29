@@ -216,23 +216,19 @@ request.send();
 											<p>Aam Aadmi Party's vision is to bring prosperity back to Punjab and provide governance, policies and facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve this vision.</p>
 											<p>Many focus groups like youth, farmers, women, Dalits, traders and many focus areas like agriculture, industry, education, health and job creation have been identified. Consultations will be held with experts in these sectors and with citizens of Punjab to identify critical problems and arrive at practical solutions.</p>
 											<p>Together, we will chart out a vision for a new Punjab.</p>
-											<div style="margin: 30px 0; text-align: center">
-
-											<div style="margin: 30px 0; text-align: center">
-
-											<a href="#topics"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
-
-											<a href="#contact"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Contact</button></a>
-
-											</div>
-
-
-										</div>
 									</div>
 
 								</div>
 
 								<div class="col-sm-12 col-md-12 col-lg-12">
+
+								<div style="margin: 30px 0; text-align: center">
+
+								<a href="#topics"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
+
+								<a href="#contact"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Contact</button></a>
+
+								</div>
 
 										<ul id="aboutTopicList"></ul>
 								</div>
