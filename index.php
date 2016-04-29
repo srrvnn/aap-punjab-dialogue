@@ -226,11 +226,17 @@ request.send();
 
 											</div>
 
-											<ul id="aboutTopicList"></ul>
+
 										</div>
 									</div>
 
 								</div>
+
+								<div class="col-sm-12 col-md-12 col-lg-12">
+
+										<ul id="aboutTopicList"></ul>
+								</div>
+
 							</div>
 						</div>
 					</div>
