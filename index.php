@@ -68,8 +68,11 @@ request.onload = function() {
     	// add name to the list
 
     	var li = document.createElement('li');
-    	li.innerHTML = focusArea.gsx$name.$t;
+    	var a = document.createElement('a');
+    	a.href = "#" + focusArea.gsx$section.$t;
+    	a.innerHTML = focusArea.gsx$name.$t;
 
+    	li.appendChild(a);
     	focusAreasList.appendChild(li);
 
     	// add name and short desc to the big list
@@ -78,6 +81,7 @@ request.onload = function() {
 
     	div.innerHTML = '<div class="issueSummary col-xm-12 col-sm-12"><span class="focus-area-short-name"></span><br/><span class="focus-area-short-shortdesc"></span></div><div class="issueDetails col-sm-3 col-xm-12"><a class="focus-area-short-anchor" href="#"><div class="dt-service-wrapper discovermore"><div class="dt-service-item">DISCOVER MORE  <img src="files/discovermore.png"></div></div></a></div>';
 
+    	div.id = focusArea.gsx$section.$t;
     	div.className = 'row issue';
 
     	div.querySelector('.focus-area-short-name').innerHTML = focusArea.gsx$name.$t;
@@ -236,38 +240,6 @@ request.send();
 							</div>
 						</div>
 					</div>
-
-
-<!-- 			<div id="intro">
-				<div class="lighter-overlay" style="padding-left: 10vw;padding-right: 10vw;padding-top: 100px;padding-bottom: 100px; background-color: rgba(255,255,255, 1);">
-					<div class="wpb_wrapper">
-						<h1 class="section-title">INTRODUCING PUNJAB DIALOGUE</h1>
-						<div class="aboutText">
-							<h1>
-								Bring prosperity to Punjab in 5 years
-							</h1>
-							<p style="font-family: margin: 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;   font-size: 16px">
-
-								Punjab, once the state with the highest per capita income in India, is today besotted with widespread drug abuse and a severe agrarian crisis. There is deep-rooted corruption in the government and the current political leadership has established mafias in almost every sphere of public life.
-							</p>
-							<p>Aam Aadmi Party's vision is to bring prosperity back to Punjab and provide governance, policies and facilities as per world class standards. Punjab Dialogue is an initiative to build a realistic and practical plan to achieve this vision.</p>
-							<p>Many focus groups like youth, farmers, women, Dalits, traders and many focus areas like agriculture, industry, education, health and job creation have been identified. Consultations will be held with experts in these sectors and with citizens of Punjab to identify critical problems and arrive at practical solutions.</p>
-							<p>Together, we will chart out a vision for a new Punjab.</p>
-
-							<div style="margin: 30px 0; text-align: center">
-
-							<a href="#topics"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Focus Areas</button></a>
-
-							<a href="#contact"><button style="margin-right: 25px; margin-top: 10px;" type="button" class="btn-lg btn-blue round"><span style="margin-left: 5px; float:right" class="glyphicon glyphicon-arrow-right"></span>Contact</button></a>
-
-							</div>
-
-							<ul id="aboutTopicList"></ul>
-
-						</div>
-					</div>
-				</div>
-			</div> -->
 
 			<div id="topics">
 				<br/>
