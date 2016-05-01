@@ -207,3 +207,7 @@ to{transform:scale(1) rotate(360deg);}
 
 	font-weight: bold;
 }
+
+ul#aboutTopicList li a {
+	display: block;
+}
