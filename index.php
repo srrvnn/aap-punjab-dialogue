@@ -68,7 +68,7 @@ request.onload = function() {
     	// add name to the list
 
     	var li = document.createElement('li');
-    	li.innerHTML = focusArea.gsx$name.$t;
+    	// li.innerHTML = focusArea.gsx$name.$t;
 
     	var a = document.createElement('a');
     	a.href = "#" + focusArea.gsx$section.$t;
@@ -342,7 +342,7 @@ request.send();
 	// The function actually applying the offset
 	function offsetAnchor() {
 	    if(location.hash.length !== 0) {
-	        window.scrollTo(window.scrollX, window.scrollY - 100);
+	        window.scrollTo(window.scrollX, window.scrollY - 70);
 	    }
 	}
 
