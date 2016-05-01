@@ -70,10 +70,10 @@ request.onload = function() {
     	var li = document.createElement('li');
     	li.innerHTML = focusArea.gsx$name.$t;
 
-    	// var a = document.createElement('a');
-    	// a.href = "#" + focusArea.gsx$section.$t;
-    	// a.innerHTML = focusArea.gsx$name.$t;
-    	// li.appendChild(a);
+    	var a = document.createElement('a');
+    	a.href = "#" + focusArea.gsx$section.$t;
+    	a.innerHTML = focusArea.gsx$name.$t;
+    	li.appendChild(a);
 
     	focusAreasList.appendChild(li);
 
@@ -336,6 +336,29 @@ request.send();
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+
+<script>
+
+	// The function actually applying the offset
+	function offsetAnchor() {
+	    if(location.hash.length !== 0) {
+	        window.scrollTo(window.scrollX, window.scrollY - 100);
+	    }
+	}
+
+	// This will capture hash changes while on the page
+	$(window).on("hashchange", function () {
+	    offsetAnchor();
+	});
+
+	// This is here so that when you enter the page with a hash,
+	// it can provide the offset in that case too. Having a timeout
+	// seems necessary to allow the browser to jump to the anchor first.
+	window.setTimeout(function() {
+	    offsetAnchor();
+	}, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+
+</script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
