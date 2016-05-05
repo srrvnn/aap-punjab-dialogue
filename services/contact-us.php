@@ -9,6 +9,8 @@ class ContactUsResponse {
 	public $messageId = "2";
 }
 
+error_log("Will attempt to send email");
+
 require 'PHPMailer-master/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 $mail->isSMTP();
