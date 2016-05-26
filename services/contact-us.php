@@ -13,7 +13,7 @@ error_log("attempting to send email");
 $mail = new PHPMailer;
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp1.gmail.com;';                     // Specify main and backup SMTP servers
+$mail->Host = 'smtp.gmail.com;';                     // Specify main and backup SMTP servers
 $mail->SMTPDebug   = 2;                               // 2 to enable SMTP debug information
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'punjabdialoguecontact@gmail.com';  // SMTP username
