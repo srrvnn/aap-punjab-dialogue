@@ -312,6 +312,7 @@ var Dialouge = function() {
 					}
 				  })
 				  .fail(function() {
+				  	console.log('post request failed');
 					Dialouge.WindowUtils.showErrorMessage(messageContainer,
 						Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
 				  })

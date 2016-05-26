@@ -102,6 +102,7 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
       $response->status = "Completed";
     }
 
+    error_log($response);
     echo json_encode($response);
     }
 }
