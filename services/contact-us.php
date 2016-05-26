@@ -2,11 +2,11 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-// class ContactUsResponse {
-//   public $status = "InvalidParameters";
-//   public $message = "Required parameters are not passed or empty";
-// 	public $messageId = "2";
-// }
+class ContactUsResponse {
+  public $status = "InvalidParameters";
+  public $message = "Required parameters are not passed or empty";
+	public $messageId = "2";
+}
 
 $mail = new PHPMailer;
 
