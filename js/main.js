@@ -281,9 +281,6 @@ var Dialouge = function() {
 						"json")
 				  .done(function(response) {
 
-				  	console.log(response);
-				  	console.dir(response);
-
 					if(typeof response === 'undefined' || typeof response["status"] === 'undefined') {
 						Dialouge.WindowUtils.showErrorMessage(messageContainer,
 							Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
@@ -312,7 +309,7 @@ var Dialouge = function() {
 					}
 				  })
 				  .fail(function() {
-				  	console.log('post request failed');
+				  	console.dir(arguments);
 					Dialouge.WindowUtils.showErrorMessage(messageContainer,
 						Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
 				  })

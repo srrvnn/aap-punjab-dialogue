@@ -92,17 +92,19 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
     if(!$mail->send()) {
 
       $response->message = "Mail could not be sent!";
-      $response->messageId = "10";
+      // $response->messageId = "10";
       $response->status = "MailingError";
 
     } else {
 
       $response->message = "Email was sent successfully!";
-      $response->messageId = "3";
+      // $response->messageId = "3";
       $response->status = "Completed";
     }
 
-    error_log($response);
+    error_log($response->message);
+    error_log($response->messageId);
+    error_log($response->status);
     echo json_encode($response);
     }
 }
