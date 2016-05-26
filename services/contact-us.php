@@ -78,8 +78,11 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 			return;
 		}
 
+    // Send mail by PHP Mail Function
+    // $mail->addAddress("$email", "$name");
+
     $mail->Subject = 'Welcome to Punjab Dialogue';
-    $mail->Body = "Dear Saravanan,\n\n Thank you for writing to the team at Delhi Dialogue. We appreciate your feedback and inputs. The strong secretariat at Delhi Dialogue will have a look at your suggestions and surely keep them in mind whilst thinking of Delhi's future.
+    $mail->Body = "Dear $name,\n\n Thank you for writing to the team at Delhi Dialogue. We appreciate your feedback and inputs. The strong secretariat at Delhi Dialogue will have a look at your suggestions and surely keep them in mind whilst thinking of Delhi's future.
     \nDelhi Dialogue is an initiative of the Aam Aadmi Party that presents a concrete, sustainable and futuristic roadmap to make Delhi a world-class city. It seeks to conduct a comprehensive study of the intractable problems that plague Delhi and take stock of the aspirations of its citizens. Invitations will be sent to domain experts, researchers, scientists, national and international experts from governments,  organizations, businesses and civil society to engage with us on a 30-point agenda themed under 12 focus areas, whilst catering to the needs, wants and desires of Delhi's youth, women, traders, middle class living in group housing societies, RWAs, JJ Clusters, other housing colonies and villages. This will be then used to create a concrete, feasible and long-term roadmap and vision to make Delhi a smart but liveable city.
     \nFeel free to write in to us at delhidialogue@aamaadmiparty.org or whatsapp us at +919643327265 or visit our website to track progress at http://delhidialogue.in/index.html
     \nYou can also follow us on Twitter > https://twitter.com/DelhiDialogue or Facebook > https://www.facebook.com/pages/Delhi-Dialogue/576718279124066?ref=br_tf as well!
@@ -88,64 +91,19 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
     $mail->AltBody = '';
 
     if(!$mail->send()) {
-        error_log("did not send");
-        error_log($mail->ErrorInfo);
-        echo 'Message could not be sent.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
+
+      $response->message = "Mail could not be sent!";
+      $response->messageId = "10";
+      $response->status = "MailingError";
+
     } else {
-        error_log("message sent");
-        echo 'Message has been sent';
+
+      $response->message = "Email was sent successfully!";
+      $response->messageId = "3";
+      $response->status = "Completed";
     }
 
-//   //       // message lines should not exceed 70 characters (PHP rule), so wrap it
-//   //       $url = 'https://api.parse.com/1/classes/contactus';
-//   //       $appId = 'yVjYjEx1SN7YTAkALF07teCzVeG906SnADSlrSEa';
-//   //       $restKey = 'pGaZrwDkhm0A31dziZMWtTi6ip8C8IbtgQHdoCgd';
-//   //       $headers = array(
-//   //           "Content-Type: application/json",
-//   //           "X-Parse-Application-Id: " . $appId,
-//   //           "X-Parse-REST-API-Key: " . $restKey
-//   //       );
-// 		// // TODO:: Need to check parse response, add metrics and return appropriate error on failure
-//   //       $objectData = "{\"email\":\"$email\", \"name\":\"$name\", \"message\":\"$message\"}";
-//   //       $rest = curl_init();
-//   //       curl_setopt($rest, CURLOPT_URL, $url);
-//   //       curl_setopt($rest, CURLOPT_POST, 1);
-//   //       curl_setopt($rest, CURLOPT_POSTFIELDS, $objectData);
-//   //       curl_setopt($rest, CURLOPT_HTTPHEADER, $headers);
-//   //       curl_setopt($rest, CURLOPT_SSL_VERIFYPEER, false);
-//   //       curl_setopt($rest, CURLOPT_RETURNTRANSFER, true);
-//   //       $res = curl_exec($rest);
-//   //       curl_close($rest);
-
-//         // Send mail by PHP Mail Function
-//         $mail->addAddress("$email", "$name");
-//         $mail->Subject = 'Welcome to Punjab Dialogue';
-//         $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-
-//         // $mail->Body = "Dear $name,\n\n Thank you for writing to the team at Delhi Dialogue. We appreciate your feedback and inputs. The strong secretariat at Delhi Dialogue will have a look at your suggestions and surely keep them in mind whilst thinking of Delhi's future.
-//         // \nDelhi Dialogue is an initiative of the Aam Aadmi Party that presents a concrete, sustainable and futuristic roadmap to make Delhi a world-class city. It seeks to conduct a comprehensive study of the intractable problems that plague Delhi and take stock of the aspirations of its citizens. Invitations will be sent to domain experts, researchers, scientists, national and international experts from governments,  organizations, businesses and civil society to engage with us on a 30-point agenda themed under 12 focus areas, whilst catering to the needs, wants and desires of Delhi's youth, women, traders, middle class living in group housing societies, RWAs, JJ Clusters, other housing colonies and villages. This will be then used to create a concrete, feasible and long-term roadmap and vision to make Delhi a smart but liveable city.
-//         // \nFeel free to write in to us at delhidialogue@aamaadmiparty.org or whatsapp us at +919643327265 or visit our website to track progress at http://delhidialogue.in/index.html
-//         // \nYou can also follow us on Twitter > https://twitter.com/DelhiDialogue or Facebook > https://www.facebook.com/pages/Delhi-Dialogue/576718279124066?ref=br_tf as well!
-//         // \n We look forward to continuing this process of Dialogue with you. Keep in touch!
-//         // \nYours sincerely,\nArvind Kejriwal\n(On Behalf of the Delhi Dialogue Team)";
-
-//         $mail->AltBody = '';
-
-//         if (!$mail->send()) {
-
-//           $response->message = "Mail could not be sent!";
-//           $response->messageId = "10";
-// 			    $response->status = "MailingError";
-
-//         } else {
-
-//           $response->message = "Email was sent successfully!";
-// 			    $response->messageId = "3";
-// 			    $response->status = "Completed";
-//         }
-
-//         echo json_encode($response);
+    echo json_encode($response);
     }
 }
 
