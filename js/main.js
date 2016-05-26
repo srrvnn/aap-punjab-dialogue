@@ -276,7 +276,9 @@ var Dialouge = function() {
 				var params = $(form).serialize();
 				var postUrl = $(form).attr( "action" );
 				$.post( postUrl,
-						params)
+						params,
+						function() {},
+						"json")
 				  .done(function(response) {
 
 					if(typeof response === 'undefined' || typeof response["status"] === 'undefined') {
@@ -307,7 +309,6 @@ var Dialouge = function() {
 					}
 				  })
 				  .fail(function() {
-				  	console.dir(arguments);
 					Dialouge.WindowUtils.showErrorMessage(messageContainer,
 						Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
 				  })
