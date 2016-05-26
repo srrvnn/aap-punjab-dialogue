@@ -2,11 +2,13 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-class ContactUsResponse {
-  public $status = "InvalidParameters";
-  public $message = "Required parameters are not passed or empty";
-	public $messageId = "2";
-}
+// class ContactUsResponse {
+//   public $status = "InvalidParameters";
+//   public $message = "Required parameters are not passed or empty";
+// 	public $messageId = "2";
+// }
+
+error_log("attempting to send email");
 
 $mail = new PHPMailer;
 
@@ -34,9 +36,11 @@ $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {
+    error_log("did not send");
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
+  error_log("message sent")
     echo 'Message has been sent';
 }
 
