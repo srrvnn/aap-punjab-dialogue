@@ -3,9 +3,8 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 class ContactUsResponse {
-
-    public $status = "InvalidParameters";
-	public $message = "Required parameters are not passed or empty";
+  public $status = "InvalidParameters";
+  public $message = "Required parameters are not passed or empty";
 	public $messageId = "2";
 }
 
@@ -23,7 +22,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
 $mail->From = 'punjabdialoguefeedback@gmail.com';
 $mail->FromName = 'Arvind Kejriwal (On Behalf of the Punjab Dialogue Team)';
-$mail->addCC('aappunjabdialogue@gmail.com');
+// $mail->addCC('aappunjabdialogue@gmail.com');
 
 $secret = '6LfDHR4TAAAAAEO7WlESvnf4_5Vdccwfirg514Yw';
 
@@ -36,9 +35,13 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 
     echo json_encode($response);
 
+    error_log("will not build email. name and email don't exist");
+
 } else {
 
-	// Check if the "Sender's Email" input field is filled out
+  error_log("will build email. sure that name and email values exist");
+
+	  // Check if the "Sender's Email" input field is filled out
     $email = $_POST['email'];
 
     // Sanitize e-mail address
@@ -55,6 +58,8 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 
     } else {
 
+      error_log("email obtained from peers");
+
         $recaptcha = new \ReCaptcha\ReCaptcha($secret);
 		$capchaResponse = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
@@ -64,6 +69,8 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 		}
 
 		if (!$capchaResponse->isSuccess()) {
+
+      error_log("captcha checking failed")
 
 			echo json_encode($capchaResponse);
 			return;
@@ -108,15 +115,17 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 
         if (!$mail->send()) {
 
-            $response->message = "Mail could not be sent!";
-			$response->messageId = "10";
-			$response->status = "MailingError";
+          error_log("sending failed");
+
+          $response->message = "Mail could not be sent!";
+          $response->messageId = "10";
+			    $response->status = "MailingError";
 
         } else {
 
-			$response->message = "Email was sent successfully!";
-			$response->messageId = "3";
-			$response->status = "Completed";
+          $response->message = "Email was sent successfully!";
+			    $response->messageId = "3";
+			    $response->status = "Completed";
         }
 
         echo json_encode($response);
