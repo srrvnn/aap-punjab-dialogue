@@ -30,72 +30,72 @@ $mail->addCC('srrvnn@gmail.com');
 // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Welcome to Punjab Dialogue';
-$mail->Body = "Dear Saravanan,\n\n Thank you for writing to the team at Delhi Dialogue. We appreciate your feedback and inputs. The strong secretariat at Delhi Dialogue will have a look at your suggestions and surely keep them in mind whilst thinking of Delhi's future.
-\nDelhi Dialogue is an initiative of the Aam Aadmi Party that presents a concrete, sustainable and futuristic roadmap to make Delhi a world-class city. It seeks to conduct a comprehensive study of the intractable problems that plague Delhi and take stock of the aspirations of its citizens. Invitations will be sent to domain experts, researchers, scientists, national and international experts from governments,  organizations, businesses and civil society to engage with us on a 30-point agenda themed under 12 focus areas, whilst catering to the needs, wants and desires of Delhi's youth, women, traders, middle class living in group housing societies, RWAs, JJ Clusters, other housing colonies and villages. This will be then used to create a concrete, feasible and long-term roadmap and vision to make Delhi a smart but liveable city.
-\nFeel free to write in to us at delhidialogue@aamaadmiparty.org or whatsapp us at +919643327265 or visit our website to track progress at http://delhidialogue.in/index.html
-\nYou can also follow us on Twitter > https://twitter.com/DelhiDialogue or Facebook > https://www.facebook.com/pages/Delhi-Dialogue/576718279124066?ref=br_tf as well!
-\n We look forward to continuing this process of Dialogue with you. Keep in touch!
-\nYours sincerely,\nArvind Kejriwal\n(On Behalf of the Delhi Dialogue Team)";
-$mail->AltBody = '';
+$secret = '6LfDHR4TAAAAAEO7WlESvnf4_5Vdccwfirg514Yw';
 
-if(!$mail->send()) {
-    error_log("did not send");
-    error_log($mail->ErrorInfo);
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-    error_log("message sent");
-    echo 'Message has been sent';
-}
-
-// $secret = '6LfDHR4TAAAAAEO7WlESvnf4_5Vdccwfirg514Yw';
-
-// $response = new ContactUsResponse();
+$response = new ContactUsResponse();
 // $is_debug = isset($_GET['q121_aap_dd_debug_counter']);
 
-// // Your code here to handle a successful verification
-// // Checking for blank Fields..
-// if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) || empty($_POST["email"])) {
+// Your code here to handle a successful verification
+// Checking for blank Fields..
+if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) || empty($_POST["email"])) {
 
-//     echo json_encode($response);
+    echo json_encode($response);
 
-// } else {
+} else {
 
-// 	  // Check if the "Sender's Email" input field is filled out
-//     $email = $_POST['email'];
+    $name = $_POST['name'];
+    $message = $_POST['message'];
 
-//     // Sanitize e-mail address
-//     $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+	  // Check if the "Sender's Email" input field is filled out
+    $email = $_POST['email'];
 
-//     // Validate e-mail address
-//     $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+    // Sanitize e-mail address
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
-//     if (!$email) {
+    // Validate e-mail address
+    $email = filter_var($email, FILTER_VALIDATE_EMAIL);
 
-//       $response->status = "ValidationError";
-// 		  $response->message = "Email is invalid!";
+    if (!$email) {
 
-//       echo json_encode($response);
+      $response->status = "ValidationError";
+		  $response->message = "Email is invalid!";
 
-//     } else {
+      echo json_encode($response);
 
-//       $recaptcha = new \ReCaptcha\ReCaptcha($secret);
-// 		  $capchaResponse = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+    } else {
 
-// 		if ($is_debug) {
+      $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+		  $capchaResponse = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-// 			echo "verify_capcha_status = ".var_dump($capchaResponse);
-// 		}
+		// if ($is_debug) {
 
-// 		if (!$capchaResponse->isSuccess()) {
+		// 	echo "verify_capcha_status = ".var_dump($capchaResponse);
+		// }
 
-// 			echo json_encode($capchaResponse);
-// 			return;
-// 		}
+		if (!$capchaResponse->isSuccess()) {
 
-//         $name = $_POST['name'];
-//         $message = $_POST['message'];
+			echo json_encode($capchaResponse);
+			return;
+		}
+
+    $mail->Subject = 'Welcome to Punjab Dialogue';
+    $mail->Body = "Dear Saravanan,\n\n Thank you for writing to the team at Delhi Dialogue. We appreciate your feedback and inputs. The strong secretariat at Delhi Dialogue will have a look at your suggestions and surely keep them in mind whilst thinking of Delhi's future.
+    \nDelhi Dialogue is an initiative of the Aam Aadmi Party that presents a concrete, sustainable and futuristic roadmap to make Delhi a world-class city. It seeks to conduct a comprehensive study of the intractable problems that plague Delhi and take stock of the aspirations of its citizens. Invitations will be sent to domain experts, researchers, scientists, national and international experts from governments,  organizations, businesses and civil society to engage with us on a 30-point agenda themed under 12 focus areas, whilst catering to the needs, wants and desires of Delhi's youth, women, traders, middle class living in group housing societies, RWAs, JJ Clusters, other housing colonies and villages. This will be then used to create a concrete, feasible and long-term roadmap and vision to make Delhi a smart but liveable city.
+    \nFeel free to write in to us at delhidialogue@aamaadmiparty.org or whatsapp us at +919643327265 or visit our website to track progress at http://delhidialogue.in/index.html
+    \nYou can also follow us on Twitter > https://twitter.com/DelhiDialogue or Facebook > https://www.facebook.com/pages/Delhi-Dialogue/576718279124066?ref=br_tf as well!
+    \n We look forward to continuing this process of Dialogue with you. Keep in touch!
+    \nYours sincerely,\nArvind Kejriwal\n(On Behalf of the Delhi Dialogue Team)";
+    $mail->AltBody = '';
+
+    if(!$mail->send()) {
+        error_log("did not send");
+        error_log($mail->ErrorInfo);
+        echo 'Message could not be sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    } else {
+        error_log("message sent");
+        echo 'Message has been sent';
+    }
 
 //   //       // message lines should not exceed 70 characters (PHP rule), so wrap it
 //   //       $url = 'https://api.parse.com/1/classes/contactus';
@@ -147,6 +147,6 @@ if(!$mail->send()) {
 
 //         echo json_encode($response);
 //     }
-// }
+}
 
 ?>
