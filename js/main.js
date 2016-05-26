@@ -1,5 +1,5 @@
 var Dialouge = function() {
-	
+
 	// This is not thread safe and not a global/singelton class.
 	FormValidator = function (formId, errorLabelId) {
 		var formContainer = $(formId);
@@ -7,7 +7,7 @@ var Dialouge = function() {
 		var errorWrapper;
 		var _successCallBack;
 		var validatorAdded = false;
-		
+
 		if(errorLabelContainerId) {
 			errorWrapper = "li";
 		}
@@ -108,7 +108,7 @@ var Dialouge = function() {
 					$element = $( element ),
 				highlightedElement = getLabelInForm(element);
 				highlightedElement.removeClass('error').removeClass('success');
-				
+
 				// Update common message label
 				var messageContainer = $(element.form).find('.message');
 				Dialouge.WindowUtils.showErrorMessage(messageContainer, Dialouge.ConstantUtils.VALIDATION_ERROR_MESSAGE, 0);
@@ -118,7 +118,7 @@ var Dialouge = function() {
 				// using bootstrap inbuilt classes success and error for auto validation
 				unhighlightedElement = getLabelInForm(element);
 				unhighlightedElement.remove();
-				
+
 				var erroredLabels = $(element.form).find("label[class=error]");
 				if(erroredLabels.length == 0) {
 					// Clear common message label
@@ -128,7 +128,7 @@ var Dialouge = function() {
 			  },
 			  // called when validation succeeded for each element (once per element)
 			  success: function(element) {
-				
+
 			  },
 			  // Called once after validation succeeded for every element
 			  submitHandler: function(form) {
@@ -165,7 +165,7 @@ var Dialouge = function() {
 			validate : validate
 		};
 	},
-	
+
 	// This is thread safe and a global/singelton class
 	WindowUtils = (function () {
 		var goToPage = function(pageId) {
@@ -275,41 +275,44 @@ var Dialouge = function() {
 				// Capcha fields are also part of the form and will be sent to server for validation
 				var params = $(form).serialize();
 				var postUrl = $(form).attr( "action" );
-				$.post( postUrl, 
+				$.post( postUrl,
 						params,
 						function() {},
 						"json")
 				  .done(function(response) {
-				
+
+				  	console.log(response);
+				  	console.dir(response);
+
 					if(typeof response === 'undefined' || typeof response["status"] === 'undefined') {
-						Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+						Dialouge.WindowUtils.showErrorMessage(messageContainer,
 							Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
 					} else {
 						var status = response["status"];
 						if(status === 'InvalidCapcha') {
-							Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+							Dialouge.WindowUtils.showErrorMessage(messageContainer,
 								Dialouge.ConstantUtils.CAPCHA_VALIDATION_FAILED_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
 						} else if(status == 'ValidationError') {
 							var errorMessage = Dialouge.ConstantUtils.VALIDATION_ERROR_MESSAGE + ". " + response['message'];
-							Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+							Dialouge.WindowUtils.showErrorMessage(messageContainer,
 								errorMessage, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
 						} else if(status == 'Completed') {
-							Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
+							Dialouge.WindowUtils.showSuccessMessage(messageContainer,
 								successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
 							clearFields(form);
 						} else if(status == 'MailingError') {
 							successMessage = successMessage + " " + Dialouge.ConstantUtils.EMAIL_FAILED_MESSAGE;
-							Dialouge.WindowUtils.showSuccessMessage(messageContainer, 
+							Dialouge.WindowUtils.showSuccessMessage(messageContainer,
 								successMessage, Dialouge.ConstantUtils.SUCCESS_MESSAGE_ACTIVE_PERIOD);
 							clearFields(form);
 						} else {
-							Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+							Dialouge.WindowUtils.showErrorMessage(messageContainer,
 								Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
 						}
 					}
 				  })
 				  .fail(function() {
-					Dialouge.WindowUtils.showErrorMessage(messageContainer, 
+					Dialouge.WindowUtils.showErrorMessage(messageContainer,
 						Dialouge.ConstantUtils.INTERNAL_ERROR_MESSAGE, Dialouge.ConstantUtils.FAILED_MESSAGE_ACTIVE_PERIOD);
 				  })
 				  .always(function() {
@@ -339,7 +342,7 @@ var Dialouge = function() {
 		};
 	})(),
 
-		
+
 	// This is thread safe and a global/singelton class
 	ConstantUtils = (function () {
 		var SUCCESS_MESSAGE_ACTIVE_PERIOD = 10000,
@@ -371,7 +374,7 @@ var Dialouge = function() {
 			CAPCHA_VALIDATION_FAILED_MESSAGE : CAPCHA_VALIDATION_FAILED_MESSAGE
 		};
 	})(),
-	
+
 	// This is thread safe and a global/singelton class
 	UrlUtils = (function () {
 		var getQueryString = function() {
@@ -423,7 +426,7 @@ var Dialouge = function() {
 			var focusAreaNameContainer = $(form).find( "input[type='hidden'][name='focusarea']" );
 			var headerContanier = getHeader();
 			$(focusAreaNameContainer).val(headerContanier.text());
-			
+
 			return Dialouge.FormUtils.formValidationSuccessCallBack(form, messageContainer, Dialouge.ConstantUtils.GET_UPDATES_REQUEST_SENT_MESSAGE);
 		},
 		// Call back function to be called after "Registration/Submit Proposal" form validation is successful
@@ -452,7 +455,7 @@ var Dialouge = function() {
 		// Call back function to be called after contact us form validation is successful
 		contactUsCallBack = function (form, messageContainer) {
 			return Dialouge.FormUtils.formValidationSuccessCallBack(form, messageContainer, Dialouge.ConstantUtils.CONTACT_US_REQUEST_SENT_MESSAGE);
-		};	
+		};
 		//public members
 		return {
 			contactUsCallBack : contactUsCallBack
