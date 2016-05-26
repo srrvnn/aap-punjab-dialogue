@@ -146,7 +146,7 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 //         }
 
 //         echo json_encode($response);
-//     }
+    }
 }
 
 ?>
