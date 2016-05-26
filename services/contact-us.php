@@ -20,8 +20,7 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->setFrom('punjabdialoguecontact@gmail.com', 'Arvind Kejriwal (On Behalf of the Punjab Dialogue Team)');
-$mail->addAddress('srrvnn@live.com');               // Name is optional
-$mail->addCC('srrvnn@gmail.com');
+$mail->addCC('srrvnn@live.com');
 // $mail->addCC('aappunjabdialogue@gmail.com');
 // $mail->addReplyTo('info@example.com', 'Information');
 // $mail->addBCC('bcc@example.com');
@@ -79,7 +78,7 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 		}
 
     // Send mail by PHP Mail Function
-    // $mail->addAddress("$email", "$name");
+    $mail->addAddress("$email", "$name");
 
     $mail->Subject = 'Welcome to Punjab Dialogue';
     $mail->Body = "Dear $name,\n\n Thank you for writing to the team at Delhi Dialogue. We appreciate your feedback and inputs. The strong secretariat at Delhi Dialogue will have a look at your suggestions and surely keep them in mind whilst thinking of Delhi's future.
