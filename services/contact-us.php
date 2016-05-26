@@ -40,7 +40,7 @@ if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-  error_log("message sent")
+    error_log("message sent");
     echo 'Message has been sent';
 }
 
