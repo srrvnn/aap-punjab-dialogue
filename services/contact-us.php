@@ -70,7 +70,7 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 
 		if (!$capchaResponse->isSuccess()) {
 
-      error_log("captcha checking failed")
+      error_log("captcha checking failed");
 
 			echo json_encode($capchaResponse);
 			return;
