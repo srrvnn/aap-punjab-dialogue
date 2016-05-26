@@ -276,9 +276,7 @@ var Dialouge = function() {
 				var params = $(form).serialize();
 				var postUrl = $(form).attr( "action" );
 				$.post( postUrl,
-						params,
-						function() {},
-						"json")
+						params)
 				  .done(function(response) {
 
 					if(typeof response === 'undefined' || typeof response["status"] === 'undefined') {
