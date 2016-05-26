@@ -7,7 +7,8 @@
         }
     ],
     "require": {
-    	"google/recaptcha": "~1.1"
+    	"google/recaptcha": "~1.1",
+        "phpmailer/phpmailer": "~5.2"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "^101.0"
