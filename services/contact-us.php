@@ -72,10 +72,10 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 
             Punjab Dialogue is an initiative of the Aam Aadmi Party  to build a realistic and practical plan to achieve the vision of bringing prosperity to Punjab. It seeks to conduct a comprehensive study of the intractable problems that plague Punjab and take stock of the aspirations of its citizens. Invitations will be sent to domain experts, researchers, scientists, national and international experts from governments,  organizations, businesses and civil society to engage with us on agenda themed under 22 focus areas, whilst catering to the needs, wants and desires of Punjab's youth, women, traders, middle class living in group housing societies, RWAs, JJ Clusters, other housing colonies and villages. This will be then used to create a concrete, feasible and long-term roadmap and vision to make Punjab a prosperous state. <br/><br/>
 
-            Feel free to write in to us at aappunjabdialogue@gmail.com or visit our website to track progress at http://punjabdialogue.org <br/>
+            Feel free to write in to us at aappunjabdialogue@gmail.com or visit our website to track progress at http://www.punjabdialogue.org <br/>
             You can also follow us on Twitter > https://twitter.com/pbdialogue or Facebook > https://www.facebook.com/punjabdialogue as well! <br/>
             We look forward to continuing this process of Dialogue with you. Keep in touch! <br/><br/>
-            Yours sincerely,<br/>Arvind Kejriwal<br/>(On Behalf of the Punjab Dialogue Team) <br/> <hr/> <i> $name ($email) <i/> wrote: $message <br/>";
+            Yours sincerely,<br/>Arvind Kejriwal<br/>(On Behalf of the Punjab Dialogue Team) <br/> <hr/> <br/> <i> $name ($email) </i> wrote: $message <br/>";
 
         $mail->AltBody = '';
 

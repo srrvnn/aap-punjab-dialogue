@@ -145,6 +145,9 @@ request.send();
 							<li style="overflow: visible;" id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-182"><a class="headnavs" href="#topics"><span>FOCUS AREAS</span></a></li>
 							<li style="overflow: visible;" id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-185"><a class="headnavs" href="#contact"><span>CONTACT</span></a></li>
 							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
+								<a href="https://www.youtube.com/channel/UCgjygnRdeEnZ1mkq890WABA"> <img src="images/youtube.png" height="15px"/></a>
+							</li>
+							<li style="overflow: hidden;padding-left:20px" id="menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
 								<div class="fb-like" data-href="https://www.facebook.com/punjabdialogue/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 							</li>
 							<li style="overflow: hidden;padding-left:25px;padding-top:2px;" id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-186">
@@ -268,6 +271,7 @@ request.send();
 								<li><h3><span class="glyphicon glyphicon-envelope"></span> aappunjabdialogue@gmail.com </h3></li>
 								<li><h3><a href="https://www.facebook.com/punjabdialogue"><img height="24px" src="files/facebook.gif">facebook.com/punjabdialogue</a></h3></li>
 								<li><h3><a href="https://www.twitter.com/pbdialogue"><img height="24px" src="files/twitter.png">twitter.com/pbdialogue</a></h3></li>
+								<li><h3><a href="https://www.youtube.com/channel/UCgjygnRdeEnZ1mkq890WABA"><img height="24px" src="images/youtube-icon.png">AAP Punjab Dialogue Channel</a></h3></li>
 								<div style="clear:both; width:100%; height:10px"></div>
 							</ul>
 
