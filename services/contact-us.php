@@ -13,13 +13,13 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                       // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com;';                       // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                                // Enable SMTP authentication
-$mail->Username = "punjabdialoguefeedback@gmail.com";   // SMTP username
-$mail->Password = "punjabdialoguefeedback123";                    // SMTP password
+$mail->Username = "punjabdialoguecontact@gmail.com";   // SMTP username
+$mail->Password = "punjabdialogue";                    // SMTP password
 $mail->SMTPSecure = 'tls';                             // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                     // TCP port to connect to
 $mail->isHTML(true);                                   // Set email format to HTML
 
-$mail->setFrom('punjabdialoguefeedback@gmail.com', 'Arvind Kejriwal (On Behalf of the Punjab Dialogue Team)');
+$mail->setFrom('punjabdialoguecontact@gmail.com', 'Arvind Kejriwal (On Behalf of the Punjab Dialogue Team)');
 $mail->addReplyTo('aappunjabdialogue@gmail.com', 'AAP Punjab Dialogue');
 // $mail->addCC('aappunjabdialogue@gmail.com');
 $mail->addBCC('srrvnn@live.com');
