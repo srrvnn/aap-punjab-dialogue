@@ -80,11 +80,15 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
 
         if (!$mail->send()) {
 
+            error_log("Mail sending unsuccessful.');
+
             $response->message = "Mail could not be sent!";
             $response->messageId = "10";
             $response->status = "MailingError";
 
         } else {
+
+            error_log("Mail sending successful.");
 
             $response->message = "Email was sent successfully!";
             $response->messageId = "3";
