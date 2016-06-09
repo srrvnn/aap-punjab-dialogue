@@ -21,7 +21,7 @@ $mail->isHTML(true);                                   // Set email format to HT
 
 $mail->setFrom('punjabdialoguecontact@gmail.com', 'Arvind Kejriwal (On Behalf of the Punjab Dialogue Team)');
 $mail->addReplyTo('aappunjabdialogue@gmail.com', 'AAP Punjab Dialogue');
-// $mail->addCC('aappunjabdialogue@gmail.com');
+$mail->addCC('aappunjabdialogue@gmail.com');
 $mail->addBCC('srrvnn@live.com');
 
 $response = new ContactUsResponse();
