@@ -68,27 +68,24 @@ if (!isset($_POST["name"]) || empty($_POST["name"]) || !isset($_POST["email"]) |
         $mail->addAddress("$email", "$name");
 
         $mail->Subject = 'Welcome to Punjab Dialogue';
-        $mail->Body = "Dear $name,\n\n Thank you for writing to the team at Punjab Dialogue. We appreciate your feedback and inputs. The strong secretariat at Punjab Dialogue will have a look at your suggestions and surely keep them in mind whilst thinking of Punjab's future.
+        $mail->Body = "Dear $name, <br/> <br/> Thank you for writing to the team at Punjab Dialogue. We appreciate your feedback and inputs. The strong secretariat at Punjab Dialogue will have a look at your suggestions and surely keep them in mind whilst thinking of Punjab's future. <br/><br/>
 
-            \nPunjab Dialogue is an initiative of the Aam Aadmi Party that presents a concrete, sustainable and futuristic roadmap to make Punjab a world-class state. It seeks to conduct a comprehensive study of the intractable problems that plague Punjab and take stock of the aspirations of its citizens. Invitations will be sent to domain experts, researchers, scientists, national and international experts from governments,  organizations, businesses and civil society to engage with us on a 30-point agenda themed under 12 focus areas, whilst catering to the needs, wants and desires of Punjab's youth, women, traders, middle class living in group housing societies, RWAs, JJ Clusters, other housing colonies and villages. This will be then used to create a concrete, feasible and long-term roadmap and vision to make Punjab a smart and liveable state.
-            \nFeel free to write in to us at aappunjabdialogue@gmail.com or WhatsApp us at +919643327265 or visit our website to track progress at http://punjabdialogue.org
-            \nYou can also follow us on Twitter > https://twitter.com/pbdialogue or Facebook > https://www.facebook.com/punjabdialogue as well!
-            \n We look forward to continuing this process of Dialogue with you. Keep in touch!
-            \nYours sincerely,\nArvind Kejriwal\n(On Behalf of the Punjab Dialogue Team) <hr/> $message";
+            Punjab Dialogue is an initiative of the Aam Aadmi Party  to build a realistic and practical plan to achieve the vision of bringing prosperity to Punjab. It seeks to conduct a comprehensive study of the intractable problems that plague Punjab and take stock of the aspirations of its citizens. Invitations will be sent to domain experts, researchers, scientists, national and international experts from governments,  organizations, businesses and civil society to engage with us on agenda themed under 22 focus areas, whilst catering to the needs, wants and desires of Punjab's youth, women, traders, middle class living in group housing societies, RWAs, JJ Clusters, other housing colonies and villages. This will be then used to create a concrete, feasible and long-term roadmap and vision to make Punjab a prosperous state. <br/><br/>
+
+            Feel free to write in to us at aappunjabdialogue@gmail.com or visit our website to track progress at http://punjabdialogue.org <br/>
+            You can also follow us on Twitter > https://twitter.com/pbdialogue or Facebook > https://www.facebook.com/punjabdialogue as well! <br/>
+            We look forward to continuing this process of Dialogue with you. Keep in touch! <br/><br/>
+            Yours sincerely,<br/>Arvind Kejriwal<br/>(On Behalf of the Punjab Dialogue Team) <br/> <hr/> <i> $name ($email) <i/> wrote: $message <br/>";
 
         $mail->AltBody = '';
 
         if (!$mail->send()) {
-
-            error_log("Mail sending unsuccessful.");
 
             $response->message = "Mail could not be sent!";
             $response->messageId = "10";
             $response->status = "MailingError";
 
         } else {
-
-            error_log("Mail sending successful.");
 
             $response->message = "Email was sent successfully!";
             $response->messageId = "3";
